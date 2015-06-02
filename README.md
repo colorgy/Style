@@ -1,4 +1,4 @@
-# ColorgyStyle
+# ColorgyStyle [![Gem Version](https://badge.fury.io/rb/colorgy_style.svg)](http://badge.fury.io/rb/colorgy_style)
 
 The front-end bundle and style guide for Colorgy.
 
