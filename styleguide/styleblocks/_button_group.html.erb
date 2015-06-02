@@ -1,0 +1,41 @@
+<!-- Basic -->
+<div class="btn-group$modifier_class" role="group" aria-label="...">
+  <a type="button" class="btn btn-default">Left</a>
+  <a type="button" class="btn btn-default">Middle</a>
+  <a type="button" class="btn btn-default">Right</a>
+</div>
+
+<!-- Combine sets in a toolbar -->
+<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-group$modifier_class" role="group" aria-label="First group">
+    <a type="button" class="btn btn-default">1</a>
+    <a type="button" class="btn btn-default">2</a>
+    <a type="button" class="btn btn-default">3</a>
+    <a type="button" class="btn btn-default">4</a>
+  </div>
+  <div class="btn-group$modifier_class" role="group" aria-label="Second group">
+    <a type="button" class="btn btn-default">5</a>
+    <a type="button" class="btn btn-default">6</a>
+    <a type="button" class="btn btn-default">7</a>
+  </div>
+  <div class="btn-group$modifier_class" role="group" aria-label="Third group">
+    <a type="button" class="btn btn-default">8</a>
+  </div>
+</div>
+
+<!-- Nesting with dropdowns -->
+<div class="btn-group$modifier_class" role="group" aria-label="...">
+  <a type="button" class="btn btn-default">1</a>
+  <a type="button" class="btn btn-default">2</a>
+
+  <div class="btn-group$modifier_class" role="group">
+    <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+      Dropdown
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">Dropdown link</a></li>
+      <li><a href="#">Dropdown link</a></li>
+    </ul>
+  </div>
+</div>

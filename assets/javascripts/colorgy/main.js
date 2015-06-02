@@ -3,5 +3,7 @@
 //= require vendor/es5-shim
 //= require jquery
 //= require jquery_ujs
+//= require ./lib/jquery.getOrAddChild
+//= require_tree ./components
 
 console.log('Hello World!');

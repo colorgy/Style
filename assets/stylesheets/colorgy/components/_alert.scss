@@ -1,0 +1,36 @@
+// Alerts.
+//
+// .success      - Success.
+// .info         - Info.
+// .warning      - Warning.
+// .danger       - Danger.
+// .dismissible  - Dismissible. Requires <code>alert.js</code> to make interactive.
+//
+// Styleguide Alert.
+
+@import "bootstrap/alerts";
+@import "bootstrap/close";
+
+.alert {
+	@extend .alert-info;
+
+	&.success {
+		@extend .alert-success;
+	}
+
+	&.info {
+		@extend .alert-info;
+	}
+
+	&.warning {
+		@extend .alert-warning;
+	}
+
+	&.danger {
+		@extend .alert-danger;
+	}
+
+	&.dismissible {
+		@extend .alert-dismissible;
+	}
+}

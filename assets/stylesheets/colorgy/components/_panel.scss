@@ -1,0 +1,35 @@
+// Panels.
+//
+// .primary  - Primary.
+// .success  - Success.
+// .info     - Info.
+// .warning  - Warning.
+// .danger   - Danger.
+//
+// Styleguide Panel.
+
+@import "bootstrap/panels";
+
+.panel {
+	@extend .panel-default;
+
+	&.primary {
+		@extend .panel-primary;
+	}
+
+	&.success {
+		@extend .panel-success;
+	}
+
+	&.info {
+		@extend .panel-info;
+	}
+
+	&.warning {
+		@extend .panel-warning;
+	}
+
+	&.danger {
+		@extend .panel-danger;
+	}
+}

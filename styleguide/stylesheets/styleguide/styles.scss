@@ -48,6 +48,20 @@
 		position: relative;
 		padding: em(12);
 
+		> .sg-example,
+		> * {
+			margin-bottom: em(12);
+			margin-right: em(4);
+		}
+
+		> hr {
+			margin: 0;
+			margin-top: em(10);
+			margin-bottom: em(10);
+			border: 0;
+			border-top: 1px solid #eeeeee;
+		}
+
 		+ .styleguide-element {
 			margin-top: em(2);
 			padding-top: em(10);

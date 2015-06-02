@@ -1,18 +1,57 @@
-// Clickable control
+// Default buttons.
 //
 // :hover                - On mouse hovered.
 // :active, .active      - Active state.
 // :disabled, .disabled  - Disabled state.
-// .btn-lg               - Large button.
-// .btn-sm               - Small button.
-// .btn-xs               - Tiny button.
-// .btn-block            - Block level buttons, span the full width of a parent.
+// .lg                   - Large button.
+// .sm                   - Small button.
+// .xs                   - Tiny button.
+// .block                - Block level buttons, span the full width of a parent.
 //
-// Styleguide 2.1.
+// Styleguide Button.
 
 @import "bootstrap/buttons";
 
 .btn {
 	@extend .btn-default;
-	font-weight: bold;
+
+	&.primary {
+		@extend .btn-primary;
+	}
+
+	&.success {
+		@extend .btn-success;
+	}
+
+	&.info {
+		@extend .btn-info;
+	}
+
+	&.warning {
+		@extend .btn-warning;
+	}
+
+	&.danger {
+		@extend .btn-danger;
+	}
+
+	&.link {
+		@extend .btn-link;
+	}
+
+	&.lg {
+		@extend .btn-lg;
+	}
+
+	&.sm {
+		@extend .btn-sm;
+	}
+
+	&.xs {
+		@extend .btn-xs;
+	}
+
+	&.block {
+		@extend .btn-block;
+	}
 }

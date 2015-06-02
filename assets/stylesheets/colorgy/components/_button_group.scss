@@ -1,0 +1,29 @@
+// Button groups.
+//
+// .lg         - Large.
+// .sm         - Small.
+// .xs         - Extra small.
+// .justified  - Stretch at equal sizes to span the entire width of its parent.
+//
+// Styleguide ButtonGroup.
+
+@import "bootstrap/button-groups";
+
+.btn-group {
+
+	&.lg {
+		@extend .btn-group-lg;
+	}
+
+	&.sm {
+		@extend .btn-group-sm;
+	}
+
+	&.xs {
+		@extend .btn-group-xs;
+	}
+
+	&.justified {
+		@extend .btn-group-justified;
+	}
+}

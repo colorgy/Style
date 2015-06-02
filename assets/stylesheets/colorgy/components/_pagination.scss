@@ -1,0 +1,19 @@
+// Paginations.
+//
+// .lg  - Large.
+// .sm  - Small.
+//
+// Styleguide Pagination.
+
+@import "bootstrap/pagination";
+
+.pagination {
+
+	&.lg {
+		@extend .pagination-lg;
+	}
+
+	&.sm {
+		@extend .pagination-sm;
+	}
+}

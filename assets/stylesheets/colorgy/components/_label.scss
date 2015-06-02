@@ -1,0 +1,35 @@
+// Labels.
+//
+// .primary  - Primary.
+// .success  - Success.
+// .info     - Info.
+// .warning  - Warning.
+// .danger   - Danger.
+//
+// Styleguide Label.
+
+@import "bootstrap/labels";
+
+.label {
+	@extend .label-default;
+
+	&.primary {
+		@extend .label-primary;
+	}
+
+	&.success {
+		@extend .label-success;
+	}
+
+	&.info {
+		@extend .label-info;
+	}
+
+	&.warning {
+		@extend .label-warning;
+	}
+
+	&.danger {
+		@extend .label-danger;
+	}
+}

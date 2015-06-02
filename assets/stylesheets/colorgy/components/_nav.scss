@@ -1,0 +1,29 @@
+// Navs.
+//
+// .tabs       - Tabs.
+// .pills      - Pills.
+// .stacked    - Stacked.
+// .justified  - Justified.
+//
+// Styleguide Nav.
+
+@import "bootstrap/navs";
+
+.nav {
+
+	&.tabs {
+		@extend .nav-tabs;
+	}
+
+	&.pills {
+		@extend .nav-pills;
+	}
+
+	&.stacked {
+		@extend .nav-stacked;
+	}
+
+	&.justified {
+		@extend .nav-justified;
+	}
+}

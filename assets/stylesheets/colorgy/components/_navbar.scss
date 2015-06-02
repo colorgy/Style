@@ -1,0 +1,19 @@
+// Navbars.
+//
+// .default  - Default style.
+// .inverse  - Inverted.
+//
+// Styleguide Navbar.
+
+@import "bootstrap/navbar";
+
+.navbar {
+
+	&.default {
+		@extend .navbar-default;
+	}
+
+	&.inverse {
+		@extend .navbar-inverse;
+	}
+}
