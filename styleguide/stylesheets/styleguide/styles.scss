@@ -1,0 +1,97 @@
+@import "compass/css3";
+@import "prism";
+
+// Pixels to em
+@function em($pixels, $context: 16) {
+	@return ($pixels/$context)+0em;
+}
+
+.styleguide-example {
+	margin: 15px 0;
+	border: 1px solid #ddd;
+	background: rgba(255,255,255, .5);
+
+	> h3 {
+		margin: 0;
+		padding: 5px;
+		border-top: 1px solid #000;
+		background: #333;
+		color: #fff;
+		font-size: 12px;
+		text-transform: uppercase;
+
+		em {
+			float: right;
+			color: #999;
+			font-style: normal;
+			font-weight: normal;
+			text-transform: none;
+		}
+	}
+
+	.styleguide-description {
+		padding: em(12);
+		border-bottom: 1px solid #ddd;
+		background: #f1f1f1;
+		font-size: em(14);
+
+		p:first-child {
+			margin-top: 0;
+		}
+
+		p:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.styleguide-element {
+		position: relative;
+		padding: em(12);
+
+		+ .styleguide-element {
+			margin-top: em(2);
+			padding-top: em(10);
+			border-top: 1px solid #eee;
+		}
+
+		.styleguide-modifier-name {
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			padding: 5px 8px;
+			border: 1px solid #eee;
+			border-top: none;
+			background: #f9f9f9;
+			color: #999;
+			font-size: 11px;
+		}
+	}
+
+	.styleguide-modifiers {
+		margin: 0 0 0 10px;
+
+		li {
+			margin-left: 0;
+			list-style-type: none;
+		}
+
+		li strong {
+			color: #222;
+			font-family: Monaco, monospace;
+			font-size: 12px;
+			font-weight: normal;
+		}
+	}
+}
+
+.styleguide-html {
+	border-top: 1px solid #dde7ea;
+	overflow: auto;
+
+	pre {
+		margin: 0;
+		font-size: em(14);
+		line-height: em(17.5);
+	}
+}
