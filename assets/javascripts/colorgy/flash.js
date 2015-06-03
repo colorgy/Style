@@ -6,9 +6,12 @@
 //
 // The "actions" parameter can be a string of HTML, or an array containing
 // title and callbacks like this:
-// [['Cancel', function() { alert('Canceled!'); }], ['Details'] function() { alert('Yo!'); }]
 //
-//= require ../vendor/toastr
+//   cancelCallback = function() { alert('Canceled!'); };
+//   showDetailsCancelCallback = function() { alert('Canceled!'); };
+//   [['Cancel', function() { alert('Canceled!'); }], ['Details', function() { alert('Yo!'); }]]
+//
+//= require ./lib/toastr
 
 flash = {};
 
