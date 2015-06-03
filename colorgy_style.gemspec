@@ -39,7 +39,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "jquery-rails"
 
   # SASS and Compass
-  spec.add_dependency "sass", ">= 3.4"
+  spec.add_dependency "sass", ">= 3.2"
   spec.add_dependency "sass-globbing"
   spec.add_dependency "compass", "~> 1.0.0"
 
