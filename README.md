@@ -2,11 +2,17 @@
 
 Colorgy 的樣式指南、樣式表以及前端工具包。
 
-The front-end bundle and style guide for Colorgy. Builded on top of Bootstrap, following architecture inspired by [SMACSS](https://smacss.com/) and [MVCSS](http://mvcss.io/).
+The front-end bundle and style guide for Colorgy. Builded on top of Bootstrap, following the architecture inspired by [SMACSS](https://smacss.com/) and [MVCSS](http://mvcss.io/).
 
-## Installation
+## Styleguide
 
-### Ruby on Rails or Sass and Sprockets
+[Here - 這裡](https://colorgy.github.io/Style/)。
+
+## Usage
+
+### Sass and Sprockets
+
+_適用於任何使用 Compass/Sass/SCSS 以及 Sprockets 的專案，例如 Ruby on Rails 或 Middleman。_
 
 將以下這行加入 Gemfile 裡：
 
@@ -44,6 +50,12 @@ _你也可以選擇只導入部分的檔案或元件，詳情請參考 [Project 
 #### Vendor
 
 這份懶人包同時也將一些常用的函式庫一併包含進來了，你可以查看 [assets/javascripts/vendor](https://github.com/colorgy/Style/tree/master/assets/javascripts/vendor) 以及 [assets/stylesheets/vendor](https://github.com/colorgy/Style/tree/master/assets/stylesheets/vendor) 來找出有哪些東西可以加以利用，然後在你的 JS 或 SCSS 檔中像這樣引入它們：`//= require vendor/classnames.js` (JavaScript)、`@import "vendor/animate";` (SCSS)。
+
+### Standalone
+
+_適用於任何專案。_
+
+直接下載打包後的 [colorgy.css](https://raw.githubusercontent.com/colorgy/Style/gh-pages/stylesheets/colorgy.css) 與 [colorgy.js](https://raw.githubusercontent.com/colorgy/Style/gh-pages/javascripts/colorgy.js) 檔案，並加它們加到你的網頁中。所有倚賴的 JavaScript 也已經被打包進去了，所以你不需要再引入像是 jQuery 等函式庫。
 
 ## Project Structure
 

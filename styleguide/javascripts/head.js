@@ -1,2 +1,1 @@
-//= require colorgy
 //= require turbolinks
