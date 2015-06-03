@@ -74,6 +74,8 @@ flash.info = function(message, actions, title) {
   toastr.info(message, title, { 'actions': actions });
 };
 
+flash.notice = flash.info;
+
 flash.success = function(message, actions, title) {
   toastr.success(message, title, { 'actions': actions });
 };
@@ -85,5 +87,7 @@ flash.error = function(message, actions, title) {
 flash.warning = function(message, actions, title) {
   toastr.warning(message, title, { 'actions': actions });
 };
+
+flash.alert = flash.warning;
 
 window.flash = flash;
