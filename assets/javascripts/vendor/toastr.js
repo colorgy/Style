@@ -178,8 +178,10 @@
                     iconClass: 'toast-info',
                     positionClass: 'toast-top-right',
                     timeOut: 5000, // Set timeOut and extendedTimeOut to 0 to make it sticky
+                    contentClass: 'toast-content',
                     titleClass: 'toast-title',
                     messageClass: 'toast-message',
+                    actionsClass: 'toast-actions',
                     target: 'body',
                     closeHtml: '<button type="button">&times;</button>',
                     newestOnTop: true,
@@ -211,7 +213,10 @@
                 var intervalId = null;
                 var $toastElement = $('<div/>');
                 var $titleElement = $('<div/>');
+                var $actionsElement = $('<div/>');
                 var $messageElement = $('<div/>');
+                var $contentElement = $('<div/>');
+                $contentElement.addClass(options.contentClass);
                 var $progressElement = $('<div/>');
                 var $closeElement = $(options.closeHtml);
                 var progressBar = {
@@ -245,6 +250,8 @@
                     setIcon();
                     setTitle();
                     setMessage();
+                    $toastElement.append($contentElement);
+                    setActions();
                     setCloseButton();
                     setProgressBar();
                     setSequence();
@@ -306,17 +313,37 @@
                     }
                 }
 
+                function setActions() {
+                    if (options.actions) {
+                        actions = options.actions;
+                        if (typeof(actions) === 'object') {
+                            for (var k in actions) {
+                                var action = actions[k];
+                                var $action = $('<a/>');
+                                $action.html(action[0]);
+                                $action.click(action[1]);
+                                $actionsElement.append($action);
+                            }
+                            $actionsElement.addClass(options.actionsClass);
+                            $toastElement.append($actionsElement);
+                        } else {
+                            $actionsElement.append(options.actions).addClass(options.actionsClass);
+                            $toastElement.append($actionsElement);
+                        }
+                    }
+                }
+
                 function setTitle() {
                     if (map.title) {
                         $titleElement.append(map.title).addClass(options.titleClass);
-                        $toastElement.append($titleElement);
+                        $contentElement.append($titleElement);
                     }
                 }
 
                 function setMessage() {
                     if (map.message) {
                         $messageElement.append(map.message).addClass(options.messageClass);
-                        $toastElement.append($messageElement);
+                        $contentElement.append($messageElement);
                     }
                 }
 

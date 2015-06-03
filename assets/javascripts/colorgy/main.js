@@ -5,5 +5,6 @@
 //= require jquery_ujs
 //= require ./lib/jquery.getOrAddChild
 //= require_tree ./components
+//= require ./flash
 
 console.log('Hello World!');
