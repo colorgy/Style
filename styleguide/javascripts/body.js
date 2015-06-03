@@ -1,4 +1,4 @@
-//= require colorgy/addons/holder
+//= require vendor/holder
 //= require ./styleguide/kss
 //= require ./styleguide/prism
 

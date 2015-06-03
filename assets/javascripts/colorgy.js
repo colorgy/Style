@@ -1,1 +1,1 @@
-//= require ./colorgy/main
+//= require ./colorgy/bundle

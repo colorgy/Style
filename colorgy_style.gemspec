@@ -36,8 +36,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "middleman-livereload", "~> 3.1.0"
   spec.add_development_dependency "middleman-deploy", "~> 1.0"
 
-  spec.add_development_dependency "jquery-rails"
-
   # SASS and Compass
   spec.add_dependency "sass", ">= 3.2"
   spec.add_dependency "sass-globbing"
@@ -47,6 +45,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "sprockets", "~> 2.0"
 
   # Assets
+  spec.add_dependency "jquery-rails"
   spec.add_dependency "bootstrap-sass", "~> 3.3.4.1"
   spec.add_dependency "materialize-sass"
   spec.add_dependency "turbolinks", "~> 2.5.3"

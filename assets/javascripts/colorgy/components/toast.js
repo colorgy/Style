@@ -1,6 +1,6 @@
-// Flash messages adopter
+// toast messages adopter
 //
-// API: flash.info(message, actions, title);
+// API: toast.info(message, actions, title);
 //            ^
 //            can be info, success, error or warning
 //
@@ -11,14 +11,14 @@
 //   showDetailsCancelCallback = function() { alert('Canceled!'); };
 //   [['Cancel', function() { alert('Canceled!'); }], ['Details', function() { alert('Yo!'); }]]
 //
-//= require ./lib/toastr
+//= require ../lib/toastr
 
-flash = {};
+toast = {};
 
-flash.count = 0;
-flash.onShown = function() {
-  flash.count++;
-  var $toast = flash.hideFirstToast();
+toast.count = 0;
+toast.onShown = function() {
+  toast.count++;
+  var $toast = toast.hideFirstToast();
   setTimeout(function() {
     $toast.css({
       'margin-top': '0',
@@ -34,7 +34,7 @@ flash.onShown = function() {
   }, 10);
 };
 
-flash.hideFirstToast = function() {
+toast.hideFirstToast = function() {
   var $target = $('#toast-container .toast:first-of-type');
   var tHight = $target.outerHeight(true);
   $target.css({
@@ -67,27 +67,30 @@ toastr.options = {
   "hideEasing": "linear",
   "showMethod": "fadeIn",
   "hideMethod": "fadeOut",
-  "onShown": flash.onShown
+  "onShown": toast.onShown
 };
 
-flash.info = function(message, actions, title) {
+toast.info = function(message, actions, title) {
   toastr.info(message, title, { 'actions': actions });
 };
 
-flash.notice = flash.info;
+toast.notice = toast.info;
 
-flash.success = function(message, actions, title) {
+toast.success = function(message, actions, title) {
   toastr.success(message, title, { 'actions': actions });
 };
 
-flash.error = function(message, actions, title) {
+toast.error = function(message, actions, title) {
   toastr.error(message, title, { 'actions': actions });
 };
 
-flash.warning = function(message, actions, title) {
+toast.warning = function(message, actions, title) {
   toastr.warning(message, title, { 'actions': actions });
 };
 
-flash.alert = flash.warning;
+toast.alert = toast.warning;
 
-window.flash = flash;
+window.toast = toast;
+
+// Alias
+window.flash = toast;
