@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.1 (12005) - http://www.bohemiancoding.com/sketch -->
+    <title>colorgy_logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-0.000879366374%" y1="50%" x2="99.9992577%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#40F2ED" offset="0%"></stop>
+            <stop stop-color="#47F9F6" offset="41.23%"></stop>
+            <stop stop-color="#4DFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="49.9957591%" x2="99.9992121%" y2="49.9957591%" id="linearGradient-2">
+            <stop stop-color="#40F2ED" offset="0%"></stop>
+            <stop stop-color="#47F9F6" offset="41.23%"></stop>
+            <stop stop-color="#4DFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50.0056529%" x2="99.9992121%" y2="50.0056529%" id="linearGradient-3">
+            <stop stop-color="#40F2ED" offset="0%"></stop>
+            <stop stop-color="#47F9F6" offset="41.23%"></stop>
+            <stop stop-color="#4DFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-0.000548352733%" y1="50.0014134%" x2="99.9988854%" y2="50.0014134%" id="linearGradient-4">
+            <stop stop-color="#FFF000" offset="0%"></stop>
+            <stop stop-color="#FFEA00" offset="20.45%"></stop>
+            <stop stop-color="#FFE100" offset="62.26%"></stop>
+        </linearGradient>
+        <linearGradient x1="0.000954927426%" y1="49.9990935%" x2="99.999809%" y2="49.9990935%" id="linearGradient-5">
+            <stop stop-color="#FFE100" offset="0%"></stop>
+            <stop stop-color="#FFF000" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0.000983284169%" y1="50.0004532%" x2="100.000197%" y2="50.0004532%" id="linearGradient-6">
+            <stop stop-color="#FFE100" offset="0%"></stop>
+            <stop stop-color="#FFF000" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-2.03945312e-06%" y1="49.9995468%" x2="100.000186%" y2="49.9995468%" id="linearGradient-7">
+            <stop stop-color="#FFE100" offset="0%"></stop>
+            <stop stop-color="#FFF000" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Logo" sketch:type="MSArtboardGroup">
+            <g id="Colorgy-Logo" sketch:type="MSLayerGroup" transform="translate(20.000000, 23.500000)">
+                <path d="M78.9843099,72.3674494 L0,72.3674494 L0,62.4657534 L70.6393118,62.4657534 C79.7929661,62.4657534 78.9843099,72.3674494 78.9843099,72.3674494 L78.9843099,72.3674494 Z" id="Shape-Copy-7" fill="url(#linearGradient-1)" sketch:type="MSShapeGroup"></path>
+                <rect id="Shape-Copy" fill="url(#linearGradient-2)" sketch:type="MSShapeGroup" x="4.38356164" y="41.6438356" width="70.5351035" height="9.90169598"></rect>
+                <rect id="Shape-Copy-2" fill="url(#linearGradient-3)" sketch:type="MSShapeGroup" x="4.38356164" y="20.8219178" width="70.5351035" height="9.90449544"></rect>
+                <path d="M76.9828957,9.90309571 L9.56709301,9.90309571 C1.81955559,9.90309571 2.19470536,0 2.19470536,0 L76.9842851,0 L76.9842851,9.90309571 L76.9828957,9.90309571 Z" id="Shape-Copy-3" fill="url(#linearGradient-4)" sketch:type="MSShapeGroup"></path>
+                <path d="M77.1348277,9.90309571 L4.38356164,30.8836613 L4.38356164,20.9777661 L77.1348277,0 L77.1348277,9.90309571 Z" id="Shape-Copy-4" fill="url(#linearGradient-5)" sketch:type="MSShapeGroup"></path>
+                <path d="M75.0367679,30.727813 L4.38356164,51.7069788 L4.38356164,41.8024834 L75.0367679,20.8219178 L75.0367679,30.727813 Z" id="Shape-Copy-5" fill="url(#linearGradient-6)" sketch:type="MSShapeGroup"></path>
+                <path d="M74.8479364,51.5483311 L0,72.5260972 L0,62.6230015 L74.8479364,41.6438356 L74.8479364,51.5483311 Z" id="Shape-Copy-6" fill="url(#linearGradient-7)" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
