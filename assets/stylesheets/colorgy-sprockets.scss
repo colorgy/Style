@@ -1,0 +1,11 @@
+@import "bootstrap-sprockets";
+
+@function clg-font-path($path) {
+  @return font-path($path);
+}
+
+@function clg-image-path($path) {
+  @return image-path($path);
+}
+
+$clg-sass-asset-helper: true;

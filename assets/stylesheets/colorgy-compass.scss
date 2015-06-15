@@ -1,0 +1,11 @@
+@import "bootstrap-compass";
+
+@function clg-font-path($path) {
+  @return font-url($path, true);
+}
+
+@function clg-image-path($path) {
+  @return image-url($path, true);
+}
+
+$clg-sass-asset-helper: true;

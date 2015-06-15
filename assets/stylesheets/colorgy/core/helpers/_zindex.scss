@@ -1,0 +1,17 @@
+@mixin z-index($element, $elements: $z-index-list, $base: 1000) {
+	$index: index($elements, $element);
+	@if $index == false {
+		@warn "There is no item \"#{$element}\" in the z-index list, please choose one of: \"#{$elements}\".";
+	} @else {
+		z-index: index($elements, $element) + $base;
+	}
+}
+
+@function z-index-of($element, $elements: $z-index-list, $base: 1000) {
+	$index: index($elements, $element);
+	@if $index == false {
+		@warn "There is no item \"#{$element}\" in the z-index list, please choose one of: \"#{$elements}\".";
+	} @else {
+		@return index($elements, $element) + $base;
+	}
+}

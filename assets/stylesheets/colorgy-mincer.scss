@@ -1,0 +1,11 @@
+@import "bootstrap-mincer";
+
+@function clg-font-path($path) {
+  @return "<%- asset_path('#{$path}'.replace(/[#?].*$/, '')) + '#{$path}'.replace(/(^[^#?]*)([#?]?.*$)/, '$2') %>";
+}
+
+@function clg-image-path($file) {
+  @return "<%- asset_path('#{$file}') %>";
+}
+
+$clg-sass-asset-helper: true;

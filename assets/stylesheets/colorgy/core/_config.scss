@@ -5,4 +5,208 @@
 //
 // *************************************
 
+$clg-sass-asset-helper: false !default;
+
+// -------------------------------------
+//   Colors
+// -------------------------------------
+
+// ----- Base Colors ----- //
+
+$white:        #fff !default;
+$black:        #000 !default;
+$gray-base:    $black !default;
+$gray-darker:  lighten($gray-base, 13.5%) !default;
+$gray-dark:    lighten($gray-base, 20%) !default;
+$gray:         lighten($gray-base, 33.5%) !default;
+$gray-light:   lighten($gray-base, 46.7%) !default;
+$gray-lighter: lighten($gray-base, 93.5%) !default;
+
+$red:    red !default;
+$orange: orange !default;
+$yellow: yellow !default;
+$green:  green !default;
+$blue:   blue !default;
+$purple: purple !default;
+
+// ----- Semantic Colors ----- //
+
+$colorgy-color:       #6173e5;
+$table-service-color: #f7957d;
+$books-service-color: #00d0ad;
+
+$success-color: #5cb85c !default;
+$info-color:    #5bc0de !default;
+$warning-color: #f0ad4e !default;
+$danger-color:  #d9534f !default;
+
+// ----- Brand Colors ----- //
+
+$brand-primary: $colorgy-color !default;
+$brand-success: $success-color !default;
+$brand-info:    $info-color !default;
+$brand-warning: $warning-color !default;
+$brand-danger:  $danger-color !default;
+
+// -------------------------------------
+//   Scaffolding
+//   -> Some of the most global styles.
+// -------------------------------------
+
+$body-bg:               $white !default;
+$text-color:            $gray-dark !default;
+
+$link-color:            $brand-primary !default;
+$link-hover-color:      darken($link-color, 15%) !default;
+$link-hover-decoration: underline !default;
+
+// -------------------------------------
+//   Typography
+//   -> Font, line-height headings...
+// -------------------------------------
+
+$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base:        $font-family-sans-serif !default;
+
+$font-size-base:          14px !default;
+$font-size-large:         ceil(($font-size-base * 1.25)) !default;
+$font-size-small:         ceil(($font-size-base * .85)) !default;
+
+$font-size-h1:            floor(($font-size-base * 2.6)) !default;
+$font-size-h2:            floor(($font-size-base * 2.15)) !default;
+$font-size-h3:            ceil(($font-size-base * 1.7)) !default;
+$font-size-h4:            ceil(($font-size-base * 1.25)) !default;
+$font-size-h5:            $font-size-base !default;
+$font-size-h6:            ceil(($font-size-base * .85)) !default;
+
+// Unit-less `line-height` for use in components like buttons
+$line-height-base:        1.428571429 !default;
+
+// Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+$line-height-computed:    floor(($font-size-base * $line-height-base)) !default;
+
+$headings-font-family:    $font-family-base !default;
+$headings-font-weight:    500 !default;
+$headings-line-height:    1.1 !default;
+$headings-color:          $text-color !default;
+
+// ----- Iconography ----- //
+
+// Load fonts from this directory
+$icon-font-path: if($clg-sass-asset-helper, "colorgy/", "../fonts/colorgy/") !default;
+
+// File name for all font files
+$icon-font-name:          "glyphicons-halflings-regular" !default;
+// Element ID within SVG icon file
+$icon-font-svg-id:        "glyphicons_halflingsregular" !default;
+
+// -------------------------------------
+//   Z-index
+// -------------------------------------
+
+@import "helpers/zindex";
+
+// Z-index master list
+$z-index-list: background,
+               shadow,
+               container,
+               footer-background,
+               footer,
+               main-background,
+               main,
+               navbar,
+               dropdown,
+               popover,
+               tooltip,
+               navbar-fixed,
+               modal-background,
+               modal,
+               trigger !default;
+
+$zindex-navbar:           z-index-of(navbar);
+$zindex-dropdown:         z-index-of(dropdown);
+$zindex-popover:          z-index-of(popover);
+$zindex-tooltip:          z-index-of(tooltip);
+$zindex-navbar-fixed:     z-index-of(navbar-fixed);
+$zindex-modal-background: z-index-of(modal-background);
+$zindex-modal:            z-index-of(modal);
+
+// -------------------------------------
+//   Media queries breakpoints
+// -------------------------------------
+
+// Extra small screen / phone
+$screen-xs:     480px !default;
+
+// Small screen / tablet
+$screen-sm-min: 768px !default;
+
+// Medium screen / desktop
+$screen-md-min: 992px !default;
+
+// Large screen / wide desktop
+$screen-lg-min: 1200px !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max: ($screen-sm-min - 1) !default;
+$screen-sm-max: ($screen-md-min - 1) !default;
+$screen-md-max: ($screen-lg-min - 1) !default;
+
+// -------------------------------------
+//   Grid system
+// -------------------------------------
+
+$grid-columns:              12 !default;
+$grid-gutter-width:         30px !default;
+$grid-float-breakpoint:     $screen-sm-min !default;
+$grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
+
+// ----- Container sizes ----- //
+
+// Small screen / tablet
+$container-sm: (720px + $grid-gutter-width) !default;
+
+// Medium screen / desktop
+$container-md: (940px + $grid-gutter-width) !default;
+
+// Large screen / wide desktop
+$container-lg: (1140px + $grid-gutter-width) !default;
+
+// -------------------------------------
+//   Components
+// -------------------------------------
+
+// Common padding, border radius sizes and more
+
+$padding-base-vertical:     6px !default;
+$padding-base-horizontal:   12px !default;
+
+$padding-large-vertical:    10px !default;
+$padding-large-horizontal:  16px !default;
+
+$padding-small-vertical:    5px !default;
+$padding-small-horizontal:  10px !default;
+
+$padding-xs-vertical:       1px !default;
+$padding-xs-horizontal:     5px !default;
+
+$line-height-large:         1.3333333 !default;
+$line-height-small:         1.5 !default;
+
+$border-radius-base:        3px !default;
+$border-radius-large:       4px !default;
+$border-radius-small:       1px !default;
+
+// Global color for active items (e.g., navs or dropdowns)
+$component-active-color:    $white !default;
+// Global background color for active items (e.g., navs or dropdowns)
+$component-active-bg:       $brand-primary !default;
+
+// Width of the `border` for generating carets that indicator dropdowns
+$caret-width-base:          4px !default;
+// Carets increase slightly in size for larger components
+$caret-width-large:         5px !default;
+
 @import "bootstrap/variables";
