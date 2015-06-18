@@ -1,0 +1,61 @@
+//
+// This file is auto generated from the template:
+//   templates/icon_fonts/_colorgy_icons.scss
+// by Font Custom.
+//
+// Icon Font: colorgy-icons
+//
+
+$icon-font-path: if($clg-sass-asset-helper, "colorgy/", "../fonts/colorgy/") !default;
+$import-icon-font-name: 'colorgy-icons';
+@font-face {
+	font-family: 'colorgy-icons';
+	src: url(if($clg-sass-asset-helper, clg-font-path('#{$icon-font-path}#{$import-icon-font-name}.eot'), '#{$icon-font-path}#{$import-icon-font-name}.eot'));
+	src: url(if($clg-sass-asset-helper, clg-font-path('#{$icon-font-path}#{$import-icon-font-name}.eot?#iefix'), '#{$icon-font-path}#{$import-icon-font-name}.eot?#iefix')) format('embedded-opentype'),
+	url(if($clg-sass-asset-helper, clg-font-path('#{$icon-font-path}#{$import-icon-font-name}.woff'), '#{$icon-font-path}#{$import-icon-font-name}.woff')) format('woff'),
+	url(if($clg-sass-asset-helper, clg-font-path('#{$icon-font-path}#{$import-icon-font-name}.ttf'), '#{$icon-font-path}#{$import-icon-font-name}.ttf')) format('truetype'),
+	url(if($clg-sass-asset-helper, clg-font-path('#{$icon-font-path}#{$import-icon-font-name}.svg##{$icon-font-svg-id}'), '#{$icon-font-path}#{$import-icon-font-name}.svg##{$icon-font-svg-id}')) format('svg');
+}
+
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
+.i-github:before,
+.i-table-blank:before,
+.i-table-bottom-left-corner-rounded:before,
+.i-table-bottom-right-corner-rounded:before,
+.i-table-frame-horizontal:before,
+.i-table-frame-vertical:before,
+.i-table-top-left-corner-rounded:before,
+.i-table-top-right-corner-rounded:before {
+  display: inline-block;
+  font-family: "colorgy-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.i-github:before { content: "\188ad"; }
+.i-table-blank:before { content: "\18894"; }
+.i-table-bottom-left-corner-rounded:before { content: "\188ab"; }
+.i-table-bottom-right-corner-rounded:before { content: "\188ac"; }
+.i-table-frame-horizontal:before { content: "\18895"; }
+.i-table-frame-vertical:before { content: "\18896"; }
+.i-table-top-left-corner-rounded:before { content: "\188a9"; }
+.i-table-top-right-corner-rounded:before { content: "\188aa"; }
+
+$font-colorgy-icons-github: "\188ad";
+$font-colorgy-icons-table-blank: "\18894";
+$font-colorgy-icons-table-bottom-left-corner-rounded: "\188ab";
+$font-colorgy-icons-table-bottom-right-corner-rounded: "\188ac";
+$font-colorgy-icons-table-frame-horizontal: "\18895";
+$font-colorgy-icons-table-frame-vertical: "\18896";
+$font-colorgy-icons-table-top-left-corner-rounded: "\188a9";
+$font-colorgy-icons-table-top-right-corner-rounded: "\188aa";

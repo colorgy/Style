@@ -1,25 +1,29 @@
-// *************************************
 //
-//   Fonts
-//   -> font-face and icon font tools
+// This file is auto generated from the template:
+//   templates/icon_fonts/_colorgy_icons.scss
+// by Font Custom.
 //
-// *************************************
-
-@import "bootstrap/glyphicons";
-@import "fonts_colorgy_icons";
+// Icon Font: <%= font_name %>
+//
 
 $icon-font-path: if($clg-sass-asset-helper, "colorgy/", "../fonts/colorgy/") !default;
-$import-icon-font-name: 'fontawesome-webfont';
+$import-icon-font-name: 'colorgy-icons';
 @font-face {
-	font-family: 'FontAwesome';
+	font-family: 'colorgy-icons';
 	src: url(if($clg-sass-asset-helper, clg-font-path('#{$icon-font-path}#{$import-icon-font-name}.eot'), '#{$icon-font-path}#{$import-icon-font-name}.eot'));
 	src: url(if($clg-sass-asset-helper, clg-font-path('#{$icon-font-path}#{$import-icon-font-name}.eot?#iefix'), '#{$icon-font-path}#{$import-icon-font-name}.eot?#iefix')) format('embedded-opentype'),
 	url(if($clg-sass-asset-helper, clg-font-path('#{$icon-font-path}#{$import-icon-font-name}.woff'), '#{$icon-font-path}#{$import-icon-font-name}.woff')) format('woff'),
-	url(if($clg-sass-asset-helper, clg-font-path('#{$icon-font-path}#{$import-icon-font-name}.woff'), '#{$icon-font-path}#{$import-icon-font-name}.woff2')) format('woff2'),
 	url(if($clg-sass-asset-helper, clg-font-path('#{$icon-font-path}#{$import-icon-font-name}.ttf'), '#{$icon-font-path}#{$import-icon-font-name}.ttf')) format('truetype'),
 	url(if($clg-sass-asset-helper, clg-font-path('#{$icon-font-path}#{$import-icon-font-name}.svg##{$icon-font-svg-id}'), '#{$icon-font-path}#{$import-icon-font-name}.svg##{$icon-font-svg-id}')) format('svg');
 }
 
-.i-icon {
-	font-family: 'colorgy-icons', 'Glyphicons Halflings', 'FontAwesome';
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
+<%= glyph_selectors %> {
+<%= glyph_properties %>
 }
+
+<%= glyphs %>
+<% @glyphs.each do |name, value| %>
+$font-<%= font_name.gsub(/[^\w\d_]/, '-') %>-<%= name.to_s %>: "\<%= value[:codepoint].to_s(16) %>";<% end %>

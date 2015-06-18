@@ -1,5 +1,10 @@
 <% wrap_layout :layout do %>
-  <div class="container">
-    <%= yield %>
-  </div>
+  <body class="<%= page_classes %>">
+    <div class="wrapper <%= current_page.data.page_classes %>" id="wrapper">
+      <div class="container">
+        <%= yield %>
+      </div>
+    </div>
+    <%= javascript_include_tag :styleguide_body %>
+  </body>
 <% end %>

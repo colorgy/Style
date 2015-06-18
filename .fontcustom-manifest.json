@@ -1,0 +1,80 @@
+{
+  "checksum": {
+    "previous": "fb8328c2f0fda5c9c9754eb1ccb84f2e94e2ceefb983253a735b22d4c33a2f08",
+    "current": "fb8328c2f0fda5c9c9754eb1ccb84f2e94e2ceefb983253a735b22d4c33a2f08"
+  },
+  "fonts": [
+    "assets/fonts/colorgy/colorgy-icons.ttf",
+    "assets/fonts/colorgy/colorgy-icons.svg",
+    "assets/fonts/colorgy/colorgy-icons.woff",
+    "assets/fonts/colorgy/colorgy-icons.eot"
+  ],
+  "glyphs": {
+    "github": {
+      "codepoint": 100525,
+      "source": "assets/fonts/colorgy/icons/github.svg"
+    },
+    "table-blank": {
+      "codepoint": 100500,
+      "source": "assets/fonts/colorgy/icons/table-blank.svg"
+    },
+    "table-bottom-left-corner-rounded": {
+      "codepoint": 100523,
+      "source": "assets/fonts/colorgy/icons/table-bottom-left-corner-rounded.svg"
+    },
+    "table-bottom-right-corner-rounded": {
+      "codepoint": 100524,
+      "source": "assets/fonts/colorgy/icons/table-bottom-right-corner-rounded.svg"
+    },
+    "table-frame-horizontal": {
+      "codepoint": 100501,
+      "source": "assets/fonts/colorgy/icons/table-frame-horizontal.svg"
+    },
+    "table-frame-vertical": {
+      "codepoint": 100502,
+      "source": "assets/fonts/colorgy/icons/table-frame-vertical.svg"
+    },
+    "table-top-left-corner-rounded": {
+      "codepoint": 100521,
+      "source": "assets/fonts/colorgy/icons/table-top-left-corner-rounded.svg"
+    },
+    "table-top-right-corner-rounded": {
+      "codepoint": 100522,
+      "source": "assets/fonts/colorgy/icons/table-top-right-corner-rounded.svg"
+    }
+  },
+  "options": {
+    "autowidth": false,
+    "base64": true,
+    "config": "fontcustom.yml",
+    "css_selector": ".i-{{glyph}}",
+    "debug": true,
+    "font_ascent": 448,
+    "font_descent": 64,
+    "font_design_size": 16,
+    "font_em": 512,
+    "font_name": "colorgy-icons",
+    "force": true,
+    "input": {
+      "templates": "templates/fontcustom",
+      "vectors": "assets/fonts/colorgy/icons"
+    },
+    "no_hash": true,
+    "output": {
+      "_fonts_colorgy_icons.scss": "assets/stylesheets/colorgy/core",
+      "css": "assets/fonts/colorgy",
+      "fonts": "assets/fonts/colorgy",
+      "preview": "assets/fonts/colorgy/icons"
+    },
+    "preprocessor_path": null,
+    "quiet": true,
+    "templates": [
+      "preview",
+      "_fonts_colorgy_icons.scss"
+    ]
+  },
+  "templates": [
+    "assets/fonts/colorgy/icons/colorgy-icons-preview.html",
+    "assets/stylesheets/colorgy/core/_fonts_colorgy_icons.scss"
+  ]
+}

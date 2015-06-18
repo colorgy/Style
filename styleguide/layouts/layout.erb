@@ -10,14 +10,7 @@
     <%= javascript_include_tag :colorgy %>
 
     <%= stylesheet_link_tag :styleguide %>
-    <%= javascript_include_tag :head %>
+    <%= javascript_include_tag :styleguide_head %>
   </head>
-  <body class="<%= page_classes %>">
-    <div class="wrapper <%= current_page.data.page_classes %>" id="wrapper">
-
-<%= yield %>
-
-    </div>
-    <%= javascript_include_tag :body %>
-  </body>
+  <%= yield %>
 </html>

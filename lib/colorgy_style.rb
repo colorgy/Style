@@ -24,6 +24,10 @@ module ColorgyStyle
       @assets_path ||= File.join gem_path, 'assets'
     end
 
+    def images_path
+      File.join assets_path, 'images'
+    end
+
     def stylesheets_path
       File.join assets_path, 'stylesheets'
     end
@@ -59,6 +63,7 @@ module ColorgyStyle
     end
 
     def register_sprockets
+      Sprockets.append_path(images_path)
       Sprockets.append_path(stylesheets_path)
       Sprockets.append_path(fonts_path)
       Sprockets.append_path(javascripts_path)

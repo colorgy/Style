@@ -1,0 +1,60 @@
+// *************************************
+//
+// Intro.
+// -> Full height intro
+//
+// It should be placed directly under
+// the body or #wrapper.
+//
+// Styleguide Intro.
+//
+// -------------------------------------
+//   Template
+// -------------------------------------
+//
+// body
+//
+//   .intro
+//
+//     .intro-body
+//
+// *************************************
+
+.intro {
+	display: table;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding: 0 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-origin: initial;
+	background-clip: initial;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+
+	&.inverse {
+		color: $white;
+		background-color: $black;
+
+		h1, h2, h3, h4, h5, h6 {
+			color: $white;
+
+			small {
+				color: $white;
+			}
+		}
+	}
+
+	.jumbotron {
+		background: none;
+	}
+}
+
+.intro-body {
+	display: table-cell;
+	vertical-align: middle;
+}

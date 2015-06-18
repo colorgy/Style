@@ -7,3 +7,92 @@
 
 @import "bootstrap/utilities";
 @import "bootstrap/responsive-utilities";
+
+.text-clip-background {
+
+	html.backgroundcliptext & {
+		-webkit-background-clip: text;
+		   -moz-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		   -moz-text-fill-color: transparent;
+		background-size: cover;
+	}
+
+	html.no-backgroundcliptext & {
+		background-image: none !important;
+	}
+}
+
+.text-clip-background-normal-text {
+	-webkit-text-fill-color: initial;
+	   -moz-text-fill-color: initial;
+}
+
+.text-clip-background-clear-text {
+
+	html.backgroundcliptext.chrome & {
+		-webkit-text-fill-color: rgba($white, .7);
+		   -moz-text-fill-color: rgba($white, .7);
+	}
+}
+
+.text-clip-background-clip {
+
+	html.backgroundcliptext & {
+		background: transparent;
+		overflow: hidden;
+		-webkit-text-fill-color: $black;
+		   -moz-text-fill-color: $black;
+
+		&::before {
+			content: '■■■■■';
+			font-family: monospace;
+			display: block;
+			letter-spacing: -300px;
+			font-size: 1000px;
+			line-height: 200px;
+			margin-top: -100px;
+			margin-left: -300px;
+			width: 1000px;
+			height: 1000px;
+			margin-right: -700px;
+			margin-bottom: -900px;
+
+			-webkit-background-clip: text;
+			   -moz-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			   -moz-text-fill-color: transparent;
+		}
+	}
+}
+
+.z-depth-0 {
+	@include z-depth-0;
+}
+
+.z-depth-1 {
+	@include z-depth-1;
+}
+
+.z-depth-2 {
+	@include z-depth-2;
+}
+
+.z-depth-3 {
+	@include z-depth-3;
+}
+
+.z-depth-4 {
+	@include z-depth-4;
+}
+
+.z-depth-5 {
+	@include z-depth-5;
+}
+
+.hover-to-transparent-background-color {
+
+	&:hover {
+		background-color: rgba(0,0,0, 0) !important;
+	}
+}

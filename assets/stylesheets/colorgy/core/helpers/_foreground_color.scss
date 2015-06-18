@@ -1,3 +1,3 @@
 @function foreground-color($color) {
-	@return contrast-color($color, $base-dark-color, $base-light-color, 60%);
+	@return contrast-color($color, $black, $white, 60%);
 }
