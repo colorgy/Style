@@ -18,6 +18,7 @@
     </script>
 
     <style type="text/css">
+
       img {
         max-width: 100%;
       }
@@ -29,20 +30,24 @@
       footer {
         padding: 80px 0;
       }
+
     </style>
 
     <div class="wrapper" id="wrapper">
-      <nav class="navbar minimal inverse fixed-top auto-fade fade auto-expanded expanded" role="navigation">
+      <nav class="navbar minimal inverse fixed-top auto-transparent transparent auto-expanded expanded" role="navigation">
         <div class="container">
           <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-              <i class="fa fa-bars"></i>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar-collapse" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand has-image" href="#wrapper">
               <img src="../images/colorgy/colorgy_logo_white.svg" />
             </a>
           </div>
-          <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+          <div id="main-navbar-collapse" class="collapse navbar-collapse navbar-right navbar-main-collapse">
             <ul class="nav navbar-nav">
               <li>
                 <a href="./">Globals</a>
@@ -61,21 +66,28 @@
         </div>
       </nav>
 
-        <header class="inverse" style="background-image: url('../images/colorgy/background_blur_1_dark.jpg'); background-size: cover; background-position: 50% 10%; ">
-    <div class="text-clip-background" style="background-image: url('../images/colorgy/background_blur_1_light.jpg'); background-size: cover; background-position: 50% 10%; padding: 140px 0 20px;">
+        <style type="text/css">
+    body.main-navbar-collapse-collapse-in header .overlay,
+    body.main-navbar-collapse-collapsing-in header .overlay {
+      opacity: .8;
+    }
+  </style>
+  <header class="inverse" style="position: relative; background-image: url('../images/colorgy/background_blur_1_dark.jpg'); background-size: cover; background-position: 50% 10%; ">
+    <div class="text-clip-background" style="background-image: url('../images/colorgy/background_blur_1_light.jpg'); background-size: cover; background-position: 50% 10%; padding: 140px 0 20px; margin-bottom: 20px;">
       <div class="container">
         <div class="h1">
             <span class="text-clip-background-clear-text">Globals</span>
           <small>/</small>
-            <small>Layouts</small>
+            <small><a href="/layouts/">Layouts</a></small>
           <small>/</small>
-            <small>Components</small>
+            <small><a href="/components/">Components</a></small>
           <small>/</small>
-            <small>Extras</small>
+            <small><a href="/extras/">Extras</a></small>
         </div>
         <p>標幟、色彩、字型和排版等泛用樣式的定義。</p>
       </div>
     </div>
+    <div class="overlay inverse hidden"></div>
   </header>
   <div class="container">
     

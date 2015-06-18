@@ -18,6 +18,7 @@
     </script>
 
     <style type="text/css">
+
       img {
         max-width: 100%;
       }
@@ -29,20 +30,24 @@
       footer {
         padding: 80px 0;
       }
+
     </style>
 
     <div class="wrapper" id="wrapper">
-      <nav class="navbar minimal inverse fixed-top auto-fade fade auto-expanded expanded" role="navigation">
+      <nav class="navbar minimal inverse fixed-top auto-transparent transparent auto-expanded expanded" role="navigation">
         <div class="container">
           <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-              <i class="fa fa-bars"></i>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar-collapse" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand has-image" href="#wrapper">
               <img src="images/colorgy/colorgy_logo_white.svg" />
             </a>
           </div>
-          <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+          <div id="main-navbar-collapse" class="collapse navbar-collapse navbar-right navbar-main-collapse">
             <ul class="nav navbar-nav">
               <li>
                 <a href="globals/">Globals</a>
@@ -66,6 +71,11 @@
 </script>
 
 <style type="text/css">
+
+  body.main-navbar-collapse-collapse-in .intro .overlay,
+  body.main-navbar-collapse-collapsing-in .intro .overlay {
+    opacity: .8;
+  }
 
   .intro .actions {
     max-width: 290px;
@@ -213,6 +223,7 @@
       <span class="i-icon">&#xf107;</span>
     </div>
   </div>
+  <div class="overlay inverse hidden"></div>
 </section>
 
 <section class="section bg-brand inverse">
