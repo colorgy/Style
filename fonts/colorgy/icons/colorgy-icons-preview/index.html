@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>colorgy-icons glyphs preview</title>
+
+    <style>
+      /* Page Styles */
+
+      * {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: #fff;
+        color: #444;
+        font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+
+      a,
+      a:visited {
+        color: #888;
+        text-decoration: underline;
+      }
+      a:hover,
+      a:focus { color: #000; }
+
+      header {
+        border-bottom: 2px solid #ddd;
+        margin-bottom: 20px;
+        overflow: hidden;
+        padding: 20px 0;
+      }
+
+      header h1 {
+        color: #888;
+        float: left;
+        font-size: 36px;
+        font-weight: 300;
+      }
+
+      header a {
+        float: right;
+        font-size: 14px;
+      }
+
+      .container {
+        margin: 0 auto;
+        max-width: 1200px;
+        min-width: 960px;
+        padding: 0 40px;
+        width: 90%;
+      }
+
+      .glyph {
+        border-bottom: 1px dotted #ccc;
+        padding: 10px 0 20px;
+        margin-bottom: 20px;
+      }
+
+      .preview-glyphs { vertical-align: bottom; }
+
+      .preview-scale {
+        color: #888;
+        font-size: 12px;
+        margin-top: 5px;
+      }
+
+      .step {
+        display: inline-block;
+        line-height: 1;
+        position: relative;
+        width: 10%;
+      }
+
+      .step .letters,
+      .step i {
+        -webkit-transition: opacity .3s;
+        -moz-transition: opacity .3s;
+        -ms-transition: opacity .3s;
+        -o-transition: opacity .3s;
+        transition: opacity .3s;
+      }
+
+      .step:hover .letters { opacity: 1; }
+      .step:hover i { opacity: .3; }
+
+      .letters {
+        opacity: .3;
+        position: absolute;
+      }
+
+      .characters-off .letters { display: none; }
+      .characters-off .step:hover i { opacity: 1; }
+
+      
+      .size-12 { font-size: 12px; }
+      
+      .size-14 { font-size: 14px; }
+      
+      .size-16 { font-size: 16px; }
+      
+      .size-18 { font-size: 18px; }
+      
+      .size-21 { font-size: 21px; }
+      
+      .size-24 { font-size: 24px; }
+      
+      .size-36 { font-size: 36px; }
+      
+      .size-48 { font-size: 48px; }
+      
+      .size-60 { font-size: 60px; }
+      
+      .size-72 { font-size: 72px; }
+      
+
+      .usage { margin-top: 10px; }
+
+      .usage input {
+        font-family: monospace;
+        margin-right: 3px;
+        padding: 2px 5px;
+        text-align: center;
+      }
+
+      .usage .point { width: 150px; }
+
+      .usage .class { width: 250px; }
+
+      footer {
+        color: #888;
+        font-size: 12px;
+        padding: 20px 0;
+      }
+
+      /* Icon Font: colorgy-icons */
+
+      @font-face {
+  font-family: "colorgy-icons";
+  src: url("../colorgy-icons.eot?") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "colorgy-icons";
+  src: url("data:application/x-font-woff;charset=utf-8;base64,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") format("woff"),
+       url("../colorgy-icons.ttf") format("truetype"),
+       url("../colorgy-icons.svg#colorgy-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "colorgy-icons";
+    src: url("../colorgy-icons.svg#colorgy-icons") format("svg");
+  }
+}
+
+      [data-icon]:before { content: attr(data-icon); }
+
+      [data-icon]:before,
+      .i-github:before,
+.i-table-blank:before,
+.i-table-bottom-left-corner-rounded:before,
+.i-table-bottom-right-corner-rounded:before,
+.i-table-frame-horizontal:before,
+.i-table-frame-vertical:before,
+.i-table-top-left-corner-rounded:before,
+.i-table-top-right-corner-rounded:before {
+        display: inline-block;
+  font-family: "colorgy-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+      }
+
+      .i-github:before { content: "\188ad"; }
+.i-table-blank:before { content: "\18894"; }
+.i-table-bottom-left-corner-rounded:before { content: "\188ab"; }
+.i-table-bottom-right-corner-rounded:before { content: "\188ac"; }
+.i-table-frame-horizontal:before { content: "\18895"; }
+.i-table-frame-vertical:before { content: "\18896"; }
+.i-table-top-left-corner-rounded:before { content: "\188a9"; }
+.i-table-top-right-corner-rounded:before { content: "\188aa"; }
+    </style>
+
+    <!--[if lte IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <script>
+      function toggleCharacters() {
+        var body = document.getElementsByTagName('body')[0];
+        body.className = body.className === 'characters-off' ? '' : 'characters-off';
+      }
+    </script>
+  </head>
+
+  <body class="characters-off">
+    <div id="page" class="container">
+      <header>
+        <h1>colorgy-icons contains 8 glyphs:</h1>
+        <a onclick="toggleCharacters(); return false;" href="#">Toggle Preview Characters</a>
+      </header>
+
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="i-github" class="i-github"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="i-github" class="i-github"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="i-github" class="i-github"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="i-github" class="i-github"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="i-github" class="i-github"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="i-github" class="i-github"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="i-github" class="i-github"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="i-github" class="i-github"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="i-github" class="i-github"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="i-github" class="i-github"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".i-github" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#x188ad;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="i-table-blank" class="i-table-blank"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="i-table-blank" class="i-table-blank"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="i-table-blank" class="i-table-blank"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="i-table-blank" class="i-table-blank"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="i-table-blank" class="i-table-blank"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="i-table-blank" class="i-table-blank"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="i-table-blank" class="i-table-blank"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="i-table-blank" class="i-table-blank"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="i-table-blank" class="i-table-blank"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="i-table-blank" class="i-table-blank"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".i-table-blank" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#x18894;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="i-table-bottom-left-corner-rounded" class="i-table-bottom-left-corner-rounded"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="i-table-bottom-left-corner-rounded" class="i-table-bottom-left-corner-rounded"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="i-table-bottom-left-corner-rounded" class="i-table-bottom-left-corner-rounded"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="i-table-bottom-left-corner-rounded" class="i-table-bottom-left-corner-rounded"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="i-table-bottom-left-corner-rounded" class="i-table-bottom-left-corner-rounded"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="i-table-bottom-left-corner-rounded" class="i-table-bottom-left-corner-rounded"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="i-table-bottom-left-corner-rounded" class="i-table-bottom-left-corner-rounded"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="i-table-bottom-left-corner-rounded" class="i-table-bottom-left-corner-rounded"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="i-table-bottom-left-corner-rounded" class="i-table-bottom-left-corner-rounded"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="i-table-bottom-left-corner-rounded" class="i-table-bottom-left-corner-rounded"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".i-table-bottom-left-corner-rounded" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#x188ab;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="i-table-bottom-right-corner-rounded" class="i-table-bottom-right-corner-rounded"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="i-table-bottom-right-corner-rounded" class="i-table-bottom-right-corner-rounded"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="i-table-bottom-right-corner-rounded" class="i-table-bottom-right-corner-rounded"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="i-table-bottom-right-corner-rounded" class="i-table-bottom-right-corner-rounded"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="i-table-bottom-right-corner-rounded" class="i-table-bottom-right-corner-rounded"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="i-table-bottom-right-corner-rounded" class="i-table-bottom-right-corner-rounded"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="i-table-bottom-right-corner-rounded" class="i-table-bottom-right-corner-rounded"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="i-table-bottom-right-corner-rounded" class="i-table-bottom-right-corner-rounded"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="i-table-bottom-right-corner-rounded" class="i-table-bottom-right-corner-rounded"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="i-table-bottom-right-corner-rounded" class="i-table-bottom-right-corner-rounded"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".i-table-bottom-right-corner-rounded" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#x188ac;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="i-table-frame-horizontal" class="i-table-frame-horizontal"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="i-table-frame-horizontal" class="i-table-frame-horizontal"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="i-table-frame-horizontal" class="i-table-frame-horizontal"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="i-table-frame-horizontal" class="i-table-frame-horizontal"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="i-table-frame-horizontal" class="i-table-frame-horizontal"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="i-table-frame-horizontal" class="i-table-frame-horizontal"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="i-table-frame-horizontal" class="i-table-frame-horizontal"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="i-table-frame-horizontal" class="i-table-frame-horizontal"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="i-table-frame-horizontal" class="i-table-frame-horizontal"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="i-table-frame-horizontal" class="i-table-frame-horizontal"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".i-table-frame-horizontal" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#x18895;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="i-table-frame-vertical" class="i-table-frame-vertical"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="i-table-frame-vertical" class="i-table-frame-vertical"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="i-table-frame-vertical" class="i-table-frame-vertical"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="i-table-frame-vertical" class="i-table-frame-vertical"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="i-table-frame-vertical" class="i-table-frame-vertical"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="i-table-frame-vertical" class="i-table-frame-vertical"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="i-table-frame-vertical" class="i-table-frame-vertical"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="i-table-frame-vertical" class="i-table-frame-vertical"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="i-table-frame-vertical" class="i-table-frame-vertical"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="i-table-frame-vertical" class="i-table-frame-vertical"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".i-table-frame-vertical" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#x18896;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="i-table-top-left-corner-rounded" class="i-table-top-left-corner-rounded"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="i-table-top-left-corner-rounded" class="i-table-top-left-corner-rounded"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="i-table-top-left-corner-rounded" class="i-table-top-left-corner-rounded"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="i-table-top-left-corner-rounded" class="i-table-top-left-corner-rounded"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="i-table-top-left-corner-rounded" class="i-table-top-left-corner-rounded"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="i-table-top-left-corner-rounded" class="i-table-top-left-corner-rounded"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="i-table-top-left-corner-rounded" class="i-table-top-left-corner-rounded"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="i-table-top-left-corner-rounded" class="i-table-top-left-corner-rounded"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="i-table-top-left-corner-rounded" class="i-table-top-left-corner-rounded"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="i-table-top-left-corner-rounded" class="i-table-top-left-corner-rounded"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".i-table-top-left-corner-rounded" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#x188a9;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="i-table-top-right-corner-rounded" class="i-table-top-right-corner-rounded"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="i-table-top-right-corner-rounded" class="i-table-top-right-corner-rounded"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="i-table-top-right-corner-rounded" class="i-table-top-right-corner-rounded"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="i-table-top-right-corner-rounded" class="i-table-top-right-corner-rounded"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="i-table-top-right-corner-rounded" class="i-table-top-right-corner-rounded"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="i-table-top-right-corner-rounded" class="i-table-top-right-corner-rounded"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="i-table-top-right-corner-rounded" class="i-table-top-right-corner-rounded"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="i-table-top-right-corner-rounded" class="i-table-top-right-corner-rounded"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="i-table-top-right-corner-rounded" class="i-table-top-right-corner-rounded"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="i-table-top-right-corner-rounded" class="i-table-top-right-corner-rounded"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".i-table-top-right-corner-rounded" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#x188aa;" />
+        </div>
+      </div>
+      
+
+      <footer>
+        Made with love using <a href="http://fontcustom.com">Font Custom</a>.
+      </footer>
+    </div>
+  </body>
+</html>

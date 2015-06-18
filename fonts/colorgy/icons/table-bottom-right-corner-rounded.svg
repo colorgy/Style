@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.1 (12005) - http://www.bohemiancoding.com/sketch -->
+    <title>table-bottom-right-corner-rounded</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Utilities" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="table-bottom-right-corner-rounded" sketch:type="MSArtboardGroup" stroke="#000000" stroke-width="2">
+            <path d="M6,0.00032711076 C5.94314538,0.00032711076 3.88700547,-0.000408888457 3.83157368,0.00032711077 C0.97654342,0.0382349618 1.80378552e-16,1.0613928 0,3.9992263 L0,5.99922657" id="Path" sketch:type="MSShapeGroup" transform="translate(3.000000, 2.999613) rotate(-180.000000) translate(-3.000000, -2.999613) "></path>
+        </g>
+    </g>
+</svg>

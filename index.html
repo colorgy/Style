@@ -10,13 +10,183 @@
     <script src="javascripts/colorgy.js" type="text/javascript"></script>
 
     <link href="stylesheets/styleguide.css" rel="stylesheet" type="text/css" />
-    <script src="javascripts/head.js" type="text/javascript"></script>
+    <script src="javascripts/styleguide_head.js" type="text/javascript"></script>
   </head>
-  <body class="index">
-    <div class="wrapper " id="wrapper">
+    <body class="minimal index">
+    <style type="text/css">
+      .intro .actions {
+        max-width: 290px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 110%;
+      }
 
-  <div class="container">
-    <h1>Styleguide</h1>
+      .intro .actions .action-1 {
+        float: left;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 8px;
+      }
+
+      .intro .actions .action-2 {
+        float: right;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 8px;
+      }
+
+      @media (max-width: 400px) {
+        .intro .actions .action-1 {
+          float: none;
+        }
+
+        .intro .actions .action-2 {
+          float: none;
+        }
+      }
+
+      .x17895 {
+        display: block;
+        box-sizing: content-box;
+        height: 39px;
+        line-height: 39px;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+        color: #fefefe;
+        border: 2px solid #fefefe;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+             -o-user-select: none;
+                user-select: none;
+      }
+
+      html.backgroundcliptext .x17895 {
+        margin-top: -44px;
+        border: 0;
+      }
+
+      .x58294 {
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      html.backgroundcliptext .x58294 {
+        display: block;
+        font-family: 'colorgy-icons';
+        font-size: 12px;
+        line-height: 12px;
+        letter-spacing: -0.25px;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+             -o-user-select: none;
+                user-select: none;
+      }
+
+      .x17895:hover {
+        text-decoration: none;
+        color: #000;
+        background-color: #fefefe;
+      }
+
+      html.backgroundcliptext .x17895:hover {
+        background-color: transparent;
+        -webkit-text-fill-color: #000;
+           -moz-text-fill-color: #000;
+      }
+
+      html.backgroundcliptext .x17895:hover::before {
+        content: '■■■■■';
+        font-family: monospace;
+        display: block;
+        letter-spacing: -300px;
+        font-size: 1000px;
+        line-height: 200px;
+        margin-top: -100px;
+        margin-left: -300px;
+        width: 1000px;
+        height: 1000px;
+        margin-right: -700px;
+        margin-bottom: -900px;
+
+        -webkit-background-clip: text;
+           -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+           -moz-text-fill-color: transparent;
+      }
+    </style>
+
+    <div class="wrapper minimal" id="wrapper">
+
+      <nav class="navbar minimal inverse fixed-top auto-fade fade auto-expanded expanded" role="navigation">
+        <div class="container">
+          <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+              <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand has-image" href="#wrapper">
+              <img src="images/colorgy/colorgy_logo_white.svg" />
+            </a>
+          </div>
+          <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="global/">Global</a>
+              </li>
+              <li>
+                <a href="layouts/">Layout</a>
+              </li>
+              <li>
+                <a href="components/">Component</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="intro inverse" style="background-image: url('/images/colorgy/background_blur_1_dark.jpg');">
+        <div class="text-clip-background" style="background-image: url('/images/colorgy/background_blur_1_light.jpg'); display: table; width: 100%; height: 100%;">
+          <div class="intro-body">
+            <div class="container">
+              <div class="jumbotron">
+                <h1 class="brand-heading text-clip-background-clear-text">Colorgy <small>Styleguide</small></h1>
+                <p class="intro-text">Colorgy《大學祭》使用者介面、視覺識別與樣式指南</p>
+                <div class="actions clearfix">
+                  <div class="action-1" style="width: 136px;">
+                    <div class="x58294" style="width: 128px;">
+                      &#x188aa;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x188a9;<br>
+                      &#x18896;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18896;<br>
+                      &#x18896;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18896;<br>
+                      &#x188ab;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x188ac;<br>
+                    </div>
+                    <a class="x17895" style="width: 118px;" href="https://github.com/colorgy/Style/raw/master/assets/images/colorgy/Colorgy.sketch"><span class="i-icon">&#xf219;</span> 素材下載</a>
+                  </div>
+                  <div class="action-2" style="width: 150px;">
+                    <div class="x58294" style="width: 142px;">
+                      &#x188aa;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x188a9;<br>
+                      &#x18896;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18896;<br>
+                      &#x18896;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18896;<br>
+                      &#x188ab;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x188ac;<br>
+                    </div>
+                    <a class="x17895" style="width: 132px;" href="https://github.com/colorgy/Style" target="_blank"><span class="i-icon">&#x188ad;</span> 瀏覽原始碼</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="display: table-row-group;">
+            <p><small>Copyright © 2015 MISK.</small></p>
+            <span class="i-icon">&#xf107;</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <h1>Styleguide</h1>
 <div class="styleguide-example">
 
   <h3>Button <em>_button.scss</em></h3>
@@ -24,9 +194,12 @@
     <p>Default buttons.</p>
 
       <ul class="styleguide-modifier">
-          <li><strong>:hover</strong> - On mouse hovered.</li>
           <li><strong>:active, .active</strong> - Active state.</li>
           <li><strong>:disabled, .disabled</strong> - Disabled state.</li>
+          <li><strong>.raised</strong> - Raised button.</li>
+          <li><strong>.frameless</strong> - Frameless button.</li>
+          <li><strong>.outline</strong> - Outline button.</li>
+          <li><strong>.wide</strong> - Wide button.</li>
           <li><strong>.lg</strong> - Large button.</li>
           <li><strong>.sm</strong> - Small button.</li>
           <li><strong>.xs</strong> - Tiny button.</li>
@@ -38,10 +211,13 @@
 <a class="btn" href="#" role="button">Link</a>
 <button class="btn" type="submit">Button</button>
 <input class="btn" type="button" value="Input">
-<input class="btn" type="submit" value="Submit">
+<input class="btn inverse" type="submit" value="Submit">
 
 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
 <button type="button" class="btn primary">Primary</button>
+
+<!-- The highlighted action in a set of buttons -->
+<button type="button" class="btn highlight">Highlight</button>
 
 <!-- Indicates a successful or positive action -->
 <button type="button" class="btn success">Success</button>
@@ -60,42 +236,18 @@
 
   </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">:hover</span>
-      <!-- Different types of button elements -->
-<a class="btn pseudo-class-hover" href="#" role="button">Link</a>
-<button class="btn pseudo-class-hover" type="submit">Button</button>
-<input class="btn pseudo-class-hover" type="button" value="Input">
-<input class="btn pseudo-class-hover" type="submit" value="Submit">
-
-<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-<button type="button" class="btn primary pseudo-class-hover">Primary</button>
-
-<!-- Indicates a successful or positive action -->
-<button type="button" class="btn success pseudo-class-hover">Success</button>
-
-<!-- Contextual button for informational alert messages -->
-<button type="button" class="btn info pseudo-class-hover">Info</button>
-
-<!-- Indicates caution should be taken with this action -->
-<button type="button" class="btn warning pseudo-class-hover">Warning</button>
-
-<!-- Indicates a dangerous or potentially negative action -->
-<button type="button" class="btn danger pseudo-class-hover">Danger</button>
-
-<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
-<button type="button" class="btn link pseudo-class-hover">Link</button>
-
-    </div>
-    <div class="styleguide-element styleguide-modifier">
       <span class="styleguide-modifier-name">:active, .active</span>
       <!-- Different types of button elements -->
 <a class="btn pseudo-class-active,  active" href="#" role="button">Link</a>
 <button class="btn pseudo-class-active,  active" type="submit">Button</button>
 <input class="btn pseudo-class-active,  active" type="button" value="Input">
-<input class="btn pseudo-class-active,  active" type="submit" value="Submit">
+<input class="btn inverse pseudo-class-active,  active" type="submit" value="Submit">
 
 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
 <button type="button" class="btn primary pseudo-class-active,  active">Primary</button>
+
+<!-- The highlighted action in a set of buttons -->
+<button type="button" class="btn highlight pseudo-class-active,  active">Highlight</button>
 
 <!-- Indicates a successful or positive action -->
 <button type="button" class="btn success pseudo-class-active,  active">Success</button>
@@ -119,10 +271,13 @@
 <a class="btn pseudo-class-disabled,  disabled" href="#" role="button">Link</a>
 <button class="btn pseudo-class-disabled,  disabled" type="submit">Button</button>
 <input class="btn pseudo-class-disabled,  disabled" type="button" value="Input">
-<input class="btn pseudo-class-disabled,  disabled" type="submit" value="Submit">
+<input class="btn inverse pseudo-class-disabled,  disabled" type="submit" value="Submit">
 
 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
 <button type="button" class="btn primary pseudo-class-disabled,  disabled">Primary</button>
+
+<!-- The highlighted action in a set of buttons -->
+<button type="button" class="btn highlight pseudo-class-disabled,  disabled">Highlight</button>
 
 <!-- Indicates a successful or positive action -->
 <button type="button" class="btn success pseudo-class-disabled,  disabled">Success</button>
@@ -141,15 +296,138 @@
 
     </div>
     <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.raised</span>
+      <!-- Different types of button elements -->
+<a class="btn raised" href="#" role="button">Link</a>
+<button class="btn raised" type="submit">Button</button>
+<input class="btn raised" type="button" value="Input">
+<input class="btn inverse raised" type="submit" value="Submit">
+
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<button type="button" class="btn primary raised">Primary</button>
+
+<!-- The highlighted action in a set of buttons -->
+<button type="button" class="btn highlight raised">Highlight</button>
+
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn success raised">Success</button>
+
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn info raised">Info</button>
+
+<!-- Indicates caution should be taken with this action -->
+<button type="button" class="btn warning raised">Warning</button>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn danger raised">Danger</button>
+
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+<button type="button" class="btn link raised">Link</button>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.frameless</span>
+      <!-- Different types of button elements -->
+<a class="btn frameless" href="#" role="button">Link</a>
+<button class="btn frameless" type="submit">Button</button>
+<input class="btn frameless" type="button" value="Input">
+<input class="btn inverse frameless" type="submit" value="Submit">
+
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<button type="button" class="btn primary frameless">Primary</button>
+
+<!-- The highlighted action in a set of buttons -->
+<button type="button" class="btn highlight frameless">Highlight</button>
+
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn success frameless">Success</button>
+
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn info frameless">Info</button>
+
+<!-- Indicates caution should be taken with this action -->
+<button type="button" class="btn warning frameless">Warning</button>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn danger frameless">Danger</button>
+
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+<button type="button" class="btn link frameless">Link</button>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.outline</span>
+      <!-- Different types of button elements -->
+<a class="btn outline" href="#" role="button">Link</a>
+<button class="btn outline" type="submit">Button</button>
+<input class="btn outline" type="button" value="Input">
+<input class="btn inverse outline" type="submit" value="Submit">
+
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<button type="button" class="btn primary outline">Primary</button>
+
+<!-- The highlighted action in a set of buttons -->
+<button type="button" class="btn highlight outline">Highlight</button>
+
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn success outline">Success</button>
+
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn info outline">Info</button>
+
+<!-- Indicates caution should be taken with this action -->
+<button type="button" class="btn warning outline">Warning</button>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn danger outline">Danger</button>
+
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+<button type="button" class="btn link outline">Link</button>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.wide</span>
+      <!-- Different types of button elements -->
+<a class="btn wide" href="#" role="button">Link</a>
+<button class="btn wide" type="submit">Button</button>
+<input class="btn wide" type="button" value="Input">
+<input class="btn inverse wide" type="submit" value="Submit">
+
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<button type="button" class="btn primary wide">Primary</button>
+
+<!-- The highlighted action in a set of buttons -->
+<button type="button" class="btn highlight wide">Highlight</button>
+
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn success wide">Success</button>
+
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn info wide">Info</button>
+
+<!-- Indicates caution should be taken with this action -->
+<button type="button" class="btn warning wide">Warning</button>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn danger wide">Danger</button>
+
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+<button type="button" class="btn link wide">Link</button>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
       <span class="styleguide-modifier-name">.lg</span>
       <!-- Different types of button elements -->
 <a class="btn lg" href="#" role="button">Link</a>
 <button class="btn lg" type="submit">Button</button>
 <input class="btn lg" type="button" value="Input">
-<input class="btn lg" type="submit" value="Submit">
+<input class="btn inverse lg" type="submit" value="Submit">
 
 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
 <button type="button" class="btn primary lg">Primary</button>
+
+<!-- The highlighted action in a set of buttons -->
+<button type="button" class="btn highlight lg">Highlight</button>
 
 <!-- Indicates a successful or positive action -->
 <button type="button" class="btn success lg">Success</button>
@@ -173,10 +451,13 @@
 <a class="btn sm" href="#" role="button">Link</a>
 <button class="btn sm" type="submit">Button</button>
 <input class="btn sm" type="button" value="Input">
-<input class="btn sm" type="submit" value="Submit">
+<input class="btn inverse sm" type="submit" value="Submit">
 
 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
 <button type="button" class="btn primary sm">Primary</button>
+
+<!-- The highlighted action in a set of buttons -->
+<button type="button" class="btn highlight sm">Highlight</button>
 
 <!-- Indicates a successful or positive action -->
 <button type="button" class="btn success sm">Success</button>
@@ -200,10 +481,13 @@
 <a class="btn xs" href="#" role="button">Link</a>
 <button class="btn xs" type="submit">Button</button>
 <input class="btn xs" type="button" value="Input">
-<input class="btn xs" type="submit" value="Submit">
+<input class="btn inverse xs" type="submit" value="Submit">
 
 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
 <button type="button" class="btn primary xs">Primary</button>
+
+<!-- The highlighted action in a set of buttons -->
+<button type="button" class="btn highlight xs">Highlight</button>
 
 <!-- Indicates a successful or positive action -->
 <button type="button" class="btn success xs">Success</button>
@@ -227,10 +511,13 @@
 <a class="btn block" href="#" role="button">Link</a>
 <button class="btn block" type="submit">Button</button>
 <input class="btn block" type="button" value="Input">
-<input class="btn block" type="submit" value="Submit">
+<input class="btn inverse block" type="submit" value="Submit">
 
 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
 <button type="button" class="btn primary block">Primary</button>
+
+<!-- The highlighted action in a set of buttons -->
+<button type="button" class="btn highlight block">Highlight</button>
 
 <!-- Indicates a successful or positive action -->
 <button type="button" class="btn success block">Success</button>
@@ -253,10 +540,13 @@
 &lt;a class=&quot;btn&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Link&lt;&#x2F;a&gt;
 &lt;button class=&quot;btn&quot; type=&quot;submit&quot;&gt;Button&lt;&#x2F;button&gt;
 &lt;input class=&quot;btn&quot; type=&quot;button&quot; value=&quot;Input&quot;&gt;
-&lt;input class=&quot;btn&quot; type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+&lt;input class=&quot;btn inverse&quot; type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
 
 &lt;!-- Provides extra visual weight and identifies the primary action in a set of buttons --&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn primary&quot;&gt;Primary&lt;&#x2F;button&gt;
+
+&lt;!-- The highlighted action in a set of buttons --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn highlight&quot;&gt;Highlight&lt;&#x2F;button&gt;
 
 &lt;!-- Indicates a successful or positive action --&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn success&quot;&gt;Success&lt;&#x2F;button&gt;
@@ -1481,6 +1771,8 @@
       <ul class="styleguide-modifier">
           <li><strong>.default</strong> - Default style.</li>
           <li><strong>.inverse</strong> - Inverted.</li>
+          <li><strong>.minimal</strong> - Minimal style.</li>
+          <li><strong>.minimal.inverse</strong> - Minimal style with inverted color.</li>
       </ul>
   </div>
   <div class="styleguide-element">
@@ -1599,6 +1891,120 @@
     <div class="styleguide-element styleguide-modifier">
       <span class="styleguide-modifier-name">.inverse</span>
       <nav class="navbar inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.minimal</span>
+      <nav class="navbar minimal">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.minimal.inverse</span>
+      <nav class="navbar minimal inverse">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -3554,10 +3960,9 @@
 
 </div>
 
-  </div>
-
-
+      </div>
     </div>
-    <script src="javascripts/body.js" type="text/javascript"></script>
+    <script src="javascripts/styleguide_body.js" type="text/javascript"></script>
   </body>
+
 </html>
