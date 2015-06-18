@@ -12,116 +12,26 @@
     <link href="../stylesheets/styleguide.css" rel="stylesheet" type="text/css" />
     <script src="../javascripts/styleguide_head.js" type="text/javascript"></script>
   </head>
-    <body class="minimal components components_index">
+    <body>
+    <script type="text/javascript">
+      window.index = false;
+    </script>
+
     <style type="text/css">
-      .intro .actions {
-        max-width: 290px;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 110%;
+      img {
+        max-width: 100%;
       }
 
-      .intro .actions .action-1 {
-        float: left;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 8px;
+      .section {
+        padding: 70px 0;
       }
 
-      .intro .actions .action-2 {
-        float: right;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 8px;
-      }
-
-      @media (max-width: 400px) {
-        .intro .actions .action-1 {
-          float: none;
-        }
-
-        .intro .actions .action-2 {
-          float: none;
-        }
-      }
-
-      .x17895 {
-        display: block;
-        box-sizing: content-box;
-        height: 39px;
-        line-height: 39px;
-        overflow: hidden;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 5px;
-        color: #fefefe;
-        border: 2px solid #fefefe;
-        -webkit-user-select: none;
-           -moz-user-select: none;
-            -ms-user-select: none;
-             -o-user-select: none;
-                user-select: none;
-      }
-
-      html.backgroundcliptext .x17895 {
-        margin-top: -44px;
-        border: 0;
-      }
-
-      .x58294 {
-        display: none;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      html.backgroundcliptext .x58294 {
-        display: block;
-        font-family: 'colorgy-icons';
-        font-size: 12px;
-        line-height: 12px;
-        letter-spacing: -0.25px;
-        -webkit-user-select: none;
-           -moz-user-select: none;
-            -ms-user-select: none;
-             -o-user-select: none;
-                user-select: none;
-      }
-
-      .x17895:hover {
-        text-decoration: none;
-        color: #000;
-        background-color: #fefefe;
-      }
-
-      html.backgroundcliptext .x17895:hover {
-        background-color: transparent;
-        -webkit-text-fill-color: #000;
-           -moz-text-fill-color: #000;
-      }
-
-      html.backgroundcliptext .x17895:hover::before {
-        content: '■■■■■';
-        font-family: monospace;
-        display: block;
-        letter-spacing: -300px;
-        font-size: 1000px;
-        line-height: 200px;
-        margin-top: -100px;
-        margin-left: -300px;
-        width: 1000px;
-        height: 1000px;
-        margin-right: -700px;
-        margin-bottom: -900px;
-
-        -webkit-background-clip: text;
-           -moz-background-clip: text;
-        -webkit-text-fill-color: transparent;
-           -moz-text-fill-color: transparent;
+      footer {
+        padding: 80px 0;
       }
     </style>
 
-    <div class="wrapper minimal" id="wrapper">
-
+    <div class="wrapper" id="wrapper">
       <nav class="navbar minimal inverse fixed-top auto-fade fade auto-expanded expanded" role="navigation">
         <div class="container">
           <div class="navbar-header page-scroll">
@@ -135,59 +45,3851 @@
           <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
             <ul class="nav navbar-nav">
               <li>
-                <a href="../global/">Global</a>
+                <a href="../globals/">Globals</a>
               </li>
               <li>
-                <a href="../layouts/">Layout</a>
+                <a href="../layouts/">Layouts</a>
               </li>
               <li>
-                <a href="./">Component</a>
+                <a href="./">Components</a>
+              </li>
+              <li>
+                <a href="../extras/">Extras</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
 
-      <section class="intro inverse" style="background-image: url('../images/colorgy/background_blur_1_dark.jpg');">
-        <div class="text-clip-background" style="background-image: url('../images/colorgy/background_blur_1_light.jpg'); display: table; width: 100%; height: 100%;">
-          <div class="intro-body">
-            <div class="container">
-              <div class="jumbotron">
-                <h1 class="brand-heading text-clip-background-clear-text">Colorgy <small>Styleguide</small></h1>
-                <p class="intro-text">Colorgy《大學祭》使用者介面、視覺識別與樣式指南</p>
-                <div class="actions clearfix">
-                  <div class="action-1" style="width: 136px;">
-                    <div class="x58294" style="width: 128px;">
-                      &#x188aa;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x188a9;<br>
-                      &#x18896;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18896;<br>
-                      &#x18896;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18896;<br>
-                      &#x188ab;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x188ac;<br>
-                    </div>
-                    <a class="x17895" style="width: 118px;" href="https://github.com/colorgy/Style/raw/master/assets/images/colorgy/Colorgy.sketch"><span class="i-icon">&#xf219;</span> 素材下載</a>
-                  </div>
-                  <div class="action-2" style="width: 150px;">
-                    <div class="x58294" style="width: 142px;">
-                      &#x188aa;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x188a9;<br>
-                      &#x18896;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18896;<br>
-                      &#x18896;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18896;<br>
-                      &#x188ab;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x188ac;<br>
-                    </div>
-                    <a class="x17895" style="width: 132px;" href="https://github.com/colorgy/Style" target="_blank"><span class="i-icon">&#x188ad;</span> 瀏覽原始碼</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div style="display: table-row-group;">
-            <p><small>Copyright © 2015 MISK.</small></p>
-            <span class="i-icon">&#xf107;</span>
+        <header class="inverse" style="background-image: url('../images/colorgy/background_blur_1_dark.jpg'); background-size: cover; background-position: 50% 10%; ">
+    <div class="text-clip-background" style="background-image: url('../images/colorgy/background_blur_1_light.jpg'); background-size: cover; background-position: 50% 10%; padding: 140px 0 20px;">
+      <div class="container">
+        <div class="h1">
+            <small>Globals</small>
+          <small>/</small>
+            <small>Layouts</small>
+          <small>/</small>
+            <span class="text-clip-background-clear-text">Components</span>
+          <small>/</small>
+            <small>Extras</small>
+        </div>
+        <p>隨處可見，可重複使用、隨意定位甚至調整大小的獨立組件。</p>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <h1>Styleguide</h1>
+<div class="styleguide-example">
+
+  <h3>Button <em>_button.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>Default buttons.</p>
+
+      <ul class="styleguide-modifier">
+          <li><strong>:active, .active</strong> - Active state.</li>
+          <li><strong>:disabled, .disabled</strong> - Disabled state.</li>
+          <li><strong>.raised</strong> - Raised button.</li>
+          <li><strong>.frameless</strong> - Frameless button.</li>
+          <li><strong>.outline</strong> - Outline button.</li>
+          <li><strong>.wide</strong> - Wide button.</li>
+          <li><strong>.lg</strong> - Large button.</li>
+          <li><strong>.sm</strong> - Small button.</li>
+          <li><strong>.xs</strong> - Tiny button.</li>
+          <li><strong>.block</strong> - Block level buttons, span the full width of a parent.</li>
+      </ul>
+  </div>
+  <div class="styleguide-element">
+    <!-- Different types of button elements -->
+<a class="btn" href="#" role="button">Link</a>
+<button class="btn" type="submit">Button</button>
+<input class="btn" type="button" value="Input">
+<input class="btn inverse" type="submit" value="Submit">
+
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<button type="button" class="btn primary">Primary</button>
+
+<!-- The highlighted action in a set of buttons -->
+<button type="button" class="btn highlighted">Highlight</button>
+
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn success">Success</button>
+
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn info">Info</button>
+
+<!-- Indicates caution should be taken with this action -->
+<button type="button" class="btn warning">Warning</button>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn danger">Danger</button>
+
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+<button type="button" class="btn link">Link</button>
+
+  </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">:active, .active</span>
+      <!-- Different types of button elements -->
+<a class="btn pseudo-class-active,  active" href="#" role="button">Link</a>
+<button class="btn pseudo-class-active,  active" type="submit">Button</button>
+<input class="btn pseudo-class-active,  active" type="button" value="Input">
+<input class="btn inverse pseudo-class-active,  active" type="submit" value="Submit">
+
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<button type="button" class="btn primary pseudo-class-active,  active">Primary</button>
+
+<!-- The highlighted action in a set of buttons -->
+<button type="button" class="btn highlighted pseudo-class-active,  active">Highlight</button>
+
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn success pseudo-class-active,  active">Success</button>
+
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn info pseudo-class-active,  active">Info</button>
+
+<!-- Indicates caution should be taken with this action -->
+<button type="button" class="btn warning pseudo-class-active,  active">Warning</button>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn danger pseudo-class-active,  active">Danger</button>
+
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+<button type="button" class="btn link pseudo-class-active,  active">Link</button>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">:disabled, .disabled</span>
+      <!-- Different types of button elements -->
+<a class="btn pseudo-class-disabled,  disabled" href="#" role="button">Link</a>
+<button class="btn pseudo-class-disabled,  disabled" type="submit">Button</button>
+<input class="btn pseudo-class-disabled,  disabled" type="button" value="Input">
+<input class="btn inverse pseudo-class-disabled,  disabled" type="submit" value="Submit">
+
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<button type="button" class="btn primary pseudo-class-disabled,  disabled">Primary</button>
+
+<!-- The highlighted action in a set of buttons -->
+<button type="button" class="btn highlighted pseudo-class-disabled,  disabled">Highlight</button>
+
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn success pseudo-class-disabled,  disabled">Success</button>
+
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn info pseudo-class-disabled,  disabled">Info</button>
+
+<!-- Indicates caution should be taken with this action -->
+<button type="button" class="btn warning pseudo-class-disabled,  disabled">Warning</button>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn danger pseudo-class-disabled,  disabled">Danger</button>
+
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+<button type="button" class="btn link pseudo-class-disabled,  disabled">Link</button>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.raised</span>
+      <!-- Different types of button elements -->
+<a class="btn raised" href="#" role="button">Link</a>
+<button class="btn raised" type="submit">Button</button>
+<input class="btn raised" type="button" value="Input">
+<input class="btn inverse raised" type="submit" value="Submit">
+
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<button type="button" class="btn primary raised">Primary</button>
+
+<!-- The highlighted action in a set of buttons -->
+<button type="button" class="btn highlighted raised">Highlight</button>
+
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn success raised">Success</button>
+
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn info raised">Info</button>
+
+<!-- Indicates caution should be taken with this action -->
+<button type="button" class="btn warning raised">Warning</button>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn danger raised">Danger</button>
+
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+<button type="button" class="btn link raised">Link</button>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.frameless</span>
+      <!-- Different types of button elements -->
+<a class="btn frameless" href="#" role="button">Link</a>
+<button class="btn frameless" type="submit">Button</button>
+<input class="btn frameless" type="button" value="Input">
+<input class="btn inverse frameless" type="submit" value="Submit">
+
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<button type="button" class="btn primary frameless">Primary</button>
+
+<!-- The highlighted action in a set of buttons -->
+<button type="button" class="btn highlighted frameless">Highlight</button>
+
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn success frameless">Success</button>
+
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn info frameless">Info</button>
+
+<!-- Indicates caution should be taken with this action -->
+<button type="button" class="btn warning frameless">Warning</button>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn danger frameless">Danger</button>
+
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+<button type="button" class="btn link frameless">Link</button>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.outline</span>
+      <!-- Different types of button elements -->
+<a class="btn outline" href="#" role="button">Link</a>
+<button class="btn outline" type="submit">Button</button>
+<input class="btn outline" type="button" value="Input">
+<input class="btn inverse outline" type="submit" value="Submit">
+
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<button type="button" class="btn primary outline">Primary</button>
+
+<!-- The highlighted action in a set of buttons -->
+<button type="button" class="btn highlighted outline">Highlight</button>
+
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn success outline">Success</button>
+
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn info outline">Info</button>
+
+<!-- Indicates caution should be taken with this action -->
+<button type="button" class="btn warning outline">Warning</button>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn danger outline">Danger</button>
+
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+<button type="button" class="btn link outline">Link</button>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.wide</span>
+      <!-- Different types of button elements -->
+<a class="btn wide" href="#" role="button">Link</a>
+<button class="btn wide" type="submit">Button</button>
+<input class="btn wide" type="button" value="Input">
+<input class="btn inverse wide" type="submit" value="Submit">
+
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<button type="button" class="btn primary wide">Primary</button>
+
+<!-- The highlighted action in a set of buttons -->
+<button type="button" class="btn highlighted wide">Highlight</button>
+
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn success wide">Success</button>
+
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn info wide">Info</button>
+
+<!-- Indicates caution should be taken with this action -->
+<button type="button" class="btn warning wide">Warning</button>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn danger wide">Danger</button>
+
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+<button type="button" class="btn link wide">Link</button>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.lg</span>
+      <!-- Different types of button elements -->
+<a class="btn lg" href="#" role="button">Link</a>
+<button class="btn lg" type="submit">Button</button>
+<input class="btn lg" type="button" value="Input">
+<input class="btn inverse lg" type="submit" value="Submit">
+
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<button type="button" class="btn primary lg">Primary</button>
+
+<!-- The highlighted action in a set of buttons -->
+<button type="button" class="btn highlighted lg">Highlight</button>
+
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn success lg">Success</button>
+
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn info lg">Info</button>
+
+<!-- Indicates caution should be taken with this action -->
+<button type="button" class="btn warning lg">Warning</button>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn danger lg">Danger</button>
+
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+<button type="button" class="btn link lg">Link</button>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.sm</span>
+      <!-- Different types of button elements -->
+<a class="btn sm" href="#" role="button">Link</a>
+<button class="btn sm" type="submit">Button</button>
+<input class="btn sm" type="button" value="Input">
+<input class="btn inverse sm" type="submit" value="Submit">
+
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<button type="button" class="btn primary sm">Primary</button>
+
+<!-- The highlighted action in a set of buttons -->
+<button type="button" class="btn highlighted sm">Highlight</button>
+
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn success sm">Success</button>
+
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn info sm">Info</button>
+
+<!-- Indicates caution should be taken with this action -->
+<button type="button" class="btn warning sm">Warning</button>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn danger sm">Danger</button>
+
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+<button type="button" class="btn link sm">Link</button>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.xs</span>
+      <!-- Different types of button elements -->
+<a class="btn xs" href="#" role="button">Link</a>
+<button class="btn xs" type="submit">Button</button>
+<input class="btn xs" type="button" value="Input">
+<input class="btn inverse xs" type="submit" value="Submit">
+
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<button type="button" class="btn primary xs">Primary</button>
+
+<!-- The highlighted action in a set of buttons -->
+<button type="button" class="btn highlighted xs">Highlight</button>
+
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn success xs">Success</button>
+
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn info xs">Info</button>
+
+<!-- Indicates caution should be taken with this action -->
+<button type="button" class="btn warning xs">Warning</button>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn danger xs">Danger</button>
+
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+<button type="button" class="btn link xs">Link</button>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.block</span>
+      <!-- Different types of button elements -->
+<a class="btn block" href="#" role="button">Link</a>
+<button class="btn block" type="submit">Button</button>
+<input class="btn block" type="button" value="Input">
+<input class="btn inverse block" type="submit" value="Submit">
+
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<button type="button" class="btn primary block">Primary</button>
+
+<!-- The highlighted action in a set of buttons -->
+<button type="button" class="btn highlighted block">Highlight</button>
+
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn success block">Success</button>
+
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn info block">Info</button>
+
+<!-- Indicates caution should be taken with this action -->
+<button type="button" class="btn warning block">Warning</button>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn danger block">Danger</button>
+
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+<button type="button" class="btn link block">Link</button>
+
+    </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;!-- Different types of button elements --&gt;
+&lt;a class=&quot;btn&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Link&lt;&#x2F;a&gt;
+&lt;button class=&quot;btn&quot; type=&quot;submit&quot;&gt;Button&lt;&#x2F;button&gt;
+&lt;input class=&quot;btn&quot; type=&quot;button&quot; value=&quot;Input&quot;&gt;
+&lt;input class=&quot;btn inverse&quot; type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+
+&lt;!-- Provides extra visual weight and identifies the primary action in a set of buttons --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn primary&quot;&gt;Primary&lt;&#x2F;button&gt;
+
+&lt;!-- The highlighted action in a set of buttons --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn highlighted&quot;&gt;Highlight&lt;&#x2F;button&gt;
+
+&lt;!-- Indicates a successful or positive action --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn success&quot;&gt;Success&lt;&#x2F;button&gt;
+
+&lt;!-- Contextual button for informational alert messages --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn info&quot;&gt;Info&lt;&#x2F;button&gt;
+
+&lt;!-- Indicates caution should be taken with this action --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn warning&quot;&gt;Warning&lt;&#x2F;button&gt;
+
+&lt;!-- Indicates a dangerous or potentially negative action --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn danger&quot;&gt;Danger&lt;&#x2F;button&gt;
+
+&lt;!-- Deemphasize a button by making it look like a link while maintaining button behavior --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn link&quot;&gt;Link&lt;&#x2F;button&gt;
+</code></pre>
+  </div>
+
+</div>
+<div class="styleguide-example">
+
+  <h3>ButtonGroup <em>_button_group.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>Button groups.</p>
+
+      <ul class="styleguide-modifier">
+          <li><strong>.lg</strong> - Large.</li>
+          <li><strong>.sm</strong> - Small.</li>
+          <li><strong>.xs</strong> - Extra small.</li>
+          <li><strong>.justified</strong> - Stretch at equal sizes to span the entire width of its parent.</li>
+      </ul>
+  </div>
+  <div class="styleguide-element">
+    <!-- Basic -->
+<div class="btn-group" role="group" aria-label="...">
+  <a type="button" class="btn btn-default">Left</a>
+  <a type="button" class="btn btn-default">Middle</a>
+  <a type="button" class="btn btn-default">Right</a>
+</div>
+
+<!-- Combine sets in a toolbar -->
+<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-group" role="group" aria-label="First group">
+    <a type="button" class="btn btn-default">1</a>
+    <a type="button" class="btn btn-default">2</a>
+    <a type="button" class="btn btn-default">3</a>
+    <a type="button" class="btn btn-default">4</a>
+  </div>
+  <div class="btn-group" role="group" aria-label="Second group">
+    <a type="button" class="btn btn-default">5</a>
+    <a type="button" class="btn btn-default">6</a>
+    <a type="button" class="btn btn-default">7</a>
+  </div>
+  <div class="btn-group" role="group" aria-label="Third group">
+    <a type="button" class="btn btn-default">8</a>
+  </div>
+</div>
+
+<!-- Nesting with dropdowns -->
+<div class="btn-group" role="group" aria-label="...">
+  <a type="button" class="btn btn-default">1</a>
+  <a type="button" class="btn btn-default">2</a>
+
+  <div class="btn-group" role="group">
+    <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+      Dropdown
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">Dropdown link</a></li>
+      <li><a href="#">Dropdown link</a></li>
+    </ul>
+  </div>
+</div>
+
+  </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.lg</span>
+      <!-- Basic -->
+<div class="btn-group lg" role="group" aria-label="...">
+  <a type="button" class="btn btn-default">Left</a>
+  <a type="button" class="btn btn-default">Middle</a>
+  <a type="button" class="btn btn-default">Right</a>
+</div>
+
+<!-- Combine sets in a toolbar -->
+<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-group lg" role="group" aria-label="First group">
+    <a type="button" class="btn btn-default">1</a>
+    <a type="button" class="btn btn-default">2</a>
+    <a type="button" class="btn btn-default">3</a>
+    <a type="button" class="btn btn-default">4</a>
+  </div>
+  <div class="btn-group lg" role="group" aria-label="Second group">
+    <a type="button" class="btn btn-default">5</a>
+    <a type="button" class="btn btn-default">6</a>
+    <a type="button" class="btn btn-default">7</a>
+  </div>
+  <div class="btn-group lg" role="group" aria-label="Third group">
+    <a type="button" class="btn btn-default">8</a>
+  </div>
+</div>
+
+<!-- Nesting with dropdowns -->
+<div class="btn-group lg" role="group" aria-label="...">
+  <a type="button" class="btn btn-default">1</a>
+  <a type="button" class="btn btn-default">2</a>
+
+  <div class="btn-group lg" role="group">
+    <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+      Dropdown
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">Dropdown link</a></li>
+      <li><a href="#">Dropdown link</a></li>
+    </ul>
+  </div>
+</div>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.sm</span>
+      <!-- Basic -->
+<div class="btn-group sm" role="group" aria-label="...">
+  <a type="button" class="btn btn-default">Left</a>
+  <a type="button" class="btn btn-default">Middle</a>
+  <a type="button" class="btn btn-default">Right</a>
+</div>
+
+<!-- Combine sets in a toolbar -->
+<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-group sm" role="group" aria-label="First group">
+    <a type="button" class="btn btn-default">1</a>
+    <a type="button" class="btn btn-default">2</a>
+    <a type="button" class="btn btn-default">3</a>
+    <a type="button" class="btn btn-default">4</a>
+  </div>
+  <div class="btn-group sm" role="group" aria-label="Second group">
+    <a type="button" class="btn btn-default">5</a>
+    <a type="button" class="btn btn-default">6</a>
+    <a type="button" class="btn btn-default">7</a>
+  </div>
+  <div class="btn-group sm" role="group" aria-label="Third group">
+    <a type="button" class="btn btn-default">8</a>
+  </div>
+</div>
+
+<!-- Nesting with dropdowns -->
+<div class="btn-group sm" role="group" aria-label="...">
+  <a type="button" class="btn btn-default">1</a>
+  <a type="button" class="btn btn-default">2</a>
+
+  <div class="btn-group sm" role="group">
+    <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+      Dropdown
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">Dropdown link</a></li>
+      <li><a href="#">Dropdown link</a></li>
+    </ul>
+  </div>
+</div>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.xs</span>
+      <!-- Basic -->
+<div class="btn-group xs" role="group" aria-label="...">
+  <a type="button" class="btn btn-default">Left</a>
+  <a type="button" class="btn btn-default">Middle</a>
+  <a type="button" class="btn btn-default">Right</a>
+</div>
+
+<!-- Combine sets in a toolbar -->
+<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-group xs" role="group" aria-label="First group">
+    <a type="button" class="btn btn-default">1</a>
+    <a type="button" class="btn btn-default">2</a>
+    <a type="button" class="btn btn-default">3</a>
+    <a type="button" class="btn btn-default">4</a>
+  </div>
+  <div class="btn-group xs" role="group" aria-label="Second group">
+    <a type="button" class="btn btn-default">5</a>
+    <a type="button" class="btn btn-default">6</a>
+    <a type="button" class="btn btn-default">7</a>
+  </div>
+  <div class="btn-group xs" role="group" aria-label="Third group">
+    <a type="button" class="btn btn-default">8</a>
+  </div>
+</div>
+
+<!-- Nesting with dropdowns -->
+<div class="btn-group xs" role="group" aria-label="...">
+  <a type="button" class="btn btn-default">1</a>
+  <a type="button" class="btn btn-default">2</a>
+
+  <div class="btn-group xs" role="group">
+    <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+      Dropdown
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">Dropdown link</a></li>
+      <li><a href="#">Dropdown link</a></li>
+    </ul>
+  </div>
+</div>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.justified</span>
+      <!-- Basic -->
+<div class="btn-group justified" role="group" aria-label="...">
+  <a type="button" class="btn btn-default">Left</a>
+  <a type="button" class="btn btn-default">Middle</a>
+  <a type="button" class="btn btn-default">Right</a>
+</div>
+
+<!-- Combine sets in a toolbar -->
+<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-group justified" role="group" aria-label="First group">
+    <a type="button" class="btn btn-default">1</a>
+    <a type="button" class="btn btn-default">2</a>
+    <a type="button" class="btn btn-default">3</a>
+    <a type="button" class="btn btn-default">4</a>
+  </div>
+  <div class="btn-group justified" role="group" aria-label="Second group">
+    <a type="button" class="btn btn-default">5</a>
+    <a type="button" class="btn btn-default">6</a>
+    <a type="button" class="btn btn-default">7</a>
+  </div>
+  <div class="btn-group justified" role="group" aria-label="Third group">
+    <a type="button" class="btn btn-default">8</a>
+  </div>
+</div>
+
+<!-- Nesting with dropdowns -->
+<div class="btn-group justified" role="group" aria-label="...">
+  <a type="button" class="btn btn-default">1</a>
+  <a type="button" class="btn btn-default">2</a>
+
+  <div class="btn-group justified" role="group">
+    <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+      Dropdown
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">Dropdown link</a></li>
+      <li><a href="#">Dropdown link</a></li>
+    </ul>
+  </div>
+</div>
+
+    </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;!-- Basic --&gt;
+&lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;...&quot;&gt;
+  &lt;a type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Left&lt;&#x2F;a&gt;
+  &lt;a type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Middle&lt;&#x2F;a&gt;
+  &lt;a type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Right&lt;&#x2F;a&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- Combine sets in a toolbar --&gt;
+&lt;div class=&quot;btn-toolbar&quot; role=&quot;toolbar&quot; aria-label=&quot;Toolbar with button groups&quot;&gt;
+  &lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;First group&quot;&gt;
+    &lt;a type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;1&lt;&#x2F;a&gt;
+    &lt;a type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;2&lt;&#x2F;a&gt;
+    &lt;a type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;3&lt;&#x2F;a&gt;
+    &lt;a type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;4&lt;&#x2F;a&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;Second group&quot;&gt;
+    &lt;a type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;5&lt;&#x2F;a&gt;
+    &lt;a type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;6&lt;&#x2F;a&gt;
+    &lt;a type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;7&lt;&#x2F;a&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;Third group&quot;&gt;
+    &lt;a type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;8&lt;&#x2F;a&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- Nesting with dropdowns --&gt;
+&lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;...&quot;&gt;
+  &lt;a type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;1&lt;&#x2F;a&gt;
+  &lt;a type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;2&lt;&#x2F;a&gt;
+
+  &lt;div class=&quot;btn-group&quot; role=&quot;group&quot;&gt;
+    &lt;a type=&quot;button&quot; class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+      Dropdown
+      &lt;span class=&quot;caret&quot;&gt;&lt;&#x2F;span&gt;
+    &lt;&#x2F;a&gt;
+    &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Dropdown link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Dropdown link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+</code></pre>
+  </div>
+
+</div>
+<div class="styleguide-example">
+
+  <h3>Dropdown <em>_dropdown.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>Dropdowns. Requires <code>components&amp;#x2F;dropdown.js</code> to make interactive.</p>
+
+      <ul class="styleguide-modifier">
+          <li><strong>.right</strong> - Pulls right the <code>dropdown-menu</code>.</li>
+      </ul>
+  </div>
+  <div class="styleguide-element">
+    <div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+    Dropdown
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
+    <li role="presentation" class="dropdown-header">Dropdown header</li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+    <li role="presentation" class="dropdown-header">Dropdown header</li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+    <li role="presentation" class="divider"></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+    <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">Disabled link</a></li>
+  </ul>
+</div>
+
+<hr>
+
+<!-- Droup "up" -->
+<div class="dropup">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="true">
+    Dropup
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+  </ul>
+</div>
+
+<hr>
+
+<!-- Single button dropdown -->
+<div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+    Action <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+
+<!-- Split button dropdown -->
+<div class="btn-group">
+  <button type="button" class="btn btn-danger">Action</button>
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+
+  </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.right</span>
+      <div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+    Dropdown
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu right" role="menu" aria-labelledby="dropdownMenu3">
+    <li role="presentation" class="dropdown-header">Dropdown header</li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+    <li role="presentation" class="dropdown-header">Dropdown header</li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+    <li role="presentation" class="divider"></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+    <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">Disabled link</a></li>
+  </ul>
+</div>
+
+<hr>
+
+<!-- Droup "up" -->
+<div class="dropup">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="true">
+    Dropup
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu right" role="menu" aria-labelledby="dropdownMenu2">
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+  </ul>
+</div>
+
+<hr>
+
+<!-- Single button dropdown -->
+<div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+    Action <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu right" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+
+<!-- Split button dropdown -->
+<div class="btn-group">
+  <button type="button" class="btn btn-danger">Action</button>
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu right" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+
+    </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;button class=&quot;btn btn-default dropdown-toggle&quot; type=&quot;button&quot; id=&quot;dropdownMenu1&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;true&quot;&gt;
+    Dropdown
+    &lt;span class=&quot;caret&quot;&gt;&lt;&#x2F;span&gt;
+  &lt;&#x2F;button&gt;
+  &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot; aria-labelledby=&quot;dropdownMenu3&quot;&gt;
+    &lt;li role=&quot;presentation&quot; class=&quot;dropdown-header&quot;&gt;Dropdown header&lt;&#x2F;li&gt;
+    &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Action&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Another action&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Something else here&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li role=&quot;presentation&quot; class=&quot;dropdown-header&quot;&gt;Dropdown header&lt;&#x2F;li&gt;
+    &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Separated link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li role=&quot;presentation&quot; class=&quot;divider&quot;&gt;&lt;&#x2F;li&gt;
+    &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Separated link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li role=&quot;presentation&quot; class=&quot;disabled&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Disabled link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+&lt;&#x2F;div&gt;
+
+&lt;hr&gt;
+
+&lt;!-- Droup &quot;up&quot; --&gt;
+&lt;div class=&quot;dropup&quot;&gt;
+  &lt;button class=&quot;btn btn-default dropdown-toggle&quot; type=&quot;button&quot; id=&quot;dropdownMenu2&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;true&quot;&gt;
+    Dropup
+    &lt;span class=&quot;caret&quot;&gt;&lt;&#x2F;span&gt;
+  &lt;&#x2F;button&gt;
+  &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot; aria-labelledby=&quot;dropdownMenu2&quot;&gt;
+    &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Action&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Another action&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Something else here&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Separated link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+&lt;&#x2F;div&gt;
+
+&lt;hr&gt;
+
+&lt;!-- Single button dropdown --&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+    Action &lt;span class=&quot;caret&quot;&gt;&lt;&#x2F;span&gt;
+  &lt;&#x2F;button&gt;
+  &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li class=&quot;divider&quot;&gt;&lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- Split button dropdown --&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Action&lt;&#x2F;button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-danger dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+    &lt;span class=&quot;caret&quot;&gt;&lt;&#x2F;span&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;Toggle Dropdown&lt;&#x2F;span&gt;
+  &lt;&#x2F;button&gt;
+  &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li class=&quot;divider&quot;&gt;&lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+&lt;&#x2F;div&gt;
+</code></pre>
+  </div>
+
+</div>
+<div class="styleguide-example">
+
+  <h3>InputGroup <em>_input_group.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>Input groups.</p>
+
+      <ul class="styleguide-modifier">
+          <li><strong>.lg</strong> - Large.</li>
+          <li><strong>.sm</strong> - Small.</li>
+      </ul>
+  </div>
+  <div class="styleguide-element">
+    <div class="input-group">
+  <span class="input-group-addon" id="basic-addon1">@</span>
+  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group">
+  <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+  <span class="input-group-addon" id="basic-addon2">@example.com</span>
+</div>
+
+<div class="input-group">
+  <span class="input-group-addon">$</span>
+  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+  <span class="input-group-addon">.00</span>
+</div>
+
+<!-- Checkboxes and radio addons -->
+<div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <span class="input-group-addon">
+        <input type="checkbox" aria-label="...">
+      </span>
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-6">
+    <div class="input-group">
+      <span class="input-group-addon">
+        <input type="radio" aria-label="...">
+      </span>
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+
+<!-- Button addons -->
+<div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go!</button>
+      </span>
+      <input type="text" class="form-control" placeholder="Search for...">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-6">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Search for...">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go!</button>
+      </span>
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+
+<!-- Buttons with dropdowns -->
+<div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-6">
+    <div class="input-group">
+      <input type="text" class="form-control" aria-label="...">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action <span class="caret"></span></button>
+        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+
+<!-- Segmented buttons -->
+<div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default">Action</button>
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+          <span class="caret"></span>
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div>
+      <input type="text" class="form-control" aria-label="Text input with segmented button dropdown">
+    </div><!-- /.input-group -->
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-6">
+    <div class="input-group">
+      <input type="text" class="form-control" aria-label="Text input with segmented button dropdown">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default">Action</button>
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+          <span class="caret"></span>
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div>
+    </div><!-- /.input-group -->
+  </div><!-- /.col-lg-6 -->
+</div>
+
+  </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.lg</span>
+      <div class="input-group lg">
+  <span class="input-group-addon" id="basic-addon1">@</span>
+  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group lg">
+  <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+  <span class="input-group-addon" id="basic-addon2">@example.com</span>
+</div>
+
+<div class="input-group lg">
+  <span class="input-group-addon">$</span>
+  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+  <span class="input-group-addon">.00</span>
+</div>
+
+<!-- Checkboxes and radio addons -->
+<div class="row">
+  <div class="col-lg-6">
+    <div class="input-group lg">
+      <span class="input-group-addon">
+        <input type="checkbox" aria-label="...">
+      </span>
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-6">
+    <div class="input-group lg">
+      <span class="input-group-addon">
+        <input type="radio" aria-label="...">
+      </span>
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+
+<!-- Button addons -->
+<div class="row">
+  <div class="col-lg-6">
+    <div class="input-group lg">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go!</button>
+      </span>
+      <input type="text" class="form-control" placeholder="Search for...">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-6">
+    <div class="input-group lg">
+      <input type="text" class="form-control" placeholder="Search for...">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go!</button>
+      </span>
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+
+<!-- Buttons with dropdowns -->
+<div class="row">
+  <div class="col-lg-6">
+    <div class="input-group lg">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-6">
+    <div class="input-group lg">
+      <input type="text" class="form-control" aria-label="...">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action <span class="caret"></span></button>
+        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+
+<!-- Segmented buttons -->
+<div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default">Action</button>
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+          <span class="caret"></span>
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div>
+      <input type="text" class="form-control" aria-label="Text input with segmented button dropdown">
+    </div><!-- /.input-group -->
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-6">
+    <div class="input-group">
+      <input type="text" class="form-control" aria-label="Text input with segmented button dropdown">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default">Action</button>
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+          <span class="caret"></span>
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div>
+    </div><!-- /.input-group -->
+  </div><!-- /.col-lg-6 -->
+</div>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.sm</span>
+      <div class="input-group sm">
+  <span class="input-group-addon" id="basic-addon1">@</span>
+  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group sm">
+  <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+  <span class="input-group-addon" id="basic-addon2">@example.com</span>
+</div>
+
+<div class="input-group sm">
+  <span class="input-group-addon">$</span>
+  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+  <span class="input-group-addon">.00</span>
+</div>
+
+<!-- Checkboxes and radio addons -->
+<div class="row">
+  <div class="col-lg-6">
+    <div class="input-group sm">
+      <span class="input-group-addon">
+        <input type="checkbox" aria-label="...">
+      </span>
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-6">
+    <div class="input-group sm">
+      <span class="input-group-addon">
+        <input type="radio" aria-label="...">
+      </span>
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+
+<!-- Button addons -->
+<div class="row">
+  <div class="col-lg-6">
+    <div class="input-group sm">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go!</button>
+      </span>
+      <input type="text" class="form-control" placeholder="Search for...">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-6">
+    <div class="input-group sm">
+      <input type="text" class="form-control" placeholder="Search for...">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go!</button>
+      </span>
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+
+<!-- Buttons with dropdowns -->
+<div class="row">
+  <div class="col-lg-6">
+    <div class="input-group sm">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-6">
+    <div class="input-group sm">
+      <input type="text" class="form-control" aria-label="...">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action <span class="caret"></span></button>
+        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+
+<!-- Segmented buttons -->
+<div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default">Action</button>
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+          <span class="caret"></span>
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div>
+      <input type="text" class="form-control" aria-label="Text input with segmented button dropdown">
+    </div><!-- /.input-group -->
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-6">
+    <div class="input-group">
+      <input type="text" class="form-control" aria-label="Text input with segmented button dropdown">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default">Action</button>
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+          <span class="caret"></span>
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div>
+    </div><!-- /.input-group -->
+  </div><!-- /.col-lg-6 -->
+</div>
+
+    </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;div class=&quot;input-group&quot;&gt;
+  &lt;span class=&quot;input-group-addon&quot; id=&quot;basic-addon1&quot;&gt;@&lt;&#x2F;span&gt;
+  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Username&quot; aria-describedby=&quot;basic-addon1&quot;&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;input-group&quot;&gt;
+  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Recipient&#x27;s username&quot; aria-describedby=&quot;basic-addon2&quot;&gt;
+  &lt;span class=&quot;input-group-addon&quot; id=&quot;basic-addon2&quot;&gt;@example.com&lt;&#x2F;span&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;input-group&quot;&gt;
+  &lt;span class=&quot;input-group-addon&quot;&gt;$&lt;&#x2F;span&gt;
+  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; aria-label=&quot;Amount (to the nearest dollar)&quot;&gt;
+  &lt;span class=&quot;input-group-addon&quot;&gt;.00&lt;&#x2F;span&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- Checkboxes and radio addons --&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-lg-6&quot;&gt;
+    &lt;div class=&quot;input-group&quot;&gt;
+      &lt;span class=&quot;input-group-addon&quot;&gt;
+        &lt;input type=&quot;checkbox&quot; aria-label=&quot;...&quot;&gt;
+      &lt;&#x2F;span&gt;
+      &lt;input type=&quot;text&quot; class=&quot;form-control&quot; aria-label=&quot;...&quot;&gt;
+    &lt;&#x2F;div&gt;&lt;!-- &#x2F;input-group --&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;.col-lg-6 --&gt;
+  &lt;div class=&quot;col-lg-6&quot;&gt;
+    &lt;div class=&quot;input-group&quot;&gt;
+      &lt;span class=&quot;input-group-addon&quot;&gt;
+        &lt;input type=&quot;radio&quot; aria-label=&quot;...&quot;&gt;
+      &lt;&#x2F;span&gt;
+      &lt;input type=&quot;text&quot; class=&quot;form-control&quot; aria-label=&quot;...&quot;&gt;
+    &lt;&#x2F;div&gt;&lt;!-- &#x2F;input-group --&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;.col-lg-6 --&gt;
+&lt;&#x2F;div&gt;&lt;!-- &#x2F;.row --&gt;
+
+&lt;!-- Button addons --&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-lg-6&quot;&gt;
+    &lt;div class=&quot;input-group&quot;&gt;
+      &lt;span class=&quot;input-group-btn&quot;&gt;
+        &lt;button class=&quot;btn btn-default&quot; type=&quot;button&quot;&gt;Go!&lt;&#x2F;button&gt;
+      &lt;&#x2F;span&gt;
+      &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Search for...&quot;&gt;
+    &lt;&#x2F;div&gt;&lt;!-- &#x2F;input-group --&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;.col-lg-6 --&gt;
+  &lt;div class=&quot;col-lg-6&quot;&gt;
+    &lt;div class=&quot;input-group&quot;&gt;
+      &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Search for...&quot;&gt;
+      &lt;span class=&quot;input-group-btn&quot;&gt;
+        &lt;button class=&quot;btn btn-default&quot; type=&quot;button&quot;&gt;Go!&lt;&#x2F;button&gt;
+      &lt;&#x2F;span&gt;
+    &lt;&#x2F;div&gt;&lt;!-- &#x2F;input-group --&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;.col-lg-6 --&gt;
+&lt;&#x2F;div&gt;&lt;!-- &#x2F;.row --&gt;
+
+&lt;!-- Buttons with dropdowns --&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-lg-6&quot;&gt;
+    &lt;div class=&quot;input-group&quot;&gt;
+      &lt;div class=&quot;input-group-btn&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;Action &lt;span class=&quot;caret&quot;&gt;&lt;&#x2F;span&gt;&lt;&#x2F;button&gt;
+        &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+          &lt;li class=&quot;divider&quot;&gt;&lt;&#x2F;li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+      &lt;&#x2F;div&gt;&lt;!-- &#x2F;btn-group --&gt;
+      &lt;input type=&quot;text&quot; class=&quot;form-control&quot; aria-label=&quot;...&quot;&gt;
+    &lt;&#x2F;div&gt;&lt;!-- &#x2F;input-group --&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;.col-lg-6 --&gt;
+  &lt;div class=&quot;col-lg-6&quot;&gt;
+    &lt;div class=&quot;input-group&quot;&gt;
+      &lt;input type=&quot;text&quot; class=&quot;form-control&quot; aria-label=&quot;...&quot;&gt;
+      &lt;div class=&quot;input-group-btn&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;Action &lt;span class=&quot;caret&quot;&gt;&lt;&#x2F;span&gt;&lt;&#x2F;button&gt;
+        &lt;ul class=&quot;dropdown-menu dropdown-menu-right&quot; role=&quot;menu&quot;&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+          &lt;li class=&quot;divider&quot;&gt;&lt;&#x2F;li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+      &lt;&#x2F;div&gt;&lt;!-- &#x2F;btn-group --&gt;
+    &lt;&#x2F;div&gt;&lt;!-- &#x2F;input-group --&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;.col-lg-6 --&gt;
+&lt;&#x2F;div&gt;&lt;!-- &#x2F;.row --&gt;
+
+&lt;!-- Segmented buttons --&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-lg-6&quot;&gt;
+    &lt;div class=&quot;input-group&quot;&gt;
+      &lt;div class=&quot;input-group-btn&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Action&lt;&#x2F;button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+          &lt;span class=&quot;caret&quot;&gt;&lt;&#x2F;span&gt;
+          &lt;span class=&quot;sr-only&quot;&gt;Toggle Dropdown&lt;&#x2F;span&gt;
+        &lt;&#x2F;button&gt;
+        &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+          &lt;li class=&quot;divider&quot;&gt;&lt;&#x2F;li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+      &lt;&#x2F;div&gt;
+      &lt;input type=&quot;text&quot; class=&quot;form-control&quot; aria-label=&quot;Text input with segmented button dropdown&quot;&gt;
+    &lt;&#x2F;div&gt;&lt;!-- &#x2F;.input-group --&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;.col-lg-6 --&gt;
+  &lt;div class=&quot;col-lg-6&quot;&gt;
+    &lt;div class=&quot;input-group&quot;&gt;
+      &lt;input type=&quot;text&quot; class=&quot;form-control&quot; aria-label=&quot;Text input with segmented button dropdown&quot;&gt;
+      &lt;div class=&quot;input-group-btn&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Action&lt;&#x2F;button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+          &lt;span class=&quot;caret&quot;&gt;&lt;&#x2F;span&gt;
+          &lt;span class=&quot;sr-only&quot;&gt;Toggle Dropdown&lt;&#x2F;span&gt;
+        &lt;&#x2F;button&gt;
+        &lt;ul class=&quot;dropdown-menu dropdown-menu-right&quot; role=&quot;menu&quot;&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+          &lt;li class=&quot;divider&quot;&gt;&lt;&#x2F;li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+      &lt;&#x2F;div&gt;
+    &lt;&#x2F;div&gt;&lt;!-- &#x2F;.input-group --&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;.col-lg-6 --&gt;
+&lt;&#x2F;div&gt;
+</code></pre>
+  </div>
+
+</div>
+<div class="styleguide-example">
+
+  <h3>Nav <em>_nav.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>Navs.</p>
+
+      <ul class="styleguide-modifier">
+          <li><strong>.tabs</strong> - Tabs.</li>
+          <li><strong>.pills</strong> - Pills.</li>
+          <li><strong>.stacked</strong> - Stacked.</li>
+          <li><strong>.justified</strong> - Justified.</li>
+      </ul>
+  </div>
+  <div class="styleguide-element">
+    <ul class="nav">
+  <li role="presentation" class="active"><a href="#">Home</a></li>
+  <li role="presentation"><a href="#">Profile</a></li>
+  <li role="presentation"><a href="#">Messages</a></li>
+  <li role="presentation" class="disabled"><a href="#">Disabled link</a></li>
+  <li role="presentation" class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+      Dropdown <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Separated link</a></li>
+    </ul>
+  </li>
+</ul>
+
+  </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.tabs</span>
+      <ul class="nav tabs">
+  <li role="presentation" class="active"><a href="#">Home</a></li>
+  <li role="presentation"><a href="#">Profile</a></li>
+  <li role="presentation"><a href="#">Messages</a></li>
+  <li role="presentation" class="disabled"><a href="#">Disabled link</a></li>
+  <li role="presentation" class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+      Dropdown <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Separated link</a></li>
+    </ul>
+  </li>
+</ul>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.pills</span>
+      <ul class="nav pills">
+  <li role="presentation" class="active"><a href="#">Home</a></li>
+  <li role="presentation"><a href="#">Profile</a></li>
+  <li role="presentation"><a href="#">Messages</a></li>
+  <li role="presentation" class="disabled"><a href="#">Disabled link</a></li>
+  <li role="presentation" class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+      Dropdown <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Separated link</a></li>
+    </ul>
+  </li>
+</ul>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.stacked</span>
+      <ul class="nav stacked">
+  <li role="presentation" class="active"><a href="#">Home</a></li>
+  <li role="presentation"><a href="#">Profile</a></li>
+  <li role="presentation"><a href="#">Messages</a></li>
+  <li role="presentation" class="disabled"><a href="#">Disabled link</a></li>
+  <li role="presentation" class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+      Dropdown <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Separated link</a></li>
+    </ul>
+  </li>
+</ul>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.justified</span>
+      <ul class="nav justified">
+  <li role="presentation" class="active"><a href="#">Home</a></li>
+  <li role="presentation"><a href="#">Profile</a></li>
+  <li role="presentation"><a href="#">Messages</a></li>
+  <li role="presentation" class="disabled"><a href="#">Disabled link</a></li>
+  <li role="presentation" class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+      Dropdown <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Separated link</a></li>
+    </ul>
+  </li>
+</ul>
+
+    </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;ul class=&quot;nav&quot;&gt;
+  &lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+  &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;Profile&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+  &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;Messages&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+  &lt;li role=&quot;presentation&quot; class=&quot;disabled&quot;&gt;&lt;a href=&quot;#&quot;&gt;Disabled link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+  &lt;li role=&quot;presentation&quot; class=&quot;dropdown&quot;&gt;
+    &lt;a class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot;&gt;
+      Dropdown &lt;span class=&quot;caret&quot;&gt;&lt;&#x2F;span&gt;
+    &lt;&#x2F;a&gt;
+    &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+      &lt;li class=&quot;divider&quot;&gt;&lt;&#x2F;li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</code></pre>
+  </div>
+
+</div>
+<div class="styleguide-example">
+
+  <h3>Navbar <em>_navbar.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>Navbars.</p>
+
+      <ul class="styleguide-modifier">
+          <li><strong>.default</strong> - Default style.</li>
+          <li><strong>.inverse</strong> - Inverted.</li>
+          <li><strong>.minimal</strong> - Minimal style.</li>
+          <li><strong>.minimal.inverse</strong> - Minimal style with inverted color.</li>
+      </ul>
+  </div>
+  <div class="styleguide-element">
+    <nav class="navbar">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+  </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.default</span>
+      <nav class="navbar default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.inverse</span>
+      <nav class="navbar inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.minimal</span>
+      <nav class="navbar minimal">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.minimal.inverse</span>
+      <nav class="navbar minimal inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;nav class=&quot;navbar&quot;&gt;
+  &lt;div class=&quot;container-fluid&quot;&gt;
+    &lt;!-- Brand and toggle get grouped for better mobile display --&gt;
+    &lt;div class=&quot;navbar-header&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;navbar-toggle collapsed&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#bs-example-navbar-collapse-1&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;&#x2F;span&gt;
+        &lt;span class=&quot;icon-bar&quot;&gt;&lt;&#x2F;span&gt;
+        &lt;span class=&quot;icon-bar&quot;&gt;&lt;&#x2F;span&gt;
+        &lt;span class=&quot;icon-bar&quot;&gt;&lt;&#x2F;span&gt;
+      &lt;&#x2F;button&gt;
+      &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Brand&lt;&#x2F;a&gt;
+    &lt;&#x2F;div&gt;
+
+    &lt;!-- Collect the nav links, forms, and other content for toggling --&gt;
+    &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;bs-example-navbar-collapse-1&quot;&gt;
+      &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+        &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Link &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li class=&quot;dropdown&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot;&gt;Dropdown &lt;span class=&quot;caret&quot;&gt;&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;
+          &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+            &lt;li class=&quot;divider&quot;&gt;&lt;&#x2F;li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+            &lt;li class=&quot;divider&quot;&gt;&lt;&#x2F;li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;One more separated link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+          &lt;&#x2F;ul&gt;
+        &lt;&#x2F;li&gt;
+      &lt;&#x2F;ul&gt;
+      &lt;form class=&quot;navbar-form navbar-left&quot; role=&quot;search&quot;&gt;
+        &lt;div class=&quot;form-group&quot;&gt;
+          &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Search&quot;&gt;
+        &lt;&#x2F;div&gt;
+        &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Submit&lt;&#x2F;button&gt;
+      &lt;&#x2F;form&gt;
+      &lt;ul class=&quot;nav navbar-nav navbar-right&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li class=&quot;dropdown&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot;&gt;Dropdown &lt;span class=&quot;caret&quot;&gt;&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;
+          &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+            &lt;li class=&quot;divider&quot;&gt;&lt;&#x2F;li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+          &lt;&#x2F;ul&gt;
+        &lt;&#x2F;li&gt;
+      &lt;&#x2F;ul&gt;
+    &lt;&#x2F;div&gt;&lt;!-- &#x2F;.navbar-collapse --&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;.container-fluid --&gt;
+&lt;&#x2F;nav&gt;
+</code></pre>
+  </div>
+
+</div>
+<div class="styleguide-example">
+
+  <h3>Breadcrumb <em>_breadcrumb.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>Breadcrumbs.</p>
+
+  </div>
+  <div class="styleguide-element">
+    <ol class="breadcrumb">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Library</a></li>
+  <li class="active">Data</li>
+</ol>
+
+  </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;ol class=&quot;breadcrumb&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Library&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+  &lt;li class=&quot;active&quot;&gt;Data&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+</code></pre>
+  </div>
+
+</div>
+<div class="styleguide-example">
+
+  <h3>Pagination <em>_pagination.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>Paginations.</p>
+
+      <ul class="styleguide-modifier">
+          <li><strong>.lg</strong> - Large.</li>
+          <li><strong>.sm</strong> - Small.</li>
+      </ul>
+  </div>
+  <div class="styleguide-element">
+    <nav>
+  <ul class="pagination">
+    <li class="disabled">
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="active"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+  </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.lg</span>
+      <nav>
+  <ul class="pagination lg">
+    <li class="disabled">
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="active"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.sm</span>
+      <nav>
+  <ul class="pagination sm">
+    <li class="disabled">
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="active"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+    </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;nav&gt;
+  &lt;ul class=&quot;pagination&quot;&gt;
+    &lt;li class=&quot;disabled&quot;&gt;
+      &lt;a href=&quot;#&quot; aria-label=&quot;Previous&quot;&gt;
+        &lt;span aria-hidden=&quot;true&quot;&gt;&amp;laquo;&lt;&#x2F;span&gt;
+      &lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;2&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;5&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li&gt;
+      &lt;a href=&quot;#&quot; aria-label=&quot;Next&quot;&gt;
+        &lt;span aria-hidden=&quot;true&quot;&gt;&amp;raquo;&lt;&#x2F;span&gt;
+      &lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+&lt;&#x2F;nav&gt;
+</code></pre>
+  </div>
+
+</div>
+<div class="styleguide-example">
+
+  <h3>Pager <em>_pager.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>Pagers.</p>
+
+  </div>
+  <div class="styleguide-element">
+    <nav>
+  <ul class="pager">
+    <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+    <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+  </ul>
+</nav>
+
+  </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;nav&gt;
+  &lt;ul class=&quot;pager&quot;&gt;
+    &lt;li class=&quot;previous disabled&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;larr;&lt;&#x2F;span&gt; Older&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li class=&quot;next&quot;&gt;&lt;a href=&quot;#&quot;&gt;Newer &lt;span aria-hidden=&quot;true&quot;&gt;&amp;rarr;&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+&lt;&#x2F;nav&gt;
+</code></pre>
+  </div>
+
+</div>
+<div class="styleguide-example">
+
+  <h3>Label <em>_label.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>Labels.</p>
+
+      <ul class="styleguide-modifier">
+          <li><strong>.primary</strong> - Primary.</li>
+          <li><strong>.success</strong> - Success.</li>
+          <li><strong>.info</strong> - Info.</li>
+          <li><strong>.warning</strong> - Warning.</li>
+          <li><strong>.danger</strong> - Danger.</li>
+      </ul>
+  </div>
+  <div class="styleguide-element">
+    <h1>Example heading <span class="label">New</span></h1>
+<h2>Example heading <span class="label">New</span></h2>
+<h3>Example heading <span class="label">New</span></h3>
+<h4>Example heading <span class="label">New</span></h4>
+<h5>Example heading <span class="label">New</span></h5>
+<h6>Example heading <span class="label">New</span></h6>
+<p>Example paragraph <span class="label">New</span></p>
+
+  </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.primary</span>
+      <h1>Example heading <span class="label primary">New</span></h1>
+<h2>Example heading <span class="label primary">New</span></h2>
+<h3>Example heading <span class="label primary">New</span></h3>
+<h4>Example heading <span class="label primary">New</span></h4>
+<h5>Example heading <span class="label primary">New</span></h5>
+<h6>Example heading <span class="label primary">New</span></h6>
+<p>Example paragraph <span class="label primary">New</span></p>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.success</span>
+      <h1>Example heading <span class="label success">New</span></h1>
+<h2>Example heading <span class="label success">New</span></h2>
+<h3>Example heading <span class="label success">New</span></h3>
+<h4>Example heading <span class="label success">New</span></h4>
+<h5>Example heading <span class="label success">New</span></h5>
+<h6>Example heading <span class="label success">New</span></h6>
+<p>Example paragraph <span class="label success">New</span></p>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.info</span>
+      <h1>Example heading <span class="label info">New</span></h1>
+<h2>Example heading <span class="label info">New</span></h2>
+<h3>Example heading <span class="label info">New</span></h3>
+<h4>Example heading <span class="label info">New</span></h4>
+<h5>Example heading <span class="label info">New</span></h5>
+<h6>Example heading <span class="label info">New</span></h6>
+<p>Example paragraph <span class="label info">New</span></p>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.warning</span>
+      <h1>Example heading <span class="label warning">New</span></h1>
+<h2>Example heading <span class="label warning">New</span></h2>
+<h3>Example heading <span class="label warning">New</span></h3>
+<h4>Example heading <span class="label warning">New</span></h4>
+<h5>Example heading <span class="label warning">New</span></h5>
+<h6>Example heading <span class="label warning">New</span></h6>
+<p>Example paragraph <span class="label warning">New</span></p>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.danger</span>
+      <h1>Example heading <span class="label danger">New</span></h1>
+<h2>Example heading <span class="label danger">New</span></h2>
+<h3>Example heading <span class="label danger">New</span></h3>
+<h4>Example heading <span class="label danger">New</span></h4>
+<h5>Example heading <span class="label danger">New</span></h5>
+<h6>Example heading <span class="label danger">New</span></h6>
+<p>Example paragraph <span class="label danger">New</span></p>
+
+    </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;h1&gt;Example heading &lt;span class=&quot;label&quot;&gt;New&lt;&#x2F;span&gt;&lt;&#x2F;h1&gt;
+&lt;h2&gt;Example heading &lt;span class=&quot;label&quot;&gt;New&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;h3&gt;Example heading &lt;span class=&quot;label&quot;&gt;New&lt;&#x2F;span&gt;&lt;&#x2F;h3&gt;
+&lt;h4&gt;Example heading &lt;span class=&quot;label&quot;&gt;New&lt;&#x2F;span&gt;&lt;&#x2F;h4&gt;
+&lt;h5&gt;Example heading &lt;span class=&quot;label&quot;&gt;New&lt;&#x2F;span&gt;&lt;&#x2F;h5&gt;
+&lt;h6&gt;Example heading &lt;span class=&quot;label&quot;&gt;New&lt;&#x2F;span&gt;&lt;&#x2F;h6&gt;
+&lt;p&gt;Example paragraph &lt;span class=&quot;label&quot;&gt;New&lt;&#x2F;span&gt;&lt;&#x2F;p&gt;
+</code></pre>
+  </div>
+
+</div>
+<div class="styleguide-example">
+
+  <h3>Badge <em>_badge.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>Badges.</p>
+
+  </div>
+  <div class="styleguide-element">
+    <a href="#">Inbox <span class="badge">42</span></a>
+
+<button class="btn" type="button">
+  Messages <span class="badge">4</span>
+</button>
+
+  </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;a href=&quot;#&quot;&gt;Inbox &lt;span class=&quot;badge&quot;&gt;42&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;
+
+&lt;button class=&quot;btn&quot; type=&quot;button&quot;&gt;
+  Messages &lt;span class=&quot;badge&quot;&gt;4&lt;&#x2F;span&gt;
+&lt;&#x2F;button&gt;
+</code></pre>
+  </div>
+
+</div>
+<div class="styleguide-example">
+
+  <h3>PageHeader <em>_page_header.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>Page headers.</p>
+
+  </div>
+  <div class="styleguide-element">
+    <div class="page-header">
+  <h1>Example page header <small>Subtext for header</small></h1>
+</div>
+
+  </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;div class=&quot;page-header&quot;&gt;
+  &lt;h1&gt;Example page header &lt;small&gt;Subtext for header&lt;&#x2F;small&gt;&lt;&#x2F;h1&gt;
+&lt;&#x2F;div&gt;
+</code></pre>
+  </div>
+
+</div>
+<div class="styleguide-example">
+
+  <h3>Thumbnail <em>_thumbnail.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>Thumbnails.</p>
+
+  </div>
+  <div class="styleguide-element">
+    <div class="row">
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img data-src="holder.js/100%x180">
+    </a>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img data-src="holder.js/100%x180">
+    </a>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img data-src="holder.js/100%x180">
+    </a>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img data-src="holder.js/100%x180">
+    </a>
+  </div>
+</div>
+
+<!-- Custom content -->
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img data-src="holder.js/100%x200">
+      <div class="caption">
+        <h3 id="thumbnail-label">Thumbnail label<a class="anchorjs-link" href="#thumbnail-label"><span class="anchorjs-icon"></span></a></h3>
+        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img data-src="holder.js/100%x200">
+      <div class="caption">
+        <h3 id="thumbnail-label">Thumbnail label<a class="anchorjs-link" href="#thumbnail-label"><span class="anchorjs-icon"></span></a></h3>
+        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img data-src="holder.js/100%x200">
+      <div class="caption">
+        <h3 id="thumbnail-label">Thumbnail label<a class="anchorjs-link" href="#thumbnail-label"><span class="anchorjs-icon"></span></a></h3>
+        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-xs-6 col-md-3&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;thumbnail&quot;&gt;
+      &lt;img data-src=&quot;holder.js&#x2F;100%x180&quot;&gt;
+    &lt;&#x2F;a&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;col-xs-6 col-md-3&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;thumbnail&quot;&gt;
+      &lt;img data-src=&quot;holder.js&#x2F;100%x180&quot;&gt;
+    &lt;&#x2F;a&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;col-xs-6 col-md-3&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;thumbnail&quot;&gt;
+      &lt;img data-src=&quot;holder.js&#x2F;100%x180&quot;&gt;
+    &lt;&#x2F;a&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;col-xs-6 col-md-3&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;thumbnail&quot;&gt;
+      &lt;img data-src=&quot;holder.js&#x2F;100%x180&quot;&gt;
+    &lt;&#x2F;a&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- Custom content --&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-sm-6 col-md-4&quot;&gt;
+    &lt;div class=&quot;thumbnail&quot;&gt;
+      &lt;img data-src=&quot;holder.js&#x2F;100%x200&quot;&gt;
+      &lt;div class=&quot;caption&quot;&gt;
+        &lt;h3 id=&quot;thumbnail-label&quot;&gt;Thumbnail label&lt;a class=&quot;anchorjs-link&quot; href=&quot;#thumbnail-label&quot;&gt;&lt;span class=&quot;anchorjs-icon&quot;&gt;&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+        &lt;p&gt;Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;&#x2F;p&gt;
+        &lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot; role=&quot;button&quot;&gt;Button&lt;&#x2F;a&gt; &lt;a href=&quot;#&quot; class=&quot;btn btn-default&quot; role=&quot;button&quot;&gt;Button&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+      &lt;&#x2F;div&gt;
+    &lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;col-sm-6 col-md-4&quot;&gt;
+    &lt;div class=&quot;thumbnail&quot;&gt;
+      &lt;img data-src=&quot;holder.js&#x2F;100%x200&quot;&gt;
+      &lt;div class=&quot;caption&quot;&gt;
+        &lt;h3 id=&quot;thumbnail-label&quot;&gt;Thumbnail label&lt;a class=&quot;anchorjs-link&quot; href=&quot;#thumbnail-label&quot;&gt;&lt;span class=&quot;anchorjs-icon&quot;&gt;&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+        &lt;p&gt;Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;&#x2F;p&gt;
+        &lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot; role=&quot;button&quot;&gt;Button&lt;&#x2F;a&gt; &lt;a href=&quot;#&quot; class=&quot;btn btn-default&quot; role=&quot;button&quot;&gt;Button&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+      &lt;&#x2F;div&gt;
+    &lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;col-sm-6 col-md-4&quot;&gt;
+    &lt;div class=&quot;thumbnail&quot;&gt;
+      &lt;img data-src=&quot;holder.js&#x2F;100%x200&quot;&gt;
+      &lt;div class=&quot;caption&quot;&gt;
+        &lt;h3 id=&quot;thumbnail-label&quot;&gt;Thumbnail label&lt;a class=&quot;anchorjs-link&quot; href=&quot;#thumbnail-label&quot;&gt;&lt;span class=&quot;anchorjs-icon&quot;&gt;&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+        &lt;p&gt;Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;&#x2F;p&gt;
+        &lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot; role=&quot;button&quot;&gt;Button&lt;&#x2F;a&gt; &lt;a href=&quot;#&quot; class=&quot;btn btn-default&quot; role=&quot;button&quot;&gt;Button&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+      &lt;&#x2F;div&gt;
+    &lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+</code></pre>
+  </div>
+
+</div>
+<div class="styleguide-example">
+
+  <h3>Alert <em>_alert.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>Alerts.</p>
+
+      <ul class="styleguide-modifier">
+          <li><strong>.success</strong> - Success.</li>
+          <li><strong>.info</strong> - Info.</li>
+          <li><strong>.warning</strong> - Warning.</li>
+          <li><strong>.danger</strong> - Danger.</li>
+          <li><strong>.dismissible</strong> - Dismissible. Requires <code>components/alert.js</code> to make interactive.</li>
+      </ul>
+  </div>
+  <div class="styleguide-element">
+    <div class="alert" role="alert">
+  <strong>Heads up!</strong> This <a href="#" class="alert-link">alert</a> needs your attention.
+</div>
+
+  </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.success</span>
+      <div class="alert success" role="alert">
+  <strong>Heads up!</strong> This <a href="#" class="alert-link">alert</a> needs your attention.
+</div>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.info</span>
+      <div class="alert info" role="alert">
+  <strong>Heads up!</strong> This <a href="#" class="alert-link">alert</a> needs your attention.
+</div>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.warning</span>
+      <div class="alert warning" role="alert">
+  <strong>Heads up!</strong> This <a href="#" class="alert-link">alert</a> needs your attention.
+</div>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.danger</span>
+      <div class="alert danger" role="alert">
+  <strong>Heads up!</strong> This <a href="#" class="alert-link">alert</a> needs your attention.
+</div>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.dismissible</span>
+      <div class="alert dismissible" role="alert">
+  <strong>Heads up!</strong> This <a href="#" class="alert-link">alert</a> needs your attention.
+</div>
+
+    </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;div class=&quot;alert&quot; role=&quot;alert&quot;&gt;
+  &lt;strong&gt;Heads up!&lt;&#x2F;strong&gt; This &lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;alert&lt;&#x2F;a&gt; needs your attention.
+&lt;&#x2F;div&gt;
+</code></pre>
+  </div>
+
+</div>
+<div class="styleguide-example">
+
+  <h3>ProgressBar <em>_progress_bar.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>Progress bars.</p>
+
+      <ul class="styleguide-modifier">
+          <li><strong>.primary</strong> - Primary.</li>
+          <li><strong>.success</strong> - Success.</li>
+          <li><strong>.info</strong> - Info.</li>
+          <li><strong>.warning</strong> - Warning.</li>
+          <li><strong>.danger</strong> - Danger.</li>
+          <li><strong>.striped</strong> - Striped.</li>
+          <li><strong>.striped.active</strong> - Stripe animated.</li>
+      </ul>
+  </div>
+  <div class="styleguide-element">
+    <div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+    <span class="sr-only">70% Complete</span>
+  </div>
+</div>
+
+<!-- With label -->
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+    60%
+  </div>
+</div>
+
+  </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.primary</span>
+      <div class="progress">
+  <div class="progress-bar primary" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+    <span class="sr-only">70% Complete</span>
+  </div>
+</div>
+
+<!-- With label -->
+<div class="progress">
+  <div class="progress-bar primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+    60%
+  </div>
+</div>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.success</span>
+      <div class="progress">
+  <div class="progress-bar success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+    <span class="sr-only">70% Complete</span>
+  </div>
+</div>
+
+<!-- With label -->
+<div class="progress">
+  <div class="progress-bar success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+    60%
+  </div>
+</div>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.info</span>
+      <div class="progress">
+  <div class="progress-bar info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+    <span class="sr-only">70% Complete</span>
+  </div>
+</div>
+
+<!-- With label -->
+<div class="progress">
+  <div class="progress-bar info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+    60%
+  </div>
+</div>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.warning</span>
+      <div class="progress">
+  <div class="progress-bar warning" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+    <span class="sr-only">70% Complete</span>
+  </div>
+</div>
+
+<!-- With label -->
+<div class="progress">
+  <div class="progress-bar warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+    60%
+  </div>
+</div>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.danger</span>
+      <div class="progress">
+  <div class="progress-bar danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+    <span class="sr-only">70% Complete</span>
+  </div>
+</div>
+
+<!-- With label -->
+<div class="progress">
+  <div class="progress-bar danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+    60%
+  </div>
+</div>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.striped</span>
+      <div class="progress">
+  <div class="progress-bar striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+    <span class="sr-only">70% Complete</span>
+  </div>
+</div>
+
+<!-- With label -->
+<div class="progress">
+  <div class="progress-bar striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+    60%
+  </div>
+</div>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.striped.active</span>
+      <div class="progress">
+  <div class="progress-bar striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+    <span class="sr-only">70% Complete</span>
+  </div>
+</div>
+
+<!-- With label -->
+<div class="progress">
+  <div class="progress-bar striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+    60%
+  </div>
+</div>
+
+    </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;div class=&quot;progress&quot;&gt;
+  &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;70&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 70%;&quot;&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;70% Complete&lt;&#x2F;span&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- With label --&gt;
+&lt;div class=&quot;progress&quot;&gt;
+  &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;60&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 60%;&quot;&gt;
+    60%
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+</code></pre>
+  </div>
+
+</div>
+<div class="styleguide-example">
+
+  <h3>Media <em>_media.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>Media objects.</p>
+
+  </div>
+  <div class="styleguide-element">
+    <div class="media">
+  <div class="media-left">
+    <a href="#">
+      <img class="media-object" data-src="holder.js/64x64">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading" id="media-heading">Media heading<a class="anchorjs-link" href="#media-heading"><span class="anchorjs-icon"></span></a></h4>
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+  </div>
+</div>
+<div class="media">
+  <div class="media-left">
+    <a href="#">
+      <img class="media-object" data-src="holder.js/64x64">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading" id="media-heading">Media heading<a class="anchorjs-link" href="#media-heading"><span class="anchorjs-icon"></span></a></h4>
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+    <div class="media">
+      <div class="media-left">
+        <a href="#">
+          <img class="media-object" data-src="holder.js/64x64">
+        </a>
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading" id="nested-media-heading">Nested media heading<a class="anchorjs-link" href="#nested-media-heading"><span class="anchorjs-icon"></span></a></h4>
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+      </div>
+    </div>
+  </div>
+</div>
+<div class="media">
+  <div class="media-body">
+    <h4 class="media-heading" id="media-heading">Media heading<a class="anchorjs-link" href="#media-heading"><span class="anchorjs-icon"></span></a></h4>
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+  </div>
+  <div class="media-right">
+    <a href="#">
+      <img class="media-object" data-src="holder.js/64x64">
+    </a>
+  </div>
+</div>
+<div class="media">
+  <div class="media-left">
+    <a href="#">
+      <img class="media-object" data-src="holder.js/64x64">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading" id="media-heading">Media heading<a class="anchorjs-link" href="#media-heading"><span class="anchorjs-icon"></span></a></h4>
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+  </div>
+  <div class="media-right">
+    <a href="#">
+      <img class="media-object" data-src="holder.js/64x64">
+    </a>
+  </div>
+</div>
+
+  </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;div class=&quot;media&quot;&gt;
+  &lt;div class=&quot;media-left&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;
+      &lt;img class=&quot;media-object&quot; data-src=&quot;holder.js&#x2F;64x64&quot;&gt;
+    &lt;&#x2F;a&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;media-body&quot;&gt;
+    &lt;h4 class=&quot;media-heading&quot; id=&quot;media-heading&quot;&gt;Media heading&lt;a class=&quot;anchorjs-link&quot; href=&quot;#media-heading&quot;&gt;&lt;span class=&quot;anchorjs-icon&quot;&gt;&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h4&gt;
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;media&quot;&gt;
+  &lt;div class=&quot;media-left&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;
+      &lt;img class=&quot;media-object&quot; data-src=&quot;holder.js&#x2F;64x64&quot;&gt;
+    &lt;&#x2F;a&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;media-body&quot;&gt;
+    &lt;h4 class=&quot;media-heading&quot; id=&quot;media-heading&quot;&gt;Media heading&lt;a class=&quot;anchorjs-link&quot; href=&quot;#media-heading&quot;&gt;&lt;span class=&quot;anchorjs-icon&quot;&gt;&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h4&gt;
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+    &lt;div class=&quot;media&quot;&gt;
+      &lt;div class=&quot;media-left&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;
+          &lt;img class=&quot;media-object&quot; data-src=&quot;holder.js&#x2F;64x64&quot;&gt;
+        &lt;&#x2F;a&gt;
+      &lt;&#x2F;div&gt;
+      &lt;div class=&quot;media-body&quot;&gt;
+        &lt;h4 class=&quot;media-heading&quot; id=&quot;nested-media-heading&quot;&gt;Nested media heading&lt;a class=&quot;anchorjs-link&quot; href=&quot;#nested-media-heading&quot;&gt;&lt;span class=&quot;anchorjs-icon&quot;&gt;&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h4&gt;
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+      &lt;&#x2F;div&gt;
+    &lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;media&quot;&gt;
+  &lt;div class=&quot;media-body&quot;&gt;
+    &lt;h4 class=&quot;media-heading&quot; id=&quot;media-heading&quot;&gt;Media heading&lt;a class=&quot;anchorjs-link&quot; href=&quot;#media-heading&quot;&gt;&lt;span class=&quot;anchorjs-icon&quot;&gt;&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h4&gt;
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;media-right&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;
+      &lt;img class=&quot;media-object&quot; data-src=&quot;holder.js&#x2F;64x64&quot;&gt;
+    &lt;&#x2F;a&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;media&quot;&gt;
+  &lt;div class=&quot;media-left&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;
+      &lt;img class=&quot;media-object&quot; data-src=&quot;holder.js&#x2F;64x64&quot;&gt;
+    &lt;&#x2F;a&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;media-body&quot;&gt;
+    &lt;h4 class=&quot;media-heading&quot; id=&quot;media-heading&quot;&gt;Media heading&lt;a class=&quot;anchorjs-link&quot; href=&quot;#media-heading&quot;&gt;&lt;span class=&quot;anchorjs-icon&quot;&gt;&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h4&gt;
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;media-right&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;
+      &lt;img class=&quot;media-object&quot; data-src=&quot;holder.js&#x2F;64x64&quot;&gt;
+    &lt;&#x2F;a&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+</code></pre>
+  </div>
+
+</div>
+<div class="styleguide-example">
+
+  <h3>ListGroup <em>_list_group.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>List groups.</p>
+
+  </div>
+  <div class="styleguide-element">
+    <div class="row">
+  <div class="col-lg-6">
+    <ul class="list-group">
+      <li class="list-group-item">Cras justo odio</li>
+      <li class="list-group-item">
+        <span class="badge">14</span>
+        Dapibus ac facilisis in
+      </li>
+      <li class="list-group-item active">Morbi leo risus</li>
+      <li class="list-group-item">Porta ac consectetur ac</li>
+      <li class="list-group-item disabled">Vestibulum at eros</li>
+    </ul>
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-6">
+    <!-- Custom content -->
+    <div class="list-group">
+      <div class="list-group-item active">
+        <h4 class="list-group-item-heading" id="list-group-item-heading">List group item heading<a class="anchorjs-link" href="#list-group-item-heading"><span class="anchorjs-icon"></span></a></h4>
+        <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+      </div>
+      <div class="list-group-item">
+        <h4 class="list-group-item-heading" id="list-group-item-heading">List group item heading<a class="anchorjs-link" href="#list-group-item-heading"><span class="anchorjs-icon"></span></a></h4>
+        <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+      </div>
+      <div class="list-group-item">
+        <h4 class="list-group-item-heading" id="list-group-item-heading">List group item heading<a class="anchorjs-link" href="#list-group-item-heading"><span class="anchorjs-icon"></span></a></h4>
+        <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+      </div>
+    </div>
+  </div><!-- /.col-lg-6 -->
+</div>
+
+  </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-lg-6&quot;&gt;
+    &lt;ul class=&quot;list-group&quot;&gt;
+      &lt;li class=&quot;list-group-item&quot;&gt;Cras justo odio&lt;&#x2F;li&gt;
+      &lt;li class=&quot;list-group-item&quot;&gt;
+        &lt;span class=&quot;badge&quot;&gt;14&lt;&#x2F;span&gt;
+        Dapibus ac facilisis in
+      &lt;&#x2F;li&gt;
+      &lt;li class=&quot;list-group-item active&quot;&gt;Morbi leo risus&lt;&#x2F;li&gt;
+      &lt;li class=&quot;list-group-item&quot;&gt;Porta ac consectetur ac&lt;&#x2F;li&gt;
+      &lt;li class=&quot;list-group-item disabled&quot;&gt;Vestibulum at eros&lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;.col-lg-6 --&gt;
+  &lt;div class=&quot;col-lg-6&quot;&gt;
+    &lt;!-- Custom content --&gt;
+    &lt;div class=&quot;list-group&quot;&gt;
+      &lt;div class=&quot;list-group-item active&quot;&gt;
+        &lt;h4 class=&quot;list-group-item-heading&quot; id=&quot;list-group-item-heading&quot;&gt;List group item heading&lt;a class=&quot;anchorjs-link&quot; href=&quot;#list-group-item-heading&quot;&gt;&lt;span class=&quot;anchorjs-icon&quot;&gt;&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h4&gt;
+        &lt;p class=&quot;list-group-item-text&quot;&gt;Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.&lt;&#x2F;p&gt;
+      &lt;&#x2F;div&gt;
+      &lt;div class=&quot;list-group-item&quot;&gt;
+        &lt;h4 class=&quot;list-group-item-heading&quot; id=&quot;list-group-item-heading&quot;&gt;List group item heading&lt;a class=&quot;anchorjs-link&quot; href=&quot;#list-group-item-heading&quot;&gt;&lt;span class=&quot;anchorjs-icon&quot;&gt;&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h4&gt;
+        &lt;p class=&quot;list-group-item-text&quot;&gt;Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.&lt;&#x2F;p&gt;
+      &lt;&#x2F;div&gt;
+      &lt;div class=&quot;list-group-item&quot;&gt;
+        &lt;h4 class=&quot;list-group-item-heading&quot; id=&quot;list-group-item-heading&quot;&gt;List group item heading&lt;a class=&quot;anchorjs-link&quot; href=&quot;#list-group-item-heading&quot;&gt;&lt;span class=&quot;anchorjs-icon&quot;&gt;&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h4&gt;
+        &lt;p class=&quot;list-group-item-text&quot;&gt;Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.&lt;&#x2F;p&gt;
+      &lt;&#x2F;div&gt;
+    &lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;.col-lg-6 --&gt;
+&lt;&#x2F;div&gt;
+</code></pre>
+  </div>
+
+</div>
+<div class="styleguide-example">
+
+  <h3>Panel <em>_panel.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>Panels.</p>
+
+      <ul class="styleguide-modifier">
+          <li><strong>.primary</strong> - Primary.</li>
+          <li><strong>.success</strong> - Success.</li>
+          <li><strong>.info</strong> - Info.</li>
+          <li><strong>.warning</strong> - Warning.</li>
+          <li><strong>.danger</strong> - Danger.</li>
+      </ul>
+  </div>
+  <div class="styleguide-element">
+    <div class="panel">
+  <div class="panel-body">
+    Basic panel example
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-6">
+    <!-- Panel with heading -->
+    <div class="panel">
+      <div class="panel-heading">Panel heading without title</div>
+      <div class="panel-body">
+        Panel content
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-heading">
+        <h3 class="panel-title">Panel title</h3>
+      </div>
+      <div class="panel-body">
+        Panel content
+      </div>
+    </div>
+
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-6">
+    <!-- Panel with footer -->
+    <div class="panel">
+      <div class="panel-body">
+        Panel content
+      </div>
+      <div class="panel-footer">Panel footer</div>
+    </div>
+  </div><!-- /.col-lg-6 -->
+</div>
+
+<div class="row">
+  <div class="col-lg-6">
+    <!-- Panel with tables -->
+    <div class="panel">
+      <!-- Default panel contents -->
+      <div class="panel-heading">Panel heading</div>
+      <div class="panel-body">
+        <p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+      </div>
+
+      <!-- Table -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-6">
+    <!-- Panel with list groups -->
+    <div class="panel">
+      <!-- Default panel contents -->
+      <div class="panel-heading">Panel heading</div>
+      <div class="panel-body">
+        <p>...</p>
+      </div>
+
+      <!-- List group -->
+      <ul class="list-group">
+        <li class="list-group-item">Cras justo odio</li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Morbi leo risus</li>
+        <li class="list-group-item">Porta ac consectetur ac</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+      </ul>
+    </div>
+  </div><!-- /.col-lg-6 -->
+</div>
+
+  </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.primary</span>
+      <div class="panel primary">
+  <div class="panel-body">
+    Basic panel example
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-6">
+    <!-- Panel with heading -->
+    <div class="panel primary">
+      <div class="panel-heading">Panel heading without title</div>
+      <div class="panel-body">
+        Panel content
+      </div>
+    </div>
+
+    <div class="panel primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Panel title</h3>
+      </div>
+      <div class="panel-body">
+        Panel content
+      </div>
+    </div>
+
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-6">
+    <!-- Panel with footer -->
+    <div class="panel primary">
+      <div class="panel-body">
+        Panel content
+      </div>
+      <div class="panel-footer">Panel footer</div>
+    </div>
+  </div><!-- /.col-lg-6 -->
+</div>
+
+<div class="row">
+  <div class="col-lg-6">
+    <!-- Panel with tables -->
+    <div class="panel primary">
+      <!-- Default panel contents -->
+      <div class="panel-heading">Panel heading</div>
+      <div class="panel-body">
+        <p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+      </div>
+
+      <!-- Table -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-6">
+    <!-- Panel with list groups -->
+    <div class="panel primary">
+      <!-- Default panel contents -->
+      <div class="panel-heading">Panel heading</div>
+      <div class="panel-body">
+        <p>...</p>
+      </div>
+
+      <!-- List group -->
+      <ul class="list-group">
+        <li class="list-group-item">Cras justo odio</li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Morbi leo risus</li>
+        <li class="list-group-item">Porta ac consectetur ac</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+      </ul>
+    </div>
+  </div><!-- /.col-lg-6 -->
+</div>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.success</span>
+      <div class="panel success">
+  <div class="panel-body">
+    Basic panel example
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-6">
+    <!-- Panel with heading -->
+    <div class="panel success">
+      <div class="panel-heading">Panel heading without title</div>
+      <div class="panel-body">
+        Panel content
+      </div>
+    </div>
+
+    <div class="panel success">
+      <div class="panel-heading">
+        <h3 class="panel-title">Panel title</h3>
+      </div>
+      <div class="panel-body">
+        Panel content
+      </div>
+    </div>
+
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-6">
+    <!-- Panel with footer -->
+    <div class="panel success">
+      <div class="panel-body">
+        Panel content
+      </div>
+      <div class="panel-footer">Panel footer</div>
+    </div>
+  </div><!-- /.col-lg-6 -->
+</div>
+
+<div class="row">
+  <div class="col-lg-6">
+    <!-- Panel with tables -->
+    <div class="panel success">
+      <!-- Default panel contents -->
+      <div class="panel-heading">Panel heading</div>
+      <div class="panel-body">
+        <p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+      </div>
+
+      <!-- Table -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-6">
+    <!-- Panel with list groups -->
+    <div class="panel success">
+      <!-- Default panel contents -->
+      <div class="panel-heading">Panel heading</div>
+      <div class="panel-body">
+        <p>...</p>
+      </div>
+
+      <!-- List group -->
+      <ul class="list-group">
+        <li class="list-group-item">Cras justo odio</li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Morbi leo risus</li>
+        <li class="list-group-item">Porta ac consectetur ac</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+      </ul>
+    </div>
+  </div><!-- /.col-lg-6 -->
+</div>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.info</span>
+      <div class="panel info">
+  <div class="panel-body">
+    Basic panel example
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-6">
+    <!-- Panel with heading -->
+    <div class="panel info">
+      <div class="panel-heading">Panel heading without title</div>
+      <div class="panel-body">
+        Panel content
+      </div>
+    </div>
+
+    <div class="panel info">
+      <div class="panel-heading">
+        <h3 class="panel-title">Panel title</h3>
+      </div>
+      <div class="panel-body">
+        Panel content
+      </div>
+    </div>
+
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-6">
+    <!-- Panel with footer -->
+    <div class="panel info">
+      <div class="panel-body">
+        Panel content
+      </div>
+      <div class="panel-footer">Panel footer</div>
+    </div>
+  </div><!-- /.col-lg-6 -->
+</div>
+
+<div class="row">
+  <div class="col-lg-6">
+    <!-- Panel with tables -->
+    <div class="panel info">
+      <!-- Default panel contents -->
+      <div class="panel-heading">Panel heading</div>
+      <div class="panel-body">
+        <p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+      </div>
+
+      <!-- Table -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-6">
+    <!-- Panel with list groups -->
+    <div class="panel info">
+      <!-- Default panel contents -->
+      <div class="panel-heading">Panel heading</div>
+      <div class="panel-body">
+        <p>...</p>
+      </div>
+
+      <!-- List group -->
+      <ul class="list-group">
+        <li class="list-group-item">Cras justo odio</li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Morbi leo risus</li>
+        <li class="list-group-item">Porta ac consectetur ac</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+      </ul>
+    </div>
+  </div><!-- /.col-lg-6 -->
+</div>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.warning</span>
+      <div class="panel warning">
+  <div class="panel-body">
+    Basic panel example
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-6">
+    <!-- Panel with heading -->
+    <div class="panel warning">
+      <div class="panel-heading">Panel heading without title</div>
+      <div class="panel-body">
+        Panel content
+      </div>
+    </div>
+
+    <div class="panel warning">
+      <div class="panel-heading">
+        <h3 class="panel-title">Panel title</h3>
+      </div>
+      <div class="panel-body">
+        Panel content
+      </div>
+    </div>
+
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-6">
+    <!-- Panel with footer -->
+    <div class="panel warning">
+      <div class="panel-body">
+        Panel content
+      </div>
+      <div class="panel-footer">Panel footer</div>
+    </div>
+  </div><!-- /.col-lg-6 -->
+</div>
+
+<div class="row">
+  <div class="col-lg-6">
+    <!-- Panel with tables -->
+    <div class="panel warning">
+      <!-- Default panel contents -->
+      <div class="panel-heading">Panel heading</div>
+      <div class="panel-body">
+        <p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+      </div>
+
+      <!-- Table -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-6">
+    <!-- Panel with list groups -->
+    <div class="panel warning">
+      <!-- Default panel contents -->
+      <div class="panel-heading">Panel heading</div>
+      <div class="panel-body">
+        <p>...</p>
+      </div>
+
+      <!-- List group -->
+      <ul class="list-group">
+        <li class="list-group-item">Cras justo odio</li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Morbi leo risus</li>
+        <li class="list-group-item">Porta ac consectetur ac</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+      </ul>
+    </div>
+  </div><!-- /.col-lg-6 -->
+</div>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.danger</span>
+      <div class="panel danger">
+  <div class="panel-body">
+    Basic panel example
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-6">
+    <!-- Panel with heading -->
+    <div class="panel danger">
+      <div class="panel-heading">Panel heading without title</div>
+      <div class="panel-body">
+        Panel content
+      </div>
+    </div>
+
+    <div class="panel danger">
+      <div class="panel-heading">
+        <h3 class="panel-title">Panel title</h3>
+      </div>
+      <div class="panel-body">
+        Panel content
+      </div>
+    </div>
+
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-6">
+    <!-- Panel with footer -->
+    <div class="panel danger">
+      <div class="panel-body">
+        Panel content
+      </div>
+      <div class="panel-footer">Panel footer</div>
+    </div>
+  </div><!-- /.col-lg-6 -->
+</div>
+
+<div class="row">
+  <div class="col-lg-6">
+    <!-- Panel with tables -->
+    <div class="panel danger">
+      <!-- Default panel contents -->
+      <div class="panel-heading">Panel heading</div>
+      <div class="panel-body">
+        <p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+      </div>
+
+      <!-- Table -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-6">
+    <!-- Panel with list groups -->
+    <div class="panel danger">
+      <!-- Default panel contents -->
+      <div class="panel-heading">Panel heading</div>
+      <div class="panel-body">
+        <p>...</p>
+      </div>
+
+      <!-- List group -->
+      <ul class="list-group">
+        <li class="list-group-item">Cras justo odio</li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Morbi leo risus</li>
+        <li class="list-group-item">Porta ac consectetur ac</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+      </ul>
+    </div>
+  </div><!-- /.col-lg-6 -->
+</div>
+
+    </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;div class=&quot;panel&quot;&gt;
+  &lt;div class=&quot;panel-body&quot;&gt;
+    Basic panel example
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-lg-6&quot;&gt;
+    &lt;!-- Panel with heading --&gt;
+    &lt;div class=&quot;panel&quot;&gt;
+      &lt;div class=&quot;panel-heading&quot;&gt;Panel heading without title&lt;&#x2F;div&gt;
+      &lt;div class=&quot;panel-body&quot;&gt;
+        Panel content
+      &lt;&#x2F;div&gt;
+    &lt;&#x2F;div&gt;
+
+    &lt;div class=&quot;panel&quot;&gt;
+      &lt;div class=&quot;panel-heading&quot;&gt;
+        &lt;h3 class=&quot;panel-title&quot;&gt;Panel title&lt;&#x2F;h3&gt;
+      &lt;&#x2F;div&gt;
+      &lt;div class=&quot;panel-body&quot;&gt;
+        Panel content
+      &lt;&#x2F;div&gt;
+    &lt;&#x2F;div&gt;
+
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;.col-lg-6 --&gt;
+  &lt;div class=&quot;col-lg-6&quot;&gt;
+    &lt;!-- Panel with footer --&gt;
+    &lt;div class=&quot;panel&quot;&gt;
+      &lt;div class=&quot;panel-body&quot;&gt;
+        Panel content
+      &lt;&#x2F;div&gt;
+      &lt;div class=&quot;panel-footer&quot;&gt;Panel footer&lt;&#x2F;div&gt;
+    &lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;.col-lg-6 --&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-lg-6&quot;&gt;
+    &lt;!-- Panel with tables --&gt;
+    &lt;div class=&quot;panel&quot;&gt;
+      &lt;!-- Default panel contents --&gt;
+      &lt;div class=&quot;panel-heading&quot;&gt;Panel heading&lt;&#x2F;div&gt;
+      &lt;div class=&quot;panel-body&quot;&gt;
+        &lt;p&gt;Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;&#x2F;p&gt;
+      &lt;&#x2F;div&gt;
+
+      &lt;!-- Table --&gt;
+      &lt;table class=&quot;table&quot;&gt;
+        &lt;thead&gt;
+          &lt;tr&gt;
+            &lt;th&gt;#&lt;&#x2F;th&gt;
+            &lt;th&gt;First Name&lt;&#x2F;th&gt;
+            &lt;th&gt;Last Name&lt;&#x2F;th&gt;
+            &lt;th&gt;Username&lt;&#x2F;th&gt;
+          &lt;&#x2F;tr&gt;
+        &lt;&#x2F;thead&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;1&lt;&#x2F;th&gt;
+            &lt;td&gt;Mark&lt;&#x2F;td&gt;
+            &lt;td&gt;Otto&lt;&#x2F;td&gt;
+            &lt;td&gt;@mdo&lt;&#x2F;td&gt;
+          &lt;&#x2F;tr&gt;
+          &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;2&lt;&#x2F;th&gt;
+            &lt;td&gt;Jacob&lt;&#x2F;td&gt;
+            &lt;td&gt;Thornton&lt;&#x2F;td&gt;
+            &lt;td&gt;@fat&lt;&#x2F;td&gt;
+          &lt;&#x2F;tr&gt;
+          &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;3&lt;&#x2F;th&gt;
+            &lt;td&gt;Larry&lt;&#x2F;td&gt;
+            &lt;td&gt;the Bird&lt;&#x2F;td&gt;
+            &lt;td&gt;@twitter&lt;&#x2F;td&gt;
+          &lt;&#x2F;tr&gt;
+        &lt;&#x2F;tbody&gt;
+      &lt;&#x2F;table&gt;
+    &lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;.col-lg-6 --&gt;
+  &lt;div class=&quot;col-lg-6&quot;&gt;
+    &lt;!-- Panel with list groups --&gt;
+    &lt;div class=&quot;panel&quot;&gt;
+      &lt;!-- Default panel contents --&gt;
+      &lt;div class=&quot;panel-heading&quot;&gt;Panel heading&lt;&#x2F;div&gt;
+      &lt;div class=&quot;panel-body&quot;&gt;
+        &lt;p&gt;...&lt;&#x2F;p&gt;
+      &lt;&#x2F;div&gt;
+
+      &lt;!-- List group --&gt;
+      &lt;ul class=&quot;list-group&quot;&gt;
+        &lt;li class=&quot;list-group-item&quot;&gt;Cras justo odio&lt;&#x2F;li&gt;
+        &lt;li class=&quot;list-group-item&quot;&gt;Dapibus ac facilisis in&lt;&#x2F;li&gt;
+        &lt;li class=&quot;list-group-item&quot;&gt;Morbi leo risus&lt;&#x2F;li&gt;
+        &lt;li class=&quot;list-group-item&quot;&gt;Porta ac consectetur ac&lt;&#x2F;li&gt;
+        &lt;li class=&quot;list-group-item&quot;&gt;Vestibulum at eros&lt;&#x2F;li&gt;
+      &lt;&#x2F;ul&gt;
+    &lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;.col-lg-6 --&gt;
+&lt;&#x2F;div&gt;
+</code></pre>
+  </div>
+
+</div>
+<div class="styleguide-example">
+
+  <h3>Well <em>_well.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>Use the well as a simple effect on an element to give it an inset effect.</p>
+
+      <ul class="styleguide-modifier">
+          <li><strong>.lg</strong> - Large.</li>
+          <li><strong>.sm</strong> - Small.</li>
+      </ul>
+  </div>
+  <div class="styleguide-element">
+    <div class="well">Look, I'm in a well!</div>
+
+  </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.lg</span>
+      <div class="well lg">Look, I'm in a well!</div>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.sm</span>
+      <div class="well sm">Look, I'm in a well!</div>
+
+    </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;div class=&quot;well&quot;&gt;Look, I&#x27;m in a well!&lt;&#x2F;div&gt;
+</code></pre>
+  </div>
+
+</div>
+<div class="styleguide-example">
+
+  <h3>Toast <em>_toast.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>Toast notifications.</p>
+
+<p>With <code>flash.js</code>, you can send flash toasts interactively using JS:
+ <code>flash.info()</code>, <code>flash.success()</code>, <code>flash.error()</code> and <code>flash.warning()</code>.</p>
+
+<p>For example:</p>
+
+<pre><code> flash.info(&amp;#x27;Hello World&amp;#x27;, &amp;#x27;&amp;lt;button class=&amp;quot;btn&amp;quot;&amp;gt;Ok&amp;lt;&amp;#x2F;button&amp;gt;&amp;#x27;, &amp;#x27;Hi&amp;#x27;);
+</code></pre>
+
+      <ul class="styleguide-modifier">
+          <li><strong>.success</strong> - Success.</li>
+          <li><strong>.error</strong> - error.</li>
+          <li><strong>.warning</strong> - Warning.</li>
+      </ul>
+  </div>
+  <div class="styleguide-element">
+    <div class="toast">
+  <div class="toast-content">
+    <div class="toast-message">Inconceivable!</div>
+  </div>
+</div>
+
+<!-- Toast with a title -->
+<div class="toast">
+  <div class="toast-content">
+    <div class="toast-title">CodeSeven</div>
+    <div class="toast-message">Have fun storming the castle!</div>
+  </div>
+</div>
+
+<!-- Toast with actions -->
+<div class="toast">
+  <div class="toast-content">
+    <div class="toast-message">It will be done</div>
+  </div>
+  <div class="toast-actions">
+    <button type="button" class="btn primary">Cancel</button>
+  </div>
+</div>
+
+<!-- Toast with two actions -->
+<div class="toast">
+  <div class="toast-content">
+    <div class="toast-title">CodeSeven</div>
+    <div class="toast-message">Have fun storming the castle!</div>
+  </div>
+  <div class="toast-actions">
+    <a class="btn">Close me</a>
+    <button type="button" class="btn">Surprise me</button>
+  </div>
+</div>
+
+  </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.success</span>
+      <div class="toast success">
+  <div class="toast-content">
+    <div class="toast-message">Inconceivable!</div>
+  </div>
+</div>
+
+<!-- Toast with a title -->
+<div class="toast success">
+  <div class="toast-content">
+    <div class="toast-title">CodeSeven</div>
+    <div class="toast-message">Have fun storming the castle!</div>
+  </div>
+</div>
+
+<!-- Toast with actions -->
+<div class="toast success">
+  <div class="toast-content">
+    <div class="toast-message">It will be done</div>
+  </div>
+  <div class="toast-actions">
+    <button type="button" class="btn primary">Cancel</button>
+  </div>
+</div>
+
+<!-- Toast with two actions -->
+<div class="toast success">
+  <div class="toast-content">
+    <div class="toast-title">CodeSeven</div>
+    <div class="toast-message">Have fun storming the castle!</div>
+  </div>
+  <div class="toast-actions">
+    <a class="btn">Close me</a>
+    <button type="button" class="btn">Surprise me</button>
+  </div>
+</div>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.error</span>
+      <div class="toast error">
+  <div class="toast-content">
+    <div class="toast-message">Inconceivable!</div>
+  </div>
+</div>
+
+<!-- Toast with a title -->
+<div class="toast error">
+  <div class="toast-content">
+    <div class="toast-title">CodeSeven</div>
+    <div class="toast-message">Have fun storming the castle!</div>
+  </div>
+</div>
+
+<!-- Toast with actions -->
+<div class="toast error">
+  <div class="toast-content">
+    <div class="toast-message">It will be done</div>
+  </div>
+  <div class="toast-actions">
+    <button type="button" class="btn primary">Cancel</button>
+  </div>
+</div>
+
+<!-- Toast with two actions -->
+<div class="toast error">
+  <div class="toast-content">
+    <div class="toast-title">CodeSeven</div>
+    <div class="toast-message">Have fun storming the castle!</div>
+  </div>
+  <div class="toast-actions">
+    <a class="btn">Close me</a>
+    <button type="button" class="btn">Surprise me</button>
+  </div>
+</div>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.warning</span>
+      <div class="toast warning">
+  <div class="toast-content">
+    <div class="toast-message">Inconceivable!</div>
+  </div>
+</div>
+
+<!-- Toast with a title -->
+<div class="toast warning">
+  <div class="toast-content">
+    <div class="toast-title">CodeSeven</div>
+    <div class="toast-message">Have fun storming the castle!</div>
+  </div>
+</div>
+
+<!-- Toast with actions -->
+<div class="toast warning">
+  <div class="toast-content">
+    <div class="toast-message">It will be done</div>
+  </div>
+  <div class="toast-actions">
+    <button type="button" class="btn primary">Cancel</button>
+  </div>
+</div>
+
+<!-- Toast with two actions -->
+<div class="toast warning">
+  <div class="toast-content">
+    <div class="toast-title">CodeSeven</div>
+    <div class="toast-message">Have fun storming the castle!</div>
+  </div>
+  <div class="toast-actions">
+    <a class="btn">Close me</a>
+    <button type="button" class="btn">Surprise me</button>
+  </div>
+</div>
+
+    </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;div class=&quot;toast&quot;&gt;
+  &lt;div class=&quot;toast-content&quot;&gt;
+    &lt;div class=&quot;toast-message&quot;&gt;Inconceivable!&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- Toast with a title --&gt;
+&lt;div class=&quot;toast&quot;&gt;
+  &lt;div class=&quot;toast-content&quot;&gt;
+    &lt;div class=&quot;toast-title&quot;&gt;CodeSeven&lt;&#x2F;div&gt;
+    &lt;div class=&quot;toast-message&quot;&gt;Have fun storming the castle!&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- Toast with actions --&gt;
+&lt;div class=&quot;toast&quot;&gt;
+  &lt;div class=&quot;toast-content&quot;&gt;
+    &lt;div class=&quot;toast-message&quot;&gt;It will be done&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;toast-actions&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn primary&quot;&gt;Cancel&lt;&#x2F;button&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- Toast with two actions --&gt;
+&lt;div class=&quot;toast&quot;&gt;
+  &lt;div class=&quot;toast-content&quot;&gt;
+    &lt;div class=&quot;toast-title&quot;&gt;CodeSeven&lt;&#x2F;div&gt;
+    &lt;div class=&quot;toast-message&quot;&gt;Have fun storming the castle!&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;toast-actions&quot;&gt;
+    &lt;a class=&quot;btn&quot;&gt;Close me&lt;&#x2F;a&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn&quot;&gt;Surprise me&lt;&#x2F;button&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+</code></pre>
+  </div>
+
+</div>
+
+  </div>
+
+
+      <section class="slogan bg-brand inverse bg-cover bg-fixed" style="background-image: url('../images/colorgy/background_blur_2_dark.jpg'); background-position-x: 50%; background-position-y: 50%;">
+        <div class="section bg-cover bg-fixed text-clip-background" style="background-image: url('../images/colorgy/background_blur_2_extra_light.jpg'); background-position-x: 50%; background-position-y: 50%;">
+          <div class="container text-center">
+            <h1>Color Your College!</h1>
+            <p class="lead">Colorgy - the hub of college life.</p>
+            <p class="h2 i-icon">
+              &#xf02d; &#xf073; &#xf19d; &#xf1d7; &#xf15c;
+            </p>
+            <br>
+            <div class="">快轉五天後，我的大學女友坐在我左邊，慢慢你會發現，和其他國家相比，你的選擇而回憶越是甜就是越傷人了而回憶越是甜，一雙眼和一雙眼短暫的交會擦身而過，挺胸，變成兩部悲傷的電影於是你含著眼淚飄飄盪盪跌跌撞撞的走著於是你，孤單的星星，已習慣忽略，像跌進了深淵獨處的時候，回天地這個起點，好想你，哭著，知走一光年，改變既有的模式！我允許你走進我的世界，那麼你至少得吃一對兒鯨魚……我身邊的朋友們啊，受傷的總是不願意放手的那一個！</div>
           </div>
         </div>
       </section>
 
-      <div class="container">
-        
-      </div>
+      <footer class="bg-dark inverse">
+
+        <div class="container footer-minimal text-center-sm text-center-xs">
+          <div style="display: table;">
+            <div style="display: table-cell; width: 99999px; vertical-align: middle;">
+              <p class="footer-minimal-clear">Colorgy Styleguide</p>
+              <div>
+                <a href="../globals/">Globals</a> /
+                <a href="../layouts/">Layouts</a> /
+                <a href="./">Components</a> /
+                <a href="../extras/">Extras</a>
+              </div>
+            </div>
+            <div class="hidden-xs hidden-sm" style="display: table-cell; vertical-align: middle;">
+              <div style="width: 300px;">
+                <img src="../images/colorgy/colorgy_logo_with_text_white.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="../javascripts/styleguide_body.js" type="text/javascript"></script>
   </body>
