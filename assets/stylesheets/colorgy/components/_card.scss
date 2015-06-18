@@ -1,0 +1,38 @@
+// *************************************
+//
+// Card.
+//
+// Styleguide Card.
+//
+// *************************************
+
+$card-padding-vertical: 20px !default;
+$card-padding-horizontal: 20px !default;
+$card-compact-padding-vertical: 12px !default;
+$card-compact-padding-horizontal: 12px !default;
+
+.card {
+	padding: $card-padding-horizontal $card-padding-vertical;
+
+	.card-content,
+	.card-action,
+	.card-image {
+		margin: (-$card-padding-horizontal) (-$card-padding-vertical);
+		padding: $card-padding-horizontal $card-padding-vertical;
+	}
+
+	.card-title {
+		margin-top: 0;
+	}
+
+	&.compact {
+		padding: $card-compact-padding-horizontal $card-compact-padding-vertical;
+
+		.card-content,
+		.card-action,
+		.card-image {
+			margin: (-$card-compact-padding-horizontal) (-$card-compact-padding-vertical);
+			padding: $card-compact-padding-horizontal $card-compact-padding-vertical;
+		}
+	}
+}

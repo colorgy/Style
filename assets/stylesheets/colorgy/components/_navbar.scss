@@ -930,10 +930,10 @@ $navbar-inverse-toggle-border-color:        #333 !default;
 		}
 	}
 
-	// Faded-out (no background) nav
+	// Transparent (no background) nav
 
-	&.fade,
-	&.fade.inverse {
+	&.transparent,
+	&.transparent.inverse {
 		background-color: transparent;
 		border-color: transparent;
 	}

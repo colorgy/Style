@@ -1,13 +1,3 @@
-// *************************************
-//
-//   Tools
-//   -> Global utilities
-//
-// *************************************
-
-@import "bootstrap/utilities";
-@import "bootstrap/responsive-utilities";
-
 .text-clip-background {
 
 	html.backgroundcliptext & {
@@ -63,36 +53,5 @@
 			-webkit-text-fill-color: transparent;
 			   -moz-text-fill-color: transparent;
 		}
-	}
-}
-
-.z-depth-0 {
-	@include z-depth-0;
-}
-
-.z-depth-1 {
-	@include z-depth-1;
-}
-
-.z-depth-2 {
-	@include z-depth-2;
-}
-
-.z-depth-3 {
-	@include z-depth-3;
-}
-
-.z-depth-4 {
-	@include z-depth-4;
-}
-
-.z-depth-5 {
-	@include z-depth-5;
-}
-
-.hover-to-transparent-background-color {
-
-	&:hover {
-		background-color: rgba(0,0,0, 0) !important;
 	}
 }

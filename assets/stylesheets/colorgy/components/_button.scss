@@ -163,7 +163,7 @@ $btn-outline-border-radius:      4px !default;
 		@include button-variant($btn-primary-color, $btn-primary-bg, transparent);
 	}
 
-	&.highlight {
+	&.highlighted {
 		@include button-variant($btn-highlight-color, $btn-highlight-bg, transparent);
 	}
 
@@ -222,7 +222,7 @@ $btn-outline-border-radius:      4px !default;
 			@include button-variant($btn-primary-color, $btn-primary-bg, transparent);
 		}
 
-		&.highlight {
+		&.highlighted {
 			@include button-variant($btn-highlight-color, $btn-highlight-bg, transparent);
 		}
 
@@ -259,7 +259,7 @@ $btn-outline-border-radius:      4px !default;
 			@include button-frameless-variant($btn-primary-border, $btn-primary-bg);
 		}
 
-		&.highlight {
+		&.highlighted {
 			@include button-frameless-variant($btn-highlight-border, $btn-highlight-bg);
 		}
 
@@ -332,7 +332,7 @@ $btn-outline-border-radius:      4px !default;
 			@include button-outline-variant($btn-primary-bg);
 		}
 
-		&.highlight {
+		&.highlighted {
 			@include button-outline-variant($btn-highlight-bg);
 		}
 

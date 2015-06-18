@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "fb8328c2f0fda5c9c9754eb1ccb84f2e94e2ceefb983253a735b22d4c33a2f08",
-    "current": "fb8328c2f0fda5c9c9754eb1ccb84f2e94e2ceefb983253a735b22d4c33a2f08"
+    "previous": "edee88f2e089fd4377189d4275023bf1b94d53963a63ae0c0a7d123586f3a703",
+    "current": "edee88f2e089fd4377189d4275023bf1b94d53963a63ae0c0a7d123586f3a703"
   },
   "fonts": [
     "assets/fonts/colorgy/colorgy-icons.ttf",
@@ -10,6 +10,10 @@
     "assets/fonts/colorgy/colorgy-icons.eot"
   ],
   "glyphs": {
+    "colorgy-text": {
+      "codepoint": 105010,
+      "source": "assets/fonts/colorgy/icons/colorgy-text.svg"
+    },
     "github": {
       "codepoint": 100525,
       "source": "assets/fonts/colorgy/icons/github.svg"

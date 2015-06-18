@@ -1,0 +1,96 @@
+<% wrap_layout :layout do %>
+  <body>
+    <script type="text/javascript">
+      window.index = false;
+    </script>
+
+    <style type="text/css">
+
+      img {
+        max-width: 100%;
+      }
+
+      .section {
+        padding: 70px 0;
+      }
+
+      footer {
+        padding: 80px 0;
+      }
+
+    </style>
+
+    <div class="wrapper<%= current_page.data.page_classes %>" id="wrapper">
+      <nav class="navbar minimal inverse fixed-top auto-transparent transparent auto-expanded expanded" role="navigation">
+        <div class="container">
+          <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar-collapse" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand has-image" href="#wrapper">
+              <%= image_tag 'colorgy/colorgy_logo_white.svg' %>
+            </a>
+          </div>
+          <div id="main-navbar-collapse" class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <ul class="nav navbar-nav">
+              <li>
+                <%= link_to 'Globals', '/globals.html', relative: true %>
+              </li>
+              <li>
+                <%= link_to 'Layouts', '/layouts.html', relative: true %>
+              </li>
+              <li>
+                <%= link_to 'Components', '/components.html', relative: true %>
+              </li>
+              <li>
+                <%= link_to 'Extras', '/extras.html', relative: true %>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <%= yield %>
+
+      <section class="slogan bg-brand inverse bg-cover bg-fixed" style="background-image: url('<%= image_path 'colorgy/background_blur_2_dark.jpg' %>'); background-position-x: 50%; background-position-y: 50%;">
+        <div class="section bg-cover bg-fixed text-clip-background" style="background-image: url('<%= image_path 'colorgy/background_blur_2_extra_light.jpg' %>'); background-position-x: 50%; background-position-y: 50%;">
+          <div class="container text-center">
+            <h1>Color Your College!</h1>
+            <p class="lead">Colorgy - the hub of college life.</p>
+            <p class="h2 i-icon">
+              &#xf02d; &#xf073; &#xf19d; &#xf1d7; &#xf15c;
+            </p>
+            <br>
+            <div class="">快轉五天後，我的大學女友坐在我左邊，慢慢你會發現，和其他國家相比，你的選擇而回憶越是甜就是越傷人了而回憶越是甜，一雙眼和一雙眼短暫的交會擦身而過，挺胸，變成兩部悲傷的電影於是你含著眼淚飄飄盪盪跌跌撞撞的走著於是你，孤單的星星，已習慣忽略，像跌進了深淵獨處的時候，回天地這個起點，好想你，哭著，知走一光年，改變既有的模式！我允許你走進我的世界，那麼你至少得吃一對兒鯨魚……我身邊的朋友們啊，受傷的總是不願意放手的那一個！</div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="bg-dark inverse">
+
+        <div class="container footer-minimal text-center-sm text-center-xs">
+          <div style="display: table;">
+            <div style="display: table-cell; width: 99999px; vertical-align: middle;">
+              <p class="footer-minimal-clear">Colorgy Styleguide</p>
+              <div>
+                <%= link_to 'Globals', '/globals.html', relative: true %> /
+                <%= link_to 'Layouts', '/layouts.html', relative: true %> /
+                <%= link_to 'Components', '/components.html', relative: true %> /
+                <%= link_to 'Extras', '/extras.html', relative: true %>
+              </div>
+            </div>
+            <div class="hidden-xs hidden-sm" style="display: table-cell; vertical-align: middle;">
+              <div style="width: 300px;">
+                <%= image_tag 'colorgy/colorgy_logo_with_text_white.svg' %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <%= javascript_include_tag :styleguide_body %>
+  </body>
+<% end %>

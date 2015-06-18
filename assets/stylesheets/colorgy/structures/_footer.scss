@@ -1,0 +1,36 @@
+.footer-minimal {
+	font-weight: 200;
+
+	&,
+	a,
+	a:hover {
+		color: rgba($text-color, .52);
+		text-decoration: none;
+	}
+
+	a:hover,
+	a:active,
+	a.active,
+	.active,
+	.footer-minimal-clear {
+		color: rgba($text-color, .9);
+	}
+}
+
+.inverse .footer-minimal,
+.footer-minimal.inverse {
+
+	&,
+	a,
+	a:hover {
+		color: rgba($text-color-inverse, .52);
+	}
+
+	a:hover,
+	a:active,
+	a.active,
+	.active,
+	.footer-minimal-clear {
+		color: rgba($text-color-inverse, .9);
+	}
+}

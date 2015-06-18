@@ -1,0 +1,44 @@
+<% wrap_layout :styleguide do %>
+  <style type="text/css">
+    body.main-navbar-collapse-collapse-in header .overlay,
+    body.main-navbar-collapse-collapsing-in header .overlay {
+      opacity: .8;
+    }
+  </style>
+  <header class="inverse" style="position: relative; background-image: url('<%= image_path 'colorgy/background_blur_1_dark.jpg' %>'); background-size: cover; background-position: 50% 10%; ">
+    <div class="text-clip-background" style="background-image: url('<%= image_path 'colorgy/background_blur_1_light.jpg' %>'); background-size: cover; background-position: 50% 10%; padding: 140px 0 20px; margin-bottom: 20px;">
+      <div class="container">
+        <div class="h1">
+          <% if current_page.data.page_name == 'globals' %>
+            <span class="text-clip-background-clear-text">Globals</span>
+          <% else %>
+            <small><%= link_to 'Globals', 'globals.html' %></small>
+          <% end %>
+          <small>/</small>
+          <% if current_page.data.page_name == 'layouts' %>
+            <span class="text-clip-background-clear-text">Layouts</span>
+          <% else %>
+            <small><%= link_to 'Layouts', 'layouts.html' %></small>
+          <% end %>
+          <small>/</small>
+          <% if current_page.data.page_name == 'components' %>
+            <span class="text-clip-background-clear-text">Components</span>
+          <% else %>
+            <small><%= link_to 'Components', 'components.html' %></small>
+          <% end %>
+          <small>/</small>
+          <% if current_page.data.page_name == 'extras' %>
+            <span class="text-clip-background-clear-text">Extras</span>
+          <% else %>
+            <small><%= link_to 'Extras', 'extras.html' %></small>
+          <% end %>
+        </div>
+        <p><%= current_page.data.page_description %></p>
+      </div>
+    </div>
+    <div class="overlay inverse hidden"></div>
+  </header>
+  <div class="container">
+    <%= yield %>
+  </div>
+<% end %>

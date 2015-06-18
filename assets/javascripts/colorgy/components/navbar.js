@@ -6,9 +6,9 @@ $(window).scroll(function() {
     $('.navbar.auto-expanded').addClass('expanded');
   }
 
-  if ($('.navbar.auto-fade').offset().top > 50) {
-    $('.navbar.auto-fade').removeClass('fade');
+  if ($('.navbar.auto-transparent').offset().top > 50) {
+    $('.navbar.auto-transparent').removeClass('transparent');
   } else {
-    $('.navbar.auto-fade').addClass('fade');
+    $('.navbar.auto-transparent').addClass('transparent');
   }
 });

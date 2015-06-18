@@ -20,6 +20,7 @@ $import-icon-font-name: 'colorgy-icons';
 [data-icon]:before { content: attr(data-icon); }
 
 [data-icon]:before,
+.i-colorgy-text:before,
 .i-github:before,
 .i-table-blank:before,
 .i-table-bottom-left-corner-rounded:before,
@@ -42,6 +43,7 @@ $import-icon-font-name: 'colorgy-icons';
   font-smoothing: antialiased;
 }
 
+.i-colorgy-text:before { content: "\19a32"; }
 .i-github:before { content: "\188ad"; }
 .i-table-blank:before { content: "\18894"; }
 .i-table-bottom-left-corner-rounded:before { content: "\188ab"; }
@@ -51,6 +53,7 @@ $import-icon-font-name: 'colorgy-icons';
 .i-table-top-left-corner-rounded:before { content: "\188a9"; }
 .i-table-top-right-corner-rounded:before { content: "\188aa"; }
 
+$font-colorgy-icons-colorgy-text: "\19a32";
 $font-colorgy-icons-github: "\188ad";
 $font-colorgy-icons-table-blank: "\18894";
 $font-colorgy-icons-table-bottom-left-corner-rounded: "\188ab";
