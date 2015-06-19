@@ -72,7 +72,7 @@
       opacity: .8;
     }
   </style>
-  <header class="inverse" style="position: relative; background-image: url('../images/colorgy/background_blur_1_dark.jpg'); background-size: cover; background-position: 50% 10%; ">
+  <header class="inverse bg-black" style="position: relative; background-image: url('../images/colorgy/background_blur_1_dark.jpg'); background-size: cover; background-position: 50% 10%; ">
     <div class="text-clip-background" style="background-image: url('../images/colorgy/background_blur_1_light.jpg'); background-size: cover; background-position: 50% 10%; padding: 140px 0 20px; margin-bottom: 20px;">
       <div class="container">
         <div class="h1">
@@ -90,24 +90,27 @@
     <div class="overlay inverse hidden"></div>
   </header>
   <div class="container">
-    <h2>3.1 按鈕</h2>
+      <div class="row">
+    <div class="col-md-9 main">
+      <h2 id='forms'>3.1. 按鈕、表單與控制組</h2>
+<h3 id='button'>3.1.1. 按鈕</h3>
 <div class="styleguide-example">
 
   <h3>Button <em>_button.scss</em></h3>
   <div class="styleguide-description markdown-body">
-    <p>Default buttons.</p>
+    <p>Button</p>
 
       <ul class="styleguide-modifier">
           <li><strong>:active, .active</strong> - Active state.</li>
           <li><strong>:disabled, .disabled</strong> - Disabled state.</li>
-          <li><strong>.raised</strong> - Raised button.</li>
-          <li><strong>.frameless</strong> - Frameless button.</li>
-          <li><strong>.outline</strong> - Outline button.</li>
-          <li><strong>.wide</strong> - Wide button.</li>
-          <li><strong>.lg</strong> - Large button.</li>
-          <li><strong>.sm</strong> - Small button.</li>
-          <li><strong>.xs</strong> - Tiny button.</li>
-          <li><strong>.block</strong> - Block level buttons, span the full width of a parent.</li>
+          <li><strong>.btn--raised</strong> - Raised button.</li>
+          <li><strong>.btn--frameless</strong> - Frameless button.</li>
+          <li><strong>.btn--outline</strong> - Outline button.</li>
+          <li><strong>.btn--wide</strong> - Wide button.</li>
+          <li><strong>.btn--lg</strong> - Large button.</li>
+          <li><strong>.btn--sm</strong> - Small button.</li>
+          <li><strong>.btn--xs</strong> - Tiny button.</li>
+          <li><strong>.btn--block</strong> - Block level buttons, span the full width of a parent.</li>
       </ul>
   </div>
   <div class="styleguide-element">
@@ -115,28 +118,28 @@
 <a class="btn" href="#" role="button">Link</a>
 <button class="btn" type="submit">Button</button>
 <input class="btn" type="button" value="Input">
-<input class="btn inverse" type="submit" value="Submit">
+<input class="btn btn--inverse" type="submit" value="Submit">
 
 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-<button type="button" class="btn primary">Primary</button>
+<button type="button" class="btn btn--primary">Primary</button>
 
 <!-- The highlighted action in a set of buttons -->
-<button type="button" class="btn highlighted">Highlight</button>
+<button type="button" class="btn btn--highlighted">Highlight</button>
 
 <!-- Indicates a successful or positive action -->
-<button type="button" class="btn success">Success</button>
+<button type="button" class="btn btn--success">Success</button>
 
 <!-- Contextual button for informational alert messages -->
-<button type="button" class="btn info">Info</button>
+<button type="button" class="btn btn--info">Info</button>
 
 <!-- Indicates caution should be taken with this action -->
-<button type="button" class="btn warning">Warning</button>
+<button type="button" class="btn btn--warning">Warning</button>
 
 <!-- Indicates a dangerous or potentially negative action -->
-<button type="button" class="btn danger">Danger</button>
+<button type="button" class="btn btn--danger">Danger</button>
 
 <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
-<button type="button" class="btn link">Link</button>
+<button type="button" class="btn btn--link">Link</button>
 
   </div>
     <div class="styleguide-element styleguide-modifier">
@@ -145,28 +148,28 @@
 <a class="btn pseudo-class-active,  active" href="#" role="button">Link</a>
 <button class="btn pseudo-class-active,  active" type="submit">Button</button>
 <input class="btn pseudo-class-active,  active" type="button" value="Input">
-<input class="btn inverse pseudo-class-active,  active" type="submit" value="Submit">
+<input class="btn btn--inverse pseudo-class-active,  active" type="submit" value="Submit">
 
 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-<button type="button" class="btn primary pseudo-class-active,  active">Primary</button>
+<button type="button" class="btn btn--primary pseudo-class-active,  active">Primary</button>
 
 <!-- The highlighted action in a set of buttons -->
-<button type="button" class="btn highlighted pseudo-class-active,  active">Highlight</button>
+<button type="button" class="btn btn--highlighted pseudo-class-active,  active">Highlight</button>
 
 <!-- Indicates a successful or positive action -->
-<button type="button" class="btn success pseudo-class-active,  active">Success</button>
+<button type="button" class="btn btn--success pseudo-class-active,  active">Success</button>
 
 <!-- Contextual button for informational alert messages -->
-<button type="button" class="btn info pseudo-class-active,  active">Info</button>
+<button type="button" class="btn btn--info pseudo-class-active,  active">Info</button>
 
 <!-- Indicates caution should be taken with this action -->
-<button type="button" class="btn warning pseudo-class-active,  active">Warning</button>
+<button type="button" class="btn btn--warning pseudo-class-active,  active">Warning</button>
 
 <!-- Indicates a dangerous or potentially negative action -->
-<button type="button" class="btn danger pseudo-class-active,  active">Danger</button>
+<button type="button" class="btn btn--danger pseudo-class-active,  active">Danger</button>
 
 <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
-<button type="button" class="btn link pseudo-class-active,  active">Link</button>
+<button type="button" class="btn btn--link pseudo-class-active,  active">Link</button>
 
     </div>
     <div class="styleguide-element styleguide-modifier">
@@ -175,268 +178,268 @@
 <a class="btn pseudo-class-disabled,  disabled" href="#" role="button">Link</a>
 <button class="btn pseudo-class-disabled,  disabled" type="submit">Button</button>
 <input class="btn pseudo-class-disabled,  disabled" type="button" value="Input">
-<input class="btn inverse pseudo-class-disabled,  disabled" type="submit" value="Submit">
+<input class="btn btn--inverse pseudo-class-disabled,  disabled" type="submit" value="Submit">
 
 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-<button type="button" class="btn primary pseudo-class-disabled,  disabled">Primary</button>
+<button type="button" class="btn btn--primary pseudo-class-disabled,  disabled">Primary</button>
 
 <!-- The highlighted action in a set of buttons -->
-<button type="button" class="btn highlighted pseudo-class-disabled,  disabled">Highlight</button>
+<button type="button" class="btn btn--highlighted pseudo-class-disabled,  disabled">Highlight</button>
 
 <!-- Indicates a successful or positive action -->
-<button type="button" class="btn success pseudo-class-disabled,  disabled">Success</button>
+<button type="button" class="btn btn--success pseudo-class-disabled,  disabled">Success</button>
 
 <!-- Contextual button for informational alert messages -->
-<button type="button" class="btn info pseudo-class-disabled,  disabled">Info</button>
+<button type="button" class="btn btn--info pseudo-class-disabled,  disabled">Info</button>
 
 <!-- Indicates caution should be taken with this action -->
-<button type="button" class="btn warning pseudo-class-disabled,  disabled">Warning</button>
+<button type="button" class="btn btn--warning pseudo-class-disabled,  disabled">Warning</button>
 
 <!-- Indicates a dangerous or potentially negative action -->
-<button type="button" class="btn danger pseudo-class-disabled,  disabled">Danger</button>
+<button type="button" class="btn btn--danger pseudo-class-disabled,  disabled">Danger</button>
 
 <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
-<button type="button" class="btn link pseudo-class-disabled,  disabled">Link</button>
+<button type="button" class="btn btn--link pseudo-class-disabled,  disabled">Link</button>
 
     </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.raised</span>
+      <span class="styleguide-modifier-name">.btn--raised</span>
       <!-- Different types of button elements -->
-<a class="btn raised" href="#" role="button">Link</a>
-<button class="btn raised" type="submit">Button</button>
-<input class="btn raised" type="button" value="Input">
-<input class="btn inverse raised" type="submit" value="Submit">
+<a class="btn btn--raised" href="#" role="button">Link</a>
+<button class="btn btn--raised" type="submit">Button</button>
+<input class="btn btn--raised" type="button" value="Input">
+<input class="btn btn--inverse btn--raised" type="submit" value="Submit">
 
 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-<button type="button" class="btn primary raised">Primary</button>
+<button type="button" class="btn btn--primary btn--raised">Primary</button>
 
 <!-- The highlighted action in a set of buttons -->
-<button type="button" class="btn highlighted raised">Highlight</button>
+<button type="button" class="btn btn--highlighted btn--raised">Highlight</button>
 
 <!-- Indicates a successful or positive action -->
-<button type="button" class="btn success raised">Success</button>
+<button type="button" class="btn btn--success btn--raised">Success</button>
 
 <!-- Contextual button for informational alert messages -->
-<button type="button" class="btn info raised">Info</button>
+<button type="button" class="btn btn--info btn--raised">Info</button>
 
 <!-- Indicates caution should be taken with this action -->
-<button type="button" class="btn warning raised">Warning</button>
+<button type="button" class="btn btn--warning btn--raised">Warning</button>
 
 <!-- Indicates a dangerous or potentially negative action -->
-<button type="button" class="btn danger raised">Danger</button>
+<button type="button" class="btn btn--danger btn--raised">Danger</button>
 
 <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
-<button type="button" class="btn link raised">Link</button>
+<button type="button" class="btn btn--link btn--raised">Link</button>
 
     </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.frameless</span>
+      <span class="styleguide-modifier-name">.btn--frameless</span>
       <!-- Different types of button elements -->
-<a class="btn frameless" href="#" role="button">Link</a>
-<button class="btn frameless" type="submit">Button</button>
-<input class="btn frameless" type="button" value="Input">
-<input class="btn inverse frameless" type="submit" value="Submit">
+<a class="btn btn--frameless" href="#" role="button">Link</a>
+<button class="btn btn--frameless" type="submit">Button</button>
+<input class="btn btn--frameless" type="button" value="Input">
+<input class="btn btn--inverse btn--frameless" type="submit" value="Submit">
 
 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-<button type="button" class="btn primary frameless">Primary</button>
+<button type="button" class="btn btn--primary btn--frameless">Primary</button>
 
 <!-- The highlighted action in a set of buttons -->
-<button type="button" class="btn highlighted frameless">Highlight</button>
+<button type="button" class="btn btn--highlighted btn--frameless">Highlight</button>
 
 <!-- Indicates a successful or positive action -->
-<button type="button" class="btn success frameless">Success</button>
+<button type="button" class="btn btn--success btn--frameless">Success</button>
 
 <!-- Contextual button for informational alert messages -->
-<button type="button" class="btn info frameless">Info</button>
+<button type="button" class="btn btn--info btn--frameless">Info</button>
 
 <!-- Indicates caution should be taken with this action -->
-<button type="button" class="btn warning frameless">Warning</button>
+<button type="button" class="btn btn--warning btn--frameless">Warning</button>
 
 <!-- Indicates a dangerous or potentially negative action -->
-<button type="button" class="btn danger frameless">Danger</button>
+<button type="button" class="btn btn--danger btn--frameless">Danger</button>
 
 <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
-<button type="button" class="btn link frameless">Link</button>
+<button type="button" class="btn btn--link btn--frameless">Link</button>
 
     </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.outline</span>
+      <span class="styleguide-modifier-name">.btn--outline</span>
       <!-- Different types of button elements -->
-<a class="btn outline" href="#" role="button">Link</a>
-<button class="btn outline" type="submit">Button</button>
-<input class="btn outline" type="button" value="Input">
-<input class="btn inverse outline" type="submit" value="Submit">
+<a class="btn btn--outline" href="#" role="button">Link</a>
+<button class="btn btn--outline" type="submit">Button</button>
+<input class="btn btn--outline" type="button" value="Input">
+<input class="btn btn--inverse btn--outline" type="submit" value="Submit">
 
 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-<button type="button" class="btn primary outline">Primary</button>
+<button type="button" class="btn btn--primary btn--outline">Primary</button>
 
 <!-- The highlighted action in a set of buttons -->
-<button type="button" class="btn highlighted outline">Highlight</button>
+<button type="button" class="btn btn--highlighted btn--outline">Highlight</button>
 
 <!-- Indicates a successful or positive action -->
-<button type="button" class="btn success outline">Success</button>
+<button type="button" class="btn btn--success btn--outline">Success</button>
 
 <!-- Contextual button for informational alert messages -->
-<button type="button" class="btn info outline">Info</button>
+<button type="button" class="btn btn--info btn--outline">Info</button>
 
 <!-- Indicates caution should be taken with this action -->
-<button type="button" class="btn warning outline">Warning</button>
+<button type="button" class="btn btn--warning btn--outline">Warning</button>
 
 <!-- Indicates a dangerous or potentially negative action -->
-<button type="button" class="btn danger outline">Danger</button>
+<button type="button" class="btn btn--danger btn--outline">Danger</button>
 
 <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
-<button type="button" class="btn link outline">Link</button>
+<button type="button" class="btn btn--link btn--outline">Link</button>
 
     </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.wide</span>
+      <span class="styleguide-modifier-name">.btn--wide</span>
       <!-- Different types of button elements -->
-<a class="btn wide" href="#" role="button">Link</a>
-<button class="btn wide" type="submit">Button</button>
-<input class="btn wide" type="button" value="Input">
-<input class="btn inverse wide" type="submit" value="Submit">
+<a class="btn btn--wide" href="#" role="button">Link</a>
+<button class="btn btn--wide" type="submit">Button</button>
+<input class="btn btn--wide" type="button" value="Input">
+<input class="btn btn--inverse btn--wide" type="submit" value="Submit">
 
 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-<button type="button" class="btn primary wide">Primary</button>
+<button type="button" class="btn btn--primary btn--wide">Primary</button>
 
 <!-- The highlighted action in a set of buttons -->
-<button type="button" class="btn highlighted wide">Highlight</button>
+<button type="button" class="btn btn--highlighted btn--wide">Highlight</button>
 
 <!-- Indicates a successful or positive action -->
-<button type="button" class="btn success wide">Success</button>
+<button type="button" class="btn btn--success btn--wide">Success</button>
 
 <!-- Contextual button for informational alert messages -->
-<button type="button" class="btn info wide">Info</button>
+<button type="button" class="btn btn--info btn--wide">Info</button>
 
 <!-- Indicates caution should be taken with this action -->
-<button type="button" class="btn warning wide">Warning</button>
+<button type="button" class="btn btn--warning btn--wide">Warning</button>
 
 <!-- Indicates a dangerous or potentially negative action -->
-<button type="button" class="btn danger wide">Danger</button>
+<button type="button" class="btn btn--danger btn--wide">Danger</button>
 
 <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
-<button type="button" class="btn link wide">Link</button>
+<button type="button" class="btn btn--link btn--wide">Link</button>
 
     </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.lg</span>
+      <span class="styleguide-modifier-name">.btn--lg</span>
       <!-- Different types of button elements -->
-<a class="btn lg" href="#" role="button">Link</a>
-<button class="btn lg" type="submit">Button</button>
-<input class="btn lg" type="button" value="Input">
-<input class="btn inverse lg" type="submit" value="Submit">
+<a class="btn btn--lg" href="#" role="button">Link</a>
+<button class="btn btn--lg" type="submit">Button</button>
+<input class="btn btn--lg" type="button" value="Input">
+<input class="btn btn--inverse btn--lg" type="submit" value="Submit">
 
 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-<button type="button" class="btn primary lg">Primary</button>
+<button type="button" class="btn btn--primary btn--lg">Primary</button>
 
 <!-- The highlighted action in a set of buttons -->
-<button type="button" class="btn highlighted lg">Highlight</button>
+<button type="button" class="btn btn--highlighted btn--lg">Highlight</button>
 
 <!-- Indicates a successful or positive action -->
-<button type="button" class="btn success lg">Success</button>
+<button type="button" class="btn btn--success btn--lg">Success</button>
 
 <!-- Contextual button for informational alert messages -->
-<button type="button" class="btn info lg">Info</button>
+<button type="button" class="btn btn--info btn--lg">Info</button>
 
 <!-- Indicates caution should be taken with this action -->
-<button type="button" class="btn warning lg">Warning</button>
+<button type="button" class="btn btn--warning btn--lg">Warning</button>
 
 <!-- Indicates a dangerous or potentially negative action -->
-<button type="button" class="btn danger lg">Danger</button>
+<button type="button" class="btn btn--danger btn--lg">Danger</button>
 
 <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
-<button type="button" class="btn link lg">Link</button>
+<button type="button" class="btn btn--link btn--lg">Link</button>
 
     </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.sm</span>
+      <span class="styleguide-modifier-name">.btn--sm</span>
       <!-- Different types of button elements -->
-<a class="btn sm" href="#" role="button">Link</a>
-<button class="btn sm" type="submit">Button</button>
-<input class="btn sm" type="button" value="Input">
-<input class="btn inverse sm" type="submit" value="Submit">
+<a class="btn btn--sm" href="#" role="button">Link</a>
+<button class="btn btn--sm" type="submit">Button</button>
+<input class="btn btn--sm" type="button" value="Input">
+<input class="btn btn--inverse btn--sm" type="submit" value="Submit">
 
 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-<button type="button" class="btn primary sm">Primary</button>
+<button type="button" class="btn btn--primary btn--sm">Primary</button>
 
 <!-- The highlighted action in a set of buttons -->
-<button type="button" class="btn highlighted sm">Highlight</button>
+<button type="button" class="btn btn--highlighted btn--sm">Highlight</button>
 
 <!-- Indicates a successful or positive action -->
-<button type="button" class="btn success sm">Success</button>
+<button type="button" class="btn btn--success btn--sm">Success</button>
 
 <!-- Contextual button for informational alert messages -->
-<button type="button" class="btn info sm">Info</button>
+<button type="button" class="btn btn--info btn--sm">Info</button>
 
 <!-- Indicates caution should be taken with this action -->
-<button type="button" class="btn warning sm">Warning</button>
+<button type="button" class="btn btn--warning btn--sm">Warning</button>
 
 <!-- Indicates a dangerous or potentially negative action -->
-<button type="button" class="btn danger sm">Danger</button>
+<button type="button" class="btn btn--danger btn--sm">Danger</button>
 
 <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
-<button type="button" class="btn link sm">Link</button>
+<button type="button" class="btn btn--link btn--sm">Link</button>
 
     </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.xs</span>
+      <span class="styleguide-modifier-name">.btn--xs</span>
       <!-- Different types of button elements -->
-<a class="btn xs" href="#" role="button">Link</a>
-<button class="btn xs" type="submit">Button</button>
-<input class="btn xs" type="button" value="Input">
-<input class="btn inverse xs" type="submit" value="Submit">
+<a class="btn btn--xs" href="#" role="button">Link</a>
+<button class="btn btn--xs" type="submit">Button</button>
+<input class="btn btn--xs" type="button" value="Input">
+<input class="btn btn--inverse btn--xs" type="submit" value="Submit">
 
 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-<button type="button" class="btn primary xs">Primary</button>
+<button type="button" class="btn btn--primary btn--xs">Primary</button>
 
 <!-- The highlighted action in a set of buttons -->
-<button type="button" class="btn highlighted xs">Highlight</button>
+<button type="button" class="btn btn--highlighted btn--xs">Highlight</button>
 
 <!-- Indicates a successful or positive action -->
-<button type="button" class="btn success xs">Success</button>
+<button type="button" class="btn btn--success btn--xs">Success</button>
 
 <!-- Contextual button for informational alert messages -->
-<button type="button" class="btn info xs">Info</button>
+<button type="button" class="btn btn--info btn--xs">Info</button>
 
 <!-- Indicates caution should be taken with this action -->
-<button type="button" class="btn warning xs">Warning</button>
+<button type="button" class="btn btn--warning btn--xs">Warning</button>
 
 <!-- Indicates a dangerous or potentially negative action -->
-<button type="button" class="btn danger xs">Danger</button>
+<button type="button" class="btn btn--danger btn--xs">Danger</button>
 
 <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
-<button type="button" class="btn link xs">Link</button>
+<button type="button" class="btn btn--link btn--xs">Link</button>
 
     </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.block</span>
+      <span class="styleguide-modifier-name">.btn--block</span>
       <!-- Different types of button elements -->
-<a class="btn block" href="#" role="button">Link</a>
-<button class="btn block" type="submit">Button</button>
-<input class="btn block" type="button" value="Input">
-<input class="btn inverse block" type="submit" value="Submit">
+<a class="btn btn--block" href="#" role="button">Link</a>
+<button class="btn btn--block" type="submit">Button</button>
+<input class="btn btn--block" type="button" value="Input">
+<input class="btn btn--inverse btn--block" type="submit" value="Submit">
 
 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-<button type="button" class="btn primary block">Primary</button>
+<button type="button" class="btn btn--primary btn--block">Primary</button>
 
 <!-- The highlighted action in a set of buttons -->
-<button type="button" class="btn highlighted block">Highlight</button>
+<button type="button" class="btn btn--highlighted btn--block">Highlight</button>
 
 <!-- Indicates a successful or positive action -->
-<button type="button" class="btn success block">Success</button>
+<button type="button" class="btn btn--success btn--block">Success</button>
 
 <!-- Contextual button for informational alert messages -->
-<button type="button" class="btn info block">Info</button>
+<button type="button" class="btn btn--info btn--block">Info</button>
 
 <!-- Indicates caution should be taken with this action -->
-<button type="button" class="btn warning block">Warning</button>
+<button type="button" class="btn btn--warning btn--block">Warning</button>
 
 <!-- Indicates a dangerous or potentially negative action -->
-<button type="button" class="btn danger block">Danger</button>
+<button type="button" class="btn btn--danger btn--block">Danger</button>
 
 <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
-<button type="button" class="btn link block">Link</button>
+<button type="button" class="btn btn--link btn--block">Link</button>
 
     </div>
   <div class="styleguide-html">
@@ -444,32 +447,33 @@
 &lt;a class=&quot;btn&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Link&lt;&#x2F;a&gt;
 &lt;button class=&quot;btn&quot; type=&quot;submit&quot;&gt;Button&lt;&#x2F;button&gt;
 &lt;input class=&quot;btn&quot; type=&quot;button&quot; value=&quot;Input&quot;&gt;
-&lt;input class=&quot;btn inverse&quot; type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+&lt;input class=&quot;btn btn--inverse&quot; type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
 
 &lt;!-- Provides extra visual weight and identifies the primary action in a set of buttons --&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn primary&quot;&gt;Primary&lt;&#x2F;button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn--primary&quot;&gt;Primary&lt;&#x2F;button&gt;
 
 &lt;!-- The highlighted action in a set of buttons --&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn highlighted&quot;&gt;Highlight&lt;&#x2F;button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn--highlighted&quot;&gt;Highlight&lt;&#x2F;button&gt;
 
 &lt;!-- Indicates a successful or positive action --&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn success&quot;&gt;Success&lt;&#x2F;button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn--success&quot;&gt;Success&lt;&#x2F;button&gt;
 
 &lt;!-- Contextual button for informational alert messages --&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn info&quot;&gt;Info&lt;&#x2F;button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn--info&quot;&gt;Info&lt;&#x2F;button&gt;
 
 &lt;!-- Indicates caution should be taken with this action --&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn warning&quot;&gt;Warning&lt;&#x2F;button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn--warning&quot;&gt;Warning&lt;&#x2F;button&gt;
 
 &lt;!-- Indicates a dangerous or potentially negative action --&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn danger&quot;&gt;Danger&lt;&#x2F;button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn--danger&quot;&gt;Danger&lt;&#x2F;button&gt;
 
 &lt;!-- Deemphasize a button by making it look like a link while maintaining button behavior --&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn link&quot;&gt;Link&lt;&#x2F;button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn--link&quot;&gt;Link&lt;&#x2F;button&gt;
 </code></pre>
   </div>
 
 </div>
+<h3 id='button-group'>3.1.2. 按鈕組</h3>
 <div class="styleguide-example">
 
   <h3>ButtonGroup <em>_button_group.scss</em></h3>
@@ -477,10 +481,10 @@
     <p>Button groups.</p>
 
       <ul class="styleguide-modifier">
-          <li><strong>.lg</strong> - Large.</li>
-          <li><strong>.sm</strong> - Small.</li>
-          <li><strong>.xs</strong> - Extra small.</li>
-          <li><strong>.justified</strong> - Stretch at equal sizes to span the entire width of its parent.</li>
+          <li><strong>.btn-group--lg</strong> - Large.</li>
+          <li><strong>.btn-group--sm</strong> - Small.</li>
+          <li><strong>.btn-group--xs</strong> - Extra small.</li>
+          <li><strong>.btn-group--justified</strong> - Stretch at equal sizes to span the entire width of its parent.</li>
       </ul>
   </div>
   <div class="styleguide-element">
@@ -528,9 +532,9 @@
 
   </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.lg</span>
+      <span class="styleguide-modifier-name">.btn-group--lg</span>
       <!-- Basic -->
-<div class="btn-group lg" role="group" aria-label="...">
+<div class="btn-group btn-group--lg" role="group" aria-label="...">
   <a type="button" class="btn btn-default">Left</a>
   <a type="button" class="btn btn-default">Middle</a>
   <a type="button" class="btn btn-default">Right</a>
@@ -538,28 +542,28 @@
 
 <!-- Combine sets in a toolbar -->
 <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-  <div class="btn-group lg" role="group" aria-label="First group">
+  <div class="btn-group btn-group--lg" role="group" aria-label="First group">
     <a type="button" class="btn btn-default">1</a>
     <a type="button" class="btn btn-default">2</a>
     <a type="button" class="btn btn-default">3</a>
     <a type="button" class="btn btn-default">4</a>
   </div>
-  <div class="btn-group lg" role="group" aria-label="Second group">
+  <div class="btn-group btn-group--lg" role="group" aria-label="Second group">
     <a type="button" class="btn btn-default">5</a>
     <a type="button" class="btn btn-default">6</a>
     <a type="button" class="btn btn-default">7</a>
   </div>
-  <div class="btn-group lg" role="group" aria-label="Third group">
+  <div class="btn-group btn-group--lg" role="group" aria-label="Third group">
     <a type="button" class="btn btn-default">8</a>
   </div>
 </div>
 
 <!-- Nesting with dropdowns -->
-<div class="btn-group lg" role="group" aria-label="...">
+<div class="btn-group btn-group--lg" role="group" aria-label="...">
   <a type="button" class="btn btn-default">1</a>
   <a type="button" class="btn btn-default">2</a>
 
-  <div class="btn-group lg" role="group">
+  <div class="btn-group btn-group--lg" role="group">
     <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
       Dropdown
       <span class="caret"></span>
@@ -573,9 +577,9 @@
 
     </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.sm</span>
+      <span class="styleguide-modifier-name">.btn-group--sm</span>
       <!-- Basic -->
-<div class="btn-group sm" role="group" aria-label="...">
+<div class="btn-group btn-group--sm" role="group" aria-label="...">
   <a type="button" class="btn btn-default">Left</a>
   <a type="button" class="btn btn-default">Middle</a>
   <a type="button" class="btn btn-default">Right</a>
@@ -583,28 +587,28 @@
 
 <!-- Combine sets in a toolbar -->
 <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-  <div class="btn-group sm" role="group" aria-label="First group">
+  <div class="btn-group btn-group--sm" role="group" aria-label="First group">
     <a type="button" class="btn btn-default">1</a>
     <a type="button" class="btn btn-default">2</a>
     <a type="button" class="btn btn-default">3</a>
     <a type="button" class="btn btn-default">4</a>
   </div>
-  <div class="btn-group sm" role="group" aria-label="Second group">
+  <div class="btn-group btn-group--sm" role="group" aria-label="Second group">
     <a type="button" class="btn btn-default">5</a>
     <a type="button" class="btn btn-default">6</a>
     <a type="button" class="btn btn-default">7</a>
   </div>
-  <div class="btn-group sm" role="group" aria-label="Third group">
+  <div class="btn-group btn-group--sm" role="group" aria-label="Third group">
     <a type="button" class="btn btn-default">8</a>
   </div>
 </div>
 
 <!-- Nesting with dropdowns -->
-<div class="btn-group sm" role="group" aria-label="...">
+<div class="btn-group btn-group--sm" role="group" aria-label="...">
   <a type="button" class="btn btn-default">1</a>
   <a type="button" class="btn btn-default">2</a>
 
-  <div class="btn-group sm" role="group">
+  <div class="btn-group btn-group--sm" role="group">
     <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
       Dropdown
       <span class="caret"></span>
@@ -618,9 +622,9 @@
 
     </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.xs</span>
+      <span class="styleguide-modifier-name">.btn-group--xs</span>
       <!-- Basic -->
-<div class="btn-group xs" role="group" aria-label="...">
+<div class="btn-group btn-group--xs" role="group" aria-label="...">
   <a type="button" class="btn btn-default">Left</a>
   <a type="button" class="btn btn-default">Middle</a>
   <a type="button" class="btn btn-default">Right</a>
@@ -628,28 +632,28 @@
 
 <!-- Combine sets in a toolbar -->
 <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-  <div class="btn-group xs" role="group" aria-label="First group">
+  <div class="btn-group btn-group--xs" role="group" aria-label="First group">
     <a type="button" class="btn btn-default">1</a>
     <a type="button" class="btn btn-default">2</a>
     <a type="button" class="btn btn-default">3</a>
     <a type="button" class="btn btn-default">4</a>
   </div>
-  <div class="btn-group xs" role="group" aria-label="Second group">
+  <div class="btn-group btn-group--xs" role="group" aria-label="Second group">
     <a type="button" class="btn btn-default">5</a>
     <a type="button" class="btn btn-default">6</a>
     <a type="button" class="btn btn-default">7</a>
   </div>
-  <div class="btn-group xs" role="group" aria-label="Third group">
+  <div class="btn-group btn-group--xs" role="group" aria-label="Third group">
     <a type="button" class="btn btn-default">8</a>
   </div>
 </div>
 
 <!-- Nesting with dropdowns -->
-<div class="btn-group xs" role="group" aria-label="...">
+<div class="btn-group btn-group--xs" role="group" aria-label="...">
   <a type="button" class="btn btn-default">1</a>
   <a type="button" class="btn btn-default">2</a>
 
-  <div class="btn-group xs" role="group">
+  <div class="btn-group btn-group--xs" role="group">
     <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
       Dropdown
       <span class="caret"></span>
@@ -663,9 +667,9 @@
 
     </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.justified</span>
+      <span class="styleguide-modifier-name">.btn-group--justified</span>
       <!-- Basic -->
-<div class="btn-group justified" role="group" aria-label="...">
+<div class="btn-group btn-group--justified" role="group" aria-label="...">
   <a type="button" class="btn btn-default">Left</a>
   <a type="button" class="btn btn-default">Middle</a>
   <a type="button" class="btn btn-default">Right</a>
@@ -673,28 +677,28 @@
 
 <!-- Combine sets in a toolbar -->
 <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-  <div class="btn-group justified" role="group" aria-label="First group">
+  <div class="btn-group btn-group--justified" role="group" aria-label="First group">
     <a type="button" class="btn btn-default">1</a>
     <a type="button" class="btn btn-default">2</a>
     <a type="button" class="btn btn-default">3</a>
     <a type="button" class="btn btn-default">4</a>
   </div>
-  <div class="btn-group justified" role="group" aria-label="Second group">
+  <div class="btn-group btn-group--justified" role="group" aria-label="Second group">
     <a type="button" class="btn btn-default">5</a>
     <a type="button" class="btn btn-default">6</a>
     <a type="button" class="btn btn-default">7</a>
   </div>
-  <div class="btn-group justified" role="group" aria-label="Third group">
+  <div class="btn-group btn-group--justified" role="group" aria-label="Third group">
     <a type="button" class="btn btn-default">8</a>
   </div>
 </div>
 
 <!-- Nesting with dropdowns -->
-<div class="btn-group justified" role="group" aria-label="...">
+<div class="btn-group btn-group--justified" role="group" aria-label="...">
   <a type="button" class="btn btn-default">1</a>
   <a type="button" class="btn btn-default">2</a>
 
-  <div class="btn-group justified" role="group">
+  <div class="btn-group btn-group--justified" role="group">
     <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
       Dropdown
       <span class="caret"></span>
@@ -753,14 +757,15 @@
   </div>
 
 </div>
+<h3 id='dropdown'>3.1.3. 下拉選單</h3>
 <div class="styleguide-example">
 
   <h3>Dropdown <em>_dropdown.scss</em></h3>
   <div class="styleguide-description markdown-body">
-    <p>Dropdowns. Requires <code>components&amp;#x2F;dropdown.js</code> to make interactive.</p>
+    <p>Dropdown</p>
 
       <ul class="styleguide-modifier">
-          <li><strong>.right</strong> - Pulls right the <code>dropdown-menu</code>.</li>
+          <li><strong>.dropdown-menu--right</strong> - Pulls right the <code>dropdown-menu</code>.</li>
       </ul>
   </div>
   <div class="styleguide-element">
@@ -832,13 +837,13 @@
 
   </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.right</span>
+      <span class="styleguide-modifier-name">.dropdown-menu--right</span>
       <div class="dropdown">
   <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
     Dropdown
     <span class="caret"></span>
   </button>
-  <ul class="dropdown-menu right" role="menu" aria-labelledby="dropdownMenu3">
+  <ul class="dropdown-menu dropdown-menu--right" role="menu" aria-labelledby="dropdownMenu3">
     <li role="presentation" class="dropdown-header">Dropdown header</li>
     <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
     <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
@@ -859,7 +864,7 @@
     Dropup
     <span class="caret"></span>
   </button>
-  <ul class="dropdown-menu right" role="menu" aria-labelledby="dropdownMenu2">
+  <ul class="dropdown-menu dropdown-menu--right" role="menu" aria-labelledby="dropdownMenu2">
     <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
     <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
     <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
@@ -874,7 +879,7 @@
   <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
     Action <span class="caret"></span>
   </button>
-  <ul class="dropdown-menu right" role="menu">
+  <ul class="dropdown-menu dropdown-menu--right" role="menu">
     <li><a href="#">Action</a></li>
     <li><a href="#">Another action</a></li>
     <li><a href="#">Something else here</a></li>
@@ -890,7 +895,7 @@
     <span class="caret"></span>
     <span class="sr-only">Toggle Dropdown</span>
   </button>
-  <ul class="dropdown-menu right" role="menu">
+  <ul class="dropdown-menu dropdown-menu--right" role="menu">
     <li><a href="#">Action</a></li>
     <li><a href="#">Another action</a></li>
     <li><a href="#">Something else here</a></li>
@@ -970,15 +975,16 @@
   </div>
 
 </div>
+<h3 id='input-group'>3.1.4. 輸入組</h3>
 <div class="styleguide-example">
 
   <h3>InputGroup <em>_input_group.scss</em></h3>
   <div class="styleguide-description markdown-body">
-    <p>Input groups.</p>
+    <p>Input Group</p>
 
       <ul class="styleguide-modifier">
-          <li><strong>.lg</strong> - Large.</li>
-          <li><strong>.sm</strong> - Small.</li>
+          <li><strong>.input-group--lg</strong> - Large.</li>
+          <li><strong>.input-group--sm</strong> - Small.</li>
       </ul>
   </div>
   <div class="styleguide-element">
@@ -1116,18 +1122,18 @@
 
   </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.lg</span>
-      <div class="input-group lg">
+      <span class="styleguide-modifier-name">.input-group--lg</span>
+      <div class="input-group input-group--lg">
   <span class="input-group-addon" id="basic-addon1">@</span>
   <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
 </div>
 
-<div class="input-group lg">
+<div class="input-group input-group--lg">
   <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
   <span class="input-group-addon" id="basic-addon2">@example.com</span>
 </div>
 
-<div class="input-group lg">
+<div class="input-group input-group--lg">
   <span class="input-group-addon">$</span>
   <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
   <span class="input-group-addon">.00</span>
@@ -1136,7 +1142,7 @@
 <!-- Checkboxes and radio addons -->
 <div class="row">
   <div class="col-lg-6">
-    <div class="input-group lg">
+    <div class="input-group input-group--lg">
       <span class="input-group-addon">
         <input type="checkbox" aria-label="...">
       </span>
@@ -1144,7 +1150,7 @@
     </div><!-- /input-group -->
   </div><!-- /.col-lg-6 -->
   <div class="col-lg-6">
-    <div class="input-group lg">
+    <div class="input-group input-group--lg">
       <span class="input-group-addon">
         <input type="radio" aria-label="...">
       </span>
@@ -1156,7 +1162,7 @@
 <!-- Button addons -->
 <div class="row">
   <div class="col-lg-6">
-    <div class="input-group lg">
+    <div class="input-group input-group--lg">
       <span class="input-group-btn">
         <button class="btn btn-default" type="button">Go!</button>
       </span>
@@ -1164,7 +1170,7 @@
     </div><!-- /input-group -->
   </div><!-- /.col-lg-6 -->
   <div class="col-lg-6">
-    <div class="input-group lg">
+    <div class="input-group input-group--lg">
       <input type="text" class="form-control" placeholder="Search for...">
       <span class="input-group-btn">
         <button class="btn btn-default" type="button">Go!</button>
@@ -1176,7 +1182,7 @@
 <!-- Buttons with dropdowns -->
 <div class="row">
   <div class="col-lg-6">
-    <div class="input-group lg">
+    <div class="input-group input-group--lg">
       <div class="input-group-btn">
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action <span class="caret"></span></button>
         <ul class="dropdown-menu" role="menu">
@@ -1191,7 +1197,7 @@
     </div><!-- /input-group -->
   </div><!-- /.col-lg-6 -->
   <div class="col-lg-6">
-    <div class="input-group lg">
+    <div class="input-group input-group--lg">
       <input type="text" class="form-control" aria-label="...">
       <div class="input-group-btn">
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action <span class="caret"></span></button>
@@ -1251,18 +1257,18 @@
 
     </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.sm</span>
-      <div class="input-group sm">
+      <span class="styleguide-modifier-name">.input-group--sm</span>
+      <div class="input-group input-group--sm">
   <span class="input-group-addon" id="basic-addon1">@</span>
   <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
 </div>
 
-<div class="input-group sm">
+<div class="input-group input-group--sm">
   <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
   <span class="input-group-addon" id="basic-addon2">@example.com</span>
 </div>
 
-<div class="input-group sm">
+<div class="input-group input-group--sm">
   <span class="input-group-addon">$</span>
   <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
   <span class="input-group-addon">.00</span>
@@ -1271,7 +1277,7 @@
 <!-- Checkboxes and radio addons -->
 <div class="row">
   <div class="col-lg-6">
-    <div class="input-group sm">
+    <div class="input-group input-group--sm">
       <span class="input-group-addon">
         <input type="checkbox" aria-label="...">
       </span>
@@ -1279,7 +1285,7 @@
     </div><!-- /input-group -->
   </div><!-- /.col-lg-6 -->
   <div class="col-lg-6">
-    <div class="input-group sm">
+    <div class="input-group input-group--sm">
       <span class="input-group-addon">
         <input type="radio" aria-label="...">
       </span>
@@ -1291,7 +1297,7 @@
 <!-- Button addons -->
 <div class="row">
   <div class="col-lg-6">
-    <div class="input-group sm">
+    <div class="input-group input-group--sm">
       <span class="input-group-btn">
         <button class="btn btn-default" type="button">Go!</button>
       </span>
@@ -1299,7 +1305,7 @@
     </div><!-- /input-group -->
   </div><!-- /.col-lg-6 -->
   <div class="col-lg-6">
-    <div class="input-group sm">
+    <div class="input-group input-group--sm">
       <input type="text" class="form-control" placeholder="Search for...">
       <span class="input-group-btn">
         <button class="btn btn-default" type="button">Go!</button>
@@ -1311,7 +1317,7 @@
 <!-- Buttons with dropdowns -->
 <div class="row">
   <div class="col-lg-6">
-    <div class="input-group sm">
+    <div class="input-group input-group--sm">
       <div class="input-group-btn">
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action <span class="caret"></span></button>
         <ul class="dropdown-menu" role="menu">
@@ -1326,7 +1332,7 @@
     </div><!-- /input-group -->
   </div><!-- /.col-lg-6 -->
   <div class="col-lg-6">
-    <div class="input-group sm">
+    <div class="input-group input-group--sm">
       <input type="text" class="form-control" aria-label="...">
       <div class="input-group-btn">
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action <span class="caret"></span></button>
@@ -1521,17 +1527,19 @@
   </div>
 
 </div>
+<h2 id='navs'>3.2. 導航</h2>
+<h3 id='nav'>3.2.1. 導航選單</h3>
 <div class="styleguide-example">
 
   <h3>Nav <em>_nav.scss</em></h3>
   <div class="styleguide-description markdown-body">
-    <p>Navs.</p>
+    <p>Nav</p>
 
       <ul class="styleguide-modifier">
-          <li><strong>.tabs</strong> - Tabs.</li>
-          <li><strong>.pills</strong> - Pills.</li>
-          <li><strong>.stacked</strong> - Stacked.</li>
-          <li><strong>.justified</strong> - Justified.</li>
+          <li><strong>.nav--tabs</strong> - Tabs.</li>
+          <li><strong>.nav--pills</strong> - Pills.</li>
+          <li><strong>.nav--stacked</strong> - Stacked.</li>
+          <li><strong>.nav--justified</strong> - Justified.</li>
       </ul>
   </div>
   <div class="styleguide-element">
@@ -1556,8 +1564,8 @@
 
   </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.tabs</span>
-      <ul class="nav tabs">
+      <span class="styleguide-modifier-name">.nav--tabs</span>
+      <ul class="nav nav--tabs">
   <li role="presentation" class="active"><a href="#">Home</a></li>
   <li role="presentation"><a href="#">Profile</a></li>
   <li role="presentation"><a href="#">Messages</a></li>
@@ -1578,8 +1586,8 @@
 
     </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.pills</span>
-      <ul class="nav pills">
+      <span class="styleguide-modifier-name">.nav--pills</span>
+      <ul class="nav nav--pills">
   <li role="presentation" class="active"><a href="#">Home</a></li>
   <li role="presentation"><a href="#">Profile</a></li>
   <li role="presentation"><a href="#">Messages</a></li>
@@ -1600,8 +1608,8 @@
 
     </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.stacked</span>
-      <ul class="nav stacked">
+      <span class="styleguide-modifier-name">.nav--stacked</span>
+      <ul class="nav nav--stacked">
   <li role="presentation" class="active"><a href="#">Home</a></li>
   <li role="presentation"><a href="#">Profile</a></li>
   <li role="presentation"><a href="#">Messages</a></li>
@@ -1622,8 +1630,8 @@
 
     </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.justified</span>
-      <ul class="nav justified">
+      <span class="styleguide-modifier-name">.nav--justified</span>
+      <ul class="nav nav--justified">
   <li role="presentation" class="active"><a href="#">Home</a></li>
   <li role="presentation"><a href="#">Profile</a></li>
   <li role="presentation"><a href="#">Messages</a></li>
@@ -1666,366 +1674,12 @@
   </div>
 
 </div>
-<div class="styleguide-example">
-
-  <h3>Navbar <em>_navbar.scss</em></h3>
-  <div class="styleguide-description markdown-body">
-    <p>Navbars.</p>
-
-      <ul class="styleguide-modifier">
-          <li><strong>.default</strong> - Default style.</li>
-          <li><strong>.inverse</strong> - Inverted.</li>
-          <li><strong>.minimal</strong> - Minimal style.</li>
-          <li><strong>.minimal.inverse</strong> - Minimal style with inverted color.</li>
-      </ul>
-  </div>
-  <div class="styleguide-element">
-    <nav class="navbar">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse-5ef608478d">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Brand</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="example-navbar-collapse-5ef608478d">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
-  </div>
-    <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.default</span>
-      <nav class="navbar default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse-5ef608478d">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Brand</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="example-navbar-collapse-5ef608478d">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
-    </div>
-    <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.inverse</span>
-      <nav class="navbar inverse">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse-5ef608478d">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Brand</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="example-navbar-collapse-5ef608478d">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
-    </div>
-    <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.minimal</span>
-      <nav class="navbar minimal">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse-5ef608478d">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Brand</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="example-navbar-collapse-5ef608478d">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
-    </div>
-    <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.minimal.inverse</span>
-      <nav class="navbar minimal inverse">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse-5ef608478d">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Brand</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="example-navbar-collapse-5ef608478d">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
-    </div>
-  <div class="styleguide-html">
-    <pre><code class="language-markup">&lt;nav class=&quot;navbar&quot;&gt;
-  &lt;div class=&quot;container-fluid&quot;&gt;
-    &lt;!-- Brand and toggle get grouped for better mobile display --&gt;
-    &lt;div class=&quot;navbar-header&quot;&gt;
-      &lt;button type=&quot;button&quot; class=&quot;navbar-toggle collapsed&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#example-navbar-collapse-5ef608478d&quot;&gt;
-        &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;&#x2F;span&gt;
-        &lt;span class=&quot;icon-bar&quot;&gt;&lt;&#x2F;span&gt;
-        &lt;span class=&quot;icon-bar&quot;&gt;&lt;&#x2F;span&gt;
-        &lt;span class=&quot;icon-bar&quot;&gt;&lt;&#x2F;span&gt;
-      &lt;&#x2F;button&gt;
-      &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Brand&lt;&#x2F;a&gt;
-    &lt;&#x2F;div&gt;
-
-    &lt;!-- Collect the nav links, forms, and other content for toggling --&gt;
-    &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;example-navbar-collapse-5ef608478d&quot;&gt;
-      &lt;ul class=&quot;nav navbar-nav&quot;&gt;
-        &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Link &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-        &lt;li class=&quot;dropdown&quot;&gt;
-          &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot;&gt;Dropdown &lt;span class=&quot;caret&quot;&gt;&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;
-          &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
-            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-            &lt;li class=&quot;divider&quot;&gt;&lt;&#x2F;li&gt;
-            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-            &lt;li class=&quot;divider&quot;&gt;&lt;&#x2F;li&gt;
-            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;One more separated link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-          &lt;&#x2F;ul&gt;
-        &lt;&#x2F;li&gt;
-      &lt;&#x2F;ul&gt;
-      &lt;form class=&quot;navbar-form navbar-left&quot; role=&quot;search&quot;&gt;
-        &lt;div class=&quot;form-group&quot;&gt;
-          &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Search&quot;&gt;
-        &lt;&#x2F;div&gt;
-        &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Submit&lt;&#x2F;button&gt;
-      &lt;&#x2F;form&gt;
-      &lt;ul class=&quot;nav navbar-nav navbar-right&quot;&gt;
-        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-        &lt;li class=&quot;dropdown&quot;&gt;
-          &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot;&gt;Dropdown &lt;span class=&quot;caret&quot;&gt;&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;
-          &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
-            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-            &lt;li class=&quot;divider&quot;&gt;&lt;&#x2F;li&gt;
-            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-          &lt;&#x2F;ul&gt;
-        &lt;&#x2F;li&gt;
-      &lt;&#x2F;ul&gt;
-    &lt;&#x2F;div&gt;&lt;!-- &#x2F;.navbar-collapse --&gt;
-  &lt;&#x2F;div&gt;&lt;!-- &#x2F;.container-fluid --&gt;
-&lt;&#x2F;nav&gt;
-</code></pre>
-  </div>
-
-</div>
+<h3 id='sidenav'>3.2.2. 側邊文件導航選單</h3>
 <div class="styleguide-example">
 
   <h3>SideNav <em>_sidenav.scss</em></h3>
   <div class="styleguide-description markdown-body">
-    <p>Side Navs.</p>
+    <p>Side Nav</p>
 
   </div>
   <div class="styleguide-element">
@@ -2086,6 +1740,7 @@
   </div>
 
 </div>
+<h3 id='breadcrumb'>3.2.3. 麵包屑導航</h3>
 <div class="styleguide-example">
 
   <h3>Breadcrumb <em>_breadcrumb.scss</em></h3>
@@ -2111,15 +1766,16 @@
   </div>
 
 </div>
+<h3 id='pagination'>3.2.4. 分頁導航</h3>
 <div class="styleguide-example">
 
   <h3>Pagination <em>_pagination.scss</em></h3>
   <div class="styleguide-description markdown-body">
-    <p>Paginations.</p>
+    <p>Paginations</p>
 
       <ul class="styleguide-modifier">
-          <li><strong>.lg</strong> - Large.</li>
-          <li><strong>.sm</strong> - Small.</li>
+          <li><strong>.pagination--lg</strong> - Large.</li>
+          <li><strong>.pagination--sm</strong> - Small.</li>
       </ul>
   </div>
   <div class="styleguide-element">
@@ -2145,9 +1801,9 @@
 
   </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.lg</span>
+      <span class="styleguide-modifier-name">.pagination--lg</span>
       <nav>
-  <ul class="pagination lg">
+  <ul class="pagination pagination--lg">
     <li class="disabled">
       <a href="#" aria-label="Previous">
         <span aria-hidden="true">&laquo;</span>
@@ -2168,9 +1824,9 @@
 
     </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.sm</span>
+      <span class="styleguide-modifier-name">.pagination--sm</span>
       <nav>
-  <ul class="pagination sm">
+  <ul class="pagination pagination--sm">
     <li class="disabled">
       <a href="#" aria-label="Previous">
         <span aria-hidden="true">&laquo;</span>
@@ -2214,11 +1870,12 @@
   </div>
 
 </div>
+<h3 id='pager'>3.2.5. 分頁導航</h3>
 <div class="styleguide-example">
 
   <h3>Pager <em>_pager.scss</em></h3>
   <div class="styleguide-description markdown-body">
-    <p>Pagers.</p>
+    <p>Pager</p>
 
   </div>
   <div class="styleguide-element">
@@ -2241,18 +1898,374 @@
   </div>
 
 </div>
+<h2 id='buttons'>3.3. 頁面元素</h2>
+<div class="styleguide-example">
+
+  <h3>Navbar <em>_navbar.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>Navbars.</p>
+
+      <ul class="styleguide-modifier">
+          <li><strong>.default</strong> - Default style.</li>
+          <li><strong>.inverse</strong> - Inverted.</li>
+          <li><strong>.minimal</strong> - Minimal style.</li>
+          <li><strong>.minimal.inverse</strong> - Minimal style with inverted color.</li>
+      </ul>
+  </div>
+  <div class="styleguide-element">
+    <nav class="navbar">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse-1391d0d8f3">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="example-navbar-collapse-1391d0d8f3">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+  </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.default</span>
+      <nav class="navbar default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse-1391d0d8f3">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="example-navbar-collapse-1391d0d8f3">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.inverse</span>
+      <nav class="navbar inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse-1391d0d8f3">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="example-navbar-collapse-1391d0d8f3">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.minimal</span>
+      <nav class="navbar minimal">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse-1391d0d8f3">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="example-navbar-collapse-1391d0d8f3">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.minimal.inverse</span>
+      <nav class="navbar minimal inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse-1391d0d8f3">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="example-navbar-collapse-1391d0d8f3">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;nav class=&quot;navbar&quot;&gt;
+  &lt;div class=&quot;container-fluid&quot;&gt;
+    &lt;!-- Brand and toggle get grouped for better mobile display --&gt;
+    &lt;div class=&quot;navbar-header&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;navbar-toggle collapsed&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#example-navbar-collapse-1391d0d8f3&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;&#x2F;span&gt;
+        &lt;span class=&quot;icon-bar&quot;&gt;&lt;&#x2F;span&gt;
+        &lt;span class=&quot;icon-bar&quot;&gt;&lt;&#x2F;span&gt;
+        &lt;span class=&quot;icon-bar&quot;&gt;&lt;&#x2F;span&gt;
+      &lt;&#x2F;button&gt;
+      &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Brand&lt;&#x2F;a&gt;
+    &lt;&#x2F;div&gt;
+
+    &lt;!-- Collect the nav links, forms, and other content for toggling --&gt;
+    &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;example-navbar-collapse-1391d0d8f3&quot;&gt;
+      &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+        &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Link &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li class=&quot;dropdown&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot;&gt;Dropdown &lt;span class=&quot;caret&quot;&gt;&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;
+          &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+            &lt;li class=&quot;divider&quot;&gt;&lt;&#x2F;li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+            &lt;li class=&quot;divider&quot;&gt;&lt;&#x2F;li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;One more separated link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+          &lt;&#x2F;ul&gt;
+        &lt;&#x2F;li&gt;
+      &lt;&#x2F;ul&gt;
+      &lt;form class=&quot;navbar-form navbar-left&quot; role=&quot;search&quot;&gt;
+        &lt;div class=&quot;form-group&quot;&gt;
+          &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Search&quot;&gt;
+        &lt;&#x2F;div&gt;
+        &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Submit&lt;&#x2F;button&gt;
+      &lt;&#x2F;form&gt;
+      &lt;ul class=&quot;nav navbar-nav navbar-right&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li class=&quot;dropdown&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot;&gt;Dropdown &lt;span class=&quot;caret&quot;&gt;&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;
+          &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+            &lt;li class=&quot;divider&quot;&gt;&lt;&#x2F;li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+          &lt;&#x2F;ul&gt;
+        &lt;&#x2F;li&gt;
+      &lt;&#x2F;ul&gt;
+    &lt;&#x2F;div&gt;&lt;!-- &#x2F;.navbar-collapse --&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;.container-fluid --&gt;
+&lt;&#x2F;nav&gt;
+</code></pre>
+  </div>
+
+</div>
 <div class="styleguide-example">
 
   <h3>Label <em>_label.scss</em></h3>
   <div class="styleguide-description markdown-body">
-    <p>Labels.</p>
+    <p>Label</p>
 
       <ul class="styleguide-modifier">
-          <li><strong>.primary</strong> - Primary.</li>
-          <li><strong>.success</strong> - Success.</li>
-          <li><strong>.info</strong> - Info.</li>
-          <li><strong>.warning</strong> - Warning.</li>
-          <li><strong>.danger</strong> - Danger.</li>
+          <li><strong>.label--primary</strong> - Primary.</li>
+          <li><strong>.label--success</strong> - Success.</li>
+          <li><strong>.label--info</strong> - Info.</li>
+          <li><strong>.label--warning</strong> - Warning.</li>
+          <li><strong>.label--danger</strong> - Danger.</li>
       </ul>
   </div>
   <div class="styleguide-element">
@@ -2266,58 +2279,58 @@
 
   </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.primary</span>
-      <h1>Example heading <span class="label primary">New</span></h1>
-<h2>Example heading <span class="label primary">New</span></h2>
-<h3>Example heading <span class="label primary">New</span></h3>
-<h4>Example heading <span class="label primary">New</span></h4>
-<h5>Example heading <span class="label primary">New</span></h5>
-<h6>Example heading <span class="label primary">New</span></h6>
-<p>Example paragraph <span class="label primary">New</span></p>
+      <span class="styleguide-modifier-name">.label--primary</span>
+      <h1>Example heading <span class="label label--primary">New</span></h1>
+<h2>Example heading <span class="label label--primary">New</span></h2>
+<h3>Example heading <span class="label label--primary">New</span></h3>
+<h4>Example heading <span class="label label--primary">New</span></h4>
+<h5>Example heading <span class="label label--primary">New</span></h5>
+<h6>Example heading <span class="label label--primary">New</span></h6>
+<p>Example paragraph <span class="label label--primary">New</span></p>
 
     </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.success</span>
-      <h1>Example heading <span class="label success">New</span></h1>
-<h2>Example heading <span class="label success">New</span></h2>
-<h3>Example heading <span class="label success">New</span></h3>
-<h4>Example heading <span class="label success">New</span></h4>
-<h5>Example heading <span class="label success">New</span></h5>
-<h6>Example heading <span class="label success">New</span></h6>
-<p>Example paragraph <span class="label success">New</span></p>
+      <span class="styleguide-modifier-name">.label--success</span>
+      <h1>Example heading <span class="label label--success">New</span></h1>
+<h2>Example heading <span class="label label--success">New</span></h2>
+<h3>Example heading <span class="label label--success">New</span></h3>
+<h4>Example heading <span class="label label--success">New</span></h4>
+<h5>Example heading <span class="label label--success">New</span></h5>
+<h6>Example heading <span class="label label--success">New</span></h6>
+<p>Example paragraph <span class="label label--success">New</span></p>
 
     </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.info</span>
-      <h1>Example heading <span class="label info">New</span></h1>
-<h2>Example heading <span class="label info">New</span></h2>
-<h3>Example heading <span class="label info">New</span></h3>
-<h4>Example heading <span class="label info">New</span></h4>
-<h5>Example heading <span class="label info">New</span></h5>
-<h6>Example heading <span class="label info">New</span></h6>
-<p>Example paragraph <span class="label info">New</span></p>
+      <span class="styleguide-modifier-name">.label--info</span>
+      <h1>Example heading <span class="label label--info">New</span></h1>
+<h2>Example heading <span class="label label--info">New</span></h2>
+<h3>Example heading <span class="label label--info">New</span></h3>
+<h4>Example heading <span class="label label--info">New</span></h4>
+<h5>Example heading <span class="label label--info">New</span></h5>
+<h6>Example heading <span class="label label--info">New</span></h6>
+<p>Example paragraph <span class="label label--info">New</span></p>
 
     </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.warning</span>
-      <h1>Example heading <span class="label warning">New</span></h1>
-<h2>Example heading <span class="label warning">New</span></h2>
-<h3>Example heading <span class="label warning">New</span></h3>
-<h4>Example heading <span class="label warning">New</span></h4>
-<h5>Example heading <span class="label warning">New</span></h5>
-<h6>Example heading <span class="label warning">New</span></h6>
-<p>Example paragraph <span class="label warning">New</span></p>
+      <span class="styleguide-modifier-name">.label--warning</span>
+      <h1>Example heading <span class="label label--warning">New</span></h1>
+<h2>Example heading <span class="label label--warning">New</span></h2>
+<h3>Example heading <span class="label label--warning">New</span></h3>
+<h4>Example heading <span class="label label--warning">New</span></h4>
+<h5>Example heading <span class="label label--warning">New</span></h5>
+<h6>Example heading <span class="label label--warning">New</span></h6>
+<p>Example paragraph <span class="label label--warning">New</span></p>
 
     </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.danger</span>
-      <h1>Example heading <span class="label danger">New</span></h1>
-<h2>Example heading <span class="label danger">New</span></h2>
-<h3>Example heading <span class="label danger">New</span></h3>
-<h4>Example heading <span class="label danger">New</span></h4>
-<h5>Example heading <span class="label danger">New</span></h5>
-<h6>Example heading <span class="label danger">New</span></h6>
-<p>Example paragraph <span class="label danger">New</span></p>
+      <span class="styleguide-modifier-name">.label--danger</span>
+      <h1>Example heading <span class="label label--danger">New</span></h1>
+<h2>Example heading <span class="label label--danger">New</span></h2>
+<h3>Example heading <span class="label label--danger">New</span></h3>
+<h4>Example heading <span class="label label--danger">New</span></h4>
+<h5>Example heading <span class="label label--danger">New</span></h5>
+<h6>Example heading <span class="label label--danger">New</span></h6>
+<p>Example paragraph <span class="label label--danger">New</span></p>
 
     </div>
   <div class="styleguide-html">
@@ -2382,7 +2395,7 @@
 
   <h3>Thumbnail <em>_thumbnail.scss</em></h3>
   <div class="styleguide-description markdown-body">
-    <p>Thumbnails.</p>
+    <p>Thumbnail</p>
 
   </div>
   <div class="styleguide-element">
@@ -2512,11 +2525,11 @@
     <p>Alerts.</p>
 
       <ul class="styleguide-modifier">
-          <li><strong>.success</strong> - Success.</li>
-          <li><strong>.info</strong> - Info.</li>
-          <li><strong>.warning</strong> - Warning.</li>
-          <li><strong>.danger</strong> - Danger.</li>
-          <li><strong>.dismissible</strong> - Dismissible. Requires <code>components/alert.js</code> to make interactive.</li>
+          <li><strong>.alert--success</strong> - Success.</li>
+          <li><strong>.alert--info</strong> - Info.</li>
+          <li><strong>.alert--warning</strong> - Warning.</li>
+          <li><strong>.alert--danger</strong> - Danger.</li>
+          <li><strong>.dismissible</strong> - Dismissible.</li>
       </ul>
   </div>
   <div class="styleguide-element">
@@ -2526,29 +2539,29 @@
 
   </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.success</span>
-      <div class="alert success" role="alert">
+      <span class="styleguide-modifier-name">.alert--success</span>
+      <div class="alert alert--success" role="alert">
   <strong>Heads up!</strong> This <a href="#" class="alert-link">alert</a> needs your attention.
 </div>
 
     </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.info</span>
-      <div class="alert info" role="alert">
+      <span class="styleguide-modifier-name">.alert--info</span>
+      <div class="alert alert--info" role="alert">
   <strong>Heads up!</strong> This <a href="#" class="alert-link">alert</a> needs your attention.
 </div>
 
     </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.warning</span>
-      <div class="alert warning" role="alert">
+      <span class="styleguide-modifier-name">.alert--warning</span>
+      <div class="alert alert--warning" role="alert">
   <strong>Heads up!</strong> This <a href="#" class="alert-link">alert</a> needs your attention.
 </div>
 
     </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.danger</span>
-      <div class="alert danger" role="alert">
+      <span class="styleguide-modifier-name">.alert--danger</span>
+      <div class="alert alert--danger" role="alert">
   <strong>Heads up!</strong> This <a href="#" class="alert-link">alert</a> needs your attention.
 </div>
 
@@ -2572,16 +2585,16 @@
 
   <h3>ProgressBar <em>_progress_bar.scss</em></h3>
   <div class="styleguide-description markdown-body">
-    <p>Progress bars.</p>
+    <p>Progress Bar</p>
 
       <ul class="styleguide-modifier">
-          <li><strong>.primary</strong> - Primary.</li>
-          <li><strong>.success</strong> - Success.</li>
-          <li><strong>.info</strong> - Info.</li>
-          <li><strong>.warning</strong> - Warning.</li>
-          <li><strong>.danger</strong> - Danger.</li>
-          <li><strong>.striped</strong> - Striped.</li>
-          <li><strong>.striped.active</strong> - Stripe animated.</li>
+          <li><strong>.progress-bar--primary</strong> - Primary.</li>
+          <li><strong>.progress-bar--success</strong> - Success.</li>
+          <li><strong>.progress-bar--info</strong> - Info.</li>
+          <li><strong>.progress-bar--warning</strong> - Warning.</li>
+          <li><strong>.progress-bar--danger</strong> - Danger.</li>
+          <li><strong>.progress-bar--striped</strong> - Striped.</li>
+          <li><strong>.progress-bar--striped.active</strong> - Stripe animated.</li>
       </ul>
   </div>
   <div class="styleguide-element">
@@ -2600,112 +2613,112 @@
 
   </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.primary</span>
+      <span class="styleguide-modifier-name">.progress-bar--primary</span>
       <div class="progress">
-  <div class="progress-bar primary" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+  <div class="progress-bar progress-bar--primary" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
     <span class="sr-only">70% Complete</span>
   </div>
 </div>
 
 <!-- With label -->
 <div class="progress">
-  <div class="progress-bar primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+  <div class="progress-bar progress-bar--primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
     60%
   </div>
 </div>
 
     </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.success</span>
+      <span class="styleguide-modifier-name">.progress-bar--success</span>
       <div class="progress">
-  <div class="progress-bar success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+  <div class="progress-bar progress-bar--success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
     <span class="sr-only">70% Complete</span>
   </div>
 </div>
 
 <!-- With label -->
 <div class="progress">
-  <div class="progress-bar success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+  <div class="progress-bar progress-bar--success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
     60%
   </div>
 </div>
 
     </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.info</span>
+      <span class="styleguide-modifier-name">.progress-bar--info</span>
       <div class="progress">
-  <div class="progress-bar info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+  <div class="progress-bar progress-bar--info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
     <span class="sr-only">70% Complete</span>
   </div>
 </div>
 
 <!-- With label -->
 <div class="progress">
-  <div class="progress-bar info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+  <div class="progress-bar progress-bar--info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
     60%
   </div>
 </div>
 
     </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.warning</span>
+      <span class="styleguide-modifier-name">.progress-bar--warning</span>
       <div class="progress">
-  <div class="progress-bar warning" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+  <div class="progress-bar progress-bar--warning" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
     <span class="sr-only">70% Complete</span>
   </div>
 </div>
 
 <!-- With label -->
 <div class="progress">
-  <div class="progress-bar warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+  <div class="progress-bar progress-bar--warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
     60%
   </div>
 </div>
 
     </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.danger</span>
+      <span class="styleguide-modifier-name">.progress-bar--danger</span>
       <div class="progress">
-  <div class="progress-bar danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+  <div class="progress-bar progress-bar--danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
     <span class="sr-only">70% Complete</span>
   </div>
 </div>
 
 <!-- With label -->
 <div class="progress">
-  <div class="progress-bar danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+  <div class="progress-bar progress-bar--danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
     60%
   </div>
 </div>
 
     </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.striped</span>
+      <span class="styleguide-modifier-name">.progress-bar--striped</span>
       <div class="progress">
-  <div class="progress-bar striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+  <div class="progress-bar progress-bar--striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
     <span class="sr-only">70% Complete</span>
   </div>
 </div>
 
 <!-- With label -->
 <div class="progress">
-  <div class="progress-bar striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+  <div class="progress-bar progress-bar--striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
     60%
   </div>
 </div>
 
     </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.striped.active</span>
+      <span class="styleguide-modifier-name">.progress-bar--striped.active</span>
       <div class="progress">
-  <div class="progress-bar striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+  <div class="progress-bar progress-bar--striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
     <span class="sr-only">70% Complete</span>
   </div>
 </div>
 
 <!-- With label -->
 <div class="progress">
-  <div class="progress-bar striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+  <div class="progress-bar progress-bar--striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
     60%
   </div>
 </div>
@@ -2732,7 +2745,7 @@
 
   <h3>Media <em>_media.scss</em></h3>
   <div class="styleguide-description markdown-body">
-    <p>Media objects.</p>
+    <p>Media Object</p>
 
   </div>
   <div class="styleguide-element">
@@ -2867,7 +2880,7 @@
 
   <h3>ListGroup <em>_list_group.scss</em></h3>
   <div class="styleguide-description markdown-body">
-    <p>List groups.</p>
+    <p>List Group</p>
 
   </div>
   <div class="styleguide-element">
@@ -2944,14 +2957,14 @@
 
   <h3>Panel <em>_panel.scss</em></h3>
   <div class="styleguide-description markdown-body">
-    <p>Panels.</p>
+    <p>Panel</p>
 
       <ul class="styleguide-modifier">
-          <li><strong>.primary</strong> - Primary.</li>
-          <li><strong>.success</strong> - Success.</li>
-          <li><strong>.info</strong> - Info.</li>
-          <li><strong>.warning</strong> - Warning.</li>
-          <li><strong>.danger</strong> - Danger.</li>
+          <li><strong>.panel--primary</strong> - Primary.</li>
+          <li><strong>.panel--success</strong> - Success.</li>
+          <li><strong>.panel--info</strong> - Info.</li>
+          <li><strong>.panel--warning</strong> - Warning.</li>
+          <li><strong>.panel--danger</strong> - Danger.</li>
       </ul>
   </div>
   <div class="styleguide-element">
@@ -3058,8 +3071,8 @@
 
   </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.primary</span>
-      <div class="panel primary">
+      <span class="styleguide-modifier-name">.panel--primary</span>
+      <div class="panel panel--primary">
   <div class="panel-body">
     Basic panel example
   </div>
@@ -3068,14 +3081,14 @@
 <div class="row">
   <div class="col-lg-6">
     <!-- Panel with heading -->
-    <div class="panel primary">
+    <div class="panel panel--primary">
       <div class="panel-heading">Panel heading without title</div>
       <div class="panel-body">
         Panel content
       </div>
     </div>
 
-    <div class="panel primary">
+    <div class="panel panel--primary">
       <div class="panel-heading">
         <h3 class="panel-title">Panel title</h3>
       </div>
@@ -3087,7 +3100,7 @@
   </div><!-- /.col-lg-6 -->
   <div class="col-lg-6">
     <!-- Panel with footer -->
-    <div class="panel primary">
+    <div class="panel panel--primary">
       <div class="panel-body">
         Panel content
       </div>
@@ -3099,7 +3112,7 @@
 <div class="row">
   <div class="col-lg-6">
     <!-- Panel with tables -->
-    <div class="panel primary">
+    <div class="panel panel--primary">
       <!-- Default panel contents -->
       <div class="panel-heading">Panel heading</div>
       <div class="panel-body">
@@ -3141,7 +3154,7 @@
   </div><!-- /.col-lg-6 -->
   <div class="col-lg-6">
     <!-- Panel with list groups -->
-    <div class="panel primary">
+    <div class="panel panel--primary">
       <!-- Default panel contents -->
       <div class="panel-heading">Panel heading</div>
       <div class="panel-body">
@@ -3162,8 +3175,8 @@
 
     </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.success</span>
-      <div class="panel success">
+      <span class="styleguide-modifier-name">.panel--success</span>
+      <div class="panel panel--success">
   <div class="panel-body">
     Basic panel example
   </div>
@@ -3172,14 +3185,14 @@
 <div class="row">
   <div class="col-lg-6">
     <!-- Panel with heading -->
-    <div class="panel success">
+    <div class="panel panel--success">
       <div class="panel-heading">Panel heading without title</div>
       <div class="panel-body">
         Panel content
       </div>
     </div>
 
-    <div class="panel success">
+    <div class="panel panel--success">
       <div class="panel-heading">
         <h3 class="panel-title">Panel title</h3>
       </div>
@@ -3191,7 +3204,7 @@
   </div><!-- /.col-lg-6 -->
   <div class="col-lg-6">
     <!-- Panel with footer -->
-    <div class="panel success">
+    <div class="panel panel--success">
       <div class="panel-body">
         Panel content
       </div>
@@ -3203,7 +3216,7 @@
 <div class="row">
   <div class="col-lg-6">
     <!-- Panel with tables -->
-    <div class="panel success">
+    <div class="panel panel--success">
       <!-- Default panel contents -->
       <div class="panel-heading">Panel heading</div>
       <div class="panel-body">
@@ -3245,7 +3258,7 @@
   </div><!-- /.col-lg-6 -->
   <div class="col-lg-6">
     <!-- Panel with list groups -->
-    <div class="panel success">
+    <div class="panel panel--success">
       <!-- Default panel contents -->
       <div class="panel-heading">Panel heading</div>
       <div class="panel-body">
@@ -3266,8 +3279,8 @@
 
     </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.info</span>
-      <div class="panel info">
+      <span class="styleguide-modifier-name">.panel--info</span>
+      <div class="panel panel--info">
   <div class="panel-body">
     Basic panel example
   </div>
@@ -3276,14 +3289,14 @@
 <div class="row">
   <div class="col-lg-6">
     <!-- Panel with heading -->
-    <div class="panel info">
+    <div class="panel panel--info">
       <div class="panel-heading">Panel heading without title</div>
       <div class="panel-body">
         Panel content
       </div>
     </div>
 
-    <div class="panel info">
+    <div class="panel panel--info">
       <div class="panel-heading">
         <h3 class="panel-title">Panel title</h3>
       </div>
@@ -3295,7 +3308,7 @@
   </div><!-- /.col-lg-6 -->
   <div class="col-lg-6">
     <!-- Panel with footer -->
-    <div class="panel info">
+    <div class="panel panel--info">
       <div class="panel-body">
         Panel content
       </div>
@@ -3307,7 +3320,7 @@
 <div class="row">
   <div class="col-lg-6">
     <!-- Panel with tables -->
-    <div class="panel info">
+    <div class="panel panel--info">
       <!-- Default panel contents -->
       <div class="panel-heading">Panel heading</div>
       <div class="panel-body">
@@ -3349,7 +3362,7 @@
   </div><!-- /.col-lg-6 -->
   <div class="col-lg-6">
     <!-- Panel with list groups -->
-    <div class="panel info">
+    <div class="panel panel--info">
       <!-- Default panel contents -->
       <div class="panel-heading">Panel heading</div>
       <div class="panel-body">
@@ -3370,8 +3383,8 @@
 
     </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.warning</span>
-      <div class="panel warning">
+      <span class="styleguide-modifier-name">.panel--warning</span>
+      <div class="panel panel--warning">
   <div class="panel-body">
     Basic panel example
   </div>
@@ -3380,14 +3393,14 @@
 <div class="row">
   <div class="col-lg-6">
     <!-- Panel with heading -->
-    <div class="panel warning">
+    <div class="panel panel--warning">
       <div class="panel-heading">Panel heading without title</div>
       <div class="panel-body">
         Panel content
       </div>
     </div>
 
-    <div class="panel warning">
+    <div class="panel panel--warning">
       <div class="panel-heading">
         <h3 class="panel-title">Panel title</h3>
       </div>
@@ -3399,7 +3412,7 @@
   </div><!-- /.col-lg-6 -->
   <div class="col-lg-6">
     <!-- Panel with footer -->
-    <div class="panel warning">
+    <div class="panel panel--warning">
       <div class="panel-body">
         Panel content
       </div>
@@ -3411,7 +3424,7 @@
 <div class="row">
   <div class="col-lg-6">
     <!-- Panel with tables -->
-    <div class="panel warning">
+    <div class="panel panel--warning">
       <!-- Default panel contents -->
       <div class="panel-heading">Panel heading</div>
       <div class="panel-body">
@@ -3453,7 +3466,7 @@
   </div><!-- /.col-lg-6 -->
   <div class="col-lg-6">
     <!-- Panel with list groups -->
-    <div class="panel warning">
+    <div class="panel panel--warning">
       <!-- Default panel contents -->
       <div class="panel-heading">Panel heading</div>
       <div class="panel-body">
@@ -3474,8 +3487,8 @@
 
     </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.danger</span>
-      <div class="panel danger">
+      <span class="styleguide-modifier-name">.panel--danger</span>
+      <div class="panel panel--danger">
   <div class="panel-body">
     Basic panel example
   </div>
@@ -3484,14 +3497,14 @@
 <div class="row">
   <div class="col-lg-6">
     <!-- Panel with heading -->
-    <div class="panel danger">
+    <div class="panel panel--danger">
       <div class="panel-heading">Panel heading without title</div>
       <div class="panel-body">
         Panel content
       </div>
     </div>
 
-    <div class="panel danger">
+    <div class="panel panel--danger">
       <div class="panel-heading">
         <h3 class="panel-title">Panel title</h3>
       </div>
@@ -3503,7 +3516,7 @@
   </div><!-- /.col-lg-6 -->
   <div class="col-lg-6">
     <!-- Panel with footer -->
-    <div class="panel danger">
+    <div class="panel panel--danger">
       <div class="panel-body">
         Panel content
       </div>
@@ -3515,7 +3528,7 @@
 <div class="row">
   <div class="col-lg-6">
     <!-- Panel with tables -->
-    <div class="panel danger">
+    <div class="panel panel--danger">
       <!-- Default panel contents -->
       <div class="panel-heading">Panel heading</div>
       <div class="panel-body">
@@ -3557,7 +3570,7 @@
   </div><!-- /.col-lg-6 -->
   <div class="col-lg-6">
     <!-- Panel with list groups -->
-    <div class="panel danger">
+    <div class="panel panel--danger">
       <!-- Default panel contents -->
       <div class="panel-heading">Panel heading</div>
       <div class="panel-body">
@@ -3689,8 +3702,8 @@
     <p>Use the well as a simple effect on an element to give it an inset effect.</p>
 
       <ul class="styleguide-modifier">
-          <li><strong>.lg</strong> - Large.</li>
-          <li><strong>.sm</strong> - Small.</li>
+          <li><strong>.well--lg</strong> - Large.</li>
+          <li><strong>.well--sm</strong> - Small.</li>
       </ul>
   </div>
   <div class="styleguide-element">
@@ -3698,13 +3711,13 @@
 
   </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.lg</span>
-      <div class="well lg">Look, I'm in a well!</div>
+      <span class="styleguide-modifier-name">.well--lg</span>
+      <div class="well well--lg">Look, I'm in a well!</div>
 
     </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.sm</span>
-      <div class="well sm">Look, I'm in a well!</div>
+      <span class="styleguide-modifier-name">.well--sm</span>
+      <div class="well well--sm">Look, I'm in a well!</div>
 
     </div>
   <div class="styleguide-html">
@@ -3928,6 +3941,68 @@
   </div>
 
 </div>
+
+    </div>
+    <div class="col-md-3 hidden-sm hidden-xs styleguide-doc-nav-container">
+      <nav class='sidenav styleguide-doc-nav'></nav>
+<script>
+  var toc = ['<ul class="nav nav-stacked">'];
+  var prevType = '';
+  
+  $('.main > h2, .main > h3').each(function() {
+  
+    $element = $(this);
+    var type = $element[0].tagName;
+    var title = $element.text();
+    var link = "#" + $element.attr("id");
+    var newHtml = '';
+  
+    if (prevType == 'H2' && type == 'H2') {
+      toc.push('</li>');
+  
+    } else if (prevType == 'H2' && type == 'H3') {
+      toc.push('<ul class="nav nav-stacked">');
+  
+    } else if (prevType == 'H3' && type == 'H3') {
+      toc.push('</li>');
+  
+    } else if (prevType == 'H3' && type == 'H2') {
+      toc.push('</li></ul>');
+    }
+  
+    toc.push('<li><a href="' + link + '">' + title + '</a>');
+  
+    prevType = type;
+  });
+  
+  if (prevType == 'H2') {
+    toc.push('</li>');
+  } else if (prevType == 'H3') {
+    toc.push('</li></ul>');
+  }
+  
+  $('.styleguide-doc-nav').html(toc.join(''));
+  
+  $('body').scrollspy({
+    target: '.styleguide-doc-nav',
+    offset: 1
+  });
+</script>
+<style>
+  .styleguide-doc-nav {
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+  }
+  
+  .slogan, footer {
+    position: relative;
+    z-index: 10;
+  }
+</style>
+
+    </div>
+  </div>
 
   </div>
 
