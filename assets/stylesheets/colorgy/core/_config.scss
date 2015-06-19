@@ -203,6 +203,15 @@ $border-radius-base:        3px !default;
 $border-radius-large:       4px !default;
 $border-radius-small:       1px !default;
 
+$box-padding-base-vertical:        20px !default;
+$box-padding-base-horizontal:      20px !default;
+
+$box-padding-compact-vertical:     12px !default;
+$box-padding-compact-horizontal:   12px !default;
+
+$box-padding-loose-vertical:       30px !default;
+$box-padding-loose-horizontal:     30px !default;
+
 // Global color for active items (e.g., navs or dropdowns)
 $component-active-color:    $white !default;
 // Global background color for active items (e.g., navs or dropdowns)

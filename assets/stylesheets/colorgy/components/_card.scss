@@ -6,10 +6,10 @@
 //
 // *************************************
 
-$card-padding-vertical: 20px !default;
-$card-padding-horizontal: 20px !default;
-$card-compact-padding-vertical: 12px !default;
-$card-compact-padding-horizontal: 12px !default;
+$card-padding-vertical:           $box-padding-base-vertical !default;
+$card-padding-horizontal:         $box-padding-base-horizontal !default;
+$card-compact-padding-vertical:   $box-padding-compact-vertical !default;
+$card-compact-padding-horizontal: $box-padding-compact-horizontal !default;
 
 .card {
 	padding: $card-padding-horizontal $card-padding-vertical;

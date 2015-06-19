@@ -78,6 +78,15 @@ h1, h2, h3, h4, h5, h6,
 			color: $headings-color-inverse;
 		}
 	}
+
+	// hash tag links that don’t headbutt the browser window
+	&::before {
+		content: '';
+		display: block;
+		visibility: hidden;
+		height: 80px;
+		margin-top: -80px;
+	}
 }
 
 h1, .h1,
@@ -191,6 +200,8 @@ mark,
 @include bg-variant('.bg-danger', $state-danger-bg);
 
 @include bg-variant('.bg-dark', $gray-dark);
+
+@include bg-variant('.bg-black', $gray-dark);
 
 // ----- Page header ----- //
 

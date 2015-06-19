@@ -1,0 +1,57 @@
+%nav.sidenav.styleguide-doc-nav
+
+:javascript
+  var toc = ['<ul class="nav nav-stacked">'];
+  var prevType = '';
+
+  $('.main > h2, .main > h3').each(function() {
+
+    $element = $(this);
+    var type = $element[0].tagName;
+    var title = $element.text();
+    var link = "#" + $element.attr("id");
+    var newHtml = '';
+
+    if (prevType == 'H2' && type == 'H2') {
+      toc.push('</li>');
+
+    } else if (prevType == 'H2' && type == 'H3') {
+      toc.push('<ul class="nav nav-stacked">');
+
+    } else if (prevType == 'H3' && type == 'H3') {
+      toc.push('</li>');
+
+    } else if (prevType == 'H3' && type == 'H2') {
+      toc.push('</li></ul>');
+    }
+
+    toc.push('<li><a href="' + link + '">' + title + '</a>');
+
+    prevType = type;
+  });
+
+  if (prevType == 'H2') {
+    toc.push('</li>');
+  } else if (prevType == 'H3') {
+    toc.push('</li></ul>');
+  }
+
+  $('.styleguide-doc-nav').html(toc.join(''));
+
+  $('body').scrollspy({
+    target: '.styleguide-doc-nav',
+    offset: 1
+  });
+
+:css
+
+  .styleguide-doc-nav {
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+  }
+
+  .slogan, footer {
+    position: relative;
+    z-index: 10;
+  }

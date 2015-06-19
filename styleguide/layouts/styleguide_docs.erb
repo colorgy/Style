@@ -1,0 +1,10 @@
+<% wrap_layout :styleguide_content do %>
+  <div class="row">
+    <div class="col-md-9 main">
+      <%= yield %>
+    </div>
+    <div class="col-md-3 hidden-sm hidden-xs styleguide-doc-nav-container">
+      <%= partial :styleguide_doc_nav %>
+    </div>
+  </div>
+<% end %>
