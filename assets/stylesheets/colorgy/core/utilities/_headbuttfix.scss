@@ -1,0 +1,13 @@
+// hash tag links that don’t headbutt the browser window
+.headbuttfix {
+
+	&::before {
+		content: '';
+		display: block;
+		visibility: hidden;
+		height: 80px;
+		margin-top: -80px;
+		pointer-events: none;
+		z-index: -1;
+	}
+}

@@ -4,6 +4,10 @@
     body.main-navbar-collapse-collapsing-in header .overlay {
       opacity: .8;
     }
+
+    .content {
+      padding-bottom: 20px;
+    }
   </style>
   <header class="inverse bg-black" style="position: relative; background-image: url('<%= image_path 'colorgy/background_blur_1_dark.jpg' %>'); background-size: cover; background-position: 50% 10%; ">
     <div class="text-clip-background" style="background-image: url('<%= image_path 'colorgy/background_blur_1_light.jpg' %>'); background-size: cover; background-position: 50% 10%; padding: 140px 0 20px; margin-bottom: 20px;">
@@ -38,7 +42,7 @@
     </div>
     <div class="overlay inverse hidden"></div>
   </header>
-  <div class="container">
+  <div class="container content">
     <%= yield %>
   </div>
 <% end %>

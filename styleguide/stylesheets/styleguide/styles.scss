@@ -193,3 +193,17 @@ $dark-checkerboard: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAAAA
 		}
 	}
 }
+
+// hash tag links that don’t headbutt the browser window
+h1, h2, h3, h4, h5, h6 {
+
+	&::before {
+		content: '';
+		display: block;
+		visibility: hidden;
+		height: 80px;
+		margin-top: -80px;
+		pointer-events: none;
+		z-index: -1;
+	}
+}
