@@ -53,6 +53,7 @@ output:
   fonts: assets/fonts/colorgy
   preview: assets/fonts/colorgy/icons
   _fonts_colorgy_icons.scss: assets/stylesheets/colorgy/core
+  _icon_font_list.html.erb: styleguide
 
 
 # -----------------------------------------------------------------------------
@@ -72,6 +73,7 @@ output:
 templates:
   - preview
   - _fonts_colorgy_icons.scss
+  - _icon_font_list.html.erb
 
 #preprocessor_path: ../fonts/
 

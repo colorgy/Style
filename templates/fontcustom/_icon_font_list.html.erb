@@ -1,0 +1,18 @@
+<!--
+  This file is auto generated from the template:
+    templates/icon_fonts/_icon_font.html.erb
+  by Font Custom.
+
+  Icon Font: <%= font_name %>
+-->
+
+<div class="icon-font-list">
+  <ul>
+    <% @glyphs.each do |name, value| %>
+      <li>
+        <span class="i-<%= name.to_s %>" aria-hidden="true"></span>
+        <span class="icon-class">i-<%= name.to_s %></span>
+      </li>
+    <% end %>
+  </ul>
+</div>

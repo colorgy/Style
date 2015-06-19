@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "edee88f2e089fd4377189d4275023bf1b94d53963a63ae0c0a7d123586f3a703",
-    "current": "edee88f2e089fd4377189d4275023bf1b94d53963a63ae0c0a7d123586f3a703"
+    "previous": "8d2a521754190fc3194f55ca87673ee676fcd82f994b20fbd4f3d616d5c923bd",
+    "current": "8d2a521754190fc3194f55ca87673ee676fcd82f994b20fbd4f3d616d5c923bd"
   },
   "fonts": [
     "assets/fonts/colorgy/colorgy-icons.ttf",
@@ -10,6 +10,10 @@
     "assets/fonts/colorgy/colorgy-icons.eot"
   ],
   "glyphs": {
+    "colorgy": {
+      "codepoint": 105000,
+      "source": "assets/fonts/colorgy/icons/colorgy.svg"
+    },
     "colorgy-text": {
       "codepoint": 105010,
       "source": "assets/fonts/colorgy/icons/colorgy-text.svg"
@@ -66,6 +70,7 @@
     "no_hash": true,
     "output": {
       "_fonts_colorgy_icons.scss": "assets/stylesheets/colorgy/core",
+      "_icon_font_list.html.erb": "styleguide",
       "css": "assets/fonts/colorgy",
       "fonts": "assets/fonts/colorgy",
       "preview": "assets/fonts/colorgy/icons"
@@ -74,11 +79,13 @@
     "quiet": true,
     "templates": [
       "preview",
-      "_fonts_colorgy_icons.scss"
+      "_fonts_colorgy_icons.scss",
+      "_icon_font_list.html.erb"
     ]
   },
   "templates": [
     "assets/fonts/colorgy/icons/colorgy-icons-preview.html",
-    "assets/stylesheets/colorgy/core/_fonts_colorgy_icons.scss"
+    "assets/stylesheets/colorgy/core/_fonts_colorgy_icons.scss",
+    "styleguide/_icon_font_list.html.erb"
   ]
 }

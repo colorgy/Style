@@ -16,7 +16,9 @@ The front-end bundle and style guide for Colorgy.
     - [Javascripts](#javascriptscolorgy)
 - [Styles](#styles)
   - [Stylesheet Conventions](#stylesheet-conventions)
+  	- [Variable Naming](#variable-naming)
     - [Authoring Examples](#authoring-examples)
+    - [Living Styleguide](#living-styleguide)
 - [Development](#development)
 - [Contributing](#contributing)
 
@@ -63,7 +65,7 @@ _你也可以只拆出部分元件使用，或是調整一些變數，詳情請�
 //= require colorgy
 ```
 
-_colorgy 是一個將所有相依套件都打包在一起的集合包，所以你將不需要另外 require 像是 jquery 或 modernizr 之類的函式庫。_
+_colorgy.js 是一個將所有相依套件都打包在一起的集合包，所以你將不需要另外 require 像是 jquery 或 modernizr 之類的函式庫。_
 
 _你也可以選擇只導入部分的檔案或元件，詳情請參考 [Project Structure](#project-structure) 段落。_
 
@@ -223,6 +225,14 @@ CSS 部分採用了 SMACSS 的方法論以及 BEM 命名架構 [*]，並遵從�
 
 `$component-name-element-name-modifier-property-property-variant`
 
+以上各部分解釋如下：
+
+- `component-name`: 該變數是屬於哪個 component (若有)
+- `element-name`: 該變數是屬於哪個 element (若有)，注意無需再加上重複的 `component-name`
+- `modifier`: 該變數是屬於哪個 modifier (若有)，注意無需再加上重複的 `component-name` 或 `element-name`，例如 `hover`、`active`、`inverse`
+- `property`: 變數內容，例如 `color`、`bg`、`padding`、`font-size`
+- `property-variant`: 變數本身的變形，例如 `dark`、`large`
+
 範例：
 
 - `$font-family-sans-serif`、`$font-family-serif`
@@ -232,14 +242,6 @@ CSS 部分採用了 SMACSS 的方法論以及 BEM 命名架構 [*]，並遵從�
 - `$padding-base-vertical`、`$box-padding-base-vertical`
 - `$btn-border-width`
 - `$btn-color`、`$btn-success-color`
-
-各部分解釋如下：
-
-- `component-name`: 該變數是屬於哪個 component (若有)
-- `element-name`: 該變數是屬於哪個 element (若有)，注意無需再加上重複的 `component-name`
-- `modifier`: 該變數是屬於哪個 modifier (若有)，注意無需再加上重複的 `component-name` 或 `element-name`，例如 `hover`、`active`、`inverse`
-- `property`: 變數內容，例如 `color`、`bg`、`padding`、`font-size`
-- `property-variant`: 變數本身的變形，例如 `dark`、`large`
 
 #### Authoring Examples
 
@@ -332,7 +334,7 @@ CSS 部分採用了 SMACSS 的方法論以及 BEM 命名架構 [*]，並遵從�
 
 #### Living Styleguide
 
-寫好一個新元件後，照慣例 (KSS) 加入檔頭註解，在 `styleguide/styleblocks` 底下建立相對應的 sample HTML code (檔名與 css 一致)，接著編輯要歸入的 styleguide section (例如 `/styleguide/components.html.haml`)，將 styleblock (像是 `= styleblock 'button', section: 'Button'`) 插入即可。
+寫好一個新元件後，照慣例 (KSS) 加入檔頭註解，在 `styleguide/styleblocks` 底下建立相對應的 sample HTML code (檔名與 css 一致)，接著編輯要歸入的 styleguide section (例如 `styleguide/components.html.haml`)，將 styleblock (像是 `= styleblock 'button', section: 'Button'`) 插入即可。
 
 
 ## Development

@@ -136,3 +136,60 @@ $dark-checkerboard: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAAAA
 	margin-bottom: $padding-base-vertical;
 	margin-right: $padding-base-vertical;
 }
+
+.icon-font-list {
+	margin: 0 -10px 20px;
+	overflow: hidden;
+
+	ul {
+		padding-left: 0;
+		list-style: none;
+	}
+
+	li {
+		float: left;
+		width: 25%;
+		height: 115px;
+		padding: 10px;
+		font-size: 10px;
+		line-height: 1.4;
+		text-align: center;
+		background-color: $gray-lighter;
+		border: 1px solid $white;
+
+		&:hover {
+			color: $white;
+			background-color: $brand-primary;
+		}
+
+		span {
+			margin-top: 5px;
+			margin-bottom: 10px;
+			font-size: 24px;
+		}
+
+		.icon-class {
+			margin: 0;
+			font-size: small;
+			display: block;
+			text-align: center;
+			word-wrap: break-word; /* Help out IE10+ with class names */
+			max-height: 50px;
+			text-overflow: ellipsis;
+			overflow: hidden;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+
+	.icon-font-list {
+		margin-right: 0;
+		margin-left: 0;
+
+		li {
+			width: 12.5%;
+			font-size: 12px;
+		}
+	}
+}
