@@ -1,23 +1,20 @@
 // *************************************
 //
-// Use the well as a simple effect on an element to give it an inset effect.
+//   Use the well as a simple effect on an element to give it an inset effect.
 //
-// .lg  - Large.
-// .sm  - Small.
+//   .well--lg  - Large.
+//   .well--sm  - Small.
 //
-// Styleguide Well.
+//   Styleguide Well.
 //
 // *************************************
 
 @import "bootstrap/wells";
 
-.well {
+.well--lg {
+	@extend .well-lg;
+}
 
-	&.lg {
-		@extend .well-lg;
-	}
-
-	&.sm {
-		@extend .well-sm;
-	}
+.well--sm {
+	@extend .well-sm;
 }

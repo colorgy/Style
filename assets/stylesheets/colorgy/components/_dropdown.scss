@@ -1,18 +1,15 @@
 // *************************************
 //
-// Dropdowns. Requires `components/dropdown.js` to make interactive.
+//   Dropdown
 //
-// .right  - Pulls right the <code>dropdown-menu</code>.
+//   .dropdown-menu--right  - Pulls right the <code>dropdown-menu</code>.
 //
-// Styleguide Dropdown.
+//   Styleguide Dropdown
 //
 // *************************************
 
 @import "bootstrap/dropdowns";
 
-.dropdown-menu {
-
-	&.right {
-		@extend .dropdown-menu-right;
-	}
+.dropdown-menu--right {
+	@extend .dropdown-menu-right;
 }

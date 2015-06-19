@@ -1,14 +1,14 @@
 // *************************************
 //
-// Labels.
+//   Label
 //
-// .primary  - Primary.
-// .success  - Success.
-// .info     - Info.
-// .warning  - Warning.
-// .danger   - Danger.
+//   .label--primary  - Primary.
+//   .label--success  - Success.
+//   .label--info     - Info.
+//   .label--warning  - Warning.
+//   .label--danger   - Danger.
 //
-// Styleguide Label.
+//   Styleguide Label
 //
 // *************************************
 
@@ -16,24 +16,24 @@
 
 .label {
 	@extend .label-default;
+}
 
-	&.primary {
-		@extend .label-primary;
-	}
+.label--primary {
+	@extend .label-primary;
+}
 
-	&.success {
-		@extend .label-success;
-	}
+.label--success {
+	@extend .label-success;
+}
 
-	&.info {
-		@extend .label-info;
-	}
+.label--info {
+	@extend .label-info;
+}
 
-	&.warning {
-		@extend .label-warning;
-	}
+.label--warning {
+	@extend .label-warning;
+}
 
-	&.danger {
-		@extend .label-danger;
-	}
+.label--danger {
+	@extend .label-danger;
 }

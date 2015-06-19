@@ -1,23 +1,20 @@
 // *************************************
 //
-// Input groups.
+//   Input Group
 //
-// .lg  - Large.
-// .sm  - Small.
+//   .input-group--lg  - Large.
+//   .input-group--sm  - Small.
 //
-// Styleguide InputGroup.
+//   Styleguide InputGroup
 //
 // *************************************
 
 @import "bootstrap/input-groups";
 
-.input-group {
+.input-group--lg {
+	@extend .input-group-lg;
+}
 
-	&.lg {
-		@extend .input-group-lg;
-	}
-
-	&.sm {
-		@extend .input-group-sm;
-	}
+.input-group--sm {
+	@extend .input-group-sm;
 }

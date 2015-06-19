@@ -1,33 +1,30 @@
 // *************************************
 //
-// Navs.
+//   Nav
 //
-// .tabs       - Tabs.
-// .pills      - Pills.
-// .stacked    - Stacked.
-// .justified  - Justified.
+//   .nav--tabs       - Tabs.
+//   .nav--pills      - Pills.
+//   .nav--stacked    - Stacked.
+//   .nav--justified  - Justified.
 //
-// Styleguide Nav.
+//   Styleguide Nav
 //
 // *************************************
 
 @import "bootstrap/navs";
 
-.nav {
+.nav--tabs {
+	@extend .nav-tabs;
+}
 
-	&.tabs {
-		@extend .nav-tabs;
-	}
+.nav--pills {
+	@extend .nav-pills;
+}
 
-	&.pills {
-		@extend .nav-pills;
-	}
+.nav--stacked {
+	@extend .nav-stacked;
+}
 
-	&.stacked {
-		@extend .nav-stacked;
-	}
-
-	&.justified {
-		@extend .nav-justified;
-	}
+.nav--justified {
+	@extend .nav-justified;
 }

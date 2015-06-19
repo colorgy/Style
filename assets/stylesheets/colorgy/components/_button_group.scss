@@ -1,33 +1,30 @@
 // *************************************
 //
-// Button groups.
+//   Button groups.
 //
-// .lg         - Large.
-// .sm         - Small.
-// .xs         - Extra small.
-// .justified  - Stretch at equal sizes to span the entire width of its parent.
+//   .btn-group--lg         - Large.
+//   .btn-group--sm         - Small.
+//   .btn-group--xs         - Extra small.
+//   .btn-group--justified  - Stretch at equal sizes to span the entire width of its parent.
 //
-// Styleguide ButtonGroup.
+//   Styleguide ButtonGroup
 //
 // *************************************
 
 @import "bootstrap/button-groups";
 
-.btn-group {
+.btn-group--lg {
+	@extend .btn-group-lg;
+}
 
-	&.lg {
-		@extend .btn-group-lg;
-	}
+.btn-group--sm {
+	@extend .btn-group-sm;
+}
 
-	&.sm {
-		@extend .btn-group-sm;
-	}
+.btn-group--xs {
+	@extend .btn-group-xs;
+}
 
-	&.xs {
-		@extend .btn-group-xs;
-	}
-
-	&.justified {
-		@extend .btn-group-justified;
-	}
+.btn-group--justified {
+	@extend .btn-group-justified;
 }

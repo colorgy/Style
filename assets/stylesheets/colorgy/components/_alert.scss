@@ -1,14 +1,14 @@
 // *************************************
 //
-// Alerts.
+//   Alerts.
 //
-// .success      - Success.
-// .info         - Info.
-// .warning      - Warning.
-// .danger       - Danger.
-// .dismissible  - Dismissible. Requires <code>components/alert.js</code> to make interactive.
+//   .alert--success      - Success.
+//   .alert--info         - Info.
+//   .alert--warning      - Warning.
+//   .alert--danger       - Danger.
+//   .dismissible         - Dismissible.
 //
-// Styleguide Alert.
+//   Styleguide Alert
 //
 // *************************************
 
@@ -17,24 +17,24 @@
 
 .alert {
 	@extend .alert-info;
+}
 
-	&.success {
-		@extend .alert-success;
-	}
+.alert--success {
+	@extend .alert-success;
+}
 
-	&.info {
-		@extend .alert-info;
-	}
+.alert--info {
+	@extend .alert-info;
+}
 
-	&.warning {
-		@extend .alert-warning;
-	}
+.alert--warning {
+	@extend .alert-warning;
+}
 
-	&.danger {
-		@extend .alert-danger;
-	}
+.alert--danger {
+	@extend .alert-danger;
+}
 
-	&.dismissible {
-		@extend .alert-dismissible;
-	}
+.alert--dismissible {
+	@extend .alert-dismissible;
 }

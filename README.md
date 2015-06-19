@@ -2,7 +2,7 @@
 
 Colorgy 的樣式指南、樣式表以及前端工具包。
 
-The front-end bundle and style guide for Colorgy. Builded on top of Bootstrap, following the architecture inspired by [SMACSS](https://smacss.com/) and [MVCSS](http://mvcss.io/).
+The front-end bundle and style guide for Colorgy.
 
 ---
 
@@ -14,6 +14,9 @@ The front-end bundle and style guide for Colorgy. Builded on top of Bootstrap, f
   - [Assets](#assets)
     - [Stylesheets](#stylesheetscolorgy)
     - [Javascripts](#javascriptscolorgy)
+- [Styles](#styles)
+  - [Stylesheet Conventions](#stylesheet-conventions)
+    - [Authoring Examples](#authoring-examples)
 - [Development](#development)
 - [Contributing](#contributing)
 
@@ -78,16 +81,10 @@ _適用於任何專案。_
 ## Project Structure
 
 ```
-├── Gemfile
-├── Gemfile.lock
-├── colorgy_style.gemspec
-├── config.rb
-├── Rakefile
 ├── README.md
+├── ...
 ├── bin
-│   ├── console
-│   ├── server
-│   └── setup
+│   └── ...
 ├── lib
 │   └── ...
 ├── spec
@@ -101,11 +98,15 @@ _適用於任何專案。_
 └── assets
     ├── fonts
     │   └── colorgy
-    │       └── ...
+    │       ├── ...
+    |       └── icons
+    |           └── ...
     ├── images
     │   └── colorgy
     │       └── ...
     ├── stylesheets
+    |   ├── ...
+    |   ├── colorgy.scss
     |   ├── colorgy
     |   │   ├── application.scss
     |   │   ├── core
@@ -116,17 +117,18 @@ _適用於任何專案。_
     |   │   │   └── ...
     |   │   └── components
     |   │       └── ...
-    |   ├── colorgy.scss
-    |   ├── ...
     |   └── vendor
     |       └── ...
     └── javascripts
+        ├── colorgy.js
+        ├── bundle.js
         ├── colorgy
         │   ├── application.js
         │   ├── components
+        │   |   └── ...
         │   ├── lib
+        │   |   └── ...
         │   └── modernizr.js
-        ├── colorgy.js
         └── vendor
             └── ...
 ```
@@ -170,6 +172,8 @@ _適用於任何專案。_
 
 所有字型檔案。為方便與其他前端框架整合，因此所有檔案皆放置於 `colorgy` 目錄下作為 namespace。
 
+- `icons/` - icon font 的 SVG 原檔，係由該目錄底下的 `Icons.sketch` 匯出，並使用 [Font Custom](http://fontcustom.com/) 產生字體
+
 #### `images/colorgy`
 
 圖片檔案。為方便與其他前端框架整合，因此所有檔案皆放置於 `colorgy` 目錄下作為 namespace。
@@ -199,6 +203,136 @@ _適用於任何專案。_
 #### `javascripts/vender`
 
 可引入使用的第三方 JavaScript 函式庫。為了方便而直接加入在此專案中。
+
+
+## Styles
+
+基本 coding style 可參考專案目錄下的 `.editorconfig` 並在編輯器安裝 [EditorConfig](http://editorconfig.org/) 來遵守。
+
+### Stylesheet Conventions
+
+CSS 部分採用了 SMACSS 的方法論以及 BEM 命名架構 [*]，並遵從大部份 [MVCSS](http://mvcss.io/) 的準則。
+
+- `core/` 目錄下放置了 stylesheet 核心，包含 config、helpers、基本元素 (base)、utilities (例如 `.pull-right`、`.text-center`、`.inverse`) 等
+- `layouts/` 底下收納了各種頁面的佈局結構 - 沒有實際表現風格，提供排版、又或是 RWD 輔助的鷹架，class name 以 `l-` 前綴
+- `components/` 中放置各式元件 - 無相依性、可重複使用的 UI 基本單位
+
+[*]: Element 的命名使用 `.card-header` 風格，而非原始的 `.card__header`。Modifier 命名慣例則為一致，但某些慣用的 state，例如 `.active`、`.disabled`、`.open`、`.collapse`、`.dismissible` 可以直接使用 class 表示 (而這些 class 通常也參與 JS 的互動)。
+
+#### Variable Naming
+
+`$component-name-element-name-modifier-property-property-variant`
+
+範例：
+
+- `$font-family-sans-serif`、`$font-family-serif`
+- `$font-size-base`、`$font-size-large`、`$font-size-small`
+- `$gray-darker`
+- `$text-color`、`$text-color-inverse`
+- `$padding-base-vertical`、`$box-padding-base-vertical`
+- `$btn-border-width`
+- `$btn-color`、`$btn-success-color`
+
+各部分解釋如下：
+
+- `component-name`: 該變數是屬於哪個 component (若有)
+- `element-name`: 該變數是屬於哪個 element (若有)，注意無需再加上重複的 `component-name`
+- `modifier`: 該變數是屬於哪個 modifier (若有)，注意無需再加上重複的 `component-name` 或 `element-name`，例如 `hover`、`active`、`inverse`
+- `property`: 變數內容，例如 `color`、`bg`、`padding`、`font-size`
+- `property-variant`: 變數本身的變形，例如 `dark`、`large`
+
+#### Authoring Examples
+
+##### Functions
+
+```scss
+// ----- Function Name ----- //
+// -> Description
+//
+// $arg - the argument description
+
+@function name($arg) {
+	// ...
+}
+```
+
+##### Mixins
+
+```scss
+// ----- Mixin Name ----- //
+// -> Description
+//
+// $arg - the argument description
+
+@mixin button-variant($arg) {
+	// ...
+}
+```
+
+##### Components
+
+```scss
+// *************************************
+//
+//   Component
+//   -> Description
+//
+//   .component--modifier - description
+//
+//   Styleguide StyleguideSection
+//
+// *************************************
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+// ----- Colors ----- //
+
+// ... (with the !default flag)
+
+// ----- Sizing ----- //
+
+// ... (with the !default flag)
+
+// -------------------------------------
+//   Helpers
+// -------------------------------------
+
+// ...
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.component {
+	// ...
+}
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// ----- Scaffolding Name ----- //
+
+.component-scaffolding {
+	// ...
+}
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Modifier Name ----- //
+
+.component--modifier {
+	// ...
+}
+```
+
+#### Living Styleguide
+
+寫好一個新元件後，照慣例 (KSS) 加入檔頭註解，在 `styleguide/styleblocks` 底下建立相對應的 sample HTML code (檔名與 css 一致)，接著編輯要歸入的 styleguide section (例如 `/styleguide/components.html.haml`)，將 styleblock (像是 `= styleblock 'button', section: 'Button'`) 插入即可。
 
 
 ## Development

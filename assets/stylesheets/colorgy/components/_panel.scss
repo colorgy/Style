@@ -1,14 +1,14 @@
 // *************************************
 //
-// Panels.
+//   Panel
 //
-// .primary  - Primary.
-// .success  - Success.
-// .info     - Info.
-// .warning  - Warning.
-// .danger   - Danger.
+//   .panel--primary  - Primary.
+//   .panel--success  - Success.
+//   .panel--info     - Info.
+//   .panel--warning  - Warning.
+//   .panel--danger   - Danger.
 //
-// Styleguide Panel.
+//   Styleguide Panel
 //
 // *************************************
 
@@ -16,24 +16,24 @@
 
 .panel {
 	@extend .panel-default;
+}
 
-	&.primary {
-		@extend .panel-primary;
-	}
+.panel--primary {
+	@extend .panel-primary;
+}
 
-	&.success {
-		@extend .panel-success;
-	}
+.panel--success {
+	@extend .panel-success;
+}
 
-	&.info {
-		@extend .panel-info;
-	}
+.panel--info {
+	@extend .panel-info;
+}
 
-	&.warning {
-		@extend .panel-warning;
-	}
+.panel--warning {
+	@extend .panel-warning;
+}
 
-	&.danger {
-		@extend .panel-danger;
-	}
+.panel--danger {
+	@extend .panel-danger;
 }
