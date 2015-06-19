@@ -1,0 +1,81 @@
+// *************************************
+//
+// Side Navs.
+//
+// Styleguide SideNav.
+//
+// *************************************
+
+$sidenav-active-color: $link-color !default;
+
+.sidenav {
+	padding-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+	.nav {
+
+		> li > a {
+			color: #999;
+			border-left: 1px solid transparent;
+			padding: 4px 20px;
+			font-size: 13px;
+			font-weight: 400;
+		}
+
+		> .active > a,
+		> li > a:hover,
+		> li > a:focus {
+			color: $sidenav-active-color;
+			text-decoration: none;
+			background-color: transparent;
+			border-left-color: $sidenav-active-color;
+		}
+
+		> .active > a,
+		> li > a:hover,
+		> li > a:focus {
+			color: $sidenav-active-color;
+			text-decoration: none;
+			background-color: transparent;
+			border-left-color: $sidenav-active-color;
+		}
+
+		> .active > a ,
+		> .active:hover > a,
+		> .active:focus > a {
+			font-weight: 700;
+		}
+
+		> .active > a {
+			border-left-width: 2px;
+		}
+
+		// nested nav
+		.nav {
+
+			.active > a,
+			.active:hover > a,
+			.active:focus > a {
+				font-weight: 500;
+			}
+
+			li > a {
+				padding-top: 1px;
+				padding-bottom: 1px;
+				padding-left: 30px;
+				font-size: 12px;
+			}
+		}
+
+		// hide inactive nested list
+		ul.nav {
+			display: none;
+		}
+
+		// show active nested list
+		.active > ul.nav {
+			display: block;
+		}
+	}
+}

@@ -12,25 +12,25 @@
           <% if current_page.data.page_name == 'globals' %>
             <span class="text-clip-background-clear-text">Globals</span>
           <% else %>
-            <small><%= link_to 'Globals', 'globals.html' %></small>
+            <small><%= link_to 'Globals', '/globals.html', relative: true %></small>
           <% end %>
           <small>/</small>
           <% if current_page.data.page_name == 'layouts' %>
             <span class="text-clip-background-clear-text">Layouts</span>
           <% else %>
-            <small><%= link_to 'Layouts', 'layouts.html' %></small>
+            <small><%= link_to 'Layouts', '/layouts.html', relative: true %></small>
           <% end %>
           <small>/</small>
           <% if current_page.data.page_name == 'components' %>
             <span class="text-clip-background-clear-text">Components</span>
           <% else %>
-            <small><%= link_to 'Components', 'components.html' %></small>
+            <small><%= link_to 'Components', '/components.html', relative: true %></small>
           <% end %>
           <small>/</small>
           <% if current_page.data.page_name == 'extras' %>
             <span class="text-clip-background-clear-text">Extras</span>
           <% else %>
-            <small><%= link_to 'Extras', 'extras.html' %></small>
+            <small><%= link_to 'Extras', '/extras.html', relative: true %></small>
           <% end %>
         </div>
         <p><%= current_page.data.page_description %></p>
