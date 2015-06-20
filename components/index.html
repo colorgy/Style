@@ -1531,8 +1531,156 @@
   </div>
 
 </div>
-<h2 id='navs'>3.2. 導航</h2>
-<h3 id='nav'>3.2.1. 導航選單</h3>
+<h2 id='container'>3.2. 容器</h2>
+<div class="styleguide-example">
+
+  <h3>Card <em>_card.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>Card</p>
+
+      <ul class="styleguide-modifier">
+          <li><strong>.card--sm</strong> - Compact</li>
+          <li><strong>.card--lg</strong> - Loose</li>
+      </ul>
+  </div>
+  <div class="styleguide-element">
+    <!-- A simple container to show content composed of different types of objects, providing basic padding and background. an additional z-depth is added for visibility. -->
+<div class="card z-depth-1">
+  Hello World!
+</div>
+
+<!-- A card including content and action. -->
+<div class="card z-depth-1">
+  <div class="card-content white-text">
+    <span class="card-title">Card Title</span>
+    <p>Lorem ipsum dolor sit amet, consul consetetur eu pro, cu nostro efficiendi efficiantur sed. Soluta aeterno inermis mea in, has facer lobortis cu. An quis mediocrem his, sea assentior constituto theophrastus ne, omittam officiis duo id. Tollit accusam perpetua pri cu. Eu soleat regione duo, vis eripuit delicatissimi at, nominati maiestatis ea cum.</p>
+  </div>
+  <div class="card-actions">
+    <a href="#">This is a link</a>
+    <button>This is a button</button>
+  </div>
+</div>
+
+<!-- A card with title image. -->
+<div class="card z-depth-1">
+  <div class="card-image">
+    <img data-src="holder.js/100%x200">
+    <span class="card-title">Card Title</span>
+  </div>
+  <div class="card-content">
+    <p>Lorem ipsum dolor sit amet, ornatus insolens definitionem cu usu, quis salutatus percipitur ad pri. Enim iusto ei duo, habemus percipit maiestatis pri no. Vocent salutatus sea no. Mei accusamus dissentiunt signiferumque an. In qui posse dicat assum. Stet praesent eam eu, vitae menandri ex usu.</p>
+  </div>
+  <div class="card-actions">
+    <a href="#">This is a link</a>
+  </div>
+</div>
+
+  </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.card--sm</span>
+      <!-- A simple container to show content composed of different types of objects, providing basic padding and background. an additional z-depth is added for visibility. -->
+<div class="card z-depth-1 card--sm">
+  Hello World!
+</div>
+
+<!-- A card including content and action. -->
+<div class="card z-depth-1 card--sm">
+  <div class="card-content white-text">
+    <span class="card-title">Card Title</span>
+    <p>Lorem ipsum dolor sit amet, consul consetetur eu pro, cu nostro efficiendi efficiantur sed. Soluta aeterno inermis mea in, has facer lobortis cu. An quis mediocrem his, sea assentior constituto theophrastus ne, omittam officiis duo id. Tollit accusam perpetua pri cu. Eu soleat regione duo, vis eripuit delicatissimi at, nominati maiestatis ea cum.</p>
+  </div>
+  <div class="card-actions">
+    <a href="#">This is a link</a>
+    <button>This is a button</button>
+  </div>
+</div>
+
+<!-- A card with title image. -->
+<div class="card z-depth-1 card--sm">
+  <div class="card-image">
+    <img data-src="holder.js/100%x200">
+    <span class="card-title">Card Title</span>
+  </div>
+  <div class="card-content">
+    <p>Lorem ipsum dolor sit amet, ornatus insolens definitionem cu usu, quis salutatus percipitur ad pri. Enim iusto ei duo, habemus percipit maiestatis pri no. Vocent salutatus sea no. Mei accusamus dissentiunt signiferumque an. In qui posse dicat assum. Stet praesent eam eu, vitae menandri ex usu.</p>
+  </div>
+  <div class="card-actions">
+    <a href="#">This is a link</a>
+  </div>
+</div>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.card--lg</span>
+      <!-- A simple container to show content composed of different types of objects, providing basic padding and background. an additional z-depth is added for visibility. -->
+<div class="card z-depth-1 card--lg">
+  Hello World!
+</div>
+
+<!-- A card including content and action. -->
+<div class="card z-depth-1 card--lg">
+  <div class="card-content white-text">
+    <span class="card-title">Card Title</span>
+    <p>Lorem ipsum dolor sit amet, consul consetetur eu pro, cu nostro efficiendi efficiantur sed. Soluta aeterno inermis mea in, has facer lobortis cu. An quis mediocrem his, sea assentior constituto theophrastus ne, omittam officiis duo id. Tollit accusam perpetua pri cu. Eu soleat regione duo, vis eripuit delicatissimi at, nominati maiestatis ea cum.</p>
+  </div>
+  <div class="card-actions">
+    <a href="#">This is a link</a>
+    <button>This is a button</button>
+  </div>
+</div>
+
+<!-- A card with title image. -->
+<div class="card z-depth-1 card--lg">
+  <div class="card-image">
+    <img data-src="holder.js/100%x200">
+    <span class="card-title">Card Title</span>
+  </div>
+  <div class="card-content">
+    <p>Lorem ipsum dolor sit amet, ornatus insolens definitionem cu usu, quis salutatus percipitur ad pri. Enim iusto ei duo, habemus percipit maiestatis pri no. Vocent salutatus sea no. Mei accusamus dissentiunt signiferumque an. In qui posse dicat assum. Stet praesent eam eu, vitae menandri ex usu.</p>
+  </div>
+  <div class="card-actions">
+    <a href="#">This is a link</a>
+  </div>
+</div>
+
+    </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;!-- A simple container to show content composed of different types of objects, providing basic padding and background. an additional z-depth is added for visibility. --&gt;
+&lt;div class=&quot;card z-depth-1&quot;&gt;
+  Hello World!
+&lt;&#x2F;div&gt;
+
+&lt;!-- A card including content and action. --&gt;
+&lt;div class=&quot;card z-depth-1&quot;&gt;
+  &lt;div class=&quot;card-content white-text&quot;&gt;
+    &lt;span class=&quot;card-title&quot;&gt;Card Title&lt;&#x2F;span&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consul consetetur eu pro, cu nostro efficiendi efficiantur sed. Soluta aeterno inermis mea in, has facer lobortis cu. An quis mediocrem his, sea assentior constituto theophrastus ne, omittam officiis duo id. Tollit accusam perpetua pri cu. Eu soleat regione duo, vis eripuit delicatissimi at, nominati maiestatis ea cum.&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;card-actions&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;This is a link&lt;&#x2F;a&gt;
+    &lt;button&gt;This is a button&lt;&#x2F;button&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- A card with title image. --&gt;
+&lt;div class=&quot;card z-depth-1&quot;&gt;
+  &lt;div class=&quot;card-image&quot;&gt;
+    &lt;img data-src=&quot;holder.js&#x2F;100%x200&quot;&gt;
+    &lt;span class=&quot;card-title&quot;&gt;Card Title&lt;&#x2F;span&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;card-content&quot;&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, ornatus insolens definitionem cu usu, quis salutatus percipitur ad pri. Enim iusto ei duo, habemus percipit maiestatis pri no. Vocent salutatus sea no. Mei accusamus dissentiunt signiferumque an. In qui posse dicat assum. Stet praesent eam eu, vitae menandri ex usu.&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;card-actions&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;This is a link&lt;&#x2F;a&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+</code></pre>
+  </div>
+
+</div>
+<h2 id='navs'>3.3. 導航</h2>
+<h3 id='nav'>3.3.1. 導航選單</h3>
 <div class="styleguide-example">
 
   <h3>Nav <em>_nav.scss</em></h3>
@@ -1678,7 +1826,7 @@
   </div>
 
 </div>
-<h3 id='sidenav'>3.2.2. 側邊文件導航選單</h3>
+<h3 id='sidenav'>3.3.2. 側邊文件導航選單</h3>
 <div class="styleguide-example">
 
   <h3>SideNav <em>_sidenav.scss</em></h3>
@@ -1744,7 +1892,7 @@
   </div>
 
 </div>
-<h3 id='breadcrumb'>3.2.3. 麵包屑導航</h3>
+<h3 id='breadcrumb'>3.3.3. 麵包屑導航</h3>
 <div class="styleguide-example">
 
   <h3>Breadcrumb <em>_breadcrumb.scss</em></h3>
@@ -1770,7 +1918,7 @@
   </div>
 
 </div>
-<h3 id='pagination'>3.2.4. 分頁導航</h3>
+<h3 id='pagination'>3.3.4. 分頁導航</h3>
 <div class="styleguide-example">
 
   <h3>Pagination <em>_pagination.scss</em></h3>
@@ -1874,7 +2022,7 @@
   </div>
 
 </div>
-<h3 id='pager'>3.2.5. 分頁導航</h3>
+<h3 id='pager'>3.3.5. 分頁導航</h3>
 <div class="styleguide-example">
 
   <h3>Pager <em>_pager.scss</em></h3>
@@ -1902,7 +2050,7 @@
   </div>
 
 </div>
-<h2 id='buttons'>3.3. 頁面元素</h2>
+<h2 id='buttons'>3.4. 頁面元素</h2>
 <div class="styleguide-example">
 
   <h3>Navbar <em>_navbar.scss</em></h3>
@@ -1921,7 +2069,7 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse-53dc43298a">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse-61e60c0c56">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -1931,7 +2079,7 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="example-navbar-collapse-53dc43298a">
+    <div class="collapse navbar-collapse" id="example-navbar-collapse-61e60c0c56">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
         <li><a href="#">Link</a></li>
@@ -1978,7 +2126,7 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse-53dc43298a">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse-61e60c0c56">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -1988,7 +2136,7 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="example-navbar-collapse-53dc43298a">
+    <div class="collapse navbar-collapse" id="example-navbar-collapse-61e60c0c56">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
         <li><a href="#">Link</a></li>
@@ -2035,7 +2183,7 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse-53dc43298a">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse-61e60c0c56">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -2045,7 +2193,7 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="example-navbar-collapse-53dc43298a">
+    <div class="collapse navbar-collapse" id="example-navbar-collapse-61e60c0c56">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
         <li><a href="#">Link</a></li>
@@ -2092,7 +2240,7 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse-53dc43298a">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse-61e60c0c56">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -2102,7 +2250,7 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="example-navbar-collapse-53dc43298a">
+    <div class="collapse navbar-collapse" id="example-navbar-collapse-61e60c0c56">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
         <li><a href="#">Link</a></li>
@@ -2149,7 +2297,7 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse-53dc43298a">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse-61e60c0c56">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -2159,7 +2307,7 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="example-navbar-collapse-53dc43298a">
+    <div class="collapse navbar-collapse" id="example-navbar-collapse-61e60c0c56">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
         <li><a href="#">Link</a></li>
@@ -2205,7 +2353,7 @@
   &lt;div class=&quot;container-fluid&quot;&gt;
     &lt;!-- Brand and toggle get grouped for better mobile display --&gt;
     &lt;div class=&quot;navbar-header&quot;&gt;
-      &lt;button type=&quot;button&quot; class=&quot;navbar-toggle collapsed&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#example-navbar-collapse-53dc43298a&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;navbar-toggle collapsed&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#example-navbar-collapse-61e60c0c56&quot;&gt;
         &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;&#x2F;span&gt;
         &lt;span class=&quot;icon-bar&quot;&gt;&lt;&#x2F;span&gt;
         &lt;span class=&quot;icon-bar&quot;&gt;&lt;&#x2F;span&gt;
@@ -2215,7 +2363,7 @@
     &lt;&#x2F;div&gt;
 
     &lt;!-- Collect the nav links, forms, and other content for toggling --&gt;
-    &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;example-navbar-collapse-53dc43298a&quot;&gt;
+    &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;example-navbar-collapse-61e60c0c56&quot;&gt;
       &lt;ul class=&quot;nav navbar-nav&quot;&gt;
         &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Link &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;

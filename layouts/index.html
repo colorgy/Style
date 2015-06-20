@@ -94,69 +94,74 @@
     <div class="overlay inverse hidden"></div>
   </header>
   <div class="container content">
-    <div class='row'>
-  <div class='col-md-9 main'>
-    <h2 id='h1'>1.1</h2>
+      <div class="row">
+    <div class="col-md-9 main">
+      <h2 id='header'>2.1. Header</h2>
+<h2 id='hero'>2.2. Hero</h2>
+<h2 id='hero'>2.3. Footer</h2>
+<h2 id='hero'>2.4. Content</h2>
+
+    </div>
+    <div class="col-md-3 hidden-sm hidden-xs styleguide-doc-nav-container">
+      <nav class='sidenav styleguide-doc-nav'></nav>
+<script>
+  var toc = ['<ul class="nav nav-stacked">'];
+  var prevType = '';
+  
+  $('.main > h2, .main > h3').each(function() {
+  
+    $element = $(this);
+    var type = $element[0].tagName;
+    var title = $element.text();
+    var link = "#" + $element.attr("id");
+    var newHtml = '';
+  
+    if (prevType == 'H2' && type == 'H2') {
+      toc.push('</li>');
+  
+    } else if (prevType == 'H2' && type == 'H3') {
+      toc.push('<ul class="nav nav-stacked">');
+  
+    } else if (prevType == 'H3' && type == 'H3') {
+      toc.push('</li>');
+  
+    } else if (prevType == 'H3' && type == 'H2') {
+      toc.push('</li></ul>');
+    }
+  
+    toc.push('<li><a href="' + link + '">' + title + '</a>');
+  
+    prevType = type;
+  });
+  
+  if (prevType == 'H2') {
+    toc.push('</li>');
+  } else if (prevType == 'H3') {
+    toc.push('</li></ul>');
+  }
+  
+  $('.styleguide-doc-nav').html(toc.join(''));
+  
+  $('body').scrollspy({
+    target: '.styleguide-doc-nav',
+    offset: 1
+  });
+</script>
+<style>
+  .styleguide-doc-nav {
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+  }
+  
+  .slogan, footer {
+    position: relative;
+    z-index: 10;
+  }
+</style>
+
+    </div>
   </div>
-  <div class='col-md-3 hidden-sm hidden-xs styleguide-doc-nav-container'>
-    <nav class='sidenav styleguide-doc-nav'></nav>
-    <script>
-      var toc = ['<ul class="nav nav-stacked">'];
-      var prevType = '';
-      
-      $('.main > h2, .main > h3').each(function() {
-      
-        $element = $(this);
-        var type = $element[0].tagName;
-        var title = $element.text();
-        var link = "#" + $element.attr("id");
-        var newHtml = '';
-      
-        if (prevType == 'H2' && type == 'H2') {
-          toc.push('</li>');
-      
-        } else if (prevType == 'H2' && type == 'H3') {
-          toc.push('<ul class="nav nav-stacked">');
-      
-        } else if (prevType == 'H3' && type == 'H3') {
-          toc.push('</li>');
-      
-        } else if (prevType == 'H3' && type == 'H2') {
-          toc.push('</li></ul>');
-        }
-      
-        toc.push('<li><a href="' + link + '">' + title + '</a>');
-      
-        prevType = type;
-      });
-      
-      if (prevType == 'H2') {
-        toc.push('</li>');
-      } else if (prevType == 'H3') {
-        toc.push('</li></ul>');
-      }
-      
-      $('.styleguide-doc-nav').html(toc.join(''));
-      
-      $('body').scrollspy({
-        target: '.styleguide-doc-nav',
-        offset: 1
-      });
-    </script>
-    <style>
-      .styleguide-doc-nav {
-        z-index: 1;
-        position: fixed;
-        bottom: 0;
-      }
-      
-      .slogan, footer {
-        position: relative;
-        z-index: 10;
-      }
-    </style>
-  </div>
-</div>
 
   </div>
 
