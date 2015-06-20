@@ -62,6 +62,8 @@ $link-color:            $brand-primary !default;
 $link-hover-color:      darken($link-color, 15%) !default;
 $link-hover-decoration: underline !default;
 
+$border-color:          #aaa !default;
+
 // -------------------------------------
 //   Typography
 //   -> Font, line-height headings...
@@ -206,11 +208,11 @@ $border-radius-small:       1px !default;
 $box-padding-base-vertical:        20px !default;
 $box-padding-base-horizontal:      20px !default;
 
-$box-padding-compact-vertical:     12px !default;
-$box-padding-compact-horizontal:   12px !default;
+$box-padding-sm-vertical:          12px !default;
+$box-padding-sm-horizontal:        12px !default;
 
-$box-padding-loose-vertical:       30px !default;
-$box-padding-loose-horizontal:     30px !default;
+$box-padding-lg-vertical:          30px !default;
+$box-padding-lg-horizontal:        30px !default;
 
 // Global color for active items (e.g., navs or dropdowns)
 $component-active-color:    $white !default;

@@ -19,15 +19,15 @@ $dark-checkerboard: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAAAA
 		opacity: .8;
 		display: block;
 		position: absolute;
-		top: $box-padding-compact-vertical;
-		left: $box-padding-compact-horizontal;
+		top: $box-padding-sm-vertical;
+		left: $box-padding-sm-horizontal;
 		color: darken($brand-primary, 20%);
 	}
 
 	> h3 {
 		text-align: right;
 		margin: 0;
-		padding: $box-padding-compact-vertical $box-padding-compact-horizontal;
+		padding: $box-padding-sm-vertical $box-padding-sm-horizontal;
 		font-size: 14px;
 		background-color: rgba($brand-primary, 1);
 		color: rgba($text-color-inverse, .8);
@@ -49,9 +49,9 @@ $dark-checkerboard: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAAAA
 	}
 
 	.styleguide-description {
-		padding: $box-padding-compact-vertical $box-padding-compact-horizontal;
+		padding: $box-padding-sm-vertical $box-padding-sm-horizontal;
 		padding-top: 4px;
-		padding-bottom: $box-padding-compact-vertical - 4;
+		padding-bottom: $box-padding-sm-vertical - 4;
 		border-bottom: 1px solid #ddd;
 		background-color: rgba($brand-primary, 1);
 		color: $text-color-inverse;
@@ -126,7 +126,7 @@ $dark-checkerboard: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAAAA
 
 	pre {
 		margin: 0;
-		padding: $box-padding-compact-vertical $box-padding-compact-horizontal;
+		padding: $box-padding-sm-vertical $box-padding-sm-horizontal;
 		border: 0;
 		border-radius: 0;
 	}

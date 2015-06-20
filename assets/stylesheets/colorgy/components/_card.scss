@@ -2,37 +2,155 @@
 //
 //   Card
 //
+//   .card--sm - Compact
+//   .card--lg - Loose
+//
 //   Styleguide Card
 //
 // *************************************
 
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+// ----- Sizing ----- //
+
 $card-padding-vertical:           $box-padding-base-vertical !default;
 $card-padding-horizontal:         $box-padding-base-horizontal !default;
-$card-compact-padding-vertical:   $box-padding-compact-vertical !default;
-$card-compact-padding-horizontal: $box-padding-compact-horizontal !default;
+$card-sm-padding-vertical:        $box-padding-sm-vertical !default;
+$card-sm-padding-horizontal:      $box-padding-sm-horizontal !default;
+$card-lg-padding-vertical:        $box-padding-lg-vertical !default;
+$card-lg-padding-horizontal:      $box-padding-lg-horizontal !default;
 
-.card {
-	padding: $card-padding-horizontal $card-padding-vertical;
+$card-title-font-size:   $font-size-h4 !default;
+
+$card-inner-border-color:         rgba(#aaa, .2) !default;
+
+// ----- Colors ----- //
+
+// -------------------------------------
+//   Mixins
+// -------------------------------------
+
+@mixin card-style-variant($padding-vertical, $padding-horizontal) {
+	padding: $padding-vertical $padding-horizontal;
 
 	.card-content,
-	.card-action,
+	.card-actions,
 	.card-image {
-		margin: (-$card-padding-horizontal) (-$card-padding-vertical);
-		padding: $card-padding-horizontal $card-padding-vertical;
+		margin: 0 (-$padding-horizontal);
+		margin-top: 0;
+
+		&:first-child {
+			margin-top: -$padding-vertical;
+		}
+
+		&:last-child {
+			margin-bottom:  -$padding-vertical;
+		}
+	}
+
+	.card-content,
+	.card-actions {
+		padding: $padding-vertical $padding-horizontal;
+	}
+
+	.card-actions {
+
+		> * {
+			margin-right: $padding-horizontal;
+
+			&:last-child {
+				margin-left: 0;
+			}
+		}
+	}
+
+	.card-image {
+
+		.card-title {
+			padding: $padding-vertical $padding-horizontal;
+		}
+	}
+}
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.card {
+	@include card-style-variant($card-padding-vertical, $card-padding-horizontal);
+	background-color: $white;
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+.card-title {
+	display: block;
+	margin-top: 0;
+	margin-bottom: $card-padding-horizontal / 2;
+	font-size: $card-title-font-size;
+}
+
+.card-actions {
+	border-top: 1px solid $card-inner-border-color;
+
+	> * {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		touch-action: manipulation;
+		cursor: pointer;
+		background: none;
+		border: 0;
+		text-transform: uppercase;
+		font-weight: 800;
+		margin-right: 20px;
+
+		&:last-child {
+			margin-left: 0;
+		}
+	}
+}
+
+.card-image {
+	position: relative;
+
+	img {
+		position: relative;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		width: 100%;
 	}
 
 	.card-title {
-		margin-top: 0;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		margin: 0;
 	}
+}
 
-	&.compact {
-		padding: $card-compact-padding-horizontal $card-compact-padding-vertical;
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
 
-		.card-content,
-		.card-action,
-		.card-image {
-			margin: (-$card-compact-padding-horizontal) (-$card-compact-padding-vertical);
-			padding: $card-compact-padding-horizontal $card-compact-padding-vertical;
-		}
-	}
+.card.inverse {
+	background-color: $black;
+}
+
+.card--sm {
+	@include card-style-variant($card-sm-padding-horizontal, $card-sm-padding-vertical);
+}
+
+.card--lg {
+	@include card-style-variant($card-lg-padding-horizontal, $card-lg-padding-vertical);
 }
