@@ -92,11 +92,15 @@ $dark-checkerboard: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAAAA
 		.styleguide-modifier-name {
 			display: block;
 			position: absolute;
+			z-index: 999999;
 			top: 0;
+			margin-top: 0;
 			right: 0;
+			margin-right: 0;
 			padding: 5px 8px;
 			border: 1px solid #eee;
 			border-top: none;
+			border-right: none;
 			background: #f9f9f9;
 			color: #999;
 			font-size: 11px;
@@ -206,4 +210,22 @@ h1, h2, h3, h4, h5, h6 {
 		pointer-events: none;
 		z-index: -1;
 	}
+}
+
+.styleguide-example-show-code-toggle {
+	border-top: 1px solid #dde7ea;
+	padding: 4px 2px;
+	text-align: center;
+	cursor: pointer;
+	text-transform: uppercase;
+	background-color: #eee;
+	font-size: 12px;
+
+	&:hover {
+		background-color: #fafafa;
+	}
+}
+
+.navbar.fixed-top {
+	z-index: 9999999;
 }
