@@ -177,23 +177,6 @@ mark,
 
 @include text-emphasis-variant('.text-danger', $state-danger-text);
 
-// Contextual backgrounds
-@include bg-variant('.bg-primary', $brand-primary);
-
-@include bg-variant('.bg-brand', $brand-primary);
-
-@include bg-variant('.bg-success', $state-success-bg);
-
-@include bg-variant('.bg-info', $state-info-bg);
-
-@include bg-variant('.bg-warning', $state-warning-bg);
-
-@include bg-variant('.bg-danger', $state-danger-bg);
-
-@include bg-variant('.bg-dark', $gray-dark);
-
-@include bg-variant('.bg-black', $gray-dark);
-
 // ----- Page header ----- //
 
 .page-header {

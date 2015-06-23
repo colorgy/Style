@@ -1,0 +1,260 @@
+// *************************************
+//
+//   Colors
+//
+// *************************************
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+$color-dark-varient:    13.5%;
+$color-darker-varient:  20%;
+$color-darkest-base:    #222;
+$color-light-varient:   13.5%;
+$color-lighter-varient: 60%;
+$color-light-varient:   13.5%;
+$color-lightest-base:   #eee;
+
+// -------------------------------------
+//   Functions
+// -------------------------------------
+
+// ----- Standard Color Transform Functions ----- //
+
+@function color-dark($color) {
+	@return darken($color, $color-dark-varient);
+}
+
+@function color-darker($color) {
+	@return darken($color, $color-darker-varient);
+}
+
+@function color-darkest($color) {
+	@return adjust-hue(saturate($color-darkest-base, 100), hue($color));
+}
+
+@function color-light($color) {
+	@return lighten($color, $color-light-varient);
+}
+
+@function color-lighter($color) {
+	@return lighten($color, $color-lighter-varient);
+}
+
+@function color-lightest($color) {
+	@return adjust-hue(saturate($color-lightest-base, 100), hue($color));
+}
+
+// ----- Luma ----- //
+// -> Calculates the visual brightness for a color
+//
+// $color - the input color
+
+@function luma($color) {
+	$-red:   red(rgba($color, 1));
+	$-green: green(rgba($color, 1));
+	$-blue:  blue(rgba($color, 1));
+
+	@return (.2126 * $-red   +
+	         .7152 * $-green +
+	         .0722 * $-blue) / 255;
+}
+
+// ----- Contrast Color ----- //
+// -> Calculates the contrast color base on a color
+//
+// $color - the input color
+
+@function color-contrast($color, $dark: $black, $light: $white) {
+
+	@if $color == null {
+		@return null;
+	}
+
+	@else {
+		$color-luma: luma($color);
+		$light-luma: luma($light);
+		$dark-luma: luma($dark);
+
+		@return if(
+			abs($color-luma - $light-luma) >
+			abs($color-luma - $dark-luma),
+			$light, $dark);
+	}
+}
+
+// ----- Text Color on Background ----- //
+// -> Calculates the text color based on the background
+//
+// $bg-color - the background color
+
+@function text-color-on-bg($bg-color, $dark: $black, $light: $white) {
+
+	@if $bg-color == null {
+		@return null;
+	}
+
+	@else {
+		$dark-darken: min((1 - luma($dark))*100%, 100%);
+		$light-lighten: min(luma($light)*100%, 100%);
+		$dark:  darken($bg-color, $dark-darken);
+		$light: lighten($bg-color, $light-lighten);
+
+		@return color-contrast($bg-color, $dark, $light);
+	}
+}
+
+// -------------------------------------
+//   Colors
+// -------------------------------------
+
+// ----- Base Colors ----- //
+
+$white:        #fcfcfc !default;
+$black:        #000 !default;
+$gray-base:    $black !default;
+$gray:         #555 !default;
+$gray-dark:    color-dark($gray) !default;
+$gray-darker:  color-darker($gray) !default;
+$gray-light:   color-light($gray) !default;
+$gray-lighter: color-lighter($gray) !default;
+
+$red:        #c13731 !default;
+$orange:     hsl(18, 94%, 56%) !default;
+$yellow:     #e1c047 !default;
+$green:      #67ba5d !default;
+$blue:       #46b0e3 !default;
+$purple:     #893dbe !default;
+$aquamarine: #00d0ad !default;
+
+// ----- Special Colors ----- //
+
+$colorgy-yellow:    #ffe100;
+$colorgy-turquoise: #40f2ed;
+
+// ----- Semantic Colors ----- //
+
+$notice-color:   #d93637 !default;
+$success-color:  #9fcb5f !default;
+$info-color:     #4abcef !default;
+$warning-color:  #eb7f28 !default;
+$danger-color:   #e5695f !default;
+
+// alias for bootstrap components
+$brand-notice:   $notice-color;
+$brand-success:  $success-color;
+$brand-info:     $info-color;
+$brand-warning:  $warning-color;
+$brand-danger:   $danger-color;
+
+// ----- Service Theme Colors ----- //
+
+$colorgy-theme-color:      $aquamarine;
+$colorgy-highlight-color:  $orange;
+
+$table-theme-color:        #f7957d;
+$table-highlight-color:    #f7957d;
+
+$books-theme-color:        $aquamarine;
+$books-highlight-color:    $orange;
+
+// ----- Theme Colors ----- //
+
+$theme-color:     $colorgy-theme-color !default;
+$highlight-color: $colorgy-highlight-color !default;
+
+// alias for bootstrap components
+$brand-primary:   $theme-color;
+$brand-highlight: $highlight-color;
+
+// ----- Basic Color Applications ----- //
+
+$text-color:            $gray-dark !default;
+$text-color-light:      $white !default;
+
+// -------------------------------------
+//   Mixins
+// -------------------------------------
+
+@mixin bg-color($parent, $color) {
+
+	#{$parent} {
+		background-color: $color !important;
+		color: color-contrast($color);
+	}
+}
+
+@mixin bg-color-variant($parent, $color, $dark-text-color: $text-color, $light-text-color: $text-color-light) {
+
+	#{$parent} {
+		$-color: $color;
+		background-color: $-color !important;
+		color: text-color-on-bg($-color, $dark-text-color, $light-text-color) !important;
+	}
+
+	#{$parent}-dark {
+		$-color: color-dark($color);
+		background-color: $-color !important;
+		color: text-color-on-bg($-color, $dark-text-color, $light-text-color) !important;
+	}
+
+	#{$parent}-darker {
+		$-color: color-darker($color);
+		background-color: $-color !important;
+		color: text-color-on-bg($-color, $dark-text-color, $light-text-color) !important;
+	}
+
+	#{$parent}-darkest {
+		$-color: color-darkest($color);
+		background-color: $-color !important;
+		color: text-color-on-bg($-color, $dark-text-color, $light-text-color) !important;
+	}
+
+	#{$parent}-light {
+		$-color: color-light($color);
+		background-color: $-color !important;
+		color: text-color-on-bg($-color, $dark-text-color, $light-text-color) !important;
+	}
+
+	#{$parent}-lighter {
+		$-color: color-lighter($color);
+		background-color: $-color !important;
+		color: text-color-on-bg($-color, $dark-text-color, $light-text-color) !important;
+	}
+
+	#{$parent}-lightest {
+	 	$-color: color-lightest($color);
+		background-color: $-color !important;
+		color: text-color-on-bg($-color, $dark-text-color, $light-text-color) !important;
+	}
+}
+
+// -------------------------------------
+//   Utilities
+// -------------------------------------
+
+@include bg-color('.bg-black', $black);
+@include bg-color('.bg-white', $white);
+@include bg-color('.bg-gray', $gray);
+@include bg-color-variant('.bg', $gray);
+
+@include bg-color-variant('.bg-red', $red);
+@include bg-color-variant('.bg-orange', $orange);
+@include bg-color-variant('.bg-yellow', $yellow);
+@include bg-color-variant('.bg-green', $green);
+@include bg-color-variant('.bg-blue', $blue);
+@include bg-color-variant('.bg-purple', $purple);
+@include bg-color-variant('.bg-aquamarine', $aquamarine);
+
+@include bg-color-variant('.bg-theme', $theme-color);
+@include bg-color('.bg-highlight', $highlight-color);
+
+@include bg-color('.bg-colorgy-yellow', $colorgy-yellow);
+@include bg-color('.bg-colorgy-turquoise', $colorgy-turquoise);
+
+@include bg-color('.bg-notice', $notice-color);
+@include bg-color('.bg-success', $success-color);
+@include bg-color('.bg-info', $info-color);
+@include bg-color('.bg-warning', $warning-color);
+@include bg-color('.bg-danger', $danger-color);

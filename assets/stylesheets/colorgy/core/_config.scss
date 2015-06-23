@@ -11,43 +11,7 @@ $clg-sass-asset-helper: false !default;
 //   Colors
 // -------------------------------------
 
-// ----- Base Colors ----- //
-
-$white:        #fcfcfc !default;
-$black:        #000 !default;
-$gray-base:    $black !default;
-$gray-darker:  lighten($gray-base, 13.5%) !default;
-$gray-dark:    lighten($gray-base, 20%) !default;
-$gray:         lighten($gray-base, 33.5%) !default;
-$gray-light:   lighten($gray-base, 46.7%) !default;
-$gray-lighter: lighten($gray-base, 93.5%) !default;
-
-$red:    red !default;
-$orange: orange !default;
-$yellow: yellow !default;
-$green:  green !default;
-$blue:   blue !default;
-$purple: purple !default;
-
-// ----- Semantic Colors ----- //
-
-$colorgy-color:       #00d0ad;
-$table-service-color: #f7957d;
-$books-service-color: #00d0ad;
-
-$success-color: #5cb85c !default;
-$info-color:    #5bc0de !default;
-$warning-color: #f0ad4e !default;
-$danger-color:  #d9534f !default;
-
-// ----- Brand Colors ----- //
-
-$brand-primary:   $colorgy-color !default;
-$brand-highlight: hsl(18, 94%, 56%) !default;
-$brand-success:   $success-color !default;
-$brand-info:      $info-color !default;
-$brand-warning:   $warning-color !default;
-$brand-danger:    $danger-color !default;
+@import "colors";
 
 // -------------------------------------
 //   Scaffolding

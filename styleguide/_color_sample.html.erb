@@ -1,0 +1,7 @@
+<% if defined? colors %>
+  <% colors.each do |color| %>
+    <div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm <%= "bg-#{color}" %>"></div>
+  <% end %>
+<% else %>
+  <div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm <%= "bg-#{color}" %>"></div>
+<% end %>

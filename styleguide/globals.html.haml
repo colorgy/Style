@@ -9,7 +9,133 @@ page_description: 標幟、色彩、字型和排版等泛用樣式的定義。
 
 %h3#logo 1.1.1. Logo
 
+.thumbnail.display-inline-block
+  = image_tag 'colorgy/colorgy_logo.svg'
+.thumbnail.display-inline-block
+  = image_tag 'colorgy/colorgy_logo_with_text.svg'
+.thumbnail.display-inline-block
+  = image_tag 'colorgy/colorgy_icon_with_text.svg'
+.thumbnail.display-inline-block
+  = image_tag 'colorgy/colorgy_logo_black.svg'
+
 %h3#colors 1.1.2. 色彩
+
+%p Colorgy 採用一系列鮮豔、純正明亮的顏色，適合獨立使用或互相搭配，賦予介面充滿活力和熱情的意象。
+
+%p
+  %i 識別色
+
+.card.z-depth-1.styleguide-color-block.bg-colorgy-yellow Colorgy Yellow
+.card.z-depth-1.styleguide-color-block.bg-colorgy-turquoise Colorgy Turquoise
+
+.card.z-depth-1.styleguide-color-block.bg-theme Theme
+.card.z-depth-1.styleguide-color-block.bg-highlight Highlight
+
+%br
+
+= partial(:color_collection, locals: { color: :theme })
+
+%hr
+
+%p
+  %i 主題色色盤
+
+.card.z-depth-1.styleguide-color-block.bg-red Red
+.card.z-depth-1.styleguide-color-block.bg-orange Orange
+.card.z-depth-1.styleguide-color-block.bg-yellow Yellow
+.card.z-depth-1.styleguide-color-block.bg-green Green
+.card.z-depth-1.styleguide-color-block.bg-blue Blue
+.card.z-depth-1.styleguide-color-block.bg-purple Purple
+.card.z-depth-1.styleguide-color-block.bg-aquamarine Aquamarine
+
+%hr
+
+%p
+  %i 語義色
+
+.card.z-depth-1.styleguide-color-block.bg-notice Notice
+.card.z-depth-1.styleguide-color-block.bg-success Success
+.card.z-depth-1.styleguide-color-block.bg-info Info
+.card.z-depth-1.styleguide-color-block.bg-warning Warning
+.card.z-depth-1.styleguide-color-block.bg-danger Danger
+
+%hr
+
+%p
+  %i 灰階
+
+.card.z-depth-1.styleguide-color-block.bg-darker Darker
+.card.z-depth-1.styleguide-color-block.bg-dark Dark
+.card.z-depth-1.styleguide-color-block.bg-gray Gray
+.card.z-depth-1.styleguide-color-block.bg-light Light
+.card.z-depth-1.styleguide-color-block.bg-lighter Lighter
+
+.card.z-depth-1.styleguide-color-block.bg-black Black
+.card.z-depth-1.styleguide-color-block.bg-white White
+
+
+%h4 1.1.2.1. 色彩規劃
+
+:markdown
+  在 Colorgy 服務的操作介面中，顏色有助於表達意義，提供視覺的連貫性，並賦予介面生命力。配色詳細邏輯可參考[關於用色的 SCSS 原始碼](https://github.com/colorgy/Style/blob/master/assets/stylesheets/colorgy/core/_colors.scss)。
+
+%dl.dl-horizontal
+
+  %dt Colorgy 特別色
+
+  %dd
+    :markdown
+      屬於 Colorgy 主體色彩識別的專用色彩，用於與 Colorgy 整體形象理念密切相關的標幟性色彩，並禁止基於它們做任何變種（例如明度、飽和度的標準調整）。
+
+  %dt 主題色
+
+  %dd
+    :markdown
+      用來表現與區隔平台底下的各個服務，會被大面積的用在區塊填色，或是連結、指標、裝飾元素上。會有四種標準的深淺變種：darkest、dark、light 以及 lightest。主題色盤亦可以用於一般性顏色搭配。
+
+  %dt 強調色
+
+  %dd
+    :markdown
+      使用者介面中，與主題色互相搭配，用來引導使用者操作的用色。不允許被大面積使用，且建議一個頁面中最多只能有一個元素使用此色。不允許任何變種。
+
+  %dt 語義色
+
+  %dd
+    :markdown
+      為表達意涵專用，例如危險、警告、通知、衝突，並禁止作為底色、圖示時的任何變種，或作為表達該意涵之外的用途。明度與飽和度與主題色盤相比稍高出一個層級，以提供更明確的視覺識別度。
+
+= partial(:color_sample, locals: { colors: %w(colorgy-turquoise colorgy-yellow) })
+&nbsp;&nbsp;
+= partial(:color_collection, locals: { color: :theme })
+&nbsp;&nbsp;
+= partial(:color_sample, locals: { color: 'highlight' })
+
+%br
+
+= partial(:color_collection, locals: { color: :red })
+&nbsp;&nbsp;
+= partial(:color_collection, locals: { color: :orange })
+&nbsp;&nbsp;
+%br
+= partial(:color_collection, locals: { color: :yellow })
+&nbsp;&nbsp;
+= partial(:color_collection, locals: { color: :green })
+&nbsp;&nbsp;
+%br
+= partial(:color_collection, locals: { color: :blue })
+&nbsp;&nbsp;
+= partial(:color_collection, locals: { color: :purple })
+&nbsp;&nbsp;
+%br
+= partial(:color_collection, locals: { color: :aquamarine })
+&nbsp;&nbsp;
+
+%br
+
+= partial(:color_sample, locals: { colors: %w(notice success info warning danger) })
+%br
+= partial(:color_sample, locals: { colors: %w(darker dark gray light black white) })
 
 %h3#tone-of-voice 1.1.3. Tone of Voice
 
