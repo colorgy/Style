@@ -98,7 +98,171 @@
     <div class="col-md-9 main">
       <h2 id='identification'>1.1. 基本識別</h2>
 <h3 id='logo'>1.1.1. Logo</h3>
+<div class='thumbnail display-inline-block'>
+  <img src="../images/colorgy/colorgy_logo.svg" />
+</div>
+<div class='thumbnail display-inline-block'>
+  <img src="../images/colorgy/colorgy_logo_with_text.svg" />
+</div>
+<div class='thumbnail display-inline-block'>
+  <img src="../images/colorgy/colorgy_icon_with_text.svg" />
+</div>
+<div class='thumbnail display-inline-block'>
+  <img src="../images/colorgy/colorgy_logo_black.svg" />
+</div>
 <h3 id='colors'>1.1.2. 色彩</h3>
+<p>Colorgy 採用一系列鮮豔、純正明亮的顏色，適合獨立使用或互相搭配，賦予介面充滿活力和熱情的意象。</p>
+<p>
+  <i>識別色</i>
+</p>
+<div class='card z-depth-1 styleguide-color-block bg-colorgy-yellow'>Colorgy Yellow</div>
+<div class='card z-depth-1 styleguide-color-block bg-colorgy-turquoise'>Colorgy Turquoise</div>
+<div class='card z-depth-1 styleguide-color-block bg-theme'>Theme</div>
+<div class='card z-depth-1 styleguide-color-block bg-highlight'>Highlight</div>
+<br>
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-theme-darkest">D3</div>
+<!-- <div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-theme-darker">D2</div> -->
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-theme-dark">D1</div>
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-theme"></div>
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-theme-light">L1</div>
+<!-- <div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-theme-lighter">L2</div> -->
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-theme-lightest">L3</div>
+<hr>
+<p>
+  <i>主題色色盤</i>
+</p>
+<div class='card z-depth-1 styleguide-color-block bg-red'>Red</div>
+<div class='card z-depth-1 styleguide-color-block bg-orange'>Orange</div>
+<div class='card z-depth-1 styleguide-color-block bg-yellow'>Yellow</div>
+<div class='card z-depth-1 styleguide-color-block bg-green'>Green</div>
+<div class='card z-depth-1 styleguide-color-block bg-blue'>Blue</div>
+<div class='card z-depth-1 styleguide-color-block bg-purple'>Purple</div>
+<div class='card z-depth-1 styleguide-color-block bg-aquamarine'>Aquamarine</div>
+<hr>
+<p>
+  <i>語義色</i>
+</p>
+<div class='card z-depth-1 styleguide-color-block bg-notice'>Notice</div>
+<div class='card z-depth-1 styleguide-color-block bg-success'>Success</div>
+<div class='card z-depth-1 styleguide-color-block bg-info'>Info</div>
+<div class='card z-depth-1 styleguide-color-block bg-warning'>Warning</div>
+<div class='card z-depth-1 styleguide-color-block bg-danger'>Danger</div>
+<hr>
+<p>
+  <i>灰階</i>
+</p>
+<div class='card z-depth-1 styleguide-color-block bg-darker'>Darker</div>
+<div class='card z-depth-1 styleguide-color-block bg-dark'>Dark</div>
+<div class='card z-depth-1 styleguide-color-block bg-gray'>Gray</div>
+<div class='card z-depth-1 styleguide-color-block bg-light'>Light</div>
+<div class='card z-depth-1 styleguide-color-block bg-lighter'>Lighter</div>
+<div class='card z-depth-1 styleguide-color-block bg-black'>Black</div>
+<div class='card z-depth-1 styleguide-color-block bg-white'>White</div>
+<h4>1.1.2.1. 色彩規劃</h4>
+<p>在 Colorgy 服務的操作介面中，顏色有助於表達意義，提供視覺的連貫性，並賦予介面生命力。配色詳細邏輯可參考<a href="https://github.com/colorgy/Style/blob/master/assets/stylesheets/colorgy/core/_colors.scss">關於用色的 SCSS 原始碼</a>。</p>
+<dl class='dl-horizontal'>
+  <dt>Colorgy 特別色</dt>
+  <dd>
+    <p>屬於 Colorgy 主體色彩識別的專用色彩，用於與 Colorgy 整體形象理念密切相關的標幟性色彩，並禁止基於它們做任何變種（例如明度、飽和度的標準調整）。</p>
+  </dd>
+  <dt>主題色</dt>
+  <dd>
+    <p>用來表現與區隔平台底下的各個服務，會被大面積的用在區塊填色，或是連結、指標、裝飾元素上。會有四種標準的深淺變種：darkest、dark、light 以及 lightest。主題色盤亦可以用於一般性顏色搭配。</p>
+  </dd>
+  <dt>強調色</dt>
+  <dd>
+    <p>使用者介面中，與主題色互相搭配，用來引導使用者操作的用色。不允許被大面積使用，且建議一個頁面中最多只能有一個元素使用此色。不允許任何變種。</p>
+  </dd>
+  <dt>語義色</dt>
+  <dd>
+    <p>為表達意涵專用，例如危險、警告、通知、衝突，並禁止作為底色、圖示時的任何變種，或作為表達該意涵之外的用途。明度與飽和度與主題色盤相比稍高出一個層級，以提供更明確的視覺識別度。</p>
+  </dd>
+</dl>
+    <div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-colorgy-turquoise"></div>
+    <div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-colorgy-yellow"></div>
+&nbsp;&nbsp;
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-theme-darkest">D3</div>
+<!-- <div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-theme-darker">D2</div> -->
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-theme-dark">D1</div>
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-theme"></div>
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-theme-light">L1</div>
+<!-- <div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-theme-lighter">L2</div> -->
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-theme-lightest">L3</div>
+&nbsp;&nbsp;
+  <div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-highlight"></div>
+<br>
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-red-darkest">D3</div>
+<!-- <div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-red-darker">D2</div> -->
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-red-dark">D1</div>
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-red"></div>
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-red-light">L1</div>
+<!-- <div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-red-lighter">L2</div> -->
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-red-lightest">L3</div>
+&nbsp;&nbsp;
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-orange-darkest">D3</div>
+<!-- <div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-orange-darker">D2</div> -->
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-orange-dark">D1</div>
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-orange"></div>
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-orange-light">L1</div>
+<!-- <div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-orange-lighter">L2</div> -->
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-orange-lightest">L3</div>
+&nbsp;&nbsp;
+<br>
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-yellow-darkest">D3</div>
+<!-- <div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-yellow-darker">D2</div> -->
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-yellow-dark">D1</div>
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-yellow"></div>
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-yellow-light">L1</div>
+<!-- <div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-yellow-lighter">L2</div> -->
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-yellow-lightest">L3</div>
+&nbsp;&nbsp;
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-green-darkest">D3</div>
+<!-- <div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-green-darker">D2</div> -->
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-green-dark">D1</div>
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-green"></div>
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-green-light">L1</div>
+<!-- <div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-green-lighter">L2</div> -->
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-green-lightest">L3</div>
+&nbsp;&nbsp;
+<br>
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-blue-darkest">D3</div>
+<!-- <div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-blue-darker">D2</div> -->
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-blue-dark">D1</div>
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-blue"></div>
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-blue-light">L1</div>
+<!-- <div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-blue-lighter">L2</div> -->
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-blue-lightest">L3</div>
+&nbsp;&nbsp;
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-purple-darkest">D3</div>
+<!-- <div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-purple-darker">D2</div> -->
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-purple-dark">D1</div>
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-purple"></div>
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-purple-light">L1</div>
+<!-- <div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-purple-lighter">L2</div> -->
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-purple-lightest">L3</div>
+&nbsp;&nbsp;
+<br>
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-aquamarine-darkest">D3</div>
+<!-- <div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-aquamarine-darker">D2</div> -->
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-aquamarine-dark">D1</div>
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-aquamarine"></div>
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-aquamarine-light">L1</div>
+<!-- <div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-aquamarine-lighter">L2</div> -->
+<div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-aquamarine-lightest">L3</div>
+&nbsp;&nbsp;
+<br>
+    <div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-notice"></div>
+    <div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-success"></div>
+    <div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-info"></div>
+    <div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-warning"></div>
+    <div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-danger"></div>
+<br>
+    <div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-darker"></div>
+    <div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-dark"></div>
+    <div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-gray"></div>
+    <div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-light"></div>
+    <div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-black"></div>
+    <div class=" card z-depth-1 styleguide-color-block styleguide-color-block--sm bg-white"></div>
 <h3 id='tone-of-voice'>1.1.3. Tone of Voice</h3>
 <h3 id='fonts'>1.1.3. 字型</h3>
 <h2 id='base'>1.2. 基本元素</h2>
