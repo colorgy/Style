@@ -78,7 +78,7 @@ $color-lightest-base:   #eee;
 		$dark-luma: luma($dark);
 
 		@return if(
-			abs($color-luma - $light-luma) >
+			abs($color-luma - $light-luma) + .32 >
 			abs($color-luma - $dark-luma),
 			$light, $dark);
 	}
