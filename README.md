@@ -16,7 +16,7 @@ The front-end bundle and style guide for Colorgy.
     - [Javascripts](#javascriptscolorgy)
 - [Styles](#styles)
   - [Stylesheet Conventions](#stylesheet-conventions)
-  	- [Variable Naming](#variable-naming)
+    - [Variable Naming](#variable-naming)
     - [Authoring Examples](#authoring-examples)
     - [Living Styleguide](#living-styleguide)
 - [Development](#development)
@@ -115,8 +115,6 @@ _適用於任何專案。_
     |   │   │   └── ...
     |   │   ├── layouts
     |   │   │   └── ...
-    |   │   ├── structures
-    |   │   │   └── ...
     |   │   └── components
     |   │       └── ...
     |   └── vendor
@@ -186,8 +184,7 @@ _適用於任何專案。_
 
 - `application.scss` - 主 manifest 檔，引入所有部件
 - `core/` - 基礎建設，包含 `config` (預設組態)、`fonts` (字型定義)、`base` (基本樣式) `grid` (網格系統) 等最核心的部分
-- `layouts/` - 各種樣式的基本頁面佈局 (頁面中唯一、將直接與 `<body>` 標籤相依)
-- `structures/` - 各式[結構](http://mvcss.io/structures/)，被重複使用的排版容器
+- `layouts/` - 各式[排版結構](http://mvcss.io/structures/)，被重複使用的排版容器
 - `components/` - 各式[元件](http://mvcss.io/components/)，可獨立使用的 UI 單位
 
 #### `javascripts/colorgy`
@@ -245,6 +242,8 @@ CSS 部分採用了 SMACSS 的方法論以及 BEM 命名架構 [*]，並遵從�
 
 #### Authoring Examples
 
+以下為一些 SCSS 的撰寫範例模板，可供開發時複製使用。
+
 ##### Functions
 
 ```scss
@@ -254,7 +253,7 @@ CSS 部分採用了 SMACSS 的方法論以及 BEM 命名架構 [*]，並遵從�
 // $arg - the argument description
 
 @function name($arg) {
-	// ...
+
 }
 ```
 
@@ -267,7 +266,7 @@ CSS 部分採用了 SMACSS 的方法論以及 BEM 命名架構 [*]，並遵從�
 // $arg - the argument description
 
 @mixin button-variant($arg) {
-	// ...
+
 }
 ```
 
@@ -308,7 +307,7 @@ CSS 部分採用了 SMACSS 的方法論以及 BEM 命名架構 [*]，並遵從�
 // -------------------------------------
 
 .component {
-	// ...
+
 }
 
 // -------------------------------------
@@ -318,7 +317,7 @@ CSS 部分採用了 SMACSS 的方法論以及 BEM 命名架構 [*]，並遵從�
 // ----- Scaffolding Name ----- //
 
 .component-scaffolding {
-	// ...
+
 }
 
 // -------------------------------------
@@ -328,7 +327,7 @@ CSS 部分採用了 SMACSS 的方法論以及 BEM 命名架構 [*]，並遵從�
 // ----- Modifier Name ----- //
 
 .component--modifier {
-	// ...
+
 }
 ```
 

@@ -23,9 +23,6 @@ indent_style = tab
 [**.scss]
 indent_style = tab
 
-[**.md]
-indent_style = tab
-
 # Don't trim trailing whitespace for markdown files
 [**.md]
 trim_trailing_whitespace = false
