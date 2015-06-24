@@ -1,0 +1,229 @@
+// *************************************
+//
+//   Steps
+//
+//   .steps--vertical - vertical
+//   .steps--sm-arrow - with small arrow
+//   .steps--vertical.steps--sm-arrow - vertical with small arrow
+//
+//   Styleguide Steps
+//
+// *************************************
+
+@import "compass/css3/images";
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+$steps-step-height:             64px !default;
+$steps-step-padding-vertical:   $padding-base-vertical * 2 !default;
+$steps-step-padding-horizontal: $padding-base-horizontal * 2 !default;
+$steps-step-active-color:       $theme-color !default;
+$steps-step-active-bg:          rgba(#ddd, .7) !default;
+$steps-border-color:            rgba(160, 160, 160, .3) !default;
+$steps-step-arrow-size:         $steps-step-height / 1.4142135 !default;
+$steps-step-arrow-z-index:      z-index-of(content-decoration) !default;
+
+// @include background-image(linear-gradient(white, #cccccc 30%, #bbbbbb 70%, #aaaaaa));
+// -------------------------------------
+//   Helpers
+// -------------------------------------
+
+@mixin step-size-variant($height, $arrow-size, $padding-vertical, $padding-horizontal) {
+	$-arrow-height: $arrow-size * 1.4142135;
+	$-padding-variant: $padding-horizontal * ($-arrow-height / ($padding-horizontal * 3.8 + ($height - $-arrow-height)));
+	height: $height;
+	padding: $padding-vertical $padding-horizontal;
+	padding-left: $padding-horizontal + $-padding-variant;
+	padding-right: max($padding-horizontal - $-padding-variant, 0);
+	clip-path: polygon(0 0, 200% 0, 200% 200%, 0 200%, 0 ($height - ($height - $-arrow-height) / 2), ($-arrow-height / 2 - 1) ($height / 2), 0 (($height - $-arrow-height) / 2), 0 0);
+	-webkit-clip-path: polygon(0 0, 200% 0, 200% 200%, 0 200%, 0 ($height - ($height - $-arrow-height) / 2), ($-arrow-height / 2 - 1) ($height / 2), 0 (($height - $-arrow-height) / 2), 0 0);
+
+	// &::before {
+	// 	top: $height / 2;
+	// 	right: 0;
+	// 	border-top: ($arrow-size / 1.4142135) dashed transparent;
+	// 	border-right: ($arrow-size / 1.4142135) solid transparent;
+	// 	border-left: ($arrow-size / 1.4142135) solid transparent;
+	// }
+
+	&::before {
+		@include background-image(linear-gradient($steps-border-color, $steps-border-color (($height - $-arrow-height) / 2 + .99), transparent (($height - $-arrow-height) / 2 + .99), transparent ($height - ($height - $-arrow-height) / 2 - .99), $steps-border-color ($height - ($height - $-arrow-height) / 2 - .99), $steps-border-color 100%));
+	}
+
+	&::after {
+		top: $height / 2;
+		right: 0;
+		width: $arrow-size;
+		height: $arrow-size;
+	}
+
+	&:first-child {
+		padding-left: $padding-horizontal;
+		clip-path: none;
+		-webkit-clip-path: none;
+	}
+
+	&:last-child {
+		padding-right: $padding-horizontal;
+
+		&::before {
+			content: none;
+			display: none;
+		}
+	}
+}
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.steps {
+	display: table;
+	table-layout: fixed;
+	border: 1px solid $steps-border-color;
+
+	&,
+	a {
+		color: $text-color;
+		text-decoration: none;
+	}
+}
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// ----- step ----- //
+
+.steps-step {
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+
+	@include step-size-variant($steps-step-height, $steps-step-arrow-size, $steps-step-padding-vertical, $steps-step-padding-horizontal);
+
+	.title {
+		font-weight: 700;
+	}
+
+	// &::before {
+	// 	content: '';
+	// 	display: block;
+	// 	position: absolute;
+	// 	z-index: $steps-step-arrow-z-index;
+	// 	right: 0;
+	// 	width: 0;
+	// 	height: 0;
+	// 	margin-left: 2px;
+	// 	vertical-align: middle;
+	// 	transform: translateY(-49.9%) translateX(75%) rotate(-90deg);
+	// }
+
+	&::before {
+		content: '';
+		position: absolute;
+		z-index: $steps-step-arrow-z-index;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		height: 100%;
+		width: 1px;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		z-index: $steps-step-arrow-z-index;
+		border-bottom: 1px solid $steps-border-color;
+		border-right: 1px solid $steps-border-color;
+		clip-path: polygon(100% 100%, 0 100%, 100% 0, 100% 100%);
+		-webkit-clip-path: polygon(100% 100%, 0 100%, 100% 0, 100% 100%);
+		transform: translateY(-49.9%) translateX(49.9%) rotate(-45deg);
+		-webkit-transform: translateY(-49.9%) translateX(49.9%) rotate(-45deg);
+	}
+
+	&:last-child {
+
+		&::after {
+			content: none;
+			display: none;
+		}
+	}
+
+	&.active {
+		background: $steps-step-active-bg;
+
+		.title {
+			color: $steps-step-active-color;
+		}
+
+		// &::before {
+		// 	border-top-color: $steps-step-active-bg !important;
+		// }
+
+		&::after {
+			background-color: $steps-step-active-bg;
+		}
+	}
+
+	&.disabled {
+		> * {
+			opacity: .5;
+		}
+	}
+}
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Arrow Size ----- //
+
+.steps--sm-arrow {
+
+	.steps-step {
+		@include step-size-variant($steps-step-height, $steps-step-height / 3, $steps-step-padding-vertical, $steps-step-padding-horizontal);
+	}
+}
+
+.steps--xs-arrow {
+
+	.steps-step {
+		@include step-size-variant($steps-step-height, $steps-step-height / 4, $steps-step-padding-vertical, $steps-step-padding-horizontal);
+	}
+}
+
+// ----- Vertical ----- //
+
+.steps--vertical {
+	border: 0;
+
+	.steps-step {
+		display: block;
+		padding: $steps-step-padding-vertical $steps-step-padding-horizontal;
+		border: 1px solid $steps-border-color;
+		border-bottom: 0;
+		clip-path: none;
+		-webkit-clip-path: none;
+
+		&::before, &::after {
+			content: none;
+			display: none;
+		}
+
+		&.active {
+			border-right: 0;
+
+			&::before, &::after {
+				content: '';
+				display: block;
+			}
+		}
+
+		&:last-child {
+			border-bottom: 1px solid $steps-border-color;
+		}
+	}
+}

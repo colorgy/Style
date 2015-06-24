@@ -23,7 +23,7 @@
 	&,
 	a,
 	a:hover {
-		color: rgba($text-color-inverse, .52);
+		color: rgba($text-color-light, .52);
 	}
 
 	a:hover,
@@ -31,6 +31,6 @@
 	a.active,
 	.active,
 	.footer-minimal-clear {
-		color: rgba($text-color-inverse, .9);
+		color: rgba($text-color-light, .9);
 	}
 }

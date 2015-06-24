@@ -30,7 +30,7 @@ $dark-checkerboard: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAAAA
 		padding: $box-padding-sm-vertical $box-padding-sm-horizontal;
 		font-size: 14px;
 		background-color: rgba($brand-primary, 1);
-		color: rgba($text-color-inverse, .8);
+		color: rgba($text-color-light, .8);
 		// color: darken($brand-primary, 10%);
 
 		&::after {
@@ -54,7 +54,7 @@ $dark-checkerboard: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAAAA
 		padding-bottom: $box-padding-sm-vertical - 4;
 		border-bottom: 1px solid #ddd;
 		background-color: rgba($brand-primary, 1);
-		color: $text-color-inverse;
+		color: $text-color-light;
 
 		p:first-child {
 			margin-top: 0;

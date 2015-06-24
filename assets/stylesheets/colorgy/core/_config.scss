@@ -20,7 +20,7 @@ $clg-sass-asset-helper: false !default;
 
 $body-bg:               $white !default;
 $text-color:            $gray-dark !default;
-$text-color-inverse:    $white !default;
+$text-color-light:      $white !default;
 
 $link-color:            $brand-primary !default;
 $link-hover-color:      darken($link-color, 15%) !default;
@@ -59,7 +59,7 @@ $headings-font-family:    $font-family-base !default;
 $headings-font-weight:    500 !default;
 $headings-line-height:    1.1 !default;
 $headings-color:          $text-color !default;
-$headings-color-inverse:  $text-color-inverse !default;
+$headings-color-inverse:  $text-color-light !default;
 
 // ----- Iconography ----- //
 
@@ -83,8 +83,9 @@ $z-index-list: background,
 			container,
 			footer-background,
 			footer,
-			main-background,
-			main,
+			content-background,
+			content,
+			content-decoration,
 			navbar,
 			dropdown,
 			popover,
