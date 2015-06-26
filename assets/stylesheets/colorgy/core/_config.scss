@@ -59,7 +59,7 @@ $headings-font-family:    $font-family-base !default;
 $headings-font-weight:    500 !default;
 $headings-line-height:    1.1 !default;
 $headings-color:          $text-color !default;
-$headings-color-inverse:  $text-color-light !default;
+// $headings-color-inverse:  $text-color-light !default;
 
 // ----- Iconography ----- //
 
@@ -737,7 +737,7 @@ $text-muted:                  $gray-light !default;
 //** Abbreviations and acronyms border color
 $abbr-border-color:           $gray-light !default;
 //** Headings small color
-$headings-small-color:        $gray-light !default;
+// $headings-small-color:        $gray-light !default;
 //** Blockquote small color
 $blockquote-small-color:      $gray-light !default;
 //** Blockquote font size

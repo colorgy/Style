@@ -62,20 +62,20 @@ h1, h2, h3, h4, h5, h6,
 	font-family: $headings-font-family;
 	font-weight: $headings-font-weight;
 	line-height: $headings-line-height;
-	color: $headings-color;
+	// color: $headings-color;
 
 	.inverse & {
-		color: $headings-color-inverse;
+		// color: $headings-color-inverse;
 	}
 
 	small,
 	.small {
 		font-weight: normal;
 		line-height: 1;
-		color: $headings-small-color;
+		opacity: .7;
 
 		.inverse & {
-			color: $headings-color-inverse;
+			// color: $headings-color-inverse;
 		}
 	}
 }
