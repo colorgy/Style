@@ -417,6 +417,17 @@ img {
 	border-radius: 50%; // set radius in percents
 }
 
+// -------------------------------------
+//   Input
+// -------------------------------------
+
+input:focus, .form-control:focus{
+	box-shadow: none !important;
+	border: 1px solid $theme-color;
+}
+
+
+
 
 // -------------------------------------
 //   Horizontal Rule
