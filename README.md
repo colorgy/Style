@@ -20,6 +20,7 @@ The front-end bundle and style guide for Colorgy.
     - [Authoring Examples](#authoring-examples)
     - [Living Styleguide](#living-styleguide)
 - [Development](#development)
+  - [Tips](#tips)
 - [Contributing](#contributing)
 
 ---
@@ -345,6 +346,10 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 To complie the icon fonts from the SVGs in `assets/fonts/colorgy/icons` (exported from `assets/fonts/colorgy/icons/Icons.sketch`), run `fontcustom compile`. Note that this requires [Font Custom](http://fontcustom.com/) to be installed on your local machine.
 
 To deploy the style guide to GitHub Pages, simply run `bundle exec rake deploy` and the source will be builded and pushed to `gh-pages` of the origin repo.
+
+### Tips
+
+可以運用 `styleguide/workspace/*` 來加速撰寫 CSS —— 將開發中的元件先寫在這裡，便於做環境隔離與加速 livereload，寫完後再整理進專案裡並 commit。
 
 
 ## Contributing
