@@ -51,7 +51,7 @@ gem 'colorgy_style'
 在 `app/assets/stylesheets/application.scss` 或其他想要的地方引入 Colorgy 樣式表：
 
 ```scss
-@import "colorgy_sprockets";
+@import "colorgy-sprockets";
 @import "colorgy";
 ```
 

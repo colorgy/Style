@@ -6,7 +6,7 @@ module ColorgyStyle
         %w(stylesheets javascripts fonts images).each do |sub|
           app.config.assets.paths << root.join('assets', sub).to_s
         end
-        app.config.assets.precompile << %r(colorgy/.+\.(?:png|gif|jpg|eot|svg|ttf|woff)$)
+        app.config.assets.precompile << %r(colorgy/.+\.(?:png|gif|jpg|eot|svg|ttf|woff|woff2)$)
       end
     end
   end
