@@ -1,0 +1,44 @@
+// *************************************
+//
+//   Footer
+//
+//
+//   Styleguide Footer
+//
+// *************************************
+
+footer{
+	width: 100%;
+	min-height: 150px;
+	background-color: $gray-darker;
+	padding: 24px 12px;
+	text-align: center;
+}
+
+.footer-menu {
+	ul{
+		li{
+			display: inline-block;
+			margin: 8px 12px;
+			a{
+				color: $white;
+				padding: 8px 12px;
+				&:hover{
+				color: $white;
+				}
+			}
+		}
+	}
+}
+
+.company-rights{
+
+	> p {
+		color: $white;
+	}
+
+	> p > a {
+		color: $theme-color;
+	}
+}
+
