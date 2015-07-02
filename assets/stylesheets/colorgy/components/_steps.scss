@@ -104,6 +104,12 @@ $steps-step-arrow-z-index:      z-index-of(content-decoration) !default;
 
 	@include step-size-variant($steps-step-height, $steps-step-arrow-size, $steps-step-padding-vertical, $steps-step-padding-horizontal);
 
+	> * {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
 	.title {
 		font-weight: 700;
 	}
