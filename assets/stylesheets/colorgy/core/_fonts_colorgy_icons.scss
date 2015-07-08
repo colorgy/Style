@@ -56,12 +56,43 @@ $import-icon-font-name: 'colorgy-icons';
 .i-table-top-right-corner-rounded:before { content: "\188aa"; }
 
 $font-colorgy-icons-colorgy: "\19a28";
+
 $font-colorgy-icons-colorgy-text: "\19a32";
+
 $font-colorgy-icons-github: "\188ad";
+
 $font-colorgy-icons-table-blank: "\18894";
+
 $font-colorgy-icons-table-bottom-left-corner-rounded: "\188ab";
+
 $font-colorgy-icons-table-bottom-right-corner-rounded: "\188ac";
+
 $font-colorgy-icons-table-frame-horizontal: "\18895";
+
 $font-colorgy-icons-table-frame-vertical: "\18896";
+
 $font-colorgy-icons-table-top-left-corner-rounded: "\188a9";
+
 $font-colorgy-icons-table-top-right-corner-rounded: "\188aa";
+
+
+.icon {
+	  display: inline-block;
+  font-family: "colorgy-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+	-webkit-font-feature-settings: "liga";
+	   -moz-font-feature-settings: "liga=1";
+	   -moz-font-feature-settings: "liga";
+	    -ms-font-feature-settings: "liga" 1;
+	     -o-font-feature-settings: "liga";
+	        font-feature-settings: "liga";
+}

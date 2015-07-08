@@ -8,3 +8,5 @@ gem "middleman"
 gem "middleman-kss"
 gem "middleman-livereload"
 gem "middleman-deploy"
+
+gem "fontcustom", github: "Neson/fontcustom"

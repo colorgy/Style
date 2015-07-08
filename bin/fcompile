@@ -1,0 +1,3 @@
+#!/usr/bin/env ruby
+
+system "bundle exec fontcustom compile #{ARGV.join(' ')}"

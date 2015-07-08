@@ -83,22 +83,30 @@ page_description: 隨處可見，可重複使用、隨意定位甚至調整大�
 
 :markdown
 
-  使用方式：
+  將圖示放到網頁中是很容易的，如以下範例：
 
   ```
-  <i class="i-colorgy" aria-hidden="true"></i>
+  <i class="i-colorgy"></i>
   ```
 
-  例如：
+  <i class="i-colorgy"></i>
+
+  或是應用稱作 [_ligature_](http://alistapart.com/article/the-era-of-symbol-fonts) 的印刷排版技術，您也可以這樣使用圖示：
 
   ```
-  歡迎來到 <i class="i-colorgy" aria-hidden="true"></i>！
-  Welcome to <i class="i-colorgy" aria-hidden="true"></i> , the hub of college life!
+  <i class="icon">colorgy</i>
   ```
 
-  會變成：
+  <i class="icon">colorgy</i>
 
-  歡迎來到 <i class="i-colorgy" aria-hidden="true"></i>！
-  Welcome to <i class="i-colorgy" aria-hidden="true"></i> , the hub of college life!
+  透過 [_ligature_](http://alistapart.com/article/the-era-of-symbol-fonts) 技術可以讓圖示的文字名稱直接顯示為圖示本身，提供了更好的瀏覽體驗 (例如可被全文搜尋、優雅降級成顯示文字、可被文字閱讀器讀用等)。
+
+  或是直接使用 UTF-8 code 也可以：
+
+  ```
+  <p class="i-icon">&#x19a28;</p>
+  ```
+
+  <p class="i-icon">&#x19a28;</p>
 
 = partial :icon_font_list

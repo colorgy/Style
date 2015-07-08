@@ -11,7 +11,7 @@
     <% @glyphs.each do |name, value| %>
       <li>
         <span class="i-<%= name.to_s %>" aria-hidden="true"></span>
-        <span class="icon-class">i-<%= name.to_s %></span>
+        <span class="icon-class"><%= name.to_s %></span>
       </li>
     <% end %>
   </ul>

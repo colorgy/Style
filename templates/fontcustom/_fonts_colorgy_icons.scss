@@ -26,4 +26,15 @@ $import-icon-font-name: 'colorgy-icons';
 
 <%= glyphs %>
 <% @glyphs.each do |name, value| %>
-$font-<%= font_name.gsub(/[^\w\d_]/, '-') %>-<%= name.to_s %>: "\<%= value[:codepoint].to_s(16) %>";<% end %>
+$font-<%= font_name.gsub(/[^\w\d_]/, '-') %>-<%= name.to_s %>: "\<%= value[:codepoint].to_s(16) %>";
+<% end %>
+
+.icon {
+	<%= glyph_properties %>
+	-webkit-font-feature-settings: "liga";
+	   -moz-font-feature-settings: "liga=1";
+	   -moz-font-feature-settings: "liga";
+	    -ms-font-feature-settings: "liga" 1;
+	     -o-font-feature-settings: "liga";
+	        font-feature-settings: "liga";
+}
