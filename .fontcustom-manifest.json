@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "8088148b6fbde3381a7a33a9ffe65bda3ba3fc4e94817de18a378053fbddb477",
-    "current": "8088148b6fbde3381a7a33a9ffe65bda3ba3fc4e94817de18a378053fbddb477"
+    "previous": "415a126a5bab6bc3dc1f412ae85b18fb53f44fd5dccaca062c30d7aa8c6b6e29",
+    "current": "415a126a5bab6bc3dc1f412ae85b18fb53f44fd5dccaca062c30d7aa8c6b6e29"
   },
   "fonts": [
     "assets/fonts/colorgy/colorgy-icons.ttf",
@@ -21,6 +21,14 @@
     "colorgy-text": {
       "codepoint": 105010,
       "source": "assets/fonts/colorgy/icons/colorgy-text.svg"
+    },
+    "done": {
+      "codepoint": 108014,
+      "source": "assets/fonts/colorgy/icons/done.svg"
+    },
+    "done-all": {
+      "codepoint": 108015,
+      "source": "assets/fonts/colorgy/icons/done-all.svg"
     },
     "github": {
       "codepoint": 100525,

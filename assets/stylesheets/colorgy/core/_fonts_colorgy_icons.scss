@@ -23,6 +23,8 @@ $import-icon-font-name: 'colorgy-icons';
 .i-cart:before,
 .i-colorgy:before,
 .i-colorgy-text:before,
+.i-done:before,
+.i-done-all:before,
 .i-github:before,
 .i-settings:before,
 .i-table-blank:before,
@@ -50,6 +52,8 @@ $import-icon-font-name: 'colorgy-icons';
 .i-cart:before { content: "\1a5eb"; }
 .i-colorgy:before { content: "\19a28"; }
 .i-colorgy-text:before { content: "\19a32"; }
+.i-done:before { content: "\1a5ee"; }
+.i-done-all:before { content: "\1a5ef"; }
 .i-github:before { content: "\188ad"; }
 .i-settings:before { content: "\1a5ec"; }
 .i-table-blank:before { content: "\18894"; }
@@ -66,6 +70,10 @@ $font-colorgy-icons-cart: "\1a5eb";
 $font-colorgy-icons-colorgy: "\19a28";
 
 $font-colorgy-icons-colorgy-text: "\19a32";
+
+$font-colorgy-icons-done: "\1a5ee";
+
+$font-colorgy-icons-done-all: "\1a5ef";
 
 $font-colorgy-icons-github: "\188ad";
 
