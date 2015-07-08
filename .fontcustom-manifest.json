@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "249c5c980bcf068e75d06c4a1a98d676f37bc1abf2dd85ecf623a97f59106a69",
-    "current": "249c5c980bcf068e75d06c4a1a98d676f37bc1abf2dd85ecf623a97f59106a69"
+    "previous": "8088148b6fbde3381a7a33a9ffe65bda3ba3fc4e94817de18a378053fbddb477",
+    "current": "8088148b6fbde3381a7a33a9ffe65bda3ba3fc4e94817de18a378053fbddb477"
   },
   "fonts": [
     "assets/fonts/colorgy/colorgy-icons.ttf",
@@ -10,6 +10,10 @@
     "assets/fonts/colorgy/colorgy-icons.eot"
   ],
   "glyphs": {
+    "cart": {
+      "codepoint": 108011,
+      "source": "assets/fonts/colorgy/icons/cart.svg"
+    },
     "colorgy": {
       "codepoint": 105000,
       "source": "assets/fonts/colorgy/icons/colorgy.svg"
@@ -21,6 +25,10 @@
     "github": {
       "codepoint": 100525,
       "source": "assets/fonts/colorgy/icons/github.svg"
+    },
+    "settings": {
+      "codepoint": 108012,
+      "source": "assets/fonts/colorgy/icons/settings.svg"
     },
     "table-blank": {
       "codepoint": 100500,
@@ -49,6 +57,10 @@
     "table-top-right-corner-rounded": {
       "codepoint": 100522,
       "source": "assets/fonts/colorgy/icons/table-top-right-corner-rounded.svg"
+    },
+    "tag": {
+      "codepoint": 108013,
+      "source": "assets/fonts/colorgy/icons/tag.svg"
     }
   },
   "options": {

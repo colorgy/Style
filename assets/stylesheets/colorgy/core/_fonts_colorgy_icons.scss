@@ -20,16 +20,19 @@ $import-icon-font-name: 'colorgy-icons';
 [data-icon]:before { content: attr(data-icon); }
 
 [data-icon]:before,
+.i-cart:before,
 .i-colorgy:before,
 .i-colorgy-text:before,
 .i-github:before,
+.i-settings:before,
 .i-table-blank:before,
 .i-table-bottom-left-corner-rounded:before,
 .i-table-bottom-right-corner-rounded:before,
 .i-table-frame-horizontal:before,
 .i-table-frame-vertical:before,
 .i-table-top-left-corner-rounded:before,
-.i-table-top-right-corner-rounded:before {
+.i-table-top-right-corner-rounded:before,
+.i-tag:before {
   display: inline-block;
   font-family: "colorgy-icons";
   font-style: normal;
@@ -44,9 +47,11 @@ $import-icon-font-name: 'colorgy-icons';
   font-smoothing: antialiased;
 }
 
+.i-cart:before { content: "\1a5eb"; }
 .i-colorgy:before { content: "\19a28"; }
 .i-colorgy-text:before { content: "\19a32"; }
 .i-github:before { content: "\188ad"; }
+.i-settings:before { content: "\1a5ec"; }
 .i-table-blank:before { content: "\18894"; }
 .i-table-bottom-left-corner-rounded:before { content: "\188ab"; }
 .i-table-bottom-right-corner-rounded:before { content: "\188ac"; }
@@ -54,12 +59,17 @@ $import-icon-font-name: 'colorgy-icons';
 .i-table-frame-vertical:before { content: "\18896"; }
 .i-table-top-left-corner-rounded:before { content: "\188a9"; }
 .i-table-top-right-corner-rounded:before { content: "\188aa"; }
+.i-tag:before { content: "\1a5ed"; }
+
+$font-colorgy-icons-cart: "\1a5eb";
 
 $font-colorgy-icons-colorgy: "\19a28";
 
 $font-colorgy-icons-colorgy-text: "\19a32";
 
 $font-colorgy-icons-github: "\188ad";
+
+$font-colorgy-icons-settings: "\1a5ec";
 
 $font-colorgy-icons-table-blank: "\18894";
 
@@ -74,6 +84,8 @@ $font-colorgy-icons-table-frame-vertical: "\18896";
 $font-colorgy-icons-table-top-left-corner-rounded: "\188a9";
 
 $font-colorgy-icons-table-top-right-corner-rounded: "\188aa";
+
+$font-colorgy-icons-tag: "\1a5ed";
 
 
 .icon {
