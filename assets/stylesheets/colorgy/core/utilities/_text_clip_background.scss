@@ -6,6 +6,10 @@
 		-webkit-text-fill-color: transparent;
 		   -moz-text-fill-color: transparent;
 		background-size: cover;
+
+		* {
+			opacity: 1;
+		}
 	}
 
 	html.no-backgroundcliptext & {
