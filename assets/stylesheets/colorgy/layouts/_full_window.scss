@@ -1,0 +1,31 @@
+// *************************************
+//
+//   Full Window
+//   -> Full window layout
+//
+//   It should be placed directly under
+//   the body or #wrapper to make 100% height.
+//
+//   Styleguide FullWindow
+//
+// -------------------------------------
+//   Template
+// -------------------------------------
+//
+//   body
+//     .l-full-window
+//       .l-full-window-body
+//
+// *************************************
+
+.l-full-window {
+	display: table;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+}
+
+.l-full-window-body {
+	display: table-cell;
+	vertical-align: middle;
+}
