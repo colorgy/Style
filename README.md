@@ -2,7 +2,7 @@
 
 Colorgy 的樣式指南、樣式表以及前端工具包。
 
-The front-end bundle and style guide for Colorgy.
+The front-end bundle and style guide for Colorgy, based on [Bootstrap 3](http://getbootstrap.com/) for the basis, and [MVCSS](http://mvcss.io/) for architecturing.
 
 ---
 
@@ -184,7 +184,7 @@ _適用於任何專案。_
 樣式表。為方便與其他前端框架整合，因此所有檔案皆放置於 `colorgy` 目錄下作為 namespace，並遵照 [MVCSS](http://mvcss.io/)-like 的目錄架構。皆使用 Sass (SCSS) 撰寫。
 
 - `application.scss` - 主 manifest 檔，引入所有部件
-- `core/` - 基礎建設，包含 `config` (預設組態)、`fonts` (字型定義)、`base` (基本樣式) `grid` (網格系統) 等最核心的部分
+- `core/` - 基礎建設，包含 `config` (預設組態)、`fonts` (字型定義)、`base` (基本樣式) `grid` (網格系統) 等最核心的部分，以及 `utilities` (輔助調整內容的懶人 class 們) 還有 `helpers` (通用的 function 或 mixin)
 - `layouts/` - 各式[排版結構](http://mvcss.io/structures/)，被重複使用的排版容器
 - `components/` - 各式[元件](http://mvcss.io/components/)，可獨立使用的 UI 單位
 

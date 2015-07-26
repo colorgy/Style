@@ -4,13 +4,12 @@
 //
 //   :active, .active      - Active state.
 //   :disabled, .disabled  - Disabled state.
-//   .btn--raised          - Raised button.
+//   .btn--flat            - Flat button.
 //   .btn--frameless       - Frameless button.
 //   .btn--outline         - Outline button.
 //   .btn--wide            - Wide button.
 //   .btn--lg              - Large button.
 //   .btn--sm              - Small button.
-//   .btn--xs              - Tiny button.
 //   .btn--block           - Block level buttons, span the full width of a parent.
 //
 //   Styleguide Button
@@ -23,14 +22,9 @@
 
 // ----- Sizing ----- //
 
-$btn-padding-vertical:           $padding-base-vertical !default;
-$btn-padding-horizontal:         $padding-base-horizontal !default;
-$btn-padding-large-vertical:     $padding-large-vertical !default;
-$btn-padding-large-horizontal:   $padding-large-horizontal !default;
-$btn-padding-small-vertical:     $padding-small-vertical !default;
-$btn-padding-small-horizontal:   $padding-small-horizontal !default;
-$btn-padding-xs-vertical:        $padding-xs-vertical !default;
-$btn-padding-xs-horizontal:      $padding-xs-horizontal !default;
+$btn-height:                     36px !default;
+$btn-line-height:                36px !default;
+$btn-padding:                    28px !default;
 
 // ----- Border Radius ----- //
 
@@ -40,20 +34,20 @@ $btn-outline-border-radius:      4px !default;
 // ----- Font Style ----- //
 
 $btn-font-size:                  $font-size-base !default;
-$btn-font-weight:                500;
+$btn-font-weight:                600;
 
 // ----- Colors ----- //
 
-$btn-default-color:              #333 !default;
-$btn-default-bg:                 #dedede !default;
-$btn-default-border:             #333;
+$btn-default-color:              #555 !default;
+$btn-default-bg:                 #fff !default;
+$btn-default-border:             transparent;
 
-$btn-primary-color:              $white !default;
-$btn-primary-bg:                 $brand-primary !default;
-$btn-primary-border:             darken($btn-primary-bg, 5%) !default;
+$btn-theme-color:                $white !default;
+$btn-theme-bg:                   $theme-color !default;
+$btn-theme-border:               darken($btn-theme-bg, 5%) !default;
 
 $btn-highlight-color:            $white !default;
-$btn-highlight-bg:               $brand-highlight !default;
+$btn-highlight-bg:               $highlight-color !default;
 $btn-highlight-border:           darken($btn-highlight-bg, 5%) !default;
 
 $btn-success-color:              $white !default;
@@ -72,6 +66,8 @@ $btn-danger-color:               $white !default;
 $btn-danger-bg:                  $brand-danger !default;
 $btn-danger-border:              darken($btn-danger-bg, 5%) !default;
 
+$btn-disabled-color:             #b3b3b3 !default;
+$btn-disabled-bg:                #dfdfdf !default;
 $btn-link-disabled-color:        $gray-light !default;
 
 // -------------------------------------
@@ -86,23 +82,35 @@ $btn-link-disabled-color:        $gray-light !default;
 
 .btn {
 	display: inline-block;
-	margin-bottom: 0; // For input.btn
+	height: $btn-height;
+	line-height: $btn-line-height;
+	padding: 0 $btn-padding;
+	border: 0;
+	border-radius: 2px;
+	outline: 0;
 	font-weight: $btn-font-weight;
 	text-align: center;
-	vertical-align: middle;
-	touch-action: manipulation;
-	cursor: pointer;
-	background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-	border: 1px solid transparent;
+	text-transform: uppercase;
 	white-space: nowrap;
-	@include button-size($btn-padding-vertical, $btn-padding-horizontal, $btn-font-size, $line-height-base, $btn-border-radius);
-	@include user-select(none);
+	vertical-align: middle;
 
-	@include button-variant($btn-default-color, $btn-default-bg, transparent);
+	@include user-select(none);
+	cursor: pointer;
+	touch-action: manipulation;
+
+	margin-bottom: 0;  // For input.btn
+	-webkit-tap-highlight-color: transparent;  // Gets rid of tap active state
+	background-image: none;  // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+
+
+	@include button-variant($btn-default-color, $btn-default-bg,
+													$btn-default-color, lighten($btn-default-bg, 8.2%),
+													$btn-default-color, lighten($btn-default-bg, 12%),
+													0);
 
 	-webkit-transition: all .3s;
-	   -moz-transition: all .3s;
-	        transition: all .3s;
+		 -moz-transition: all .3s;
+					transition: all .3s;
 
 	&,
 	&:active,
@@ -129,87 +137,30 @@ $btn-link-disabled-color:        $gray-light !default;
 	&.disabled,
 	&[disabled],
 	fieldset[disabled] & {
+		@include button-variant($btn-disabled-color, $btn-disabled-bg,
+														$btn-disabled-color, $btn-disabled-bg,
+														$btn-disabled-color, $btn-disabled-bg,
+														0);
 		cursor: $cursor-disabled;
-		@include opacity(.65);
-		@include box-shadow(none);
+
+		@include z-depth-0;
+
+		&:hover,
+		&:focus,
+		&.focus {
+			@include z-depth-0;
+		}
+
+		&:active,
+		&.active {
+			@include z-depth-0;
+		}
 	}
 }
 
-// -------------------------------------
-//   Modifiers
-// -------------------------------------
+// ----- Z Depth ----- //
 
-// ----- Modifier Name ----- //
-
-// ----- Size ----- //
-
-.btn--lg {
-	// line-height: ensure even-numbered height of button next to large input
-	@include button-size($btn-padding-large-vertical, $btn-padding-large-horizontal, $font-size-large, $line-height-large, $btn-border-radius);
-}
-
-.btn--sm {
-	// line-height: ensure proper height of button next to small input
-	@include button-size($btn-padding-small-vertical, $btn-padding-small-horizontal, $font-size-small, $line-height-small, $btn-border-radius);
-}
-
-.btn--xs {
-	@include button-size($btn-padding-xs-vertical, $btn-padding-xs-horizontal, $font-size-small, $line-height-small, $btn-border-radius);
-}
-
-.btn--wide {
-	@include button-size($btn-padding-vertical, $btn-padding-horizontal * 2.4, $btn-font-size, $line-height-base, $btn-border-radius);
-
-	&.btn--lg {
-		@include button-size($btn-padding-large-vertical, $btn-padding-large-horizontal * 2.4, $font-size-large, $line-height-large, $btn-border-radius);
-	}
-
-	&.btn--sm {
-		@include button-size($btn-padding-small-vertical, $btn-padding-small-horizontal * 2.4, $font-size-small, $line-height-small, $btn-border-radius);
-	}
-
-	&.btn--xs {
-		@include button-size($btn-padding-xs-vertical, $btn-padding-xs-horizontal * 2.4, $font-size-small, $line-height-small, $btn-border-radius);
-	}
-}
-
-// ----- Color ----- //
-
-.btn--default {
-	@include button-variant($btn-default-color, $btn-default-bg, transparent);
-}
-
-.btn--primary {
-	@include button-variant($btn-primary-color, $btn-primary-bg, transparent);
-}
-
-.btn--highlighted {
-	@include button-variant($btn-highlight-color, $btn-highlight-bg, transparent);
-}
-
-// Success appears as green
-.btn--success {
-	@include button-variant($btn-success-color, $btn-success-bg, transparent);
-}
-
-// Info appears as blue-green
-.btn--info {
-	@include button-variant($btn-info-color, $btn-info-bg, transparent);
-}
-
-// Warning appears as orange
-.btn--warning {
-	@include button-variant($btn-warning-color, $btn-warning-bg, transparent);
-}
-
-// Danger and error appear as red
-.btn--danger {
-	@include button-variant($btn-danger-color, $btn-danger-bg, transparent);
-}
-
-// ----- Styles ----- //
-
-.btn--raised {
+.btn {
 	@include z-depth-1;
 
 	&:hover,
@@ -219,161 +170,238 @@ $btn-link-disabled-color:        $gray-light !default;
 	}
 
 	&:active,
-	&.active,
-	&:active,
-	&.active,
-	&:active,
 	&.active {
 		@include z-depth-1;
+	}
+}
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Size ----- //
+
+.btn--lg {
+	height: $btn-height * 1.5;
+	line-height: $btn-line-height * 1.5;
+	padding: 0 $btn-padding * 1.5;
+}
+
+.btn--sm {
+	height: $btn-height * .8;
+	line-height: $btn-line-height * .8;
+	padding: 0 $btn-padding * .7;
+}
+
+.btn--wide {
+	padding: 0 $btn-padding * 1.6;
+}
+
+// ----- Color ----- //
+
+.btn--default {
+	@include button-variant($btn-default-color, $btn-default-bg,
+													$btn-default-color, lighten($btn-default-bg, 8.2%),
+													$btn-default-color, lighten($btn-default-bg, 12%),
+													0);
+}
+
+.btn--theme {
+	@include button-variant($btn-theme-color, $btn-theme-bg,
+													$btn-theme-color, lighten($btn-theme-bg, 8.2%),
+													$btn-theme-color, lighten($btn-theme-bg, 12%),
+													0);
+}
+
+.btn--highlighted {
+	@include button-variant($btn-highlight-color, $btn-highlight-bg,
+													$btn-highlight-color, lighten($btn-highlight-bg, 8.2%),
+													$btn-highlight-color, lighten($btn-highlight-bg, 12%),
+													0);
+}
+
+// Success appears as green
+.btn--success {
+	@include button-variant($btn-success-color, $btn-success-bg,
+													$btn-success-color, lighten($btn-success-bg, 8.2%),
+													$btn-success-color, lighten($btn-success-bg, 12%),
+													0);
+}
+
+// Info appears as blue-green
+.btn--info {
+	@include button-variant($btn-info-color, $btn-info-bg,
+													$btn-info-color, lighten($btn-info-bg, 8.2%),
+													$btn-info-color, lighten($btn-info-bg, 12%),
+													0);
+}
+
+// Warning appears as orange
+.btn--warning {
+	@include button-variant($btn-warning-color, $btn-warning-bg,
+													$btn-warning-color, lighten($btn-warning-bg, 8.2%),
+													$btn-warning-color, lighten($btn-warning-bg, 12%),
+													0);
+}
+
+// Danger and error appear as red
+.btn--danger {
+	@include button-variant($btn-danger-color, $btn-danger-bg,
+													$btn-danger-color, lighten($btn-danger-bg, 8.2%),
+													$btn-danger-color, lighten($btn-danger-bg, 12%),
+													0);
+}
+
+// ----- Styles ----- //
+
+.btn--flat {
+	@include z-depth-0;
+
+	&:hover,
+	&:focus,
+	&.focus {
+		@include z-depth-0;
+	}
+
+	&:active,
+	&.active {
+		@include z-depth-0;
+	}
+}
+
+.btn--frameless {
+	@extend .btn--flat;
+
+	&,
+	&.btn--default {
+		@include button-variant($btn-default-color, transparent,
+														$btn-default-color, rgba($btn-theme-bg, .32),
+														$btn-default-bg, rgba($btn-theme-bg, .5),
+														0);
+	}
+
+	&.btn--theme {
+		@include button-variant($btn-theme-bg, transparent,
+														$btn-theme-bg, rgba($btn-theme-bg, .32),
+														$btn-theme-bg, rgba($btn-theme-bg, .5),
+														0);
+	}
+
+	&.btn--highlighted {
+		@include button-variant($btn-highlight-bg, transparent,
+														$btn-highlight-bg, rgba($btn-highlight-bg, .32),
+														$btn-highlight-bg, rgba($btn-highlight-bg, .5),
+														0);
+	}
+
+	// Success appears as green
+	&.btn--success {
+		@include button-variant($btn-success-bg, transparent,
+														$btn-success-bg, rgba($btn-success-bg, .32),
+														$btn-success-bg, rgba($btn-success-bg, .5),
+														0);
+	}
+
+	// Info appears as blue-green
+	&.btn--info {
+		@include button-variant($btn-info-bg, transparent,
+														$btn-info-bg, rgba($btn-info-bg, .32),
+														$btn-info-bg, rgba($btn-info-bg, .5),
+														0);
+	}
+
+	// Warning appears as orange
+	&.btn--warning {
+		@include button-variant($btn-warning-bg, transparent,
+														$btn-warning-bg, rgba($btn-warning-bg, .32),
+														$btn-warning-bg, rgba($btn-warning-bg, .5),
+														0);
+	}
+
+	// Danger and error appear as red
+	&.btn--danger {
+		@include button-variant($btn-danger-bg, transparent,
+														$btn-danger-bg, rgba($btn-danger-bg, .32),
+														$btn-danger-bg, rgba($btn-danger-bg, .5),
+														0);
 	}
 
 	&.disabled,
 	&[disabled],
 	fieldset[disabled] & {
-		@include z-depth-0;
-	}
-
-	&,
-	&.btn--default {
-		@include button-variant($btn-default-color, $white, transparent);
-	}
-
-	&.btn--primary {
-		@include button-variant($btn-primary-color, $btn-primary-bg, transparent);
-	}
-
-	&.btn--highlighted {
-		@include button-variant($btn-highlight-color, $btn-highlight-bg, transparent);
-	}
-
-	// Success appears as green
-	&.btn--success {
-		@include button-variant($btn-success-color, $btn-success-bg, transparent);
-	}
-
-	// Info appears as blue-green
-	&.btn--info {
-		@include button-variant($btn-info-color, $btn-info-bg, transparent);
-	}
-
-	// Warning appears as orange
-	&.btn--warning {
-		@include button-variant($btn-warning-color, $btn-warning-bg, transparent);
-	}
-
-	// Danger and error appear as red
-	&.btn--danger {
-		@include button-variant($btn-danger-color, $btn-danger-bg, transparent);
-	}
-}
-
-.btn--frameless {
-	@include z-depth-0;
-
-	&,
-	&.btn--default {
-		@include button-frameless-variant($btn-default-border, $btn-default-color);
-	}
-
-	&.btn--primary {
-		@include button-frameless-variant($btn-primary-border, $btn-primary-bg);
-	}
-
-	&.btn--highlighted {
-		@include button-frameless-variant($btn-highlight-border, $btn-highlight-bg);
-	}
-
-	// Success appears as green
-	&.btn--success {
-		@include button-frameless-variant($btn-success-border, $btn-success-bg);
-	}
-
-	// Info appears as blue-green
-	&.btn--info {
-		@include button-frameless-variant($btn-info-border, $btn-info-bg);
-	}
-
-	// Warning appears as orange
-	&.btn--warning {
-		@include button-frameless-variant($btn-warning-border, $btn-warning-bg);
-	}
-
-	// Danger and error appear as red
-	&.btn--danger {
-		@include button-frameless-variant($btn-danger-border, $btn-danger-bg);
+		@include button-variant($btn-disabled-bg, transparent,
+														$btn-disabled-bg, transparent,
+														$btn-disabled-bg, transparent,
+														0);
+		cursor: $cursor-disabled;
 	}
 }
 
 .btn--outline {
-	border-width: 2px;
-
-	@include button-size($btn-padding-vertical, $btn-padding-horizontal, $btn-font-size, $line-height-base, $btn-outline-border-radius);
-
-	&.btn--lg {
-		// line-height: ensure even-numbered height of button next to large input
-		@include button-size($btn-padding-large-vertical, $btn-padding-large-horizontal, $font-size-large, $line-height-large, $btn-outline-border-radius);
-	}
-
-	&.btn--sm {
-		// line-height: ensure proper height of button next to small input
-		@include button-size($btn-padding-small-vertical, $btn-padding-small-horizontal, $font-size-small, $line-height-small, $btn-outline-border-radius);
-	}
-
-	&.btn--xs {
-		@include button-size($btn-padding-xs-vertical, $btn-padding-xs-horizontal, $font-size-small, $line-height-small, $btn-outline-border-radius);
-	}
-
-	&.btn--wide {
-		@include button-size($btn-padding-vertical, $btn-padding-horizontal * 2.4, $btn-font-size, $line-height-base, $btn-outline-border-radius);
-
-		&.btn--lg {
-			@include button-size($btn-padding-large-vertical, $btn-padding-large-horizontal * 2.4, $font-size-large, $line-height-large, $btn-outline-border-radius);
-		}
-
-		&.btn--sm {
-			@include button-size($btn-padding-small-vertical, $btn-padding-small-horizontal * 2.4, $font-size-small, $line-height-small, $btn-outline-border-radius);
-		}
-
-		&.btn--xs {
-			@include button-size($btn-padding-xs-vertical, $btn-padding-xs-horizontal * 2.4, $font-size-small, $line-height-small, $btn-outline-border-radius);
-		}
-	}
+	@extend .btn--flat;
 
 	&,
 	&.btn--default {
-		@include button-outline-variant($btn-default-color);
+		@include button-variant($btn-default-bg, transparent,
+														$btn-default-color, $btn-default-bg,
+														lighten($btn-default-bg, 12%), $btn-default-bg,
+														$btn-default-bg solid 2px);
 	}
 
-	&.btn--inverse {
-		@include button-outline-variant($white, $black);
-	}
-
-	&.btn--primary {
-		@include button-outline-variant($btn-primary-bg);
+	&.btn--theme {
+		@include button-variant($btn-theme-bg, transparent,
+														$btn-default-bg, $btn-theme-bg,
+														lighten($btn-theme-bg, 12%), $btn-theme-bg,
+														$btn-theme-bg solid 2px);
 	}
 
 	&.btn--highlighted {
-		@include button-outline-variant($btn-highlight-bg);
+		@include button-variant($btn-highlight-bg, transparent,
+														$btn-default-bg, $btn-highlight-bg,
+														lighten($btn-highlight-bg, 12%), $btn-highlight-bg,
+														$btn-highlight-bg solid 2px);
 	}
 
 	// Success appears as green
 	&.btn--success {
-		@include button-outline-variant($btn-success-bg);
+		@include button-variant($btn-success-bg, transparent,
+														$btn-default-bg, $btn-success-bg,
+														lighten($btn-success-bg, 12%), $btn-success-bg,
+														$btn-success-bg solid 2px);
 	}
 
 	// Info appears as blue-green
 	&.btn--info {
-		@include button-outline-variant($btn-info-bg);
+		@include button-variant($btn-info-bg, transparent,
+														$btn-default-bg, $btn-info-bg,
+														lighten($btn-info-bg, 12%), $btn-info-bg,
+														$btn-info-bg solid 2px);
 	}
 
 	// Warning appears as orange
 	&.btn--warning {
-		@include button-outline-variant($btn-warning-bg);
+		@include button-variant($btn-warning-bg, transparent,
+														$btn-default-bg, $btn-warning-bg,
+														lighten($btn-warning-bg, 12%), $btn-warning-bg,
+														$btn-warning-bg solid 2px);
 	}
 
 	// Danger and error appear as red
 	&.btn--danger {
-		@include button-outline-variant($btn-danger-bg);
+		@include button-variant($btn-danger-bg, transparent,
+														$btn-default-bg, $btn-danger-bg,
+														lighten($btn-danger-bg, 12%), $btn-danger-bg,
+														$btn-danger-bg solid 2px);
+	}
+
+	&.disabled,
+	&[disabled],
+	fieldset[disabled] & {
+		@include button-variant($btn-disabled-bg, transparent,
+														$btn-disabled-bg, transparent,
+														$btn-disabled-bg, transparent,
+														$btn-disabled-bg solid 2px);
+		cursor: $cursor-disabled;
 	}
 }
 
@@ -421,6 +449,7 @@ a.btn {
 
 // Make a button look and behave like a link
 .btn--link {
+	@extend .btn--flat;
 	color: $link-color;
 	font-weight: normal;
 	border-radius: 0;

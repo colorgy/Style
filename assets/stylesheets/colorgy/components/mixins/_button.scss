@@ -1,90 +1,30 @@
-@mixin button-variant($color, $background, $border) {
+@mixin button-variant($color, $background-color, $color-hover, $background-color-hover, $color-active, $background-color-active, $border) {
 	color: $color;
-	background-color: $background;
-	border-color: $border;
+	background-color: $background-color;
+	border: $border;
 
 	&:focus,
 	&.focus {
-		color: $color;
-		background-color: lighten($background, 8.2%);
-				border-color: lighten($border, 8.2%);
+		color: $color-hover;
+		background-color: $background-color-hover;
 	}
 
 	&:hover {
-		color: $color;
-		background-color: lighten($background, 8.2%);
-				border-color: lighten($border, 8.2%);
+		color: $color-hover;
+		background-color: $background-color-hover;
 	}
 
 	&:active,
 	&.active,
 	.open > &.dropdown-toggle {
-		color: $color;
-		background-color: darken($background, 10%);
-				border-color: darken($border, 12%);
+		color: $color-active;
+		background-color: $background-color-active;
 
 		&:hover,
 		&:focus,
 		&.focus {
-			color: $color;
-			background-color: darken($background, 17%);
-					border-color: darken($border, 25%);
-		}
-	}
-
-	&:active,
-	&.active,
-	.open > &.dropdown-toggle {
-		background-image: none;
-	}
-
-	&.disabled,
-	&[disabled],
-	fieldset[disabled] & {
-		&,
-		&:hover,
-		&:focus,
-		&.focus,
-		&:active,
-		&.active {
-			background-color: $background;
-					border-color: $border;
-		}
-	}
-
-	.badge {
-		color: $background;
-		background-color: $color;
-	}
-}
-
-@mixin button-frameless-variant($color, $background, $border: transparent) {
-	color: $color;
-	$background: darken($background, 10%);
-	background-color: rgba($background, 0);
-
-	&:focus,
-	&.focus {
-		color: $color;
-		background-color: rgba($background, .2);
-	}
-
-	&:hover {
-		color: $color;
-		background-color: rgba($background, .2);
-	}
-
-	&:active,
-	&.active,
-	.open > &.dropdown-toggle {
-		color: $color;
-		background-color: rgba($background, .3);
-
-		&:hover,
-		&:focus,
-		&.focus {
-			color: $color;
-			background-color: rgba($background, .3);
+			color: $color-active;
+			background-color: $background-color-active;
 		}
 	}
 
@@ -95,50 +35,6 @@
 	}
 
 	.badge {
-		color: $color;
-		background-color: $white;
-	}
-}
-
-@mixin button-outline-variant($color, $hover-color: $white) {
-	color: darken($color, 2%);
-	background-color: rgba($color, 0);
-	border-color: $color;
-
-	&:focus,
-	&.focus {
-		color: darken($color, 2%);
-		background-color: rgba($color, .2);
-	}
-
-	&:hover {
-		color: $hover-color;
-		background-color: rgba($color, 1);
-	}
-
-	&:active,
-	&.active,
-	.open > &.dropdown-toggle {
-		color: $hover-color;
-		background-color: rgba($color, 1);
-
-		&:hover,
-		&:focus,
-		&.focus {
-			color: $hover-color;
-			background-color: rgba($color, 1);
-		}
-	}
-
-	&:active,
-	&.active,
-	.open > &.dropdown-toggle {
-		background-image: none;
-	}
-
-	.badge {
-		color: $color;
-		background-color: $hover-color;
 	}
 }
 
