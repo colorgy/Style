@@ -1,6 +1,7 @@
 // *************************************
 //
 //   Colors
+//   -> 色彩計畫與用色邏輯
 //
 // *************************************
 
@@ -57,8 +58,8 @@ $color-lightest-base:   #eee;
 	$-blue:  blue(rgba($color, 1));
 
 	@return (.2126 * $-red   +
-	         .7152 * $-green +
-	         .0722 * $-blue) / 255;
+					 .7152 * $-green +
+					 .0722 * $-blue) / 255;
 }
 
 // ----- Contrast Color ----- //
@@ -128,7 +129,7 @@ $blue:       #46b0e3 !default;
 $purple:     #893dbe !default;
 $aquamarine: #00d0ad !default;
 
-// ----- Special Colors ----- //
+// ----- Brand Special Colors ----- //
 
 $colorgy-yellow:    #ffe100;
 $colorgy-turquoise: #40f2ed;
@@ -167,6 +168,10 @@ $highlight-color: $colorgy-highlight-color !default;
 // alias for bootstrap components
 $brand-primary:   $theme-color;
 $brand-highlight: $highlight-color;
+$primary-color:   $theme-color;
+$secondary-color: $highlight-color;
+$primary-color-light: color-light($primary-color);
+$primary-color-dark: color-dark($primary-color);
 
 // ----- Basic Color Applications ----- //
 
@@ -224,14 +229,14 @@ $text-color-light:      $white !default;
 	}
 
 	#{$parent}-lightest {
-	 	$-color: color-lightest($color);
+		$-color: color-lightest($color);
 		background-color: $-color !important;
 		color: text-color-on-bg($-color, $dark-text-color, $light-text-color) !important;
 	}
 }
 
 // -------------------------------------
-//   Utilities
+//   Color Utilities
 // -------------------------------------
 
 @include bg-color('.bg-black', $black);

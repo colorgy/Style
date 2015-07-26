@@ -33,8 +33,19 @@ $border-color:          #aaa !default;
 //   -> Font, line-height headings...
 // -------------------------------------
 
-$font-family-sans-serif:  "Lucida Sans Unicode", "Lucida Grande", sans-serif !default;
-$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+$font-family-sans-serif:  "Lucida Sans Unicode",
+													"Lucida Grande",
+													"XinGothic",
+													"Heiti TC",
+													"Noto Sans",
+													"Noto Sans CJK TC",
+													"微軟正黑體",
+													sans-serif !default;
+$font-family-serif:       Georgia,
+													"Songti TC",
+													"Times New Roman",
+													Times,
+													serif !default;
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
 $font-family-icons:       'colorgy-icons', 'Glyphicons Halflings', 'FontAwesome', $font-family-base !default;
