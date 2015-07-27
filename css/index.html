@@ -101,9 +101,157 @@
 
 <p>此處命名及架構慣例大多自 <a href="http://getbootstrap.com/css">Bootstrap 3</a> 承襲而來，包含 Grid System、Typography、Table、Form、Button 等。因此可直接參考 <a href="http://getbootstrap.com/css">Bootstrap 3 CSS</a> 說明文件套用。唯有 modifier 慣例使用了 BEM 模式的最顯著差別（<code>btn-warning</code> 與 <code>btn--warning</code>）。</p>
 <h2 id='grid-system'>2.2. 格線系統與基線垂直節奏</h2>
-<p>參見 <a href="http://getbootstrap.com/css#grid">Bootstrap 3 CSS - Grid System</a>、<a href="http://getbootstrap.com/css/#responsive-utilities">Bootstrap 3 CSS - Responsive Utilities</a>。</p>
-<h2 id='typography'>2.3. 基本排版</h2>
-<p>參見 <a href="http://getbootstrap.com/css/#type">Bootstrap 3 CSS - Typography</a>。</p>
+<p>參見 <a href="http://getbootstrap.com/css#grid">Bootstrap 3 CSS - Grid System</a>、<a href="http://getbootstrap.com/css/#responsive-utilities">Bootstrap 3 CSS - Responsive Utilities</a>、<a href="http://getbootstrap.com/css/#type">Bootstrap 3 CSS - Typography</a>。</p>
+<h2 id='layout'>2.3. 基本佈局</h2>
+<h3 id='layout'>2.3.1. 卡片 (Card)</h3>
+<p>卡片 (Card) 容器提供了基本的邊距 (padding) 以及簡單的排版規則，提供緊密、一般、寬鬆三種風格，且適合做為基本容器擴充使用。下例中的卡片皆搭配了 <code>.z-depth-1</code> 呈現，以便觀察。</p>
+<div class="styleguide-example">
+
+  <h3>Card <em>_card.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>Card</p>
+
+      <ul class="styleguide-modifier">
+          <li><strong>.card--sm</strong> - Compact</li>
+          <li><strong>.card--lg</strong> - Loose</li>
+      </ul>
+  </div>
+  <div class="styleguide-element">
+    <!-- A simple container to show content composed of different types of objects, providing basic padding and background. an additional z-depth is added for visibility. -->
+<div class="card z-depth-1">
+  Hello World!
+</div>
+
+<!-- A card including content and action. -->
+<div class="card z-depth-1">
+  <div class="card-content white-text">
+    <span class="card-title">Card Title</span>
+    <p>Lorem ipsum dolor sit amet, consul consetetur eu pro, cu nostro efficiendi efficiantur sed. Soluta aeterno inermis mea in, has facer lobortis cu. An quis mediocrem his, sea assentior constituto theophrastus ne, omittam officiis duo id. Tollit accusam perpetua pri cu. Eu soleat regione duo, vis eripuit delicatissimi at, nominati maiestatis ea cum.</p>
+  </div>
+  <div class="card-actions">
+    <a href="#">This is a link</a>
+    <button>This is a button</button>
+  </div>
+</div>
+
+<!-- A card with title image. -->
+<div class="card z-depth-1">
+  <div class="card-image">
+    <img data-src="holder.js/100%x200">
+    <span class="card-title">Card Title</span>
+  </div>
+  <div class="card-content">
+    <p>Lorem ipsum dolor sit amet, ornatus insolens definitionem cu usu, quis salutatus percipitur ad pri. Enim iusto ei duo, habemus percipit maiestatis pri no. Vocent salutatus sea no. Mei accusamus dissentiunt signiferumque an. In qui posse dicat assum. Stet praesent eam eu, vitae menandri ex usu.</p>
+  </div>
+  <div class="card-actions">
+    <a href="#">This is a link</a>
+  </div>
+</div>
+
+  </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.card--sm</span>
+      <!-- A simple container to show content composed of different types of objects, providing basic padding and background. an additional z-depth is added for visibility. -->
+<div class="card z-depth-1 card--sm">
+  Hello World!
+</div>
+
+<!-- A card including content and action. -->
+<div class="card z-depth-1 card--sm">
+  <div class="card-content white-text">
+    <span class="card-title">Card Title</span>
+    <p>Lorem ipsum dolor sit amet, consul consetetur eu pro, cu nostro efficiendi efficiantur sed. Soluta aeterno inermis mea in, has facer lobortis cu. An quis mediocrem his, sea assentior constituto theophrastus ne, omittam officiis duo id. Tollit accusam perpetua pri cu. Eu soleat regione duo, vis eripuit delicatissimi at, nominati maiestatis ea cum.</p>
+  </div>
+  <div class="card-actions">
+    <a href="#">This is a link</a>
+    <button>This is a button</button>
+  </div>
+</div>
+
+<!-- A card with title image. -->
+<div class="card z-depth-1 card--sm">
+  <div class="card-image">
+    <img data-src="holder.js/100%x200">
+    <span class="card-title">Card Title</span>
+  </div>
+  <div class="card-content">
+    <p>Lorem ipsum dolor sit amet, ornatus insolens definitionem cu usu, quis salutatus percipitur ad pri. Enim iusto ei duo, habemus percipit maiestatis pri no. Vocent salutatus sea no. Mei accusamus dissentiunt signiferumque an. In qui posse dicat assum. Stet praesent eam eu, vitae menandri ex usu.</p>
+  </div>
+  <div class="card-actions">
+    <a href="#">This is a link</a>
+  </div>
+</div>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.card--lg</span>
+      <!-- A simple container to show content composed of different types of objects, providing basic padding and background. an additional z-depth is added for visibility. -->
+<div class="card z-depth-1 card--lg">
+  Hello World!
+</div>
+
+<!-- A card including content and action. -->
+<div class="card z-depth-1 card--lg">
+  <div class="card-content white-text">
+    <span class="card-title">Card Title</span>
+    <p>Lorem ipsum dolor sit amet, consul consetetur eu pro, cu nostro efficiendi efficiantur sed. Soluta aeterno inermis mea in, has facer lobortis cu. An quis mediocrem his, sea assentior constituto theophrastus ne, omittam officiis duo id. Tollit accusam perpetua pri cu. Eu soleat regione duo, vis eripuit delicatissimi at, nominati maiestatis ea cum.</p>
+  </div>
+  <div class="card-actions">
+    <a href="#">This is a link</a>
+    <button>This is a button</button>
+  </div>
+</div>
+
+<!-- A card with title image. -->
+<div class="card z-depth-1 card--lg">
+  <div class="card-image">
+    <img data-src="holder.js/100%x200">
+    <span class="card-title">Card Title</span>
+  </div>
+  <div class="card-content">
+    <p>Lorem ipsum dolor sit amet, ornatus insolens definitionem cu usu, quis salutatus percipitur ad pri. Enim iusto ei duo, habemus percipit maiestatis pri no. Vocent salutatus sea no. Mei accusamus dissentiunt signiferumque an. In qui posse dicat assum. Stet praesent eam eu, vitae menandri ex usu.</p>
+  </div>
+  <div class="card-actions">
+    <a href="#">This is a link</a>
+  </div>
+</div>
+
+    </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;!-- A simple container to show content composed of different types of objects, providing basic padding and background. an additional z-depth is added for visibility. --&gt;
+&lt;div class=&quot;card z-depth-1&quot;&gt;
+  Hello World!
+&lt;&#x2F;div&gt;
+
+&lt;!-- A card including content and action. --&gt;
+&lt;div class=&quot;card z-depth-1&quot;&gt;
+  &lt;div class=&quot;card-content white-text&quot;&gt;
+    &lt;span class=&quot;card-title&quot;&gt;Card Title&lt;&#x2F;span&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consul consetetur eu pro, cu nostro efficiendi efficiantur sed. Soluta aeterno inermis mea in, has facer lobortis cu. An quis mediocrem his, sea assentior constituto theophrastus ne, omittam officiis duo id. Tollit accusam perpetua pri cu. Eu soleat regione duo, vis eripuit delicatissimi at, nominati maiestatis ea cum.&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;card-actions&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;This is a link&lt;&#x2F;a&gt;
+    &lt;button&gt;This is a button&lt;&#x2F;button&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- A card with title image. --&gt;
+&lt;div class=&quot;card z-depth-1&quot;&gt;
+  &lt;div class=&quot;card-image&quot;&gt;
+    &lt;img data-src=&quot;holder.js&#x2F;100%x200&quot;&gt;
+    &lt;span class=&quot;card-title&quot;&gt;Card Title&lt;&#x2F;span&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;card-content&quot;&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, ornatus insolens definitionem cu usu, quis salutatus percipitur ad pri. Enim iusto ei duo, habemus percipit maiestatis pri no. Vocent salutatus sea no. Mei accusamus dissentiunt signiferumque an. In qui posse dicat assum. Stet praesent eam eu, vitae menandri ex usu.&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;card-actions&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;This is a link&lt;&#x2F;a&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+</code></pre>
+  </div>
+
+</div>
 <h2 id='buttons'>2.4. 按鈕 (Button)</h2>
 <div class="styleguide-example">
 
@@ -135,6 +283,11 @@
 
 <!-- The highlighted action in a set of buttons -->
 <button type="button" class="btn btn--highlighted">Highlight</button>
+
+<!-- Greyscale buttons -->
+<button type="button" class="btn btn--gray">Success</button>
+<button type="button" class="btn btn--gray-dark">Success</button>
+<button type="button" class="btn btn--gray-darker">Success</button>
 
 <!-- Indicates a successful or positive action -->
 <button type="button" class="btn btn--success">Success</button>
@@ -169,6 +322,11 @@
 <!-- The highlighted action in a set of buttons -->
 <button type="button" class="btn btn--highlighted pseudo-class-active,  active">Highlight</button>
 
+<!-- Greyscale buttons -->
+<button type="button" class="btn btn--gray pseudo-class-active,  active">Success</button>
+<button type="button" class="btn btn--gray-dark pseudo-class-active,  active">Success</button>
+<button type="button" class="btn btn--gray-darker pseudo-class-active,  active">Success</button>
+
 <!-- Indicates a successful or positive action -->
 <button type="button" class="btn btn--success pseudo-class-active,  active">Success</button>
 
@@ -201,6 +359,11 @@
 
 <!-- The highlighted action in a set of buttons -->
 <button type="button" class="btn btn--highlighted pseudo-class-disabled,  disabled">Highlight</button>
+
+<!-- Greyscale buttons -->
+<button type="button" class="btn btn--gray pseudo-class-disabled,  disabled">Success</button>
+<button type="button" class="btn btn--gray-dark pseudo-class-disabled,  disabled">Success</button>
+<button type="button" class="btn btn--gray-darker pseudo-class-disabled,  disabled">Success</button>
 
 <!-- Indicates a successful or positive action -->
 <button type="button" class="btn btn--success pseudo-class-disabled,  disabled">Success</button>
@@ -235,6 +398,11 @@
 <!-- The highlighted action in a set of buttons -->
 <button type="button" class="btn btn--highlighted btn--flat">Highlight</button>
 
+<!-- Greyscale buttons -->
+<button type="button" class="btn btn--gray btn--flat">Success</button>
+<button type="button" class="btn btn--gray-dark btn--flat">Success</button>
+<button type="button" class="btn btn--gray-darker btn--flat">Success</button>
+
 <!-- Indicates a successful or positive action -->
 <button type="button" class="btn btn--success btn--flat">Success</button>
 
@@ -267,6 +435,11 @@
 
 <!-- The highlighted action in a set of buttons -->
 <button type="button" class="btn btn--highlighted btn--frameless">Highlight</button>
+
+<!-- Greyscale buttons -->
+<button type="button" class="btn btn--gray btn--frameless">Success</button>
+<button type="button" class="btn btn--gray-dark btn--frameless">Success</button>
+<button type="button" class="btn btn--gray-darker btn--frameless">Success</button>
 
 <!-- Indicates a successful or positive action -->
 <button type="button" class="btn btn--success btn--frameless">Success</button>
@@ -301,6 +474,11 @@
 <!-- The highlighted action in a set of buttons -->
 <button type="button" class="btn btn--highlighted btn--outline">Highlight</button>
 
+<!-- Greyscale buttons -->
+<button type="button" class="btn btn--gray btn--outline">Success</button>
+<button type="button" class="btn btn--gray-dark btn--outline">Success</button>
+<button type="button" class="btn btn--gray-darker btn--outline">Success</button>
+
 <!-- Indicates a successful or positive action -->
 <button type="button" class="btn btn--success btn--outline">Success</button>
 
@@ -333,6 +511,11 @@
 
 <!-- The highlighted action in a set of buttons -->
 <button type="button" class="btn btn--highlighted btn--wide">Highlight</button>
+
+<!-- Greyscale buttons -->
+<button type="button" class="btn btn--gray btn--wide">Success</button>
+<button type="button" class="btn btn--gray-dark btn--wide">Success</button>
+<button type="button" class="btn btn--gray-darker btn--wide">Success</button>
 
 <!-- Indicates a successful or positive action -->
 <button type="button" class="btn btn--success btn--wide">Success</button>
@@ -367,6 +550,11 @@
 <!-- The highlighted action in a set of buttons -->
 <button type="button" class="btn btn--highlighted btn--lg">Highlight</button>
 
+<!-- Greyscale buttons -->
+<button type="button" class="btn btn--gray btn--lg">Success</button>
+<button type="button" class="btn btn--gray-dark btn--lg">Success</button>
+<button type="button" class="btn btn--gray-darker btn--lg">Success</button>
+
 <!-- Indicates a successful or positive action -->
 <button type="button" class="btn btn--success btn--lg">Success</button>
 
@@ -399,6 +587,11 @@
 
 <!-- The highlighted action in a set of buttons -->
 <button type="button" class="btn btn--highlighted btn--sm">Highlight</button>
+
+<!-- Greyscale buttons -->
+<button type="button" class="btn btn--gray btn--sm">Success</button>
+<button type="button" class="btn btn--gray-dark btn--sm">Success</button>
+<button type="button" class="btn btn--gray-darker btn--sm">Success</button>
 
 <!-- Indicates a successful or positive action -->
 <button type="button" class="btn btn--success btn--sm">Success</button>
@@ -433,6 +626,11 @@
 <!-- The highlighted action in a set of buttons -->
 <button type="button" class="btn btn--highlighted btn--block">Highlight</button>
 
+<!-- Greyscale buttons -->
+<button type="button" class="btn btn--gray btn--block">Success</button>
+<button type="button" class="btn btn--gray-dark btn--block">Success</button>
+<button type="button" class="btn btn--gray-darker btn--block">Success</button>
+
 <!-- Indicates a successful or positive action -->
 <button type="button" class="btn btn--success btn--block">Success</button>
 
@@ -464,6 +662,11 @@
 
 &lt;!-- The highlighted action in a set of buttons --&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn--highlighted&quot;&gt;Highlight&lt;&#x2F;button&gt;
+
+&lt;!-- Greyscale buttons --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn--gray&quot;&gt;Success&lt;&#x2F;button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn--gray-dark&quot;&gt;Success&lt;&#x2F;button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn--gray-darker&quot;&gt;Success&lt;&#x2F;button&gt;
 
 &lt;!-- Indicates a successful or positive action --&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn--success&quot;&gt;Success&lt;&#x2F;button&gt;
