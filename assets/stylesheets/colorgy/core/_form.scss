@@ -61,10 +61,6 @@ $datepicker-focus:                rgba(0,0,0, .05) !default;
 $datepicker-selected:             $theme-color !default;
 $datepicker-selected-outfocus:    desaturate(lighten($theme-color, 35%), 15%) !default;
 
-$button-color: #0f0;
-
-$gutter-width: 10px;
-
 // -------------------------------------
 //   Helpers
 // -------------------------------------
@@ -169,7 +165,7 @@ select:focus {
 
 button:focus {
 	outline: none;
-	background-color: lighten($button-color, 4%);
+	background-color: transparent;
 }
 
 label {

@@ -186,7 +186,7 @@ $btn-link-disabled-color:        $gray-light !default;
 .btn--lg {
 	height: $btn-lg-height;
 	line-height: $btn-lg-height;
-	padding: 0 $btn-padding * 1.5;
+	padding: 0 $btn-padding * 1.8;
 }
 
 .btn--sm {
@@ -219,6 +219,27 @@ $btn-link-disabled-color:        $gray-light !default;
 	@include button-variant($btn-highlight-color, $btn-highlight-bg,
 													$btn-highlight-color, lighten($btn-highlight-bg, 8.2%),
 													$btn-highlight-color, lighten($btn-highlight-bg, 12%),
+													0);
+}
+
+.btn--gray {
+	@include button-variant($white, $gray,
+													$white, lighten($gray, 8.2%),
+													$white, lighten($gray, 12%),
+													0);
+}
+
+.btn--gray-dark {
+	@include button-variant($white, $gray-dark,
+													$white, lighten($gray-dark, 8.2%),
+													$white, lighten($gray-dark, 12%),
+													0);
+}
+
+.btn--gray-darker {
+	@include button-variant($white, $gray-darker,
+													$white, lighten($gray-darker, 8.2%),
+													$white, lighten($gray-darker, 12%),
 													0);
 }
 

@@ -12,3 +12,17 @@
 .text-align-right {
 	text-align: right !important;
 }
+
+.text-justify {
+	text-align: justify;
+	text-justify: inter-ideograph;
+	-ms-text-justify: inter-ideograph;
+	-moz-text-align-last: justify;
+	-webkit-text-align-last: justify;
+
+	&::after {
+		content: '';
+		display: inline-block;
+		width: 100%;
+	}
+}

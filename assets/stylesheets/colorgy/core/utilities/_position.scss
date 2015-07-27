@@ -1,4 +1,16 @@
+.position-static {
+	position: static !important;
+}
+
 .position-absolute-full {
+	position: absolute !important;
+	left: 0 !important;
+	right: 0 !important;
+	top: 0 !important;
+	bottom: 0 !important;
+}
+
+.position-absolute-full-width {
 	position: absolute !important;
 	left: 0 !important;
 	right: 0 !important;

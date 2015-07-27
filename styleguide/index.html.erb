@@ -15,7 +15,7 @@ layout: styleguide
   }
 
   .l-intro .actions {
-    max-width: 290px;
+    max-width: 314px;
     margin-left: auto;
     margin-right: auto;
     font-size: 110%;
@@ -133,23 +133,23 @@ layout: styleguide
           <h1 class="brand-heading text-clip-background-clear-text">Colorgy <small>Styleguide</small></h1>
           <p>Colorgy《大學祭》使用者介面、視覺識別與樣式指南</p>
           <div class="actions clearfix">
-            <div class="action-1" style="width: 136px;">
-              <div class="x58294" style="width: 128px;">
-                &#x188aa;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x188a9;<br>
-                &#x18896;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18896;<br>
-                &#x18896;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18896;<br>
-                &#x188ab;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x188ac;<br>
-              </div>
-              <a class="x17895" style="width: 118px;" href="https://github.com/colorgy/Style/raw/master/assets/images/colorgy/Colorgy.sketch"><span class="i-icon">&#xf219;</span> 素材下載</a>
-            </div>
-            <div class="action-2" style="width: 150px;">
-              <div class="x58294" style="width: 142px;">
+            <div class="action-1" style="width: 148px;">
+              <div class="x58294" style="width: 140px;">
                 &#x188aa;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x188a9;<br>
                 &#x18896;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18896;<br>
                 &#x18896;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18896;<br>
                 &#x188ab;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x188ac;<br>
               </div>
-              <a class="x17895" style="width: 132px;" href="https://github.com/colorgy/Style" target="_blank"><span class="i-icon">&#x188ad;</span> 瀏覽原始碼</a>
+              <a class="x17895" style="width: 130px;" href="https://github.com/colorgy/Style/raw/master/assets/images/colorgy/Colorgy.sketch"><span class="i-icon">&#xf219;</span> 素材下載</a>
+            </div>
+            <div class="action-2" style="width: 162px;">
+              <div class="x58294" style="width: 154px;">
+                &#x188aa;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x188a9;<br>
+                &#x18896;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18896;<br>
+                &#x18896;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18894;&#x18896;<br>
+                &#x188ab;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x18895;&#x188ac;<br>
+              </div>
+              <a class="x17895" style="width: 144px;" href="https://github.com/colorgy/Style" target="_blank"><span class="i-icon">&#x188ad;</span> 瀏覽原始碼</a>
             </div>
           </div>
         </div>
@@ -164,7 +164,7 @@ layout: styleguide
 </section>
 
 <section class="section bg-theme">
-  <div class="container text-center">
+  <div class="container text-center max-width-800px">
     <p class="lead">
       這是一份為 Colorgy 開發應用的設計資源，包含了一套完整的前端樣式框架，用於打造符合 Colorgy 風格的作品。
     </p>
@@ -182,15 +182,15 @@ layout: styleguide
           <p class="h1"><small>1.</small></p>
           <h2 class="h3">Globals</h2>
           <p>標幟、色彩、字型和排版等泛用樣式的定義。</p>
-          <%= link_to 'Globals »', '/globals.html', relative: true, class: 'btn btn--raised' %>
+          <%= link_to 'Globals »', '/globals.html', relative: true, class: 'btn btn--gray btn--lg' %>
         </div>
       </div>
       <div class="col-md-3 col-sm-6">
         <div class="">
           <p class="h1"><small>2.</small></p>
           <h2 class="h3">CSS</h2>
-          <p>CSS 風格、基本 HTML 元素。</p>
-          <%= link_to 'CSS »', '/css.html', relative: true, class: 'btn btn--raised' %>
+          <p>Grid System、Typography、Table、Form、Utilities，CSS 風格、基本 HTML 元素。</p>
+          <%= link_to 'CSS »', '/css.html', relative: true, class: 'btn btn--gray btn--lg' %>
         </div>
       </div>
       <div class="col-md-3 col-sm-6">
@@ -198,7 +198,7 @@ layout: styleguide
           <p class="h1"><small>3.</small></p>
           <h2 class="h3">Components</h2>
           <p>隨處可見，可重複使用、隨意定位甚至調整大小的獨立組件。</p>
-          <%= link_to 'Components »', '/components.html', relative: true, class: 'btn btn--raised' %>
+          <%= link_to 'Components »', '/components.html', relative: true, class: 'btn btn--gray btn--lg' %>
         </div>
       </div>
       <div class="col-md-3 col-sm-6">
@@ -206,7 +206,7 @@ layout: styleguide
           <p class="h1"><small>4.</small></p>
           <h2 class="h3">Extensional Components</h2>
           <p>更多為特定目的製作的組件。</p>
-          <%= link_to 'Extras »', '/extras.html', relative: true, class: 'btn btn--raised' %>
+          <%= link_to 'Extras »', '/extras.html', relative: true, class: 'btn btn--gray btn--lg' %>
         </div>
       </div>
     </div>

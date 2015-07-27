@@ -19,19 +19,22 @@ $dark-checkerboard: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAAAA
 		opacity: .8;
 		display: block;
 		position: absolute;
-		top: $box-padding-sm-vertical;
-		left: $box-padding-sm-horizontal;
-		color: darken($brand-primary, 20%);
+		z-index: 99999;
+		top: 12px;
+		left: 16px;
+		color: grey;
 	}
 
 	> h3 {
+		position: absolute;
+		z-index: 99999;
+		width: 100%;
 		text-align: right;
 		margin: 0;
-		padding: $box-padding-sm-vertical $box-padding-sm-horizontal;
+		padding: 12px 16px;
 		font-size: 14px;
-		background-color: rgba($brand-primary, 1);
-		color: rgba($text-color-light, .8);
-		// color: darken($brand-primary, 10%);
+		color: grey;
+		opacity: .7;
 
 		&::after {
 			content: '−';
@@ -49,20 +52,11 @@ $dark-checkerboard: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAAAA
 	}
 
 	.styleguide-description {
-		padding: $box-padding-sm-vertical $box-padding-sm-horizontal;
-		padding-top: 4px;
-		padding-bottom: $box-padding-sm-vertical - 4;
-		border-bottom: 1px solid #ddd;
-		background-color: rgba($brand-primary, 1);
-		color: $text-color-light;
+		display: none;
+	}
 
-		p:first-child {
-			margin-top: 0;
-		}
-
-		p:last-child {
-			margin-bottom: 0;
-		}
+	.styleguide-description + .styleguide-element {
+		padding-top: 45px;
 	}
 
 	.styleguide-element {
@@ -130,7 +124,7 @@ $dark-checkerboard: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAAAA
 
 	pre {
 		margin: 0;
-		padding: $box-padding-sm-vertical $box-padding-sm-horizontal;
+		padding: 12px 12px;
 		border: 0;
 		border-radius: 0;
 	}
