@@ -53,7 +53,7 @@
                 <a href="../globals/">Globals</a>
               </li>
               <li>
-                <a href="../layouts/">Layouts</a>
+                <a href="../css/">CSS</a>
               </li>
               <li>
                 <a href="./">Components</a>
@@ -82,7 +82,7 @@
         <div class="h1">
             <small><a href="../globals/">Globals</a></small>
           <small>/</small>
-            <small><a href="../layouts/">Layouts</a></small>
+            <small><a href="../css/">CSS</a></small>
           <small>/</small>
             <span class="text-clip-background-clear-text">Components</span>
           <small>/</small>
@@ -107,13 +107,12 @@
       <ul class="styleguide-modifier">
           <li><strong>:active, .active</strong> - Active state.</li>
           <li><strong>:disabled, .disabled</strong> - Disabled state.</li>
-          <li><strong>.btn--raised</strong> - Raised button.</li>
+          <li><strong>.btn--flat</strong> - Flat button.</li>
           <li><strong>.btn--frameless</strong> - Frameless button.</li>
           <li><strong>.btn--outline</strong> - Outline button.</li>
           <li><strong>.btn--wide</strong> - Wide button.</li>
           <li><strong>.btn--lg</strong> - Large button.</li>
           <li><strong>.btn--sm</strong> - Small button.</li>
-          <li><strong>.btn--xs</strong> - Tiny button.</li>
           <li><strong>.btn--block</strong> - Block level buttons, span the full width of a parent.</li>
       </ul>
   </div>
@@ -124,8 +123,8 @@
 <input class="btn" type="button" value="Input">
 <input class="btn btn--inverse" type="submit" value="Submit">
 
-<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-<button type="button" class="btn btn--primary">Primary</button>
+<!-- Theme -->
+<button type="button" class="btn btn--theme">Theme</button>
 
 <!-- The highlighted action in a set of buttons -->
 <button type="button" class="btn btn--highlighted">Highlight</button>
@@ -145,6 +144,9 @@
 <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
 <button type="button" class="btn btn--link">Link</button>
 
+<!-- Disabled button -->
+<button type="button" class="btn disabled">Disabled</button>
+
   </div>
     <div class="styleguide-element styleguide-modifier">
       <span class="styleguide-modifier-name">:active, .active</span>
@@ -154,8 +156,8 @@
 <input class="btn pseudo-class-active,  active" type="button" value="Input">
 <input class="btn btn--inverse pseudo-class-active,  active" type="submit" value="Submit">
 
-<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-<button type="button" class="btn btn--primary pseudo-class-active,  active">Primary</button>
+<!-- Theme -->
+<button type="button" class="btn btn--theme pseudo-class-active,  active">Theme</button>
 
 <!-- The highlighted action in a set of buttons -->
 <button type="button" class="btn btn--highlighted pseudo-class-active,  active">Highlight</button>
@@ -175,6 +177,9 @@
 <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
 <button type="button" class="btn btn--link pseudo-class-active,  active">Link</button>
 
+<!-- Disabled button -->
+<button type="button" class="btn disabled pseudo-class-active,  active">Disabled</button>
+
     </div>
     <div class="styleguide-element styleguide-modifier">
       <span class="styleguide-modifier-name">:disabled, .disabled</span>
@@ -184,8 +189,8 @@
 <input class="btn pseudo-class-disabled,  disabled" type="button" value="Input">
 <input class="btn btn--inverse pseudo-class-disabled,  disabled" type="submit" value="Submit">
 
-<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-<button type="button" class="btn btn--primary pseudo-class-disabled,  disabled">Primary</button>
+<!-- Theme -->
+<button type="button" class="btn btn--theme pseudo-class-disabled,  disabled">Theme</button>
 
 <!-- The highlighted action in a set of buttons -->
 <button type="button" class="btn btn--highlighted pseudo-class-disabled,  disabled">Highlight</button>
@@ -205,35 +210,41 @@
 <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
 <button type="button" class="btn btn--link pseudo-class-disabled,  disabled">Link</button>
 
+<!-- Disabled button -->
+<button type="button" class="btn disabled pseudo-class-disabled,  disabled">Disabled</button>
+
     </div>
     <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.btn--raised</span>
+      <span class="styleguide-modifier-name">.btn--flat</span>
       <!-- Different types of button elements -->
-<a class="btn btn--raised" href="#" role="button">Link</a>
-<button class="btn btn--raised" type="submit">Button</button>
-<input class="btn btn--raised" type="button" value="Input">
-<input class="btn btn--inverse btn--raised" type="submit" value="Submit">
+<a class="btn btn--flat" href="#" role="button">Link</a>
+<button class="btn btn--flat" type="submit">Button</button>
+<input class="btn btn--flat" type="button" value="Input">
+<input class="btn btn--inverse btn--flat" type="submit" value="Submit">
 
-<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-<button type="button" class="btn btn--primary btn--raised">Primary</button>
+<!-- Theme -->
+<button type="button" class="btn btn--theme btn--flat">Theme</button>
 
 <!-- The highlighted action in a set of buttons -->
-<button type="button" class="btn btn--highlighted btn--raised">Highlight</button>
+<button type="button" class="btn btn--highlighted btn--flat">Highlight</button>
 
 <!-- Indicates a successful or positive action -->
-<button type="button" class="btn btn--success btn--raised">Success</button>
+<button type="button" class="btn btn--success btn--flat">Success</button>
 
 <!-- Contextual button for informational alert messages -->
-<button type="button" class="btn btn--info btn--raised">Info</button>
+<button type="button" class="btn btn--info btn--flat">Info</button>
 
 <!-- Indicates caution should be taken with this action -->
-<button type="button" class="btn btn--warning btn--raised">Warning</button>
+<button type="button" class="btn btn--warning btn--flat">Warning</button>
 
 <!-- Indicates a dangerous or potentially negative action -->
-<button type="button" class="btn btn--danger btn--raised">Danger</button>
+<button type="button" class="btn btn--danger btn--flat">Danger</button>
 
 <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
-<button type="button" class="btn btn--link btn--raised">Link</button>
+<button type="button" class="btn btn--link btn--flat">Link</button>
+
+<!-- Disabled button -->
+<button type="button" class="btn disabled btn--flat">Disabled</button>
 
     </div>
     <div class="styleguide-element styleguide-modifier">
@@ -244,8 +255,8 @@
 <input class="btn btn--frameless" type="button" value="Input">
 <input class="btn btn--inverse btn--frameless" type="submit" value="Submit">
 
-<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-<button type="button" class="btn btn--primary btn--frameless">Primary</button>
+<!-- Theme -->
+<button type="button" class="btn btn--theme btn--frameless">Theme</button>
 
 <!-- The highlighted action in a set of buttons -->
 <button type="button" class="btn btn--highlighted btn--frameless">Highlight</button>
@@ -265,6 +276,9 @@
 <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
 <button type="button" class="btn btn--link btn--frameless">Link</button>
 
+<!-- Disabled button -->
+<button type="button" class="btn disabled btn--frameless">Disabled</button>
+
     </div>
     <div class="styleguide-element styleguide-modifier">
       <span class="styleguide-modifier-name">.btn--outline</span>
@@ -274,8 +288,8 @@
 <input class="btn btn--outline" type="button" value="Input">
 <input class="btn btn--inverse btn--outline" type="submit" value="Submit">
 
-<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-<button type="button" class="btn btn--primary btn--outline">Primary</button>
+<!-- Theme -->
+<button type="button" class="btn btn--theme btn--outline">Theme</button>
 
 <!-- The highlighted action in a set of buttons -->
 <button type="button" class="btn btn--highlighted btn--outline">Highlight</button>
@@ -295,6 +309,9 @@
 <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
 <button type="button" class="btn btn--link btn--outline">Link</button>
 
+<!-- Disabled button -->
+<button type="button" class="btn disabled btn--outline">Disabled</button>
+
     </div>
     <div class="styleguide-element styleguide-modifier">
       <span class="styleguide-modifier-name">.btn--wide</span>
@@ -304,8 +321,8 @@
 <input class="btn btn--wide" type="button" value="Input">
 <input class="btn btn--inverse btn--wide" type="submit" value="Submit">
 
-<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-<button type="button" class="btn btn--primary btn--wide">Primary</button>
+<!-- Theme -->
+<button type="button" class="btn btn--theme btn--wide">Theme</button>
 
 <!-- The highlighted action in a set of buttons -->
 <button type="button" class="btn btn--highlighted btn--wide">Highlight</button>
@@ -325,6 +342,9 @@
 <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
 <button type="button" class="btn btn--link btn--wide">Link</button>
 
+<!-- Disabled button -->
+<button type="button" class="btn disabled btn--wide">Disabled</button>
+
     </div>
     <div class="styleguide-element styleguide-modifier">
       <span class="styleguide-modifier-name">.btn--lg</span>
@@ -334,8 +354,8 @@
 <input class="btn btn--lg" type="button" value="Input">
 <input class="btn btn--inverse btn--lg" type="submit" value="Submit">
 
-<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-<button type="button" class="btn btn--primary btn--lg">Primary</button>
+<!-- Theme -->
+<button type="button" class="btn btn--theme btn--lg">Theme</button>
 
 <!-- The highlighted action in a set of buttons -->
 <button type="button" class="btn btn--highlighted btn--lg">Highlight</button>
@@ -355,6 +375,9 @@
 <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
 <button type="button" class="btn btn--link btn--lg">Link</button>
 
+<!-- Disabled button -->
+<button type="button" class="btn disabled btn--lg">Disabled</button>
+
     </div>
     <div class="styleguide-element styleguide-modifier">
       <span class="styleguide-modifier-name">.btn--sm</span>
@@ -364,8 +387,8 @@
 <input class="btn btn--sm" type="button" value="Input">
 <input class="btn btn--inverse btn--sm" type="submit" value="Submit">
 
-<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-<button type="button" class="btn btn--primary btn--sm">Primary</button>
+<!-- Theme -->
+<button type="button" class="btn btn--theme btn--sm">Theme</button>
 
 <!-- The highlighted action in a set of buttons -->
 <button type="button" class="btn btn--highlighted btn--sm">Highlight</button>
@@ -385,35 +408,8 @@
 <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
 <button type="button" class="btn btn--link btn--sm">Link</button>
 
-    </div>
-    <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.btn--xs</span>
-      <!-- Different types of button elements -->
-<a class="btn btn--xs" href="#" role="button">Link</a>
-<button class="btn btn--xs" type="submit">Button</button>
-<input class="btn btn--xs" type="button" value="Input">
-<input class="btn btn--inverse btn--xs" type="submit" value="Submit">
-
-<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-<button type="button" class="btn btn--primary btn--xs">Primary</button>
-
-<!-- The highlighted action in a set of buttons -->
-<button type="button" class="btn btn--highlighted btn--xs">Highlight</button>
-
-<!-- Indicates a successful or positive action -->
-<button type="button" class="btn btn--success btn--xs">Success</button>
-
-<!-- Contextual button for informational alert messages -->
-<button type="button" class="btn btn--info btn--xs">Info</button>
-
-<!-- Indicates caution should be taken with this action -->
-<button type="button" class="btn btn--warning btn--xs">Warning</button>
-
-<!-- Indicates a dangerous or potentially negative action -->
-<button type="button" class="btn btn--danger btn--xs">Danger</button>
-
-<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
-<button type="button" class="btn btn--link btn--xs">Link</button>
+<!-- Disabled button -->
+<button type="button" class="btn disabled btn--sm">Disabled</button>
 
     </div>
     <div class="styleguide-element styleguide-modifier">
@@ -424,8 +420,8 @@
 <input class="btn btn--block" type="button" value="Input">
 <input class="btn btn--inverse btn--block" type="submit" value="Submit">
 
-<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-<button type="button" class="btn btn--primary btn--block">Primary</button>
+<!-- Theme -->
+<button type="button" class="btn btn--theme btn--block">Theme</button>
 
 <!-- The highlighted action in a set of buttons -->
 <button type="button" class="btn btn--highlighted btn--block">Highlight</button>
@@ -445,6 +441,9 @@
 <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
 <button type="button" class="btn btn--link btn--block">Link</button>
 
+<!-- Disabled button -->
+<button type="button" class="btn disabled btn--block">Disabled</button>
+
     </div>
   <div class="styleguide-html">
     <pre><code class="language-markup">&lt;!-- Different types of button elements --&gt;
@@ -453,8 +452,8 @@
 &lt;input class=&quot;btn&quot; type=&quot;button&quot; value=&quot;Input&quot;&gt;
 &lt;input class=&quot;btn btn--inverse&quot; type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
 
-&lt;!-- Provides extra visual weight and identifies the primary action in a set of buttons --&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn--primary&quot;&gt;Primary&lt;&#x2F;button&gt;
+&lt;!-- Theme --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn--theme&quot;&gt;Theme&lt;&#x2F;button&gt;
 
 &lt;!-- The highlighted action in a set of buttons --&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn--highlighted&quot;&gt;Highlight&lt;&#x2F;button&gt;
@@ -473,6 +472,9 @@
 
 &lt;!-- Deemphasize a button by making it look like a link while maintaining button behavior --&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn--link&quot;&gt;Link&lt;&#x2F;button&gt;
+
+&lt;!-- Disabled button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn disabled&quot;&gt;Disabled&lt;&#x2F;button&gt;
 </code></pre>
   </div>
 
@@ -487,7 +489,6 @@
       <ul class="styleguide-modifier">
           <li><strong>.btn-group--lg</strong> - Large.</li>
           <li><strong>.btn-group--sm</strong> - Small.</li>
-          <li><strong>.btn-group--xs</strong> - Extra small.</li>
           <li><strong>.btn-group--justified</strong> - Stretch at equal sizes to span the entire width of its parent.</li>
       </ul>
   </div>
@@ -613,51 +614,6 @@
   <a type="button" class="btn btn-default">2</a>
 
   <div class="btn-group btn-group--sm" role="group">
-    <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-      Dropdown
-      <span class="caret"></span>
-    </a>
-    <ul class="dropdown-menu" role="menu">
-      <li><a href="#">Dropdown link</a></li>
-      <li><a href="#">Dropdown link</a></li>
-    </ul>
-  </div>
-</div>
-
-    </div>
-    <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name">.btn-group--xs</span>
-      <!-- Basic -->
-<div class="btn-group btn-group--xs" role="group" aria-label="...">
-  <a type="button" class="btn btn-default">Left</a>
-  <a type="button" class="btn btn-default">Middle</a>
-  <a type="button" class="btn btn-default">Right</a>
-</div>
-
-<!-- Combine sets in a toolbar -->
-<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-  <div class="btn-group btn-group--xs" role="group" aria-label="First group">
-    <a type="button" class="btn btn-default">1</a>
-    <a type="button" class="btn btn-default">2</a>
-    <a type="button" class="btn btn-default">3</a>
-    <a type="button" class="btn btn-default">4</a>
-  </div>
-  <div class="btn-group btn-group--xs" role="group" aria-label="Second group">
-    <a type="button" class="btn btn-default">5</a>
-    <a type="button" class="btn btn-default">6</a>
-    <a type="button" class="btn btn-default">7</a>
-  </div>
-  <div class="btn-group btn-group--xs" role="group" aria-label="Third group">
-    <a type="button" class="btn btn-default">8</a>
-  </div>
-</div>
-
-<!-- Nesting with dropdowns -->
-<div class="btn-group btn-group--xs" role="group" aria-label="...">
-  <a type="button" class="btn btn-default">1</a>
-  <a type="button" class="btn btn-default">2</a>
-
-  <div class="btn-group btn-group--xs" role="group">
     <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
       Dropdown
       <span class="caret"></span>
@@ -2066,20 +2022,23 @@
   <div class="styleguide-element">
     <div class="steps">
   <a class="steps-step">
-    <div class="title">Previous Step</div>
-    <div class="description">Description</div>
+    <div class="steps-step-title">Previous Step</div>
+    <div class="steps-step-description">Description</div>
   </a>
-  <a class="steps-step">
-    <div class="title">Previous Step</div>
-    <div class="description">Description</div>
+  <a class="steps-step completed">
+    <div class="steps-step-icon"><img data-src="holder.js/200x300"></div>
+    <div class="steps-step-title">Previous Step</div>
+    <div class="steps-step-description">Description</div>
   </a>
   <a class="steps-step active">
-    <div class="title">Active Step</div>
-    <div class="description">Description</div>
+    <div class="steps-step-icon success"><i class="icon">settings</i></div>
+    <div class="steps-step-title">Active Step</div>
+    <div class="steps-step-description">Description</div>
   </a>
   <a class="steps-step disabled">
-    <div class="title">Disabled Step</div>
-    <div class="description">Description</div>
+    <div class="steps-step-icon"><i class="icon">cart</i></div>
+    <div class="steps-step-title">Disabled Step</div>
+    <div class="steps-step-description">Description</div>
   </a>
 </div>
 
@@ -2088,20 +2047,23 @@
       <span class="styleguide-modifier-name">.steps--vertical</span>
       <div class="steps steps--vertical">
   <a class="steps-step">
-    <div class="title">Previous Step</div>
-    <div class="description">Description</div>
+    <div class="steps-step-title">Previous Step</div>
+    <div class="steps-step-description">Description</div>
   </a>
-  <a class="steps-step">
-    <div class="title">Previous Step</div>
-    <div class="description">Description</div>
+  <a class="steps-step completed">
+    <div class="steps-step-icon"><img data-src="holder.js/200x300"></div>
+    <div class="steps-step-title">Previous Step</div>
+    <div class="steps-step-description">Description</div>
   </a>
   <a class="steps-step active">
-    <div class="title">Active Step</div>
-    <div class="description">Description</div>
+    <div class="steps-step-icon success"><i class="icon">settings</i></div>
+    <div class="steps-step-title">Active Step</div>
+    <div class="steps-step-description">Description</div>
   </a>
   <a class="steps-step disabled">
-    <div class="title">Disabled Step</div>
-    <div class="description">Description</div>
+    <div class="steps-step-icon"><i class="icon">cart</i></div>
+    <div class="steps-step-title">Disabled Step</div>
+    <div class="steps-step-description">Description</div>
   </a>
 </div>
 
@@ -2110,20 +2072,23 @@
       <span class="styleguide-modifier-name">.steps--sm-arrow</span>
       <div class="steps steps--sm-arrow">
   <a class="steps-step">
-    <div class="title">Previous Step</div>
-    <div class="description">Description</div>
+    <div class="steps-step-title">Previous Step</div>
+    <div class="steps-step-description">Description</div>
   </a>
-  <a class="steps-step">
-    <div class="title">Previous Step</div>
-    <div class="description">Description</div>
+  <a class="steps-step completed">
+    <div class="steps-step-icon"><img data-src="holder.js/200x300"></div>
+    <div class="steps-step-title">Previous Step</div>
+    <div class="steps-step-description">Description</div>
   </a>
   <a class="steps-step active">
-    <div class="title">Active Step</div>
-    <div class="description">Description</div>
+    <div class="steps-step-icon success"><i class="icon">settings</i></div>
+    <div class="steps-step-title">Active Step</div>
+    <div class="steps-step-description">Description</div>
   </a>
   <a class="steps-step disabled">
-    <div class="title">Disabled Step</div>
-    <div class="description">Description</div>
+    <div class="steps-step-icon"><i class="icon">cart</i></div>
+    <div class="steps-step-title">Disabled Step</div>
+    <div class="steps-step-description">Description</div>
   </a>
 </div>
 
@@ -2132,20 +2097,23 @@
       <span class="styleguide-modifier-name">.steps--vertical.steps--sm-arrow</span>
       <div class="steps steps--vertical steps--sm-arrow">
   <a class="steps-step">
-    <div class="title">Previous Step</div>
-    <div class="description">Description</div>
+    <div class="steps-step-title">Previous Step</div>
+    <div class="steps-step-description">Description</div>
   </a>
-  <a class="steps-step">
-    <div class="title">Previous Step</div>
-    <div class="description">Description</div>
+  <a class="steps-step completed">
+    <div class="steps-step-icon"><img data-src="holder.js/200x300"></div>
+    <div class="steps-step-title">Previous Step</div>
+    <div class="steps-step-description">Description</div>
   </a>
   <a class="steps-step active">
-    <div class="title">Active Step</div>
-    <div class="description">Description</div>
+    <div class="steps-step-icon success"><i class="icon">settings</i></div>
+    <div class="steps-step-title">Active Step</div>
+    <div class="steps-step-description">Description</div>
   </a>
   <a class="steps-step disabled">
-    <div class="title">Disabled Step</div>
-    <div class="description">Description</div>
+    <div class="steps-step-icon"><i class="icon">cart</i></div>
+    <div class="steps-step-title">Disabled Step</div>
+    <div class="steps-step-description">Description</div>
   </a>
 </div>
 
@@ -2153,20 +2121,23 @@
   <div class="styleguide-html">
     <pre><code class="language-markup">&lt;div class=&quot;steps&quot;&gt;
   &lt;a class=&quot;steps-step&quot;&gt;
-    &lt;div class=&quot;title&quot;&gt;Previous Step&lt;&#x2F;div&gt;
-    &lt;div class=&quot;description&quot;&gt;Description&lt;&#x2F;div&gt;
+    &lt;div class=&quot;steps-step-title&quot;&gt;Previous Step&lt;&#x2F;div&gt;
+    &lt;div class=&quot;steps-step-description&quot;&gt;Description&lt;&#x2F;div&gt;
   &lt;&#x2F;a&gt;
-  &lt;a class=&quot;steps-step&quot;&gt;
-    &lt;div class=&quot;title&quot;&gt;Previous Step&lt;&#x2F;div&gt;
-    &lt;div class=&quot;description&quot;&gt;Description&lt;&#x2F;div&gt;
+  &lt;a class=&quot;steps-step completed&quot;&gt;
+    &lt;div class=&quot;steps-step-icon&quot;&gt;&lt;img data-src=&quot;holder.js&#x2F;200x300&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;steps-step-title&quot;&gt;Previous Step&lt;&#x2F;div&gt;
+    &lt;div class=&quot;steps-step-description&quot;&gt;Description&lt;&#x2F;div&gt;
   &lt;&#x2F;a&gt;
   &lt;a class=&quot;steps-step active&quot;&gt;
-    &lt;div class=&quot;title&quot;&gt;Active Step&lt;&#x2F;div&gt;
-    &lt;div class=&quot;description&quot;&gt;Description&lt;&#x2F;div&gt;
+    &lt;div class=&quot;steps-step-icon success&quot;&gt;&lt;i class=&quot;icon&quot;&gt;settings&lt;&#x2F;i&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;steps-step-title&quot;&gt;Active Step&lt;&#x2F;div&gt;
+    &lt;div class=&quot;steps-step-description&quot;&gt;Description&lt;&#x2F;div&gt;
   &lt;&#x2F;a&gt;
   &lt;a class=&quot;steps-step disabled&quot;&gt;
-    &lt;div class=&quot;title&quot;&gt;Disabled Step&lt;&#x2F;div&gt;
-    &lt;div class=&quot;description&quot;&gt;Description&lt;&#x2F;div&gt;
+    &lt;div class=&quot;steps-step-icon&quot;&gt;&lt;i class=&quot;icon&quot;&gt;cart&lt;&#x2F;i&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;steps-step-title&quot;&gt;Disabled Step&lt;&#x2F;div&gt;
+    &lt;div class=&quot;steps-step-description&quot;&gt;Description&lt;&#x2F;div&gt;
   &lt;&#x2F;a&gt;
 &lt;&#x2F;div&gt;
 </code></pre>
@@ -2192,7 +2163,7 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse-5118dfcb62">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse-b64e7aba53">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -2202,7 +2173,7 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="example-navbar-collapse-5118dfcb62">
+    <div class="collapse navbar-collapse" id="example-navbar-collapse-b64e7aba53">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
         <li><a href="#">Link</a></li>
@@ -2249,7 +2220,7 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse-5118dfcb62">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse-b64e7aba53">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -2259,7 +2230,7 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="example-navbar-collapse-5118dfcb62">
+    <div class="collapse navbar-collapse" id="example-navbar-collapse-b64e7aba53">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
         <li><a href="#">Link</a></li>
@@ -2306,7 +2277,7 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse-5118dfcb62">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse-b64e7aba53">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -2316,7 +2287,7 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="example-navbar-collapse-5118dfcb62">
+    <div class="collapse navbar-collapse" id="example-navbar-collapse-b64e7aba53">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
         <li><a href="#">Link</a></li>
@@ -2363,7 +2334,7 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse-5118dfcb62">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse-b64e7aba53">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -2373,7 +2344,7 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="example-navbar-collapse-5118dfcb62">
+    <div class="collapse navbar-collapse" id="example-navbar-collapse-b64e7aba53">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
         <li><a href="#">Link</a></li>
@@ -2420,7 +2391,7 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse-5118dfcb62">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse-b64e7aba53">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -2430,7 +2401,7 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="example-navbar-collapse-5118dfcb62">
+    <div class="collapse navbar-collapse" id="example-navbar-collapse-b64e7aba53">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
         <li><a href="#">Link</a></li>
@@ -2476,7 +2447,7 @@
   &lt;div class=&quot;container-fluid&quot;&gt;
     &lt;!-- Brand and toggle get grouped for better mobile display --&gt;
     &lt;div class=&quot;navbar-header&quot;&gt;
-      &lt;button type=&quot;button&quot; class=&quot;navbar-toggle collapsed&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#example-navbar-collapse-5118dfcb62&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;navbar-toggle collapsed&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#example-navbar-collapse-b64e7aba53&quot;&gt;
         &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;&#x2F;span&gt;
         &lt;span class=&quot;icon-bar&quot;&gt;&lt;&#x2F;span&gt;
         &lt;span class=&quot;icon-bar&quot;&gt;&lt;&#x2F;span&gt;
@@ -2486,7 +2457,7 @@
     &lt;&#x2F;div&gt;
 
     &lt;!-- Collect the nav links, forms, and other content for toggling --&gt;
-    &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;example-navbar-collapse-5118dfcb62&quot;&gt;
+    &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;example-navbar-collapse-b64e7aba53&quot;&gt;
       &lt;ul class=&quot;nav navbar-nav&quot;&gt;
         &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Link &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -4217,18 +4188,25 @@
 
 </div>
 <h2 id='glyphicons'>3.4. 圖示字型 (Glyphicons)</h2>
-<p>使用方式：</p>
+<p>將圖示放到網頁中是很容易的，如以下範例：</p>
 
-<p><code>&#x000A;&lt;i class=&quot;i-colorgy&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;</code></p>
+<p><code>&#x000A;&lt;i class=&quot;i-colorgy&quot;&gt;&lt;/i&gt;</code></p>
 
-<p>例如：</p>
+<p><i class="i-colorgy"></i></p>
 
-<p><code>&#x000A;歡迎來到 &lt;i class=&quot;i-colorgy&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;！&#x000A;Welcome to &lt;i class=&quot;i-colorgy&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; , the hub of college life!</code></p>
+<p>或是應用稱作 <a href="http://alistapart.com/article/the-era-of-symbol-fonts"><em>ligature</em></a> 的印刷排版技術，您也可以這樣使用圖示：</p>
 
-<p>會變成：</p>
+<p><code>&#x000A;&lt;i class=&quot;icon&quot;&gt;colorgy&lt;/i&gt;</code></p>
 
-<p>歡迎來到 <i class="i-colorgy" aria-hidden="true"></i>！
-Welcome to <i class="i-colorgy" aria-hidden="true"></i> , the hub of college life!</p>
+<p><i class="icon">colorgy</i></p>
+
+<p>透過 <a href="http://alistapart.com/article/the-era-of-symbol-fonts"><em>ligature</em></a> 技術可以讓圖示的文字名稱直接顯示為圖示本身，提供了更好的瀏覽體驗 (例如可被全文搜尋、優雅降級成顯示文字、可被文字閱讀器讀用等)。</p>
+
+<p>或是直接使用 UTF-8 code 也可以：</p>
+
+<p><code>&#x000A;&lt;p class=&quot;i-icon&quot;&gt;&amp;#x19a28;&lt;/p&gt;</code></p>
+
+<p class="i-icon">&#x19a28;</p>
 <!--
   This file is auto generated from the template:
     templates/icon_fonts/_icon_font.html.erb
@@ -4241,53 +4219,78 @@ Welcome to <i class="i-colorgy" aria-hidden="true"></i> , the hub of college lif
   <ul>
     
       <li>
+        <span class="i-cart" aria-hidden="true"></span>
+        <span class="icon-class">cart</span>
+      </li>
+    
+      <li>
         <span class="i-colorgy" aria-hidden="true"></span>
-        <span class="icon-class">i-colorgy</span>
+        <span class="icon-class">colorgy</span>
       </li>
     
       <li>
         <span class="i-colorgy-text" aria-hidden="true"></span>
-        <span class="icon-class">i-colorgy-text</span>
+        <span class="icon-class">colorgy-text</span>
+      </li>
+    
+      <li>
+        <span class="i-done" aria-hidden="true"></span>
+        <span class="icon-class">done</span>
+      </li>
+    
+      <li>
+        <span class="i-done-all" aria-hidden="true"></span>
+        <span class="icon-class">done-all</span>
       </li>
     
       <li>
         <span class="i-github" aria-hidden="true"></span>
-        <span class="icon-class">i-github</span>
+        <span class="icon-class">github</span>
+      </li>
+    
+      <li>
+        <span class="i-settings" aria-hidden="true"></span>
+        <span class="icon-class">settings</span>
       </li>
     
       <li>
         <span class="i-table-blank" aria-hidden="true"></span>
-        <span class="icon-class">i-table-blank</span>
+        <span class="icon-class">table-blank</span>
       </li>
     
       <li>
         <span class="i-table-bottom-left-corner-rounded" aria-hidden="true"></span>
-        <span class="icon-class">i-table-bottom-left-corner-rounded</span>
+        <span class="icon-class">table-bottom-left-corner-rounded</span>
       </li>
     
       <li>
         <span class="i-table-bottom-right-corner-rounded" aria-hidden="true"></span>
-        <span class="icon-class">i-table-bottom-right-corner-rounded</span>
+        <span class="icon-class">table-bottom-right-corner-rounded</span>
       </li>
     
       <li>
         <span class="i-table-frame-horizontal" aria-hidden="true"></span>
-        <span class="icon-class">i-table-frame-horizontal</span>
+        <span class="icon-class">table-frame-horizontal</span>
       </li>
     
       <li>
         <span class="i-table-frame-vertical" aria-hidden="true"></span>
-        <span class="icon-class">i-table-frame-vertical</span>
+        <span class="icon-class">table-frame-vertical</span>
       </li>
     
       <li>
         <span class="i-table-top-left-corner-rounded" aria-hidden="true"></span>
-        <span class="icon-class">i-table-top-left-corner-rounded</span>
+        <span class="icon-class">table-top-left-corner-rounded</span>
       </li>
     
       <li>
         <span class="i-table-top-right-corner-rounded" aria-hidden="true"></span>
-        <span class="icon-class">i-table-top-right-corner-rounded</span>
+        <span class="icon-class">table-top-right-corner-rounded</span>
+      </li>
+    
+      <li>
+        <span class="i-tag" aria-hidden="true"></span>
+        <span class="icon-class">tag</span>
       </li>
     
   </ul>
@@ -4380,7 +4383,7 @@ Welcome to <i class="i-colorgy" aria-hidden="true"></i> , the hub of college lif
               <p class="footer-minimal-clear">Colorgy Styleguide</p>
               <div>
                 <a href="../globals/">Globals</a> /
-                <a href="../layouts/">Layouts</a> /
+                <a href="../css/">CSS</a> /
                 <a href="./">Components</a> /
                 <a href="../extras/">Extras</a>
               </div>

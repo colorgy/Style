@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSS // Colorgy Styleguide</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0 minimum-scale=1.0, user-scalable=no">
+
+    <link href="../stylesheets/colorgy.css" rel="stylesheet" type="text/css" />
+    <script src="../javascripts/colorgy.js" type="text/javascript"></script>
+
+    <link href="../stylesheets/styleguide.css" rel="stylesheet" type="text/css" />
+    <script src="../javascripts/styleguide_head.js" type="text/javascript"></script>
+  </head>
+    <body>
+    <script type="text/javascript">
+      window.index = false;
+    </script>
+
+    <style type="text/css">
+
+      img {
+        max-width: 100%;
+      }
+
+      .section {
+        padding: 70px 0;
+      }
+
+      footer {
+        padding: 80px 0;
+      }
+
+    </style>
+
+    <div class="wrapper" id="wrapper">
+      <nav class="navbar minimal inverse fixed-top auto-transparent transparent auto-expanded expanded" role="navigation">
+        <div class="container">
+          <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar-collapse" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand has-image" href="#wrapper">
+              <img src="../images/colorgy/colorgy_logo_white.svg" />
+            </a>
+          </div>
+          <div id="main-navbar-collapse" class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="../globals/">Globals</a>
+              </li>
+              <li>
+                <a href="./">CSS</a>
+              </li>
+              <li>
+                <a href="../components/">Components</a>
+              </li>
+              <li>
+                <a href="../extras/">Extras</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+        <style type="text/css">
+    body.main-navbar-collapse-collapse-in header .overlay,
+    body.main-navbar-collapse-collapsing-in header .overlay {
+      opacity: .8;
+    }
+
+    .content {
+      padding-bottom: 20px;
+    }
+  </style>
+  <header class="inverse bg-black" style="position: relative; background-image: url('../images/colorgy/background_blur_1_dark.jpg'); background-size: cover; background-position: 50% 10%; ">
+    <div class="text-clip-background" style="background-image: url('../images/colorgy/background_blur_1_light.jpg'); background-size: cover; background-position: 50% 10%; padding: 140px 0 20px; margin-bottom: 20px;">
+      <div class="container">
+        <div class="h1">
+            <small><a href="../globals/">Globals</a></small>
+          <small>/</small>
+            <span class="text-clip-background-clear-text">CSS</span>
+          <small>/</small>
+            <small><a href="../components/">Components</a></small>
+          <small>/</small>
+            <small><a href="../extras/">Extras</a></small>
+        </div>
+        <p>Grid System、Typography、Table、Form、Utilities，CSS 風格、基本 HTML 元素。</p>
+      </div>
+    </div>
+    <div class="overlay inverse hidden"></div>
+  </header>
+  <div class="container content">
+      <div class="row">
+    <div class="col-md-9 main">
+      <h2 id='overview'>2.1. CSS 概覽</h2>
+<p>在此提供排版系統、各種基本 HTML 元素風格、以及調整內容幫手 Utilities (helpers) 等。</p>
+
+<p>此處命名及架構慣例大多自 <a href="http://getbootstrap.com/css">Bootstrap 3</a> 承襲而來，包含 Grid System、Typography、Table、Form、Button 等。因此可直接參考 <a href="http://getbootstrap.com/css">Bootstrap 3 CSS</a> 說明文件套用。唯有 modifier 慣例使用了 BEM 模式的最顯著差別（<code>btn-warning</code> 與 <code>btn--warning</code>）。</p>
+<h2 id='grid-system'>2.2. 格線系統與基線垂直節奏</h2>
+<p>參見 <a href="http://getbootstrap.com/css#grid">Bootstrap 3 CSS - Grid System</a>、<a href="http://getbootstrap.com/css/#responsive-utilities">Bootstrap 3 CSS - Responsive Utilities</a>。</p>
+<h2 id='typography'>2.3. 基本排版</h2>
+<p>參見 <a href="http://getbootstrap.com/css/#type">Bootstrap 3 CSS - Typography</a>。</p>
+<h2 id='buttons'>2.4. 按鈕 (Button)</h2>
+<div class="styleguide-example">
+
+  <h3>Button <em>_button.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>Button</p>
+
+      <ul class="styleguide-modifier">
+          <li><strong>:active, .active</strong> - Active state.</li>
+          <li><strong>:disabled, .disabled</strong> - Disabled state.</li>
+          <li><strong>.btn--flat</strong> - Flat button.</li>
+          <li><strong>.btn--frameless</strong> - Frameless button.</li>
+          <li><strong>.btn--outline</strong> - Outline button.</li>
+          <li><strong>.btn--wide</strong> - Wide button.</li>
+          <li><strong>.btn--lg</strong> - Large button.</li>
+          <li><strong>.btn--sm</strong> - Small button.</li>
+          <li><strong>.btn--block</strong> - Block level buttons, span the full width of a parent.</li>
+      </ul>
+  </div>
+  <div class="styleguide-element">
+    <!-- Different types of button elements -->
+<a class="btn" href="#" role="button">Link</a>
+<button class="btn" type="submit">Button</button>
+<input class="btn" type="button" value="Input">
+<input class="btn btn--inverse" type="submit" value="Submit">
+
+<!-- Theme -->
+<button type="button" class="btn btn--theme">Theme</button>
+
+<!-- The highlighted action in a set of buttons -->
+<button type="button" class="btn btn--highlighted">Highlight</button>
+
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn btn--success">Success</button>
+
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn btn--info">Info</button>
+
+<!-- Indicates caution should be taken with this action -->
+<button type="button" class="btn btn--warning">Warning</button>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn btn--danger">Danger</button>
+
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+<button type="button" class="btn btn--link">Link</button>
+
+<!-- Disabled button -->
+<button type="button" class="btn disabled">Disabled</button>
+
+  </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">:active, .active</span>
+      <!-- Different types of button elements -->
+<a class="btn pseudo-class-active,  active" href="#" role="button">Link</a>
+<button class="btn pseudo-class-active,  active" type="submit">Button</button>
+<input class="btn pseudo-class-active,  active" type="button" value="Input">
+<input class="btn btn--inverse pseudo-class-active,  active" type="submit" value="Submit">
+
+<!-- Theme -->
+<button type="button" class="btn btn--theme pseudo-class-active,  active">Theme</button>
+
+<!-- The highlighted action in a set of buttons -->
+<button type="button" class="btn btn--highlighted pseudo-class-active,  active">Highlight</button>
+
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn btn--success pseudo-class-active,  active">Success</button>
+
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn btn--info pseudo-class-active,  active">Info</button>
+
+<!-- Indicates caution should be taken with this action -->
+<button type="button" class="btn btn--warning pseudo-class-active,  active">Warning</button>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn btn--danger pseudo-class-active,  active">Danger</button>
+
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+<button type="button" class="btn btn--link pseudo-class-active,  active">Link</button>
+
+<!-- Disabled button -->
+<button type="button" class="btn disabled pseudo-class-active,  active">Disabled</button>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">:disabled, .disabled</span>
+      <!-- Different types of button elements -->
+<a class="btn pseudo-class-disabled,  disabled" href="#" role="button">Link</a>
+<button class="btn pseudo-class-disabled,  disabled" type="submit">Button</button>
+<input class="btn pseudo-class-disabled,  disabled" type="button" value="Input">
+<input class="btn btn--inverse pseudo-class-disabled,  disabled" type="submit" value="Submit">
+
+<!-- Theme -->
+<button type="button" class="btn btn--theme pseudo-class-disabled,  disabled">Theme</button>
+
+<!-- The highlighted action in a set of buttons -->
+<button type="button" class="btn btn--highlighted pseudo-class-disabled,  disabled">Highlight</button>
+
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn btn--success pseudo-class-disabled,  disabled">Success</button>
+
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn btn--info pseudo-class-disabled,  disabled">Info</button>
+
+<!-- Indicates caution should be taken with this action -->
+<button type="button" class="btn btn--warning pseudo-class-disabled,  disabled">Warning</button>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn btn--danger pseudo-class-disabled,  disabled">Danger</button>
+
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+<button type="button" class="btn btn--link pseudo-class-disabled,  disabled">Link</button>
+
+<!-- Disabled button -->
+<button type="button" class="btn disabled pseudo-class-disabled,  disabled">Disabled</button>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.btn--flat</span>
+      <!-- Different types of button elements -->
+<a class="btn btn--flat" href="#" role="button">Link</a>
+<button class="btn btn--flat" type="submit">Button</button>
+<input class="btn btn--flat" type="button" value="Input">
+<input class="btn btn--inverse btn--flat" type="submit" value="Submit">
+
+<!-- Theme -->
+<button type="button" class="btn btn--theme btn--flat">Theme</button>
+
+<!-- The highlighted action in a set of buttons -->
+<button type="button" class="btn btn--highlighted btn--flat">Highlight</button>
+
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn btn--success btn--flat">Success</button>
+
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn btn--info btn--flat">Info</button>
+
+<!-- Indicates caution should be taken with this action -->
+<button type="button" class="btn btn--warning btn--flat">Warning</button>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn btn--danger btn--flat">Danger</button>
+
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+<button type="button" class="btn btn--link btn--flat">Link</button>
+
+<!-- Disabled button -->
+<button type="button" class="btn disabled btn--flat">Disabled</button>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.btn--frameless</span>
+      <!-- Different types of button elements -->
+<a class="btn btn--frameless" href="#" role="button">Link</a>
+<button class="btn btn--frameless" type="submit">Button</button>
+<input class="btn btn--frameless" type="button" value="Input">
+<input class="btn btn--inverse btn--frameless" type="submit" value="Submit">
+
+<!-- Theme -->
+<button type="button" class="btn btn--theme btn--frameless">Theme</button>
+
+<!-- The highlighted action in a set of buttons -->
+<button type="button" class="btn btn--highlighted btn--frameless">Highlight</button>
+
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn btn--success btn--frameless">Success</button>
+
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn btn--info btn--frameless">Info</button>
+
+<!-- Indicates caution should be taken with this action -->
+<button type="button" class="btn btn--warning btn--frameless">Warning</button>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn btn--danger btn--frameless">Danger</button>
+
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+<button type="button" class="btn btn--link btn--frameless">Link</button>
+
+<!-- Disabled button -->
+<button type="button" class="btn disabled btn--frameless">Disabled</button>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.btn--outline</span>
+      <!-- Different types of button elements -->
+<a class="btn btn--outline" href="#" role="button">Link</a>
+<button class="btn btn--outline" type="submit">Button</button>
+<input class="btn btn--outline" type="button" value="Input">
+<input class="btn btn--inverse btn--outline" type="submit" value="Submit">
+
+<!-- Theme -->
+<button type="button" class="btn btn--theme btn--outline">Theme</button>
+
+<!-- The highlighted action in a set of buttons -->
+<button type="button" class="btn btn--highlighted btn--outline">Highlight</button>
+
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn btn--success btn--outline">Success</button>
+
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn btn--info btn--outline">Info</button>
+
+<!-- Indicates caution should be taken with this action -->
+<button type="button" class="btn btn--warning btn--outline">Warning</button>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn btn--danger btn--outline">Danger</button>
+
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+<button type="button" class="btn btn--link btn--outline">Link</button>
+
+<!-- Disabled button -->
+<button type="button" class="btn disabled btn--outline">Disabled</button>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.btn--wide</span>
+      <!-- Different types of button elements -->
+<a class="btn btn--wide" href="#" role="button">Link</a>
+<button class="btn btn--wide" type="submit">Button</button>
+<input class="btn btn--wide" type="button" value="Input">
+<input class="btn btn--inverse btn--wide" type="submit" value="Submit">
+
+<!-- Theme -->
+<button type="button" class="btn btn--theme btn--wide">Theme</button>
+
+<!-- The highlighted action in a set of buttons -->
+<button type="button" class="btn btn--highlighted btn--wide">Highlight</button>
+
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn btn--success btn--wide">Success</button>
+
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn btn--info btn--wide">Info</button>
+
+<!-- Indicates caution should be taken with this action -->
+<button type="button" class="btn btn--warning btn--wide">Warning</button>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn btn--danger btn--wide">Danger</button>
+
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+<button type="button" class="btn btn--link btn--wide">Link</button>
+
+<!-- Disabled button -->
+<button type="button" class="btn disabled btn--wide">Disabled</button>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.btn--lg</span>
+      <!-- Different types of button elements -->
+<a class="btn btn--lg" href="#" role="button">Link</a>
+<button class="btn btn--lg" type="submit">Button</button>
+<input class="btn btn--lg" type="button" value="Input">
+<input class="btn btn--inverse btn--lg" type="submit" value="Submit">
+
+<!-- Theme -->
+<button type="button" class="btn btn--theme btn--lg">Theme</button>
+
+<!-- The highlighted action in a set of buttons -->
+<button type="button" class="btn btn--highlighted btn--lg">Highlight</button>
+
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn btn--success btn--lg">Success</button>
+
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn btn--info btn--lg">Info</button>
+
+<!-- Indicates caution should be taken with this action -->
+<button type="button" class="btn btn--warning btn--lg">Warning</button>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn btn--danger btn--lg">Danger</button>
+
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+<button type="button" class="btn btn--link btn--lg">Link</button>
+
+<!-- Disabled button -->
+<button type="button" class="btn disabled btn--lg">Disabled</button>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.btn--sm</span>
+      <!-- Different types of button elements -->
+<a class="btn btn--sm" href="#" role="button">Link</a>
+<button class="btn btn--sm" type="submit">Button</button>
+<input class="btn btn--sm" type="button" value="Input">
+<input class="btn btn--inverse btn--sm" type="submit" value="Submit">
+
+<!-- Theme -->
+<button type="button" class="btn btn--theme btn--sm">Theme</button>
+
+<!-- The highlighted action in a set of buttons -->
+<button type="button" class="btn btn--highlighted btn--sm">Highlight</button>
+
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn btn--success btn--sm">Success</button>
+
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn btn--info btn--sm">Info</button>
+
+<!-- Indicates caution should be taken with this action -->
+<button type="button" class="btn btn--warning btn--sm">Warning</button>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn btn--danger btn--sm">Danger</button>
+
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+<button type="button" class="btn btn--link btn--sm">Link</button>
+
+<!-- Disabled button -->
+<button type="button" class="btn disabled btn--sm">Disabled</button>
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.btn--block</span>
+      <!-- Different types of button elements -->
+<a class="btn btn--block" href="#" role="button">Link</a>
+<button class="btn btn--block" type="submit">Button</button>
+<input class="btn btn--block" type="button" value="Input">
+<input class="btn btn--inverse btn--block" type="submit" value="Submit">
+
+<!-- Theme -->
+<button type="button" class="btn btn--theme btn--block">Theme</button>
+
+<!-- The highlighted action in a set of buttons -->
+<button type="button" class="btn btn--highlighted btn--block">Highlight</button>
+
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn btn--success btn--block">Success</button>
+
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn btn--info btn--block">Info</button>
+
+<!-- Indicates caution should be taken with this action -->
+<button type="button" class="btn btn--warning btn--block">Warning</button>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn btn--danger btn--block">Danger</button>
+
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+<button type="button" class="btn btn--link btn--block">Link</button>
+
+<!-- Disabled button -->
+<button type="button" class="btn disabled btn--block">Disabled</button>
+
+    </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;!-- Different types of button elements --&gt;
+&lt;a class=&quot;btn&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Link&lt;&#x2F;a&gt;
+&lt;button class=&quot;btn&quot; type=&quot;submit&quot;&gt;Button&lt;&#x2F;button&gt;
+&lt;input class=&quot;btn&quot; type=&quot;button&quot; value=&quot;Input&quot;&gt;
+&lt;input class=&quot;btn btn--inverse&quot; type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+
+&lt;!-- Theme --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn--theme&quot;&gt;Theme&lt;&#x2F;button&gt;
+
+&lt;!-- The highlighted action in a set of buttons --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn--highlighted&quot;&gt;Highlight&lt;&#x2F;button&gt;
+
+&lt;!-- Indicates a successful or positive action --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn--success&quot;&gt;Success&lt;&#x2F;button&gt;
+
+&lt;!-- Contextual button for informational alert messages --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn--info&quot;&gt;Info&lt;&#x2F;button&gt;
+
+&lt;!-- Indicates caution should be taken with this action --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn--warning&quot;&gt;Warning&lt;&#x2F;button&gt;
+
+&lt;!-- Indicates a dangerous or potentially negative action --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn--danger&quot;&gt;Danger&lt;&#x2F;button&gt;
+
+&lt;!-- Deemphasize a button by making it look like a link while maintaining button behavior --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn--link&quot;&gt;Link&lt;&#x2F;button&gt;
+
+&lt;!-- Disabled button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn disabled&quot;&gt;Disabled&lt;&#x2F;button&gt;
+</code></pre>
+  </div>
+
+</div>
+<h2 id='table'>2.4. 表格 (Table)</h2>
+<h2 id='form'>2.5. 表單 (Form)</h2>
+<div class="styleguide-example">
+
+  <h3>Form <em>_form.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>Form
+   -&gt; Basic from styles</p>
+
+      <ul class="styleguide-modifier">
+          <li><strong>.form-inline</strong> - Inline form.</li>
+      </ul>
+  </div>
+  <div class="styleguide-element">
+    <form class="">
+  <!-- Form group -->
+  <div class="form-group">
+    <label for="example-input-name-1">Name</label>
+    <input type="text" class="form-control" id="example-input-name-1" placeholder="Name">
+  </div>
+
+  <div class="checkbox">
+    <input type="checkbox" id="demo-form-checkbox>">
+    <label for="demo-form-checkbox>">This is fine.</label>
+  </div>
+</form>
+
+<form class="">
+  <!-- Form group with validation -->
+  <div class="form-group">
+    <label for="example-input-email-1">Email address</label>
+    <input type="email" class="form-control validate" id="example-input-email-1" placeholder="Email">
+  </div>
+
+  <!-- Password form group -->
+  <div class="form-group">
+    <label for="example-input-password-1">Password</label>
+    <input type="password" class="form-control" id="example-input-password-1" placeholder="Password">
+  </div>
+
+  <button type="submit" class="btn btn-default">Go</button>
+</form>
+
+  </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.form-inline</span>
+      <form class=" form-inline">
+  <!-- Form group -->
+  <div class="form-group">
+    <label for="example-input-name-1">Name</label>
+    <input type="text" class="form-control" id="example-input-name-1" placeholder="Name">
+  </div>
+
+  <div class="checkbox">
+    <input type="checkbox" id="demo-form-checkbox>">
+    <label for="demo-form-checkbox>">This is fine.</label>
+  </div>
+</form>
+
+<form class=" form-inline">
+  <!-- Form group with validation -->
+  <div class="form-group">
+    <label for="example-input-email-1">Email address</label>
+    <input type="email" class="form-control validate" id="example-input-email-1" placeholder="Email">
+  </div>
+
+  <!-- Password form group -->
+  <div class="form-group">
+    <label for="example-input-password-1">Password</label>
+    <input type="password" class="form-control" id="example-input-password-1" placeholder="Password">
+  </div>
+
+  <button type="submit" class="btn btn-default">Go</button>
+</form>
+
+    </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;form&gt;
+  &lt;!-- Form group --&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;example-input-name-1&quot;&gt;Name&lt;&#x2F;label&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;example-input-name-1&quot; placeholder=&quot;Name&quot;&gt;
+  &lt;&#x2F;div&gt;
+
+  &lt;div class=&quot;checkbox&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;demo-form-checkbox&gt;&quot;&gt;
+    &lt;label for=&quot;demo-form-checkbox&gt;&quot;&gt;This is fine.&lt;&#x2F;label&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;form&gt;
+
+&lt;form&gt;
+  &lt;!-- Form group with validation --&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;example-input-email-1&quot;&gt;Email address&lt;&#x2F;label&gt;
+    &lt;input type=&quot;email&quot; class=&quot;form-control validate&quot; id=&quot;example-input-email-1&quot; placeholder=&quot;Email&quot;&gt;
+  &lt;&#x2F;div&gt;
+
+  &lt;!-- Password form group --&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;example-input-password-1&quot;&gt;Password&lt;&#x2F;label&gt;
+    &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;example-input-password-1&quot; placeholder=&quot;Password&quot;&gt;
+  &lt;&#x2F;div&gt;
+
+  &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Go&lt;&#x2F;button&gt;
+&lt;&#x2F;form&gt;
+</code></pre>
+  </div>
+
+</div>
+<h3 id='input'>2.5.1. 文字輸入框 (Input)</h3>
+<div class="styleguide-example">
+
+  <h3>Input <em>_input.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>Input
+   -&gt; Text Inputs &amp; Textarea</p>
+
+      <ul class="styleguide-modifier">
+          <li><strong>.minimal</strong> - Minimal style.</li>
+      </ul>
+  </div>
+  <div class="styleguide-element">
+    <form>
+  <!-- Simple styled input -->
+  <input type="text" class="form-control">
+
+  <!-- Input field in form group -->
+  <div class="form-group">
+    <label for="input-example-name-1">Name</label>
+    <input type="text" class="form-control" id="input-example-name-1">
+  </div>
+
+  <!-- Input field in form group with validate -->
+  <div class="form-group">
+    <label for="input-example-email-1">Email address</label>
+    <input type="email" class="form-control validate" id="input-example-email-1">
+    <div data-error="喔喔！錯了。" data-success="看起來挺好！"></div>
+  </div>
+
+  <!-- Disabled form group -->
+  <fieldset disabled>
+    <div class="form-group">
+      <label for="disabled-text-input">Disabled input</label>
+      <input type="text" id="disabled-text-input" class="form-control" placeholder="Disabled input">
+    </div>
+  </fieldset>
+
+  <!-- Textarea form group -->
+  <div class="form-group">
+    <label for="textarea-1">Textarea with Autosize</label>
+    <textarea id="textarea-1" class="form-control autosize"></textarea>
+  </div>
+
+  <!-- Input field -->
+  <div class="input-field">
+    <input type="text" class="form-control" id="input-example-name-2">
+    <label for="input-example-name-2">Name</label>
+  </div>
+
+  <!-- Input field with validate -->
+  <div class="input-field">
+    <input type="email" class="form-control validate" id="input-example-email-2">
+    <div data-error="喔喔！錯了。" data-success="看起來挺好！"></div>
+    <label for="input-example-email-2">Email address</label>
+  </div>
+
+  <!-- Password input field -->
+  <div class="input-field">
+    <input type="password" class="form-control" id="input-example-password">
+    <label for="input-example-password">Password</label>
+  </div>
+
+  <!-- Textarea input field -->
+  <div class="input-field">
+    <textarea id="textarea-2" class="form-control autosize"></textarea>
+    <label for="textarea-2">Textarea with Autosize</label>
+  </div>
+</form>
+
+  </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.minimal</span>
+      <form>
+  <!-- Simple styled input -->
+  <input type="text" class="form-control minimal">
+
+  <!-- Input field in form group -->
+  <div class="form-group">
+    <label for="input-example-name-1">Name</label>
+    <input type="text" class="form-control minimal" id="input-example-name-1">
+  </div>
+
+  <!-- Input field in form group with validate -->
+  <div class="form-group">
+    <label for="input-example-email-1">Email address</label>
+    <input type="email" class="form-control minimal validate" id="input-example-email-1">
+    <div data-error="喔喔！錯了。" data-success="看起來挺好！"></div>
+  </div>
+
+  <!-- Disabled form group -->
+  <fieldset disabled>
+    <div class="form-group">
+      <label for="disabled-text-input">Disabled input</label>
+      <input type="text" id="disabled-text-input" class="form-control minimal" placeholder="Disabled input">
+    </div>
+  </fieldset>
+
+  <!-- Textarea form group -->
+  <div class="form-group">
+    <label for="textarea-1">Textarea with Autosize</label>
+    <textarea id="textarea-1" class="form-control autosize"></textarea>
+  </div>
+
+  <!-- Input field -->
+  <div class="input-field">
+    <input type="text" class="form-control minimal" id="input-example-name-2">
+    <label for="input-example-name-2">Name</label>
+  </div>
+
+  <!-- Input field with validate -->
+  <div class="input-field">
+    <input type="email" class="form-control minimal validate" id="input-example-email-2">
+    <div data-error="喔喔！錯了。" data-success="看起來挺好！"></div>
+    <label for="input-example-email-2">Email address</label>
+  </div>
+
+  <!-- Password input field -->
+  <div class="input-field">
+    <input type="password" class="form-control minimal" id="input-example-password">
+    <label for="input-example-password">Password</label>
+  </div>
+
+  <!-- Textarea input field -->
+  <div class="input-field">
+    <textarea id="textarea-2" class="form-control autosize"></textarea>
+    <label for="textarea-2">Textarea with Autosize</label>
+  </div>
+</form>
+
+    </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;form&gt;
+  &lt;!-- Simple styled input --&gt;
+  &lt;input type=&quot;text&quot; class=&quot;form-control&quot;&gt;
+
+  &lt;!-- Input field in form group --&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;input-example-name-1&quot;&gt;Name&lt;&#x2F;label&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;input-example-name-1&quot;&gt;
+  &lt;&#x2F;div&gt;
+
+  &lt;!-- Input field in form group with validate --&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;input-example-email-1&quot;&gt;Email address&lt;&#x2F;label&gt;
+    &lt;input type=&quot;email&quot; class=&quot;form-control validate&quot; id=&quot;input-example-email-1&quot;&gt;
+    &lt;div data-error=&quot;喔喔！錯了。&quot; data-success=&quot;看起來挺好！&quot;&gt;&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+
+  &lt;!-- Disabled form group --&gt;
+  &lt;fieldset disabled&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+      &lt;label for=&quot;disabled-text-input&quot;&gt;Disabled input&lt;&#x2F;label&gt;
+      &lt;input type=&quot;text&quot; id=&quot;disabled-text-input&quot; class=&quot;form-control&quot; placeholder=&quot;Disabled input&quot;&gt;
+    &lt;&#x2F;div&gt;
+  &lt;&#x2F;fieldset&gt;
+
+  &lt;!-- Textarea form group --&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;textarea-1&quot;&gt;Textarea with Autosize&lt;&#x2F;label&gt;
+    &lt;textarea id=&quot;textarea-1&quot; class=&quot;form-control autosize&quot;&gt;&lt;&#x2F;textarea&gt;
+  &lt;&#x2F;div&gt;
+
+  &lt;!-- Input field --&gt;
+  &lt;div class=&quot;input-field&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;input-example-name-2&quot;&gt;
+    &lt;label for=&quot;input-example-name-2&quot;&gt;Name&lt;&#x2F;label&gt;
+  &lt;&#x2F;div&gt;
+
+  &lt;!-- Input field with validate --&gt;
+  &lt;div class=&quot;input-field&quot;&gt;
+    &lt;input type=&quot;email&quot; class=&quot;form-control validate&quot; id=&quot;input-example-email-2&quot;&gt;
+    &lt;div data-error=&quot;喔喔！錯了。&quot; data-success=&quot;看起來挺好！&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;label for=&quot;input-example-email-2&quot;&gt;Email address&lt;&#x2F;label&gt;
+  &lt;&#x2F;div&gt;
+
+  &lt;!-- Password input field --&gt;
+  &lt;div class=&quot;input-field&quot;&gt;
+    &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;input-example-password&quot;&gt;
+    &lt;label for=&quot;input-example-password&quot;&gt;Password&lt;&#x2F;label&gt;
+  &lt;&#x2F;div&gt;
+
+  &lt;!-- Textarea input field --&gt;
+  &lt;div class=&quot;input-field&quot;&gt;
+    &lt;textarea id=&quot;textarea-2&quot; class=&quot;form-control autosize&quot;&gt;&lt;&#x2F;textarea&gt;
+    &lt;label for=&quot;textarea-2&quot;&gt;Textarea with Autosize&lt;&#x2F;label&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;form&gt;
+</code></pre>
+  </div>
+
+</div>
+<h3 id='checkbox'>2.5.2. 複選框 (Checkbox)</h3>
+<div class="styleguide-example">
+
+  <h3>Checkbox <em>_checkbox.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>Checkbox</p>
+
+      <ul class="styleguide-modifier">
+          <li><strong>.disabled</strong> - Disabled.</li>
+      </ul>
+  </div>
+  <div class="styleguide-element">
+    <form>
+  <div class="form-group">
+    <input type="checkbox" class="" id="demo-checkbox-1">
+    <label for="demo-checkbox-1">Checkbox</label>
+  </div>
+
+  <div class="form-group">
+    <input type="checkbox" class="" id="demo-checkbox-2" checked="checked">
+    <label for="demo-checkbox-2">Checkbox Checked</label>
+  </div>
+
+  <div class="form-group">
+    <input type="checkbox" class="filled-in" id="demo-checkbox-3">
+    <label for="demo-checkbox-3">Filled-in Checkbox</label>
+  </div>
+
+  <div class="form-group">
+    <input type="checkbox" class="filled-in" id="demo-checkbox-4" checked="checked">
+    <label for="demo-checkbox-4">Filled-in Checkbox Checked</label>
+  </div>
+
+  <div class="form-group">
+    <input type="checkbox" class="highlight filled-in" id="demo-checkbox-5">
+    <label for="demo-checkbox-5">Highlighted Filled-in Checkbox</label>
+  </div>
+
+  <div class="form-group">
+    <input type="checkbox" class="highlight filled-in" id="demo-checkbox-6" checked="checked">
+    <label for="demo-checkbox-6">Highlighted Filled-in Checkbox Checked</label>
+  </div>
+</form>
+
+  </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.disabled</span>
+      <form>
+  <div class="form-group">
+    <input type="checkbox" class=" disabled" id="demo-checkbox-1">
+    <label for="demo-checkbox-1">Checkbox</label>
+  </div>
+
+  <div class="form-group">
+    <input type="checkbox" class=" disabled" id="demo-checkbox-2" checked="checked">
+    <label for="demo-checkbox-2">Checkbox Checked</label>
+  </div>
+
+  <div class="form-group">
+    <input type="checkbox" class="filled-in disabled" id="demo-checkbox-3">
+    <label for="demo-checkbox-3">Filled-in Checkbox</label>
+  </div>
+
+  <div class="form-group">
+    <input type="checkbox" class="filled-in disabled" id="demo-checkbox-4" checked="checked">
+    <label for="demo-checkbox-4">Filled-in Checkbox Checked</label>
+  </div>
+
+  <div class="form-group">
+    <input type="checkbox" class="highlight filled-in disabled" id="demo-checkbox-5">
+    <label for="demo-checkbox-5">Highlighted Filled-in Checkbox</label>
+  </div>
+
+  <div class="form-group">
+    <input type="checkbox" class="highlight filled-in disabled" id="demo-checkbox-6" checked="checked">
+    <label for="demo-checkbox-6">Highlighted Filled-in Checkbox Checked</label>
+  </div>
+</form>
+
+    </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;form&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;demo-checkbox-1&quot;&gt;
+    &lt;label for=&quot;demo-checkbox-1&quot;&gt;Checkbox&lt;&#x2F;label&gt;
+  &lt;&#x2F;div&gt;
+
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;demo-checkbox-2&quot; checked=&quot;checked&quot;&gt;
+    &lt;label for=&quot;demo-checkbox-2&quot;&gt;Checkbox Checked&lt;&#x2F;label&gt;
+  &lt;&#x2F;div&gt;
+
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; class=&quot;filled-in&quot; id=&quot;demo-checkbox-3&quot;&gt;
+    &lt;label for=&quot;demo-checkbox-3&quot;&gt;Filled-in Checkbox&lt;&#x2F;label&gt;
+  &lt;&#x2F;div&gt;
+
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; class=&quot;filled-in&quot; id=&quot;demo-checkbox-4&quot; checked=&quot;checked&quot;&gt;
+    &lt;label for=&quot;demo-checkbox-4&quot;&gt;Filled-in Checkbox Checked&lt;&#x2F;label&gt;
+  &lt;&#x2F;div&gt;
+
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; class=&quot;highlight filled-in&quot; id=&quot;demo-checkbox-5&quot;&gt;
+    &lt;label for=&quot;demo-checkbox-5&quot;&gt;Highlighted Filled-in Checkbox&lt;&#x2F;label&gt;
+  &lt;&#x2F;div&gt;
+
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; class=&quot;highlight filled-in&quot; id=&quot;demo-checkbox-6&quot; checked=&quot;checked&quot;&gt;
+    &lt;label for=&quot;demo-checkbox-6&quot;&gt;Highlighted Filled-in Checkbox Checked&lt;&#x2F;label&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;form&gt;
+</code></pre>
+  </div>
+
+</div>
+<h3 id='radio'>2.5.3. 單選鈕 (Radio)</h3>
+<div class="styleguide-example">
+
+  <h3>Radio <em>_radio.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>Radio
+   -&gt; Radio Buttons</p>
+
+  </div>
+  <div class="styleguide-element">
+    <form>
+  <div class="form-group">
+    <input name="radio-group-1" type="radio" id="test-1" checked>
+    <label for="test-1">One</label>
+  </div>
+  <div class="form-group">
+    <input name="radio-group-1" type="radio" id="test-2">
+    <label for="test-2">Two</label>
+  </div>
+  <div class="form-group">
+    <input class="with-gap" name="radio-group-1" type="radio" id="test-3">
+    <label for="test-3">With Gap</label>
+  </div>
+  <div class="form-group">
+    <input name="radio-group-1" type="radio" id="test4" disabled="disabled">
+    <label for="test-4">Disabled</label>
+  </div>
+</form>
+
+  </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;form&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;input name=&quot;radio-group-1&quot; type=&quot;radio&quot; id=&quot;test-1&quot; checked&gt;
+    &lt;label for=&quot;test-1&quot;&gt;One&lt;&#x2F;label&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;input name=&quot;radio-group-1&quot; type=&quot;radio&quot; id=&quot;test-2&quot;&gt;
+    &lt;label for=&quot;test-2&quot;&gt;Two&lt;&#x2F;label&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;input class=&quot;with-gap&quot; name=&quot;radio-group-1&quot; type=&quot;radio&quot; id=&quot;test-3&quot;&gt;
+    &lt;label for=&quot;test-3&quot;&gt;With Gap&lt;&#x2F;label&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;input name=&quot;radio-group-1&quot; type=&quot;radio&quot; id=&quot;test4&quot; disabled=&quot;disabled&quot;&gt;
+    &lt;label for=&quot;test-4&quot;&gt;Disabled&lt;&#x2F;label&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;form&gt;
+</code></pre>
+  </div>
+
+</div>
+<h3 id='select'>2.5.4. 選單 (Select)</h3>
+<div class="styleguide-example">
+
+  <h3>Select <em>_select.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>Select</p>
+
+  </div>
+  <div class="styleguide-element">
+    <select>
+  <option value="" disabled selected>Choose your option</option>
+  <option value="1">Option 1</option>
+  <option value="2">Option 2</option>
+  <option value="3">Option 3</option>
+</select>
+
+  </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;select&gt;
+  &lt;option value=&quot;&quot; disabled selected&gt;Choose your option&lt;&#x2F;option&gt;
+  &lt;option value=&quot;1&quot;&gt;Option 1&lt;&#x2F;option&gt;
+  &lt;option value=&quot;2&quot;&gt;Option 2&lt;&#x2F;option&gt;
+  &lt;option value=&quot;3&quot;&gt;Option 3&lt;&#x2F;option&gt;
+&lt;&#x2F;select&gt;
+</code></pre>
+  </div>
+
+</div>
+<h2 id='images'>2.6. 圖片</h2>
+<h2 id='utilities'>2.7. Utilities (Helper Classes)</h2>
+<p>原始碼可參見 <a href="https://github.com/colorgy/Style/tree/master/assets/stylesheets/colorgy/core/utilities">assets/stylesheets/colorgy/core/utilities</a>。</p>
+
+    </div>
+    <div class="col-md-3 hidden-sm hidden-xs styleguide-doc-nav-container">
+      <nav class='sidenav styleguide-doc-nav'></nav>
+<script>
+  var toc = ['<ul class="nav nav-stacked">'];
+  var prevType = '';
+  
+  $('.main > h2, .main > h3').each(function() {
+  
+    $element = $(this);
+    var type = $element[0].tagName;
+    var title = $element.text();
+    var link = "#" + $element.attr("id");
+    var newHtml = '';
+  
+    if (prevType == 'H2' && type == 'H2') {
+      toc.push('</li>');
+  
+    } else if (prevType == 'H2' && type == 'H3') {
+      toc.push('<ul class="nav nav-stacked">');
+  
+    } else if (prevType == 'H3' && type == 'H3') {
+      toc.push('</li>');
+  
+    } else if (prevType == 'H3' && type == 'H2') {
+      toc.push('</li></ul>');
+    }
+  
+    toc.push('<li><a href="' + link + '">' + title + '</a>');
+  
+    prevType = type;
+  });
+  
+  if (prevType == 'H2') {
+    toc.push('</li>');
+  } else if (prevType == 'H3') {
+    toc.push('</li></ul>');
+  }
+  
+  $('.styleguide-doc-nav').html(toc.join(''));
+  
+  $('body').scrollspy({
+    target: '.styleguide-doc-nav',
+    offset: 1
+  });
+</script>
+<style>
+  .styleguide-doc-nav {
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+  }
+  
+  .slogan, footer {
+    position: relative;
+    z-index: 10;
+  }
+</style>
+
+    </div>
+  </div>
+
+  </div>
+
+
+      <section class="slogan bg-brand inverse bg-cover bg-fixed" style="background-image: url('../images/colorgy/background_blur_2_dark.jpg'); background-position-x: 50%; background-position-y: 50%;">
+        <div class="section bg-cover bg-fixed text-clip-background" style="background-image: url('../images/colorgy/background_blur_2_extra_light.jpg'); background-position-x: 50%; background-position-y: 50%;">
+          <div class="container text-center">
+            <h1>Color Your College!</h1>
+            <p class="lead">Colorgy - the hub of college life.</p>
+            <p class="h2 i-icon">
+              &#x19a28; &#xf02d; &#xf073; &#xf19d; &#xf1d7; &#xf15c;
+            </p>
+            <br>
+            <div class="">快轉五天後，我的大學女友坐在我左邊，慢慢你會發現，和其他國家相比，你的選擇而回憶越是甜就是越傷人了而回憶越是甜，一雙眼和一雙眼短暫的交會擦身而過，挺胸，變成兩部悲傷的電影於是你含著眼淚飄飄盪盪跌跌撞撞的走著於是你，孤單的星星，已習慣忽略，像跌進了深淵獨處的時候，回天地這個起點，好想你，哭著，知走一光年，改變既有的模式！我允許你走進我的世界，那麼你至少得吃一對兒鯨魚……我身邊的朋友們啊，受傷的總是不願意放手的那一個！</div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="bg-dark inverse">
+
+        <div class="container footer-minimal text-center-sm text-center-xs">
+          <div style="display: table;">
+            <div style="display: table-cell; width: 99999px; vertical-align: middle;">
+              <p class="footer-minimal-clear">Colorgy Styleguide</p>
+              <div>
+                <a href="../globals/">Globals</a> /
+                <a href="./">CSS</a> /
+                <a href="../components/">Components</a> /
+                <a href="../extras/">Extras</a>
+              </div>
+            </div>
+            <div class="hidden-xs hidden-sm" style="display: table-cell; vertical-align: middle;">
+              <div style="width: 300px;">
+                <a href="https://colorgy.io" target="_blank">
+                  <img src="../images/colorgy/colorgy_logo_with_text_white.svg" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="../javascripts/styleguide_body.js" type="text/javascript"></script>
+  </body>
+
+</html>
