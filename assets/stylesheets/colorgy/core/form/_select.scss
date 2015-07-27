@@ -1,0 +1,83 @@
+// *************************************
+//
+//   Select
+//
+//   Styleguide Select
+//
+// *************************************
+
+select {
+	background-color: rgba(255, 255, 255, .9);
+	margin: 0 0 $input-margin-button;
+	width: 100%;
+	padding: 5px;
+	border: 1px solid $input-bg;
+	border-radius: $input-border-radius;
+	height: $input-height;
+}
+
+.select-label {
+	position: absolute;
+}
+
+.select-wrapper {
+	position: relative;
+
+	input.select-dropdown {
+		position: relative;
+		cursor: pointer;
+		// color: #444;
+		background-color: transparent;
+		border: none;
+		border-bottom: 1px solid $input-border-color;
+		outline: none;
+		height: $input-height;
+		line-height: $input-height;
+		width: 100%;
+		font-size: $input-font-size;
+		margin: 0 0 $input-margin-button;
+		padding: 0;
+		display: block;
+	}
+
+	span.caret {
+		color: initial;
+		position: absolute;
+		right: 0;
+		top: 16px;
+		font-size: 10px;
+		&.disabled {
+			color: $input-disabled-color;
+		}
+	}
+
+	& + label {
+		position: absolute;
+		top: -14px;
+		font-size: $input-label-font-size;
+	}
+}
+
+select.form-control { display: none; }
+select { display: block; }
+
+
+// Disabled styles
+select:disabled {
+	color: rgba(0,0,0,.3);
+}
+.select-wrapper input.select-dropdown:disabled {
+	color: rgba(0,0,0,.3);
+	cursor: default;
+	-webkit-user-select: none; /* webkit (safari, chrome) browsers */
+	-moz-user-select: none; /* mozilla browsers */
+	-ms-user-select: none; /* IE10+ */
+	border-bottom: 1px solid rgba(0,0,0,.3);
+}
+.select-wrapper i {
+	color: rgba(0,0,0,.3);
+}
+.select-dropdown li.disabled {
+	color: rgba(0,0,0,.3);
+	background-color: transparent;
+}

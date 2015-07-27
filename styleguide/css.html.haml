@@ -1,0 +1,56 @@
+---
+title: CSS // Colorgy Styleguide
+layout: styleguide_docs
+page_name: css
+page_description: Grid System、Typography、Table、Form、Utilities，CSS 風格、基本 HTML 元素。
+---
+
+%h2#overview 2.1. CSS 概覽
+
+:markdown
+  在此提供排版系統、各種基本 HTML 元素風格、以及調整內容幫手 Utilities (helpers) 等。
+
+  此處命名及架構慣例大多自 [Bootstrap 3](http://getbootstrap.com/css) 承襲而來，包含 Grid System、Typography、Table、Form、Button 等。因此可直接參考 [Bootstrap 3 CSS](http://getbootstrap.com/css) 說明文件套用。唯有 modifier 慣例使用了 BEM 模式的最顯著差別（`btn-warning` 與 `btn--warning`）。
+
+%h2#grid-system 2.2. 格線系統與基線垂直節奏
+
+:markdown
+  參見 [Bootstrap 3 CSS - Grid System](http://getbootstrap.com/css#grid)、[Bootstrap 3 CSS - Responsive Utilities](http://getbootstrap.com/css/#responsive-utilities)。
+
+%h2#typography 2.3. 基本排版
+
+:markdown
+  參見 [Bootstrap 3 CSS - Typography](http://getbootstrap.com/css/#type)。
+
+%h2#buttons 2.4. 按鈕 (Button)
+
+= styleblock 'button', section: 'Button'
+
+%h2#table 2.4. 表格 (Table)
+
+%h2#form 2.5. 表單 (Form)
+
+= styleblock 'form', section: 'Form'
+
+%h3#input 2.5.1. 文字輸入框 (Input)
+
+= styleblock 'input', section: 'Input'
+
+%h3#checkbox 2.5.2. 複選框 (Checkbox)
+
+= styleblock 'checkbox', section: 'Checkbox'
+
+%h3#radio 2.5.3. 單選鈕 (Radio)
+
+= styleblock 'radio', section: 'Radio'
+
+%h3#select 2.5.4. 選單 (Select)
+
+= styleblock 'select', section: 'Select'
+
+%h2#images 2.6. 圖片
+
+%h2#utilities 2.7. Utilities (Helper Classes)
+
+:markdown
+  原始碼可參見 [assets/stylesheets/colorgy/core/utilities](https://github.com/colorgy/Style/tree/master/assets/stylesheets/colorgy/core/utilities)。

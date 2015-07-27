@@ -97,14 +97,14 @@ $navbar-inverse-toggle-border-color:        #333 !default;
 	}
 
 	-webkit-transition: background $navbar-transition-duration ease-in-out,
-	                    border-color $navbar-transition-duration ease-in-out,
-	                    padding $navbar-transition-duration ease-in-out;
-	   -moz-transition: background $navbar-transition-duration ease-in-out,
-	                    border-color $navbar-transition-duration ease-in-out,
-	                    padding $navbar-transition-duration ease-in-out;
-	        transition: background $navbar-transition-duration ease-in-out,
-	                    border-color $navbar-transition-duration ease-in-out,
-	                    padding $navbar-transition-duration ease-in-out;
+											border-color $navbar-transition-duration ease-in-out,
+											padding $navbar-transition-duration ease-in-out;
+		 -moz-transition: background $navbar-transition-duration ease-in-out,
+											border-color $navbar-transition-duration ease-in-out,
+											padding $navbar-transition-duration ease-in-out;
+					transition: background $navbar-transition-duration ease-in-out,
+											border-color $navbar-transition-duration ease-in-out,
+											padding $navbar-transition-duration ease-in-out;
 
 	// Navbar alignment options
 	//
@@ -164,8 +164,8 @@ $navbar-inverse-toggle-border-color:        #333 !default;
 	}
 
 	-webkit-transition: margin $navbar-transition-duration ease-in-out;
-	   -moz-transition: margin $navbar-transition-duration ease-in-out;
-	        transition: margin $navbar-transition-duration ease-in-out;
+		 -moz-transition: margin $navbar-transition-duration ease-in-out;
+					transition: margin $navbar-transition-duration ease-in-out;
 }
 
 // Navbar collapse (body)
@@ -255,8 +255,8 @@ $navbar-inverse-toggle-border-color:        #333 !default;
 	height: $navbar-height;
 
 	-webkit-transition: all $navbar-transition-duration ease-in-out;
-	   -moz-transition: all $navbar-transition-duration ease-in-out;
-	        transition: all $navbar-transition-duration ease-in-out;
+		 -moz-transition: all $navbar-transition-duration ease-in-out;
+					transition: all $navbar-transition-duration ease-in-out;
 
 	&:hover,
 	&:focus {
@@ -388,7 +388,7 @@ $navbar-inverse-toggle-border-color:        #333 !default;
 	@include box-shadow($shadow);
 
 	// Mixin behavior for optimum display
-	@include form-inline;
+	// @include form-inline;
 
 	.form-group {
 		@media (max-width: $grid-float-breakpoint-max) {
@@ -401,7 +401,7 @@ $navbar-inverse-toggle-border-color:        #333 !default;
 	}
 
 	// Vertically center in expanded, horizontal navbar
-	@include navbar-vertical-align($input-height-base);
+	@include navbar-vertical-align($height-base);
 
 	// Undo 100% width for pull classes
 	@media (min-width: $grid-float-breakpoint) {
@@ -435,10 +435,10 @@ $navbar-inverse-toggle-border-color:        #333 !default;
 // Vertically center a button within a navbar (when *not* in a form).
 
 .navbar-btn {
-	@include navbar-vertical-align($input-height-base);
+	@include navbar-vertical-align($height-base);
 
 	&.btn-sm {
-		@include navbar-vertical-align($input-height-small);
+		@include navbar-vertical-align($height-small);
 	}
 	&.btn-xs {
 		@include navbar-vertical-align(22);
@@ -806,8 +806,8 @@ $navbar-inverse-toggle-border-color:        #333 !default;
 
 			> li > a {
 				-webkit-transition: background .24s ease-in-out;
-				   -moz-transition: background .24s ease-in-out;
-				        transition: background .24s ease-in-out;
+					 -moz-transition: background .24s ease-in-out;
+								transition: background .24s ease-in-out;
 			}
 
 			> li > a,
@@ -883,7 +883,7 @@ $navbar-inverse-toggle-border-color:        #333 !default;
 		.navbar-form {
 			border-color: rgba($navbar-default-border, .2);
 			-webkit-box-shadow: none;
-			        box-shadow: none;
+							box-shadow: none;
 		}
 	}
 

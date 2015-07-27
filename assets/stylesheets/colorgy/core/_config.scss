@@ -29,6 +29,52 @@ $link-hover-decoration: underline !default;
 $border-color:          #aaa !default;
 
 // -------------------------------------
+//   Grid System
+// -------------------------------------
+
+// ----- Media Query Breakpoints ----- //
+
+// Extra small screen / phone
+$screen-xs:     480px !default;
+$screen-xs-min: $screen-xs;
+
+// Small screen / tablet
+$screen-sm-min: 768px !default;
+
+// Medium screen / desktop
+$screen-md-min: 992px !default;
+
+// Large screen / wide desktop
+$screen-lg-min: 1200px !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max: ($screen-sm-min - 1) !default;
+$screen-sm-max: ($screen-md-min - 1) !default;
+$screen-md-max: ($screen-lg-min - 1) !default;
+
+// ----- Grid System ----- //
+
+$grid-columns:              12 !default;
+$grid-gutter-width:         30px !default;
+$grid-float-breakpoint:     $screen-sm-min !default;
+$grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
+
+// ----- Container Sizes ----- //
+
+// Small screen / tablet
+$container-sm: (720px + $grid-gutter-width) !default;
+
+// Medium screen / desktop
+$container-md: (940px + $grid-gutter-width) !default;
+
+// Large screen / wide desktop
+$container-lg: (1140px + $grid-gutter-width) !default;
+
+// ----- Vertical Rhythm ----- //
+
+$vertical-unit: 36px !default;
+
+// -------------------------------------
 //   Typography
 //   -> Font, line-height headings...
 // -------------------------------------
@@ -50,7 +96,7 @@ $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !def
 $font-family-base:        $font-family-sans-serif !default;
 $font-family-icons:       'colorgy-icons', 'Glyphicons Halflings', 'FontAwesome', $font-family-base !default;
 
-$font-size-base:          14px !default;
+$font-size-base:          15px !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default;
 $font-size-small:         ceil(($font-size-base * .85)) !default;
 
@@ -61,8 +107,8 @@ $font-size-h4:            ceil(($font-size-base * 1.25)) !default;
 $font-size-h5:            $font-size-base !default;
 $font-size-h6:            ceil(($font-size-base * .85)) !default;
 
-// Unit-less `line-height` for use in components like buttons
-$line-height-base:        1.428571429 !default;
+// Unit-less `line-height` for use in components
+$line-height-base:        ($vertical-unit * 2/3) / $font-size-base !default;
 
 // Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
 $line-height-computed:    floor(($font-size-base * $line-height-base)) !default;
@@ -116,60 +162,28 @@ $zindex-modal-background: z-index-of(modal-background);
 $zindex-modal:            z-index-of(modal);
 
 // -------------------------------------
-//   Media queries breakpoints
+//   UI
 // -------------------------------------
 
-// Extra small screen / phone
-$screen-xs:     480px !default;
-$screen-xs-min: $screen-xs;
-
-// Small screen / tablet
-$screen-sm-min: 768px !default;
-
-// Medium screen / desktop
-$screen-md-min: 992px !default;
-
-// Large screen / wide desktop
-$screen-lg-min: 1200px !default;
-
-// So media queries don't overlap when required, provide a maximum
-$screen-xs-max: ($screen-sm-min - 1) !default;
-$screen-sm-max: ($screen-md-min - 1) !default;
-$screen-md-max: ($screen-lg-min - 1) !default;
-
-// -------------------------------------
-//   Grid system
-// -------------------------------------
-
-$grid-columns:              12 !default;
-$grid-gutter-width:         30px !default;
-$grid-float-breakpoint:     $screen-sm-min !default;
-$grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
-
-// ----- Container sizes ----- //
-
-// Small screen / tablet
-$container-sm: (720px + $grid-gutter-width) !default;
-
-// Medium screen / desktop
-$container-md: (940px + $grid-gutter-width) !default;
-
-// Large screen / wide desktop
-$container-lg: (1140px + $grid-gutter-width) !default;
+$cursor-disabled:                not-allowed !default;
 
 // -------------------------------------
 //   Components
 // -------------------------------------
 
+$height-base:    $vertical-unit !default;
+$height-large:   $vertical-unit * 6/4 !default;
+$height-small:   $vertical-unit * 3/4 !default;
+
 // Common padding, border radius sizes and more
 
-$padding-base-vertical:     6px !default;
+$padding-base-vertical:     $vertical-unit * 1/4 !default;
 $padding-base-horizontal:   12px !default;
 
-$padding-large-vertical:    10px !default;
+$padding-large-vertical:    $vertical-unit * 2/4 !default;
 $padding-large-horizontal:  16px !default;
 
-$padding-small-vertical:    5px !default;
+$padding-small-vertical:    $vertical-unit * .5/4 !default;
 $padding-small-horizontal:  10px !default;
 
 $padding-xs-vertical:       1px !default;
@@ -225,55 +239,55 @@ $table-bg-active:               $table-bg-hover !default;
 //** Border color for table and cell borders.
 $table-border-color:            #ddd !default;
 
-//== Forms
+// //== Forms
+// //
+// //##
+
+// //** `<input>` background color
+// $input-bg:                       #fff !default;
+// //** `<input disabled>` background color
+// $input-bg-disabled:              $gray-lighter !default;
+
+// //** Text color for `<input>`s
+// $input-color:                    $gray !default;
+// //** `<input>` border color
+// $input-border:                   #ccc !default;
+
+// // TODO: Rename `$input-border-radius` to `$input-border-radius-base` in v4
+// //** Default `.form-control` border radius
+// // This has no effect on `<select>`s in some browsers, due to the limited stylability of `<select>`s in CSS.
+// $input-border-radius:            $border-radius-base !default;
+// //** Large `.form-control` border radius
+// $input-border-radius-large:      $border-radius-large !default;
+// //** Small `.form-control` border radius
+// $input-border-radius-small:      $border-radius-small !default;
+
+// //** Border color for inputs on focus
+// $input-border-focus:             #66afe9 !default;
+
+// //** Placeholder text color
+// $input-color-placeholder:        #999 !default;
+
+// //** Default `.form-control` height
+// $input-height-base:              ($line-height-computed + ($padding-base-vertical * 2) + 2) !default;
+// //** Large `.form-control` height
+// $input-height-large:             (ceil($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + 2) !default;
+// //** Small `.form-control` height
+// $input-height-small:             (floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2) !default;
+
+// //** `.form-group` margin
+// $form-group-margin-bottom:       15px !default;
+
+// $legend-color:                   $gray-dark !default;
+// $legend-border-color:            #e5e5e5 !default;
+
+// //** Background color for textual input addons
+// $input-group-addon-bg:           $gray-lighter !default;
+// //** Border color for textual input addons
+// $input-group-addon-border-color: $input-border !default;
+
+// //** Disabled cursor for form controls and buttons.
 //
-//##
-
-//** `<input>` background color
-$input-bg:                       #fff !default;
-//** `<input disabled>` background color
-$input-bg-disabled:              $gray-lighter !default;
-
-//** Text color for `<input>`s
-$input-color:                    $gray !default;
-//** `<input>` border color
-$input-border:                   #ccc !default;
-
-// TODO: Rename `$input-border-radius` to `$input-border-radius-base` in v4
-//** Default `.form-control` border radius
-// This has no effect on `<select>`s in some browsers, due to the limited stylability of `<select>`s in CSS.
-$input-border-radius:            $border-radius-base !default;
-//** Large `.form-control` border radius
-$input-border-radius-large:      $border-radius-large !default;
-//** Small `.form-control` border radius
-$input-border-radius-small:      $border-radius-small !default;
-
-//** Border color for inputs on focus
-$input-border-focus:             #66afe9 !default;
-
-//** Placeholder text color
-$input-color-placeholder:        #999 !default;
-
-//** Default `.form-control` height
-$input-height-base:              ($line-height-computed + ($padding-base-vertical * 2) + 2) !default;
-//** Large `.form-control` height
-$input-height-large:             (ceil($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + 2) !default;
-//** Small `.form-control` height
-$input-height-small:             (floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2) !default;
-
-//** `.form-group` margin
-$form-group-margin-bottom:       15px !default;
-
-$legend-color:                   $gray-dark !default;
-$legend-border-color:            #e5e5e5 !default;
-
-//** Background color for textual input addons
-$input-group-addon-bg:           $gray-lighter !default;
-//** Border color for textual input addons
-$input-group-addon-border-color: $input-border !default;
-
-//** Disabled cursor for form controls and buttons.
-$cursor-disabled:                not-allowed !default;
 
 
 //== Dropdowns

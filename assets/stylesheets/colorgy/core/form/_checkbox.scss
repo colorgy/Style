@@ -1,0 +1,215 @@
+// *************************************
+//
+//   Checkbox
+//
+//   .disabled - Disabled.
+//
+//   Styleguide Checkbox
+//
+// *************************************
+
+$checkbox-size: 20px !default;
+$checkbox-top:  ($input-height - $checkbox-size) / 2;
+
+// Remove default checkbox
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+	position: absolute;
+	left: -9999px;
+	visibility: hidden;
+}
+
+// Checkbox Styles
+
+[type="checkbox"] {
+
+	// Text Label Style
+	+ label {
+		position: relative;
+		padding-left: 35px;
+		cursor: pointer;
+		display: inline-block;
+		height: $input-height;
+		line-height: $input-height;
+		font-size: $input-font-size;
+
+		@include user-select(none);
+	}
+
+	// checkbox aspect
+	+ label::before {
+		content: '';
+		position: absolute;
+		top: $checkbox-top;
+		left: 0;
+		width: $checkbox-size;
+		height: $checkbox-size;
+		z-index: 0;
+		border: 2px solid $radio-empty-color;
+		border-radius: 1px;
+		@include transition(.2s);
+	}
+
+	&:disabled:not(:checked),
+	&.disabled:not(:checked) {
+		cursor: $cursor-disabled;
+		pointer-events: none;
+		color: $input-disabled-color;
+
+		+ label {
+			cursor: $cursor-disabled;
+			pointer-events: none;
+			color: $input-disabled-color;
+		}
+
+		+ label::before {
+			border: none;
+			background-color: $input-disabled-color;
+		}
+	}
+
+}
+
+[type="checkbox"]:checked {
+
+	+ label::before {
+		top: $checkbox-top;
+		width: 12px; height: 22px;
+		border-top: 2px solid transparent;
+		border-left: 2px solid transparent;
+		border-right: 2px solid $radio-fill-color;
+		border-bottom: 2px solid $radio-fill-color;
+		@include transform(translateX($checkbox-size / 3.2) translateY(-$checkbox-size / 3.2) rotate(40deg));
+		-webkit-backface-visibility: hidden;
+		@include transform-origin(100% 100%);
+	}
+
+	&:disabled, &.disabled {
+		cursor: $cursor-disabled;
+		pointer-events: none;
+		color: $input-disabled-color;
+
+		+ label {
+			cursor: $cursor-disabled;
+			pointer-events: none;
+			color: $input-disabled-color;
+		}
+
+		+ label::before {
+			border-right: 2px solid $input-disabled-color;
+			border-bottom: 2px solid $input-disabled-color;
+		}
+	}
+
+}
+
+// Filled in Style
+
+[type="checkbox"].filled-in {
+
+	// General
+	+ label::after {
+		border-radius: 2px;
+	}
+
+	+ label::before,
+	+ label::after {
+		content: '';
+		left: 0;
+		position: absolute;
+		// .1s delay is for check animation
+		transition: border .25s, background-color .25s, width .20s .1s, height .20s .1s, top .20s .1s, left .20s .1s;
+		z-index: 1;
+	}
+
+	// Unchecked style
+	&:not(:checked) + label::before {
+		width: 0;
+		height: 0;
+		border: 3px solid transparent;
+		left: 6px;
+		top: $checkbox-top * 3;
+
+		-webkit-transform: rotateZ(37deg);
+						transform: rotateZ(37deg);
+		-webkit-transform-origin: 20% 40%;
+						transform-origin: 100% 100%;
+	}
+
+	&:not(:checked) + label::after {
+		height: $checkbox-size;
+		width: $checkbox-size;
+		background-color: transparent;
+		border: 2px solid $radio-empty-color;
+		top: $checkbox-top;
+		z-index: 0;
+	}
+
+	// Checked style
+	&:checked {
+
+		+ label::before {
+			top: $checkbox-top + ($checkbox-size / 10);
+			left: 1px;
+			width: $checkbox-size / 2.5;
+			height: $checkbox-size / 1.52;
+			border-top: 2px solid transparent;
+			border-left: 2px solid transparent;
+			border-right: 2px solid $white;
+			border-bottom: 2px solid $white;
+			-webkit-transform: rotateZ(37deg);
+			transform: rotateZ(37deg);
+
+			-webkit-transform-origin: 100% 100%;
+			transform-origin: 100% 100%;
+		}
+
+		+ label::after {
+			top: $checkbox-top;
+			width: $checkbox-size;
+			height: $checkbox-size;
+			border: 2px solid $theme-color;
+			background-color: $theme-color;
+			z-index: 0;
+		}
+	}
+
+	// Disabled style
+	&:disabled:not(:checked),
+	&.disabled:not(:checked) {
+
+		 + label::before {
+			background-color: transparent;
+			border: 2px solid transparent;
+		}
+
+		+ label::after {
+				border-color: transparent;
+				background-color: $input-disabled-solid-color;
+			}
+	}
+
+	&:disabled:checked,
+	&.disabled:checked {
+
+		+ label::before {
+			background-color: transparent;
+		}
+
+		+ label::after {
+			background-color: $input-disabled-solid-color;
+			border-color: $input-disabled-solid-color;
+		}
+	}
+}
+
+[type="checkbox"].filled-in.highlight {
+
+	&:checked {
+
+		+ label::after {
+			border: 2px solid $highlight-color;
+			background-color: $highlight-color;
+		}
+	}
+}

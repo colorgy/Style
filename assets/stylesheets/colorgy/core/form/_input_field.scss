@@ -1,0 +1,64 @@
+// *************************************
+//
+//   Input Field
+//   -> Auto input field
+//
+//   Styleguide InputField
+//
+// *************************************
+
+.input-field {
+	position: relative;
+	margin-top: $input-height / 2;
+
+	label {
+		color: $input-placeholder-color;
+		position: absolute;
+		top: ($input-height - $input-font-size) / 2;
+		left: $input-padding;
+		font-size: $input-font-size;
+		line-height: $input-font-size;
+		cursor: text;
+		@include transition(.2s ease-out);
+
+		&.active {
+			left: 0;
+			color: $input-label-color;
+			font-size: $input-label-font-size;
+			@include transform(translateY(-200%));
+		}
+	}
+
+	// Prefix Icons
+	.prefix {
+		position: absolute;
+		width: $input-height;
+		font-size: 2rem;
+		@include transition(color .2s);
+
+		&.active { color: $input-focus-color-minimal; }
+	}
+
+	.prefix ~ input,
+	.prefix ~ textarea {
+		margin-left: $input-height;
+		width: 92%;
+		width: calc(100% - $input-height);
+	}
+
+	.prefix ~ textarea { padding-top: .8rem; }
+	.prefix ~ label { margin-left: $input-height; }
+
+	@media (max-width: $screen-md-max) {
+		.prefix ~ input {
+			width: 86%;
+			width: calc(100% - $input-height);
+		}
+	}
+	@media (max-width: $screen-sm-max) {
+		.prefix ~ input {
+			width: 80%;
+			width: calc(100% - $input-height);
+		}
+	}
+}

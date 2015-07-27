@@ -22,7 +22,9 @@
 
 // ----- Sizing ----- //
 
-$btn-height:                     36px !default;
+$btn-height:                     $height-base;
+$btn-lg-height:                  $height-large;
+$btn-sm-height:                  $height-small;
 $btn-line-height:                36px !default;
 $btn-padding:                    28px !default;
 
@@ -83,12 +85,12 @@ $btn-link-disabled-color:        $gray-light !default;
 .btn {
 	display: inline-block;
 	height: $btn-height;
-	line-height: $btn-line-height;
+	line-height: $btn-height;
 	padding: 0 $btn-padding;
 	border: 0;
 	border-radius: 2px;
 	outline: 0;
-	font-weight: $btn-font-weight;
+	font-outline: 0;
 	text-align: center;
 	text-transform: uppercase;
 	white-space: nowrap;
@@ -182,14 +184,14 @@ $btn-link-disabled-color:        $gray-light !default;
 // ----- Size ----- //
 
 .btn--lg {
-	height: $btn-height * 1.5;
-	line-height: $btn-line-height * 1.5;
+	height: $btn-lg-height;
+	line-height: $btn-lg-height;
 	padding: 0 $btn-padding * 1.5;
 }
 
 .btn--sm {
-	height: $btn-height * .8;
-	line-height: $btn-line-height * .8;
+	height: $btn-sm-height;
+	line-height: $btn-sm-height;
 	padding: 0 $btn-padding * .7;
 }
 

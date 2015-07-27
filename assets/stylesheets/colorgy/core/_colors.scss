@@ -140,7 +140,8 @@ $notice-color:   #d93637 !default;
 $success-color:  #9fcb5f !default;
 $info-color:     #4abcef !default;
 $warning-color:  #eb7f28 !default;
-$danger-color:   #e5695f !default;
+$error-color:   #e5695f !default;
+$danger-color:   $error-color !default;
 
 // alias for bootstrap components
 $brand-notice:   $notice-color;

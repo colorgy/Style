@@ -1,0 +1,56 @@
+<form>
+  <!-- Simple styled input -->
+  <input type="text" class="form-control$modifier_class">
+
+  <!-- Input field in form group -->
+  <div class="form-group">
+    <label for="input-example-name-1">Name</label>
+    <input type="text" class="form-control$modifier_class" id="input-example-name-1">
+  </div>
+
+  <!-- Input field in form group with validate -->
+  <div class="form-group">
+    <label for="input-example-email-1">Email address</label>
+    <input type="email" class="form-control$modifier_class validate" id="input-example-email-1">
+    <div data-error="喔喔！錯了。" data-success="看起來挺好！"></div>
+  </div>
+
+  <!-- Disabled form group -->
+  <fieldset disabled>
+    <div class="form-group">
+      <label for="disabled-text-input">Disabled input</label>
+      <input type="text" id="disabled-text-input" class="form-control$modifier_class" placeholder="Disabled input">
+    </div>
+  </fieldset>
+
+  <!-- Textarea form group -->
+  <div class="form-group">
+    <label for="textarea-1">Textarea with Autosize</label>
+    <textarea id="textarea-1" class="form-control autosize"></textarea>
+  </div>
+
+  <!-- Input field -->
+  <div class="input-field">
+    <input type="text" class="form-control$modifier_class" id="input-example-name-2">
+    <label for="input-example-name-2">Name</label>
+  </div>
+
+  <!-- Input field with validate -->
+  <div class="input-field">
+    <input type="email" class="form-control$modifier_class validate" id="input-example-email-2">
+    <div data-error="喔喔！錯了。" data-success="看起來挺好！"></div>
+    <label for="input-example-email-2">Email address</label>
+  </div>
+
+  <!-- Password input field -->
+  <div class="input-field">
+    <input type="password" class="form-control$modifier_class" id="input-example-password">
+    <label for="input-example-password">Password</label>
+  </div>
+
+  <!-- Textarea input field -->
+  <div class="input-field">
+    <textarea id="textarea-2" class="form-control autosize"></textarea>
+    <label for="textarea-2">Textarea with Autosize</label>
+  </div>
+</form>

@@ -1,0 +1,166 @@
+// *************************************
+//
+//   Input
+//   -> Text Inputs & Textarea
+//
+//   .minimal - Minimal style.
+//
+//   Styleguide Input
+//
+// *************************************
+
+// Text inputs
+
+.form-control {
+	// General Styles
+	width: 100%;
+	height: $input-height;
+	margin: 0 0 $input-margin-button;
+	padding: 0 $input-padding;
+	border: 0;
+	border-radius: $input-border-radius;
+	outline: none;
+	background-color: $input-bg;
+	font-size: $input-font-size;
+	@include box-sizing(border-box);
+
+	// Form Message Shared Styles
+	&.validate + * {
+		display: block;
+		position: relative;
+		font-size: $input-label-font-size;
+	}
+
+	&.validate + *::after {
+		display: block;
+		content: "";
+		position: absolute;
+		top: -$input-margin-button * 0.9;
+		opacity: 0;
+		transition: .2s opacity ease-out, .2s color ease-out;
+	}
+
+	// Custom Error message
+	&.invalid + *::after,
+	&:focus.invalid + *::after {
+		content: attr(data-error);
+		color: $input-error-color;
+		opacity: 1;
+	}
+
+	// Custom Success Message
+	&.valid + *::after,
+	&:focus.valid + *::after {
+		content: attr(data-success);
+		color: $input-success-color;
+		opacity: 1;
+	}
+
+	// Focused input style
+	&:focus:not([readonly]) {
+		background-color: $input-bg-active;
+	}
+
+	// Disabled and read-only inputs
+	//
+	// HTML5 says that controls under a fieldset > legend:first-child won't be
+	// disabled if the fieldset is disabled. Due to implementation difficulty, we
+	// don't honor that edge case; we style them as disabled anyway.
+	&[disabled],
+	&[readonly],
+	fieldset[disabled] & {
+		background-color: $input-bg-disabled;
+		opacity: 1;  // iOS fix for unreadable disabled content; see https://github.com/twbs/bootstrap/issues/11655
+
+		::-webkit-input-placeholder {
+			 color: $input-disabled-color;
+		}
+
+		:-moz-placeholder {
+			color: $input-disabled-color;
+		}
+
+		::-moz-placeholder {
+			color: $input-disabled-color;
+		}
+
+		:-ms-input-placeholder {
+			color: $input-disabled-color;
+		}
+	}
+
+	&[disabled],
+	fieldset[disabled] & {
+		cursor: $cursor-disabled;
+	}
+
+	&.minimal {
+		border: none;
+		border-bottom: 1px solid $input-border-color;
+		border-radius: 0;
+		padding: 0;
+		box-shadow: none;
+		background-color: transparent;
+		transition: all .3s;
+
+		// Disabled input style
+		&:disabled, &[readonly="readonly"] {
+			color: $input-disabled-color;
+			border-bottom: 1px dotted $input-disabled-color;
+			background-color: transparent;
+		}
+
+		// Disabled label style
+		&:disabled+label, &[readonly="readonly"]+label {
+			color: $input-disabled-color;
+		}
+
+		// Focused input style
+		&:focus:not([readonly]) {
+			border-bottom: 1px solid $input-focus-color-minimal;
+			box-shadow: 0 1px 0 0 $input-focus-color-minimal;
+			background-color: transparent;
+		}
+
+		// Focused label style
+		&:focus:not([readonly]) ~ label {
+			color: $input-focus-color-minimal;
+		}
+
+		// Valid Input Style
+		&.valid,
+		&:focus.valid {
+			border-bottom: 1px solid $input-success-color;
+			box-shadow: 0 1px 0 0 $input-success-color;
+		}
+
+		// Invalid Input Style
+		&.invalid,
+		&:focus.invalid {
+			border-bottom: 1px solid $input-error-color;
+			box-shadow: 0 1px 0 0 $input-error-color;
+		}
+
+		~ label {
+			left: 0;
+		}
+	}
+}
+
+// Textarea Autosize
+
+textarea.autosize {
+	overflow-y: hidden;  // prevents scroll bar flash
+	padding: $input-padding $input-padding ($input-font-size + 2px);  // prevents text jump on Enter keypress
+	resize: none;
+	min-height: $input-height * 2;
+}
+
+// for textarea autoresize
+.textarea-autosize-hiddendiv {
+	display: none;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	overflow-wrap: break-word;  // future version of deprecated 'word-wrap'
+	padding: $input-padding $input-padding ($input-font-size + 2px);  // prevents text jump on Enter keypress
+}

@@ -4,7 +4,6 @@
 //
 //   .btn-group--lg         - Large.
 //   .btn-group--sm         - Small.
-//   .btn-group--xs         - Extra small.
 //   .btn-group--justified  - Stretch at equal sizes to span the entire width of its parent.
 //
 //   Styleguide ButtonGroup
@@ -19,10 +18,6 @@
 
 .btn-group--sm {
 	@extend .btn-group-sm;
-}
-
-.btn-group--xs {
-	@extend .btn-group-xs;
 }
 
 .btn-group--justified {
