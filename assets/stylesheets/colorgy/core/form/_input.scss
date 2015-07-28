@@ -28,14 +28,14 @@
 	&.validate + * {
 		display: block;
 		position: relative;
-		font-size: $input-label-font-size;
+		font-size: $input-label-font-size * .9;
 	}
 
 	&.validate + *::after {
 		display: block;
 		content: "";
 		position: absolute;
-		top: -$input-margin-button * 0.9;
+		top: -$input-margin-button * .9;
 		opacity: 0;
 		transition: .2s opacity ease-out, .2s color ease-out;
 	}

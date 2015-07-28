@@ -51,6 +51,15 @@ body,
 //   Typography
 // -------------------------------------
 
+// ----- Vertical Rhythm ----- //
+
+@import "compass/typography/vertical_rhythm";
+
+$base-font-size: $font-size-base;
+$base-line-height: $vertical-unit / 2;
+
+@include establish-baseline();
+
 .inverse {
 	color: $text-color-light;
 }
@@ -62,6 +71,7 @@ h1, h2, h3, h4, h5, h6,
 	font-family: $headings-font-family;
 	font-weight: $headings-font-weight;
 	line-height: $headings-line-height;
+
 	// color: $headings-color;
 
 	.inverse & {
@@ -83,8 +93,12 @@ h1, h2, h3, h4, h5, h6,
 h1, .h1,
 h2, .h2,
 h3, .h3 {
-	margin-top: $line-height-computed;
-	margin-bottom: ($line-height-computed / 2);
+
+	&,
+	&.base {
+		margin-top: $line-height-computed;
+		margin-bottom: ($line-height-computed / 2);
+	}
 
 	small,
 	.small {
@@ -95,8 +109,12 @@ h3, .h3 {
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-	margin-top: ($line-height-computed / 2);
-	margin-bottom: ($line-height-computed / 2);
+
+	&,
+	&.base {
+		margin-top: ($line-height-computed / 2);
+		margin-bottom: ($line-height-computed / 2);
+	}
 
 	small,
 	.small {
@@ -104,17 +122,17 @@ h6, .h6 {
 	}
 }
 
-h1, .h1 { font-size: $font-size-h1; }
-h2, .h2 { font-size: $font-size-h2; }
-h3, .h3 { font-size: $font-size-h3; }
-h4, .h4 { font-size: $font-size-h4; }
-h5, .h5 { font-size: $font-size-h5; }
-h6, .h6 { font-size: $font-size-h6; }
+h1, .h1 { @include adjust-font-size-to($font-size-h1); @include rhythm(2, 0, 0, 1, $font-size-h1); }
+h2, .h2 { @include adjust-font-size-to($font-size-h2); @include rhythm(1.5, 0, 0, 1, $font-size-h2); }
+h3, .h3 { @include adjust-font-size-to($font-size-h3); @include rhythm(1, 0, 0, 1, $font-size-h3); }
+h4, .h4 { @include adjust-font-size-to($font-size-h4); @include rhythm(1, 0, 0, 1, $font-size-h4); }
+h5, .h5 { @include adjust-font-size-to($font-size-h5); @include rhythm(1, 0, 0, 1, $font-size-h5); }
+h6, .h6 { @include adjust-font-size-to($font-size-h6); @include rhythm(1, 0, 0, 0, $font-size-h6); }
 
 // ----- Body text ----- //
 
 p {
-	margin: 0 0 ($line-height-computed / 2);
+	@include rhythm(0, 0, 0, 1);
 }
 
 .lead {

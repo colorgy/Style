@@ -38,7 +38,7 @@ $input-label-font-size:         13px !default;
 $input-label-color:             #777 !default;
 $input-disabled-color:          rgba(0,0,0, .26) !default;
 $input-disabled-solid-color:    #bdbdbd !default;
-$input-margin-button:           $vertical-unit / 2;
+$input-margin-button:           $vertical-unit * 3/4;
 
 // ----- Radio Buttons ----- //
 

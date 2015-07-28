@@ -148,9 +148,9 @@ $card-inner-border-color:         rgba(#aaa, .2) !default;
 }
 
 .card--sm {
-	@include card-style-variant($card-sm-padding-horizontal, $card-sm-padding-vertical);
+	@include card-style-variant($card-sm-padding-vertical, $card-sm-padding-horizontal);
 }
 
 .card--lg {
-	@include card-style-variant($card-lg-padding-horizontal, $card-lg-padding-vertical);
+	@include card-style-variant($card-lg-padding-vertical, $card-lg-padding-horizontal);
 }
