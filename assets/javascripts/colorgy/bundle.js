@@ -6,6 +6,7 @@
 //= require colorgy/modernizr
 //= require vendor/es5-shim
 //= require vendor/visibility
+//= require vendor/jquery.touchSwipe
 //
 // Main Application
 //= require ./application

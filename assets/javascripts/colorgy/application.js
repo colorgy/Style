@@ -4,6 +4,9 @@
 // Helpers or custom library shared by other things
 //= require ./lib
 //
+// Structures
+//= require ./structures
+//
 // Components
 //= require ./components
 //

@@ -137,21 +137,25 @@ $icon-font-svg-id:        "glyphicons_halflingsregular" !default;
 
 // Z-index master list
 $z-index-list: background,
-			shadow,
-			container,
-			footer-background,
-			footer,
-			content-background,
-			content,
-			content-decoration,
-			navbar,
-			dropdown,
-			popover,
-			tooltip,
-			navbar-fixed,
-			modal-background,
-			modal,
-			trigger !default;
+							 shadow,
+							 container,
+							 footer-background,
+							 footer,
+							 content-background,
+							 content,
+							 content-decoration,
+							 navbar,
+							 dropdown,
+							 popover,
+							 tooltip,
+							 navbar-fixed,
+							 modal-background,
+							 modal,
+							 mobile-menu-dimmer,
+							 mobile-menu,
+							 mobile-menu-s,
+							 trigger,
+							 trigger-s !default;
 
 $zindex-navbar:           z-index-of(navbar);
 $zindex-dropdown:         z-index-of(dropdown);

@@ -1,0 +1,127 @@
+$mobile-slide-width: 250px !default;
+$mobile-side-trigger-area-width: 20px !default;
+
+.mobile-slide-trigger-button {
+	display: block;
+	cursor: pointer;
+
+	path {
+		@include transform(none);
+		@include transition-property(all);
+		@include transition-duration(.3s);
+		@include transition-delay(.3s);
+	}
+
+	body.is-mobile-slide-active & {
+
+		path {
+			@include transform(rotate(-45deg) translateX(-6px) translateY(3px));
+		}
+
+		path:first-child {
+			@include transform(rotate(45deg) translateX(2px) translateY(-2px));
+		}
+
+		path:last-child {
+			@include transform(rotate(-45deg) translateX(-6px) translateY(-2px));
+		}
+	}
+}
+
+.mobile-slide,
+.mobile-slide-second {
+	@include translateX(0);
+	@include transition-property(transform);
+	@include transition-duration(.32s);
+	position: fixed !important;
+	top: 0 !important;
+	height: 100% !important;
+
+	& ~ div:not([class]) {
+		display: none;
+	}
+}
+
+.mobile-slide {
+	@include z-index(mobile-menu);
+	left: - $mobile-slide-width !important;
+	width: $mobile-slide-width !important;
+
+	body.is-mobile-slide-active & {
+		@include translateX($mobile-slide-width);
+	}
+
+	body.is-mobile-slide-active.is-mobile-slide-second-active & {
+		@include translateX($mobile-slide-width + 16);
+	}
+}
+
+.mobile-slide-second {
+	@include z-index(mobile-menu-s);
+	left: - $mobile-slide-width !important;
+	width: $mobile-slide-width !important;
+
+	body.is-mobile-slide-active & {
+		@include translateX(12px);
+	}
+
+	body.is-mobile-slide-active.is-mobile-slide-second-active & {
+		@include translateX($mobile-slide-width);
+	}
+}
+
+#mobile-slide-touch-trigger {
+	@include z-index(trigger);
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: $mobile-side-trigger-area-width;
+	height: 100%;
+
+	body.is-mobile-slide-active & {
+		left: $mobile-slide-width - 12;
+		width: 100%;
+	}
+}
+
+#mobile-slide-second-touch-trigger {
+	@include z-index(trigger-s);
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+
+	body.is-mobile-slide-active & {
+		width: $mobile-side-trigger-area-width;
+	}
+
+	body.is-mobile-slide-active.is-mobile-slide-second-active & {
+		left: $mobile-slide-width - 12;
+		width: 100%;
+	}
+}
+
+#mobile-slide-body-dimmer {
+	position: fixed;
+	@include z-index(mobile-menu-dimmer);
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0;
+	pointer-events: none;
+
+	@include transition-property(opacity);
+	@include transition-duration(.32s);
+
+	body.is-mobile-slide-active & {
+		opacity: .5;
+		pointer-events: auto;
+	}
+}
