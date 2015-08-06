@@ -17,7 +17,7 @@
 // -------------------------------------
 
 $steps-step-height:              64px !default;
-$steps-step-padding-vertical:    $padding-base-vertical * 2 !default;
+$steps-step-padding-vertical:    $padding-base-vertical !default;
 $steps-step-padding-horizontal:  $padding-base-horizontal * 2 !default;
 $steps-step-active-color:        $theme-color !default;
 $steps-step-active-bg:           rgba(#ddd, .7) !default;
@@ -39,6 +39,7 @@ $steps-step-completed-color:     $success-color !default;
 	padding: $padding-vertical $padding-horizontal;
 	padding-left: $padding-horizontal + $-padding-variant;
 	padding-right: max($padding-horizontal - $-padding-variant, 0);
+	line-height: ($height - ($padding-vertical * 2)) / 2;
 	clip-path: polygon(0 0, 200% 0, 200% 200%, 0 200%, 0 ($height - ($height - $-arrow-height) / 2), ($-arrow-height / 2 - 1) ($height / 2), 0 (($height - $-arrow-height) / 2), 0 0);
 	-webkit-clip-path: polygon(0 0, 200% 0, 200% 200%, 0 200%, 0 ($height - ($height - $-arrow-height) / 2), ($-arrow-height / 2 - 1) ($height / 2), 0 (($height - $-arrow-height) / 2), 0 0);
 
@@ -155,7 +156,7 @@ $steps-step-completed-color:     $success-color !default;
 	height: $_height;
 	text-align: center;
 	line-height: $_height;
-	font-size: $_height * .8;
+	font-size: $_height * .7;
 	padding-right: $_height * .2;
 
 	img {
