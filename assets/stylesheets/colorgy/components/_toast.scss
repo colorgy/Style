@@ -150,6 +150,7 @@
 	position: relative;
 	text-align: center;
 	vertical-align: middle;
+	white-space: nowrap;
 
 	.btn, > * {
 		display: table-row;
@@ -257,8 +258,10 @@ button.toast-close-button {
 #toast-container {
 	position: fixed;
 	z-index: 999999;
+	pointer-events: none;
 
 	> * {
+		pointer-events: all;
 		margin-bottom: 12px;
 	}
 
