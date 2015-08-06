@@ -2,7 +2,7 @@
 
 Colorgy 的樣式指南、樣式表以及前端工具包。
 
-The front-end bundle and style guide for Colorgy, based on [Bootstrap 3](http://getbootstrap.com/) for the basis, and [MVCSS](http://mvcss.io/) for architecturing.
+The front-end bundle and style guide for Colorgy, based on [Bootstrap 3](http://getbootstrap.com/) for the basis, and [MVCSS](http://mvcss.io/) for architecturing. Includes [Materialize](http://materializecss.com/).
 
 ---
 
@@ -114,7 +114,7 @@ _適用於任何專案。_
     |   │   ├── application.scss
     |   │   ├── core
     |   │   │   └── ...
-    |   │   ├── layouts
+    |   │   ├── structures
     |   │   │   └── ...
     |   │   └── components
     |   │       └── ...
@@ -185,7 +185,7 @@ _適用於任何專案。_
 
 - `application.scss` - 主 manifest 檔，引入所有部件
 - `core/` - 基礎建設，包含 `config` (預設組態)、`fonts` (字型定義)、`base` (基本樣式) `grid` (網格系統) 等最核心的部分，以及 `utilities` (輔助調整內容的懶人 class 們) 還有 `helpers` (通用的 function 或 mixin)
-- `layouts/` - 各式[排版結構](http://mvcss.io/structures/)，被重複使用的排版容器
+- `structures/` - 各式[排版結構](http://mvcss.io/structures/)，被重複使用的排版容器
 - `components/` - 各式[元件](http://mvcss.io/components/)，可獨立使用的 UI 單位
 
 #### `javascripts/colorgy`
@@ -214,7 +214,7 @@ _適用於任何專案。_
 CSS 部分採用了 SMACSS 的方法論以及 BEM 命名架構 [*]，並遵從大部份 [MVCSS](http://mvcss.io/) 的準則。
 
 - `core/` 目錄下放置了 stylesheet 核心，包含 config、helpers、基本元素 (base)、utilities (例如 `.pull-right`、`.text-center`、`.inverse`) 等
-- `layouts/` 底下收納了各種頁面的佈局結構 - 沒有實際表現風格，提供排版、又或是 RWD 輔助的鷹架，class name 以 `l-` 前綴
+- `structures/` 底下收納了各種頁面的佈局結構 - 沒有實際表現風格，提供排版、又或是 RWD 輔助的鷹架，class name 通常以 `l-` 前綴
 - `components/` 中放置各式元件 - 無相依性、可重複使用的 UI 基本單位
 
 [*]: Element 的命名使用 `.card-header` 風格，而非原始的 `.card__header`。Modifier 命名慣例則為一致，但某些慣用的 state，例如 `.active`、`.disabled`、`.open`、`.collapse`、`.dismissible`、`.inverse` 可以直接使用 class 表示 (而這些 class 通常也參與 JS 的互動)。
