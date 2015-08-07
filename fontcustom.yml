@@ -46,7 +46,7 @@ quiet: true
 # -----------------------------------------------------------------------------
 
 input:
-  vectors: assets/fonts/colorgy/icons
+  vectors: assets/icons
   templates: templates/fontcustom
 
 output:

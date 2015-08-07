@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "6cf957921d63b924ba69058ed16ce7fabdac7bde2c6fb103347aac533a76db74",
-    "current": "6cf957921d63b924ba69058ed16ce7fabdac7bde2c6fb103347aac533a76db74"
+    "previous": "dc53cebb0914cf7beb897467081ca757a1e01a9731507a93b3a5c0c68679a4e1",
+    "current": "dc53cebb0914cf7beb897467081ca757a1e01a9731507a93b3a5c0c68679a4e1"
   },
   "fonts": [
     "assets/fonts/colorgy/colorgy-icons.ttf",
@@ -12,3239 +12,3239 @@
   "glyphs": {
     "3d-rotation": {
       "codepoint": 108811,
-      "source": "assets/fonts/colorgy/icons/3d-rotation.svg"
+      "source": "assets/icons/3d-rotation.svg"
     },
     "access-alarm": {
       "codepoint": 108812,
-      "source": "assets/fonts/colorgy/icons/access-alarm.svg"
+      "source": "assets/icons/access-alarm.svg"
     },
     "access-alarms": {
       "codepoint": 108813,
-      "source": "assets/fonts/colorgy/icons/access-alarms.svg"
+      "source": "assets/icons/access-alarms.svg"
     },
     "access-time": {
       "codepoint": 108814,
-      "source": "assets/fonts/colorgy/icons/access-time.svg"
+      "source": "assets/icons/access-time.svg"
     },
     "accessibility": {
       "codepoint": 108020,
-      "source": "assets/fonts/colorgy/icons/accessibility.svg"
+      "source": "assets/icons/accessibility.svg"
     },
     "account-balance": {
       "codepoint": 108815,
-      "source": "assets/fonts/colorgy/icons/account-balance.svg"
+      "source": "assets/icons/account-balance.svg"
     },
     "account-balance-wallet": {
       "codepoint": 108816,
-      "source": "assets/fonts/colorgy/icons/account-balance-wallet.svg"
+      "source": "assets/icons/account-balance-wallet.svg"
     },
     "account-box": {
       "codepoint": 108817,
-      "source": "assets/fonts/colorgy/icons/account-box.svg"
+      "source": "assets/icons/account-box.svg"
     },
     "account-circle": {
       "codepoint": 108818,
-      "source": "assets/fonts/colorgy/icons/account-circle.svg"
+      "source": "assets/icons/account-circle.svg"
     },
     "adb": {
       "codepoint": 108025,
-      "source": "assets/fonts/colorgy/icons/adb.svg"
+      "source": "assets/icons/adb.svg"
     },
     "add": {
       "codepoint": 108026,
-      "source": "assets/fonts/colorgy/icons/add.svg"
+      "source": "assets/icons/add.svg"
     },
     "add-alarm": {
       "codepoint": 108819,
-      "source": "assets/fonts/colorgy/icons/add-alarm.svg"
+      "source": "assets/icons/add-alarm.svg"
     },
     "add-alert": {
       "codepoint": 108820,
-      "source": "assets/fonts/colorgy/icons/add-alert.svg"
+      "source": "assets/icons/add-alert.svg"
     },
     "add-box": {
       "codepoint": 108821,
-      "source": "assets/fonts/colorgy/icons/add-box.svg"
+      "source": "assets/icons/add-box.svg"
     },
     "add-circle": {
       "codepoint": 108822,
-      "source": "assets/fonts/colorgy/icons/add-circle.svg"
+      "source": "assets/icons/add-circle.svg"
     },
     "add-circle-outline": {
       "codepoint": 108823,
-      "source": "assets/fonts/colorgy/icons/add-circle-outline.svg"
+      "source": "assets/icons/add-circle-outline.svg"
     },
     "add-shopping-cart": {
       "codepoint": 108824,
-      "source": "assets/fonts/colorgy/icons/add-shopping-cart.svg"
+      "source": "assets/icons/add-shopping-cart.svg"
     },
     "add-to-photos": {
       "codepoint": 108825,
-      "source": "assets/fonts/colorgy/icons/add-to-photos.svg"
+      "source": "assets/icons/add-to-photos.svg"
     },
     "adjust": {
       "codepoint": 108034,
-      "source": "assets/fonts/colorgy/icons/adjust.svg"
+      "source": "assets/icons/adjust.svg"
     },
     "airline-seat-flat": {
       "codepoint": 108826,
-      "source": "assets/fonts/colorgy/icons/airline-seat-flat.svg"
+      "source": "assets/icons/airline-seat-flat.svg"
     },
     "airline-seat-flat-angled": {
       "codepoint": 108827,
-      "source": "assets/fonts/colorgy/icons/airline-seat-flat-angled.svg"
+      "source": "assets/icons/airline-seat-flat-angled.svg"
     },
     "airline-seat-individual-suite": {
       "codepoint": 108828,
-      "source": "assets/fonts/colorgy/icons/airline-seat-individual-suite.svg"
+      "source": "assets/icons/airline-seat-individual-suite.svg"
     },
     "airline-seat-legroom-extra": {
       "codepoint": 108829,
-      "source": "assets/fonts/colorgy/icons/airline-seat-legroom-extra.svg"
+      "source": "assets/icons/airline-seat-legroom-extra.svg"
     },
     "airline-seat-legroom-normal": {
       "codepoint": 108830,
-      "source": "assets/fonts/colorgy/icons/airline-seat-legroom-normal.svg"
+      "source": "assets/icons/airline-seat-legroom-normal.svg"
     },
     "airline-seat-legroom-reduced": {
       "codepoint": 108831,
-      "source": "assets/fonts/colorgy/icons/airline-seat-legroom-reduced.svg"
+      "source": "assets/icons/airline-seat-legroom-reduced.svg"
     },
     "airline-seat-recline-extra": {
       "codepoint": 108832,
-      "source": "assets/fonts/colorgy/icons/airline-seat-recline-extra.svg"
+      "source": "assets/icons/airline-seat-recline-extra.svg"
     },
     "airline-seat-recline-normal": {
       "codepoint": 108833,
-      "source": "assets/fonts/colorgy/icons/airline-seat-recline-normal.svg"
+      "source": "assets/icons/airline-seat-recline-normal.svg"
     },
     "airplanemode-active": {
       "codepoint": 108834,
-      "source": "assets/fonts/colorgy/icons/airplanemode-active.svg"
+      "source": "assets/icons/airplanemode-active.svg"
     },
     "airplanemode-inactive": {
       "codepoint": 108835,
-      "source": "assets/fonts/colorgy/icons/airplanemode-inactive.svg"
+      "source": "assets/icons/airplanemode-inactive.svg"
     },
     "airplay": {
       "codepoint": 108045,
-      "source": "assets/fonts/colorgy/icons/airplay.svg"
+      "source": "assets/icons/airplay.svg"
     },
     "alarm": {
       "codepoint": 108046,
-      "source": "assets/fonts/colorgy/icons/alarm.svg"
+      "source": "assets/icons/alarm.svg"
     },
     "alarm-add": {
       "codepoint": 108836,
-      "source": "assets/fonts/colorgy/icons/alarm-add.svg"
+      "source": "assets/icons/alarm-add.svg"
     },
     "alarm-off": {
       "codepoint": 108837,
-      "source": "assets/fonts/colorgy/icons/alarm-off.svg"
+      "source": "assets/icons/alarm-off.svg"
     },
     "alarm-on": {
       "codepoint": 108838,
-      "source": "assets/fonts/colorgy/icons/alarm-on.svg"
+      "source": "assets/icons/alarm-on.svg"
     },
     "album": {
       "codepoint": 108050,
-      "source": "assets/fonts/colorgy/icons/album.svg"
+      "source": "assets/icons/album.svg"
     },
     "android": {
       "codepoint": 108051,
-      "source": "assets/fonts/colorgy/icons/android.svg"
+      "source": "assets/icons/android.svg"
     },
     "announcement": {
       "codepoint": 108052,
-      "source": "assets/fonts/colorgy/icons/announcement.svg"
+      "source": "assets/icons/announcement.svg"
     },
     "apps": {
       "codepoint": 108053,
-      "source": "assets/fonts/colorgy/icons/apps.svg"
+      "source": "assets/icons/apps.svg"
     },
     "archive": {
       "codepoint": 108054,
-      "source": "assets/fonts/colorgy/icons/archive.svg"
+      "source": "assets/icons/archive.svg"
     },
     "arrow-back": {
       "codepoint": 108839,
-      "source": "assets/fonts/colorgy/icons/arrow-back.svg"
+      "source": "assets/icons/arrow-back.svg"
     },
     "arrow-drop-down": {
       "codepoint": 108840,
-      "source": "assets/fonts/colorgy/icons/arrow-drop-down.svg"
+      "source": "assets/icons/arrow-drop-down.svg"
     },
     "arrow-drop-down-circle": {
       "codepoint": 108841,
-      "source": "assets/fonts/colorgy/icons/arrow-drop-down-circle.svg"
+      "source": "assets/icons/arrow-drop-down-circle.svg"
     },
     "arrow-drop-up": {
       "codepoint": 108842,
-      "source": "assets/fonts/colorgy/icons/arrow-drop-up.svg"
+      "source": "assets/icons/arrow-drop-up.svg"
     },
     "arrow-forward": {
       "codepoint": 108843,
-      "source": "assets/fonts/colorgy/icons/arrow-forward.svg"
+      "source": "assets/icons/arrow-forward.svg"
     },
     "aspect-ratio": {
       "codepoint": 108844,
-      "source": "assets/fonts/colorgy/icons/aspect-ratio.svg"
+      "source": "assets/icons/aspect-ratio.svg"
     },
     "assessment": {
       "codepoint": 108061,
-      "source": "assets/fonts/colorgy/icons/assessment.svg"
+      "source": "assets/icons/assessment.svg"
     },
     "assignment": {
       "codepoint": 108062,
-      "source": "assets/fonts/colorgy/icons/assignment.svg"
+      "source": "assets/icons/assignment.svg"
     },
     "assignment-ind": {
       "codepoint": 108845,
-      "source": "assets/fonts/colorgy/icons/assignment-ind.svg"
+      "source": "assets/icons/assignment-ind.svg"
     },
     "assignment-late": {
       "codepoint": 108846,
-      "source": "assets/fonts/colorgy/icons/assignment-late.svg"
+      "source": "assets/icons/assignment-late.svg"
     },
     "assignment-return": {
       "codepoint": 108847,
-      "source": "assets/fonts/colorgy/icons/assignment-return.svg"
+      "source": "assets/icons/assignment-return.svg"
     },
     "assignment-returned": {
       "codepoint": 108848,
-      "source": "assets/fonts/colorgy/icons/assignment-returned.svg"
+      "source": "assets/icons/assignment-returned.svg"
     },
     "assignment-turned-in": {
       "codepoint": 108849,
-      "source": "assets/fonts/colorgy/icons/assignment-turned-in.svg"
+      "source": "assets/icons/assignment-turned-in.svg"
     },
     "assistant": {
       "codepoint": 108068,
-      "source": "assets/fonts/colorgy/icons/assistant.svg"
+      "source": "assets/icons/assistant.svg"
     },
     "assistant-photo": {
       "codepoint": 108850,
-      "source": "assets/fonts/colorgy/icons/assistant-photo.svg"
+      "source": "assets/icons/assistant-photo.svg"
     },
     "attach-file": {
       "codepoint": 108851,
-      "source": "assets/fonts/colorgy/icons/attach-file.svg"
+      "source": "assets/icons/attach-file.svg"
     },
     "attach-money": {
       "codepoint": 108852,
-      "source": "assets/fonts/colorgy/icons/attach-money.svg"
+      "source": "assets/icons/attach-money.svg"
     },
     "attachment": {
       "codepoint": 108072,
-      "source": "assets/fonts/colorgy/icons/attachment.svg"
+      "source": "assets/icons/attachment.svg"
     },
     "audiotrack": {
       "codepoint": 108073,
-      "source": "assets/fonts/colorgy/icons/audiotrack.svg"
+      "source": "assets/icons/audiotrack.svg"
     },
     "autorenew": {
       "codepoint": 108074,
-      "source": "assets/fonts/colorgy/icons/autorenew.svg"
+      "source": "assets/icons/autorenew.svg"
     },
     "av-timer": {
       "codepoint": 108853,
-      "source": "assets/fonts/colorgy/icons/av-timer.svg"
+      "source": "assets/icons/av-timer.svg"
     },
     "backspace": {
       "codepoint": 108076,
-      "source": "assets/fonts/colorgy/icons/backspace.svg"
+      "source": "assets/icons/backspace.svg"
     },
     "backup": {
       "codepoint": 108077,
-      "source": "assets/fonts/colorgy/icons/backup.svg"
+      "source": "assets/icons/backup.svg"
     },
     "battery-20": {
       "codepoint": 108854,
-      "source": "assets/fonts/colorgy/icons/battery-20.svg"
+      "source": "assets/icons/battery-20.svg"
     },
     "battery-30": {
       "codepoint": 108855,
-      "source": "assets/fonts/colorgy/icons/battery-30.svg"
+      "source": "assets/icons/battery-30.svg"
     },
     "battery-50": {
       "codepoint": 108856,
-      "source": "assets/fonts/colorgy/icons/battery-50.svg"
+      "source": "assets/icons/battery-50.svg"
     },
     "battery-60": {
       "codepoint": 108857,
-      "source": "assets/fonts/colorgy/icons/battery-60.svg"
+      "source": "assets/icons/battery-60.svg"
     },
     "battery-80": {
       "codepoint": 108858,
-      "source": "assets/fonts/colorgy/icons/battery-80.svg"
+      "source": "assets/icons/battery-80.svg"
     },
     "battery-90": {
       "codepoint": 108859,
-      "source": "assets/fonts/colorgy/icons/battery-90.svg"
+      "source": "assets/icons/battery-90.svg"
     },
     "battery-alert": {
       "codepoint": 108860,
-      "source": "assets/fonts/colorgy/icons/battery-alert.svg"
+      "source": "assets/icons/battery-alert.svg"
     },
     "battery-charging-20": {
       "codepoint": 108861,
-      "source": "assets/fonts/colorgy/icons/battery-charging-20.svg"
+      "source": "assets/icons/battery-charging-20.svg"
     },
     "battery-charging-30": {
       "codepoint": 108862,
-      "source": "assets/fonts/colorgy/icons/battery-charging-30.svg"
+      "source": "assets/icons/battery-charging-30.svg"
     },
     "battery-charging-50": {
       "codepoint": 108863,
-      "source": "assets/fonts/colorgy/icons/battery-charging-50.svg"
+      "source": "assets/icons/battery-charging-50.svg"
     },
     "battery-charging-60": {
       "codepoint": 108864,
-      "source": "assets/fonts/colorgy/icons/battery-charging-60.svg"
+      "source": "assets/icons/battery-charging-60.svg"
     },
     "battery-charging-80": {
       "codepoint": 108865,
-      "source": "assets/fonts/colorgy/icons/battery-charging-80.svg"
+      "source": "assets/icons/battery-charging-80.svg"
     },
     "battery-charging-90": {
       "codepoint": 108866,
-      "source": "assets/fonts/colorgy/icons/battery-charging-90.svg"
+      "source": "assets/icons/battery-charging-90.svg"
     },
     "battery-charging-full": {
       "codepoint": 108867,
-      "source": "assets/fonts/colorgy/icons/battery-charging-full.svg"
+      "source": "assets/icons/battery-charging-full.svg"
     },
     "battery-full": {
       "codepoint": 108868,
-      "source": "assets/fonts/colorgy/icons/battery-full.svg"
+      "source": "assets/icons/battery-full.svg"
     },
     "battery-std": {
       "codepoint": 108869,
-      "source": "assets/fonts/colorgy/icons/battery-std.svg"
+      "source": "assets/icons/battery-std.svg"
     },
     "battery-unknown": {
       "codepoint": 108870,
-      "source": "assets/fonts/colorgy/icons/battery-unknown.svg"
+      "source": "assets/icons/battery-unknown.svg"
     },
     "beenhere": {
       "codepoint": 108095,
-      "source": "assets/fonts/colorgy/icons/beenhere.svg"
+      "source": "assets/icons/beenhere.svg"
     },
     "block": {
       "codepoint": 108096,
-      "source": "assets/fonts/colorgy/icons/block.svg"
+      "source": "assets/icons/block.svg"
     },
     "bluetooth": {
       "codepoint": 108097,
-      "source": "assets/fonts/colorgy/icons/bluetooth.svg"
+      "source": "assets/icons/bluetooth.svg"
     },
     "bluetooth-audio": {
       "codepoint": 108871,
-      "source": "assets/fonts/colorgy/icons/bluetooth-audio.svg"
+      "source": "assets/icons/bluetooth-audio.svg"
     },
     "bluetooth-connected": {
       "codepoint": 108872,
-      "source": "assets/fonts/colorgy/icons/bluetooth-connected.svg"
+      "source": "assets/icons/bluetooth-connected.svg"
     },
     "bluetooth-disabled": {
       "codepoint": 108873,
-      "source": "assets/fonts/colorgy/icons/bluetooth-disabled.svg"
+      "source": "assets/icons/bluetooth-disabled.svg"
     },
     "bluetooth-searching": {
       "codepoint": 108874,
-      "source": "assets/fonts/colorgy/icons/bluetooth-searching.svg"
+      "source": "assets/icons/bluetooth-searching.svg"
     },
     "blur-circular": {
       "codepoint": 108875,
-      "source": "assets/fonts/colorgy/icons/blur-circular.svg"
+      "source": "assets/icons/blur-circular.svg"
     },
     "blur-linear": {
       "codepoint": 108876,
-      "source": "assets/fonts/colorgy/icons/blur-linear.svg"
+      "source": "assets/icons/blur-linear.svg"
     },
     "blur-off": {
       "codepoint": 108877,
-      "source": "assets/fonts/colorgy/icons/blur-off.svg"
+      "source": "assets/icons/blur-off.svg"
     },
     "blur-on": {
       "codepoint": 108878,
-      "source": "assets/fonts/colorgy/icons/blur-on.svg"
+      "source": "assets/icons/blur-on.svg"
     },
     "book": {
       "codepoint": 108106,
-      "source": "assets/fonts/colorgy/icons/book.svg"
+      "source": "assets/icons/book.svg"
     },
     "bookmark": {
       "codepoint": 108107,
-      "source": "assets/fonts/colorgy/icons/bookmark.svg"
+      "source": "assets/icons/bookmark.svg"
     },
     "bookmark-border": {
       "codepoint": 108879,
-      "source": "assets/fonts/colorgy/icons/bookmark-border.svg"
+      "source": "assets/icons/bookmark-border.svg"
     },
     "border-all": {
       "codepoint": 108880,
-      "source": "assets/fonts/colorgy/icons/border-all.svg"
+      "source": "assets/icons/border-all.svg"
     },
     "border-bottom": {
       "codepoint": 108881,
-      "source": "assets/fonts/colorgy/icons/border-bottom.svg"
+      "source": "assets/icons/border-bottom.svg"
     },
     "border-clear": {
       "codepoint": 108882,
-      "source": "assets/fonts/colorgy/icons/border-clear.svg"
+      "source": "assets/icons/border-clear.svg"
     },
     "border-color": {
       "codepoint": 108883,
-      "source": "assets/fonts/colorgy/icons/border-color.svg"
+      "source": "assets/icons/border-color.svg"
     },
     "border-horizontal": {
       "codepoint": 108884,
-      "source": "assets/fonts/colorgy/icons/border-horizontal.svg"
+      "source": "assets/icons/border-horizontal.svg"
     },
     "border-inner": {
       "codepoint": 108885,
-      "source": "assets/fonts/colorgy/icons/border-inner.svg"
+      "source": "assets/icons/border-inner.svg"
     },
     "border-left": {
       "codepoint": 108886,
-      "source": "assets/fonts/colorgy/icons/border-left.svg"
+      "source": "assets/icons/border-left.svg"
     },
     "border-outer": {
       "codepoint": 108887,
-      "source": "assets/fonts/colorgy/icons/border-outer.svg"
+      "source": "assets/icons/border-outer.svg"
     },
     "border-right": {
       "codepoint": 108888,
-      "source": "assets/fonts/colorgy/icons/border-right.svg"
+      "source": "assets/icons/border-right.svg"
     },
     "border-style": {
       "codepoint": 108889,
-      "source": "assets/fonts/colorgy/icons/border-style.svg"
+      "source": "assets/icons/border-style.svg"
     },
     "border-top": {
       "codepoint": 108890,
-      "source": "assets/fonts/colorgy/icons/border-top.svg"
+      "source": "assets/icons/border-top.svg"
     },
     "border-vertical": {
       "codepoint": 108891,
-      "source": "assets/fonts/colorgy/icons/border-vertical.svg"
+      "source": "assets/icons/border-vertical.svg"
     },
     "brightness-1": {
       "codepoint": 108892,
-      "source": "assets/fonts/colorgy/icons/brightness-1.svg"
+      "source": "assets/icons/brightness-1.svg"
     },
     "brightness-2": {
       "codepoint": 108893,
-      "source": "assets/fonts/colorgy/icons/brightness-2.svg"
+      "source": "assets/icons/brightness-2.svg"
     },
     "brightness-3": {
       "codepoint": 108894,
-      "source": "assets/fonts/colorgy/icons/brightness-3.svg"
+      "source": "assets/icons/brightness-3.svg"
     },
     "brightness-4": {
       "codepoint": 108895,
-      "source": "assets/fonts/colorgy/icons/brightness-4.svg"
+      "source": "assets/icons/brightness-4.svg"
     },
     "brightness-5": {
       "codepoint": 108896,
-      "source": "assets/fonts/colorgy/icons/brightness-5.svg"
+      "source": "assets/icons/brightness-5.svg"
     },
     "brightness-6": {
       "codepoint": 108897,
-      "source": "assets/fonts/colorgy/icons/brightness-6.svg"
+      "source": "assets/icons/brightness-6.svg"
     },
     "brightness-7": {
       "codepoint": 108898,
-      "source": "assets/fonts/colorgy/icons/brightness-7.svg"
+      "source": "assets/icons/brightness-7.svg"
     },
     "brightness-auto": {
       "codepoint": 108899,
-      "source": "assets/fonts/colorgy/icons/brightness-auto.svg"
+      "source": "assets/icons/brightness-auto.svg"
     },
     "brightness-high": {
       "codepoint": 108900,
-      "source": "assets/fonts/colorgy/icons/brightness-high.svg"
+      "source": "assets/icons/brightness-high.svg"
     },
     "brightness-low": {
       "codepoint": 108901,
-      "source": "assets/fonts/colorgy/icons/brightness-low.svg"
+      "source": "assets/icons/brightness-low.svg"
     },
     "brightness-medium": {
       "codepoint": 108902,
-      "source": "assets/fonts/colorgy/icons/brightness-medium.svg"
+      "source": "assets/icons/brightness-medium.svg"
     },
     "broken-image": {
       "codepoint": 108903,
-      "source": "assets/fonts/colorgy/icons/broken-image.svg"
+      "source": "assets/icons/broken-image.svg"
     },
     "brush": {
       "codepoint": 108133,
-      "source": "assets/fonts/colorgy/icons/brush.svg"
+      "source": "assets/icons/brush.svg"
     },
     "bug-report": {
       "codepoint": 108904,
-      "source": "assets/fonts/colorgy/icons/bug-report.svg"
+      "source": "assets/icons/bug-report.svg"
     },
     "build": {
       "codepoint": 108135,
-      "source": "assets/fonts/colorgy/icons/build.svg"
+      "source": "assets/icons/build.svg"
     },
     "business": {
       "codepoint": 108136,
-      "source": "assets/fonts/colorgy/icons/business.svg"
+      "source": "assets/icons/business.svg"
     },
     "cached": {
       "codepoint": 108137,
-      "source": "assets/fonts/colorgy/icons/cached.svg"
+      "source": "assets/icons/cached.svg"
     },
     "cake": {
       "codepoint": 108138,
-      "source": "assets/fonts/colorgy/icons/cake.svg"
+      "source": "assets/icons/cake.svg"
     },
     "call": {
       "codepoint": 108139,
-      "source": "assets/fonts/colorgy/icons/call.svg"
+      "source": "assets/icons/call.svg"
     },
     "call-end": {
       "codepoint": 108905,
-      "source": "assets/fonts/colorgy/icons/call-end.svg"
+      "source": "assets/icons/call-end.svg"
     },
     "call-made": {
       "codepoint": 108906,
-      "source": "assets/fonts/colorgy/icons/call-made.svg"
+      "source": "assets/icons/call-made.svg"
     },
     "call-merge": {
       "codepoint": 108907,
-      "source": "assets/fonts/colorgy/icons/call-merge.svg"
+      "source": "assets/icons/call-merge.svg"
     },
     "call-missed": {
       "codepoint": 108908,
-      "source": "assets/fonts/colorgy/icons/call-missed.svg"
+      "source": "assets/icons/call-missed.svg"
     },
     "call-received": {
       "codepoint": 108909,
-      "source": "assets/fonts/colorgy/icons/call-received.svg"
+      "source": "assets/icons/call-received.svg"
     },
     "call-split": {
       "codepoint": 108910,
-      "source": "assets/fonts/colorgy/icons/call-split.svg"
+      "source": "assets/icons/call-split.svg"
     },
     "camera": {
       "codepoint": 108146,
-      "source": "assets/fonts/colorgy/icons/camera.svg"
+      "source": "assets/icons/camera.svg"
     },
     "camera-alt": {
       "codepoint": 108911,
-      "source": "assets/fonts/colorgy/icons/camera-alt.svg"
+      "source": "assets/icons/camera-alt.svg"
     },
     "camera-front": {
       "codepoint": 108912,
-      "source": "assets/fonts/colorgy/icons/camera-front.svg"
+      "source": "assets/icons/camera-front.svg"
     },
     "camera-rear": {
       "codepoint": 108913,
-      "source": "assets/fonts/colorgy/icons/camera-rear.svg"
+      "source": "assets/icons/camera-rear.svg"
     },
     "camera-roll": {
       "codepoint": 108914,
-      "source": "assets/fonts/colorgy/icons/camera-roll.svg"
+      "source": "assets/icons/camera-roll.svg"
     },
     "cancel": {
       "codepoint": 108151,
-      "source": "assets/fonts/colorgy/icons/cancel.svg"
+      "source": "assets/icons/cancel.svg"
     },
     "card-giftcard": {
       "codepoint": 108915,
-      "source": "assets/fonts/colorgy/icons/card-giftcard.svg"
+      "source": "assets/icons/card-giftcard.svg"
     },
     "card-membership": {
       "codepoint": 108916,
-      "source": "assets/fonts/colorgy/icons/card-membership.svg"
+      "source": "assets/icons/card-membership.svg"
     },
     "card-travel": {
       "codepoint": 108917,
-      "source": "assets/fonts/colorgy/icons/card-travel.svg"
+      "source": "assets/icons/card-travel.svg"
     },
     "cart": {
       "codepoint": 108011,
-      "source": "assets/fonts/colorgy/icons/cart.svg"
+      "source": "assets/icons/cart.svg"
     },
     "cast": {
       "codepoint": 108155,
-      "source": "assets/fonts/colorgy/icons/cast.svg"
+      "source": "assets/icons/cast.svg"
     },
     "cast-connected": {
       "codepoint": 108918,
-      "source": "assets/fonts/colorgy/icons/cast-connected.svg"
+      "source": "assets/icons/cast-connected.svg"
     },
     "center-focus-strong": {
       "codepoint": 108919,
-      "source": "assets/fonts/colorgy/icons/center-focus-strong.svg"
+      "source": "assets/icons/center-focus-strong.svg"
     },
     "center-focus-weak": {
       "codepoint": 108920,
-      "source": "assets/fonts/colorgy/icons/center-focus-weak.svg"
+      "source": "assets/icons/center-focus-weak.svg"
     },
     "change-history": {
       "codepoint": 108921,
-      "source": "assets/fonts/colorgy/icons/change-history.svg"
+      "source": "assets/icons/change-history.svg"
     },
     "chat": {
       "codepoint": 108160,
-      "source": "assets/fonts/colorgy/icons/chat.svg"
+      "source": "assets/icons/chat.svg"
     },
     "chat-bubble": {
       "codepoint": 108922,
-      "source": "assets/fonts/colorgy/icons/chat-bubble.svg"
+      "source": "assets/icons/chat-bubble.svg"
     },
     "chat-bubble-outline": {
       "codepoint": 108923,
-      "source": "assets/fonts/colorgy/icons/chat-bubble-outline.svg"
+      "source": "assets/icons/chat-bubble-outline.svg"
     },
     "check": {
       "codepoint": 108163,
-      "source": "assets/fonts/colorgy/icons/check.svg"
+      "source": "assets/icons/check.svg"
     },
     "check-box": {
       "codepoint": 108924,
-      "source": "assets/fonts/colorgy/icons/check-box.svg"
+      "source": "assets/icons/check-box.svg"
     },
     "check-box-outline-blank": {
       "codepoint": 108925,
-      "source": "assets/fonts/colorgy/icons/check-box-outline-blank.svg"
+      "source": "assets/icons/check-box-outline-blank.svg"
     },
     "check-circle": {
       "codepoint": 108926,
-      "source": "assets/fonts/colorgy/icons/check-circle.svg"
+      "source": "assets/icons/check-circle.svg"
     },
     "chevron-left": {
       "codepoint": 108927,
-      "source": "assets/fonts/colorgy/icons/chevron-left.svg"
+      "source": "assets/icons/chevron-left.svg"
     },
     "chevron-right": {
       "codepoint": 108928,
-      "source": "assets/fonts/colorgy/icons/chevron-right.svg"
+      "source": "assets/icons/chevron-right.svg"
     },
     "chrome-reader-mode": {
       "codepoint": 108929,
-      "source": "assets/fonts/colorgy/icons/chrome-reader-mode.svg"
+      "source": "assets/icons/chrome-reader-mode.svg"
     },
     "class": {
       "codepoint": 108170,
-      "source": "assets/fonts/colorgy/icons/class.svg"
+      "source": "assets/icons/class.svg"
     },
     "clear": {
       "codepoint": 108171,
-      "source": "assets/fonts/colorgy/icons/clear.svg"
+      "source": "assets/icons/clear.svg"
     },
     "clear-all": {
       "codepoint": 108930,
-      "source": "assets/fonts/colorgy/icons/clear-all.svg"
+      "source": "assets/icons/clear-all.svg"
     },
     "close": {
       "codepoint": 108173,
-      "source": "assets/fonts/colorgy/icons/close.svg"
+      "source": "assets/icons/close.svg"
     },
     "closed-caption": {
       "codepoint": 108931,
-      "source": "assets/fonts/colorgy/icons/closed-caption.svg"
+      "source": "assets/icons/closed-caption.svg"
     },
     "cloud": {
       "codepoint": 108175,
-      "source": "assets/fonts/colorgy/icons/cloud.svg"
+      "source": "assets/icons/cloud.svg"
     },
     "cloud-circle": {
       "codepoint": 108932,
-      "source": "assets/fonts/colorgy/icons/cloud-circle.svg"
+      "source": "assets/icons/cloud-circle.svg"
     },
     "cloud-done": {
       "codepoint": 108933,
-      "source": "assets/fonts/colorgy/icons/cloud-done.svg"
+      "source": "assets/icons/cloud-done.svg"
     },
     "cloud-download": {
       "codepoint": 108934,
-      "source": "assets/fonts/colorgy/icons/cloud-download.svg"
+      "source": "assets/icons/cloud-download.svg"
     },
     "cloud-off": {
       "codepoint": 108935,
-      "source": "assets/fonts/colorgy/icons/cloud-off.svg"
+      "source": "assets/icons/cloud-off.svg"
     },
     "cloud-queue": {
       "codepoint": 108936,
-      "source": "assets/fonts/colorgy/icons/cloud-queue.svg"
+      "source": "assets/icons/cloud-queue.svg"
     },
     "cloud-upload": {
       "codepoint": 108937,
-      "source": "assets/fonts/colorgy/icons/cloud-upload.svg"
+      "source": "assets/icons/cloud-upload.svg"
     },
     "code": {
       "codepoint": 108182,
-      "source": "assets/fonts/colorgy/icons/code.svg"
+      "source": "assets/icons/code.svg"
     },
     "collections": {
       "codepoint": 108183,
-      "source": "assets/fonts/colorgy/icons/collections.svg"
+      "source": "assets/icons/collections.svg"
     },
     "color-lens": {
       "codepoint": 108938,
-      "source": "assets/fonts/colorgy/icons/color-lens.svg"
+      "source": "assets/icons/color-lens.svg"
     },
     "colorgy": {
       "codepoint": 105000,
-      "source": "assets/fonts/colorgy/icons/colorgy.svg"
+      "source": "assets/icons/colorgy.svg"
     },
     "colorgy-text": {
       "codepoint": 105010,
-      "source": "assets/fonts/colorgy/icons/colorgy-text.svg"
+      "source": "assets/icons/colorgy-text.svg"
     },
     "colorize": {
       "codepoint": 108185,
-      "source": "assets/fonts/colorgy/icons/colorize.svg"
+      "source": "assets/icons/colorize.svg"
     },
     "comment": {
       "codepoint": 108186,
-      "source": "assets/fonts/colorgy/icons/comment.svg"
+      "source": "assets/icons/comment.svg"
     },
     "compare": {
       "codepoint": 108187,
-      "source": "assets/fonts/colorgy/icons/compare.svg"
+      "source": "assets/icons/compare.svg"
     },
     "computer": {
       "codepoint": 108188,
-      "source": "assets/fonts/colorgy/icons/computer.svg"
+      "source": "assets/icons/computer.svg"
     },
     "confirmation-number": {
       "codepoint": 108939,
-      "source": "assets/fonts/colorgy/icons/confirmation-number.svg"
+      "source": "assets/icons/confirmation-number.svg"
     },
     "contact-mail-48px": {
       "codepoint": 108940,
-      "source": "assets/fonts/colorgy/icons/contact-mail-48px.svg"
+      "source": "assets/icons/contact-mail-48px.svg"
     },
     "contact-phone": {
       "codepoint": 108941,
-      "source": "assets/fonts/colorgy/icons/contact-phone.svg"
+      "source": "assets/icons/contact-phone.svg"
     },
     "contacts": {
       "codepoint": 108192,
-      "source": "assets/fonts/colorgy/icons/contacts.svg"
+      "source": "assets/icons/contacts.svg"
     },
     "content-copy": {
       "codepoint": 108942,
-      "source": "assets/fonts/colorgy/icons/content-copy.svg"
+      "source": "assets/icons/content-copy.svg"
     },
     "content-cut": {
       "codepoint": 108943,
-      "source": "assets/fonts/colorgy/icons/content-cut.svg"
+      "source": "assets/icons/content-cut.svg"
     },
     "content-paste": {
       "codepoint": 108944,
-      "source": "assets/fonts/colorgy/icons/content-paste.svg"
+      "source": "assets/icons/content-paste.svg"
     },
     "control-point": {
       "codepoint": 108945,
-      "source": "assets/fonts/colorgy/icons/control-point.svg"
+      "source": "assets/icons/control-point.svg"
     },
     "control-point-duplicate": {
       "codepoint": 108946,
-      "source": "assets/fonts/colorgy/icons/control-point-duplicate.svg"
+      "source": "assets/icons/control-point-duplicate.svg"
     },
     "create": {
       "codepoint": 108198,
-      "source": "assets/fonts/colorgy/icons/create.svg"
+      "source": "assets/icons/create.svg"
     },
     "credit-card": {
       "codepoint": 108947,
-      "source": "assets/fonts/colorgy/icons/credit-card.svg"
+      "source": "assets/icons/credit-card.svg"
     },
     "crop": {
       "codepoint": 108200,
-      "source": "assets/fonts/colorgy/icons/crop.svg"
+      "source": "assets/icons/crop.svg"
     },
     "crop-16-9": {
       "codepoint": 108948,
-      "source": "assets/fonts/colorgy/icons/crop-16-9.svg"
+      "source": "assets/icons/crop-16-9.svg"
     },
     "crop-3-2": {
       "codepoint": 108949,
-      "source": "assets/fonts/colorgy/icons/crop-3-2.svg"
+      "source": "assets/icons/crop-3-2.svg"
     },
     "crop-5-4": {
       "codepoint": 108950,
-      "source": "assets/fonts/colorgy/icons/crop-5-4.svg"
+      "source": "assets/icons/crop-5-4.svg"
     },
     "crop-7-5": {
       "codepoint": 108951,
-      "source": "assets/fonts/colorgy/icons/crop-7-5.svg"
+      "source": "assets/icons/crop-7-5.svg"
     },
     "crop-din": {
       "codepoint": 108952,
-      "source": "assets/fonts/colorgy/icons/crop-din.svg"
+      "source": "assets/icons/crop-din.svg"
     },
     "crop-free": {
       "codepoint": 108953,
-      "source": "assets/fonts/colorgy/icons/crop-free.svg"
+      "source": "assets/icons/crop-free.svg"
     },
     "crop-landscape": {
       "codepoint": 108954,
-      "source": "assets/fonts/colorgy/icons/crop-landscape.svg"
+      "source": "assets/icons/crop-landscape.svg"
     },
     "crop-original": {
       "codepoint": 108955,
-      "source": "assets/fonts/colorgy/icons/crop-original.svg"
+      "source": "assets/icons/crop-original.svg"
     },
     "crop-portrait": {
       "codepoint": 108956,
-      "source": "assets/fonts/colorgy/icons/crop-portrait.svg"
+      "source": "assets/icons/crop-portrait.svg"
     },
     "crop-square": {
       "codepoint": 108957,
-      "source": "assets/fonts/colorgy/icons/crop-square.svg"
+      "source": "assets/icons/crop-square.svg"
     },
     "dashboard": {
       "codepoint": 108211,
-      "source": "assets/fonts/colorgy/icons/dashboard.svg"
+      "source": "assets/icons/dashboard.svg"
     },
     "data-usage": {
       "codepoint": 108958,
-      "source": "assets/fonts/colorgy/icons/data-usage.svg"
+      "source": "assets/icons/data-usage.svg"
     },
     "dehaze": {
       "codepoint": 108213,
-      "source": "assets/fonts/colorgy/icons/dehaze.svg"
+      "source": "assets/icons/dehaze.svg"
     },
     "delete": {
       "codepoint": 108214,
-      "source": "assets/fonts/colorgy/icons/delete.svg"
+      "source": "assets/icons/delete.svg"
     },
     "description": {
       "codepoint": 108215,
-      "source": "assets/fonts/colorgy/icons/description.svg"
+      "source": "assets/icons/description.svg"
     },
     "desktop-mac": {
       "codepoint": 108959,
-      "source": "assets/fonts/colorgy/icons/desktop-mac.svg"
+      "source": "assets/icons/desktop-mac.svg"
     },
     "desktop-windows": {
       "codepoint": 108960,
-      "source": "assets/fonts/colorgy/icons/desktop-windows.svg"
+      "source": "assets/icons/desktop-windows.svg"
     },
     "details": {
       "codepoint": 108218,
-      "source": "assets/fonts/colorgy/icons/details.svg"
+      "source": "assets/icons/details.svg"
     },
     "developer-board": {
       "codepoint": 108961,
-      "source": "assets/fonts/colorgy/icons/developer-board.svg"
+      "source": "assets/icons/developer-board.svg"
     },
     "developer-mode": {
       "codepoint": 108962,
-      "source": "assets/fonts/colorgy/icons/developer-mode.svg"
+      "source": "assets/icons/developer-mode.svg"
     },
     "devices": {
       "codepoint": 108221,
-      "source": "assets/fonts/colorgy/icons/devices.svg"
+      "source": "assets/icons/devices.svg"
     },
     "dialer-sip": {
       "codepoint": 108963,
-      "source": "assets/fonts/colorgy/icons/dialer-sip.svg"
+      "source": "assets/icons/dialer-sip.svg"
     },
     "dialpad": {
       "codepoint": 108223,
-      "source": "assets/fonts/colorgy/icons/dialpad.svg"
+      "source": "assets/icons/dialpad.svg"
     },
     "directions": {
       "codepoint": 108224,
-      "source": "assets/fonts/colorgy/icons/directions.svg"
+      "source": "assets/icons/directions.svg"
     },
     "directions-bike": {
       "codepoint": 108964,
-      "source": "assets/fonts/colorgy/icons/directions-bike.svg"
+      "source": "assets/icons/directions-bike.svg"
     },
     "directions-boat": {
       "codepoint": 108965,
-      "source": "assets/fonts/colorgy/icons/directions-boat.svg"
+      "source": "assets/icons/directions-boat.svg"
     },
     "directions-bus": {
       "codepoint": 108966,
-      "source": "assets/fonts/colorgy/icons/directions-bus.svg"
+      "source": "assets/icons/directions-bus.svg"
     },
     "directions-car": {
       "codepoint": 108967,
-      "source": "assets/fonts/colorgy/icons/directions-car.svg"
+      "source": "assets/icons/directions-car.svg"
     },
     "directions-railway": {
       "codepoint": 108968,
-      "source": "assets/fonts/colorgy/icons/directions-railway.svg"
+      "source": "assets/icons/directions-railway.svg"
     },
     "directions-run": {
       "codepoint": 108969,
-      "source": "assets/fonts/colorgy/icons/directions-run.svg"
+      "source": "assets/icons/directions-run.svg"
     },
     "directions-subway": {
       "codepoint": 108970,
-      "source": "assets/fonts/colorgy/icons/directions-subway.svg"
+      "source": "assets/icons/directions-subway.svg"
     },
     "directions-transit": {
       "codepoint": 108971,
-      "source": "assets/fonts/colorgy/icons/directions-transit.svg"
+      "source": "assets/icons/directions-transit.svg"
     },
     "directions-walk": {
       "codepoint": 108972,
-      "source": "assets/fonts/colorgy/icons/directions-walk.svg"
+      "source": "assets/icons/directions-walk.svg"
     },
     "disc-full": {
       "codepoint": 108973,
-      "source": "assets/fonts/colorgy/icons/disc-full.svg"
+      "source": "assets/icons/disc-full.svg"
     },
     "dns": {
       "codepoint": 108235,
-      "source": "assets/fonts/colorgy/icons/dns.svg"
+      "source": "assets/icons/dns.svg"
     },
     "do-not-disturb": {
       "codepoint": 108974,
-      "source": "assets/fonts/colorgy/icons/do-not-disturb.svg"
+      "source": "assets/icons/do-not-disturb.svg"
     },
     "do-not-disturb-alt": {
       "codepoint": 108975,
-      "source": "assets/fonts/colorgy/icons/do-not-disturb-alt.svg"
+      "source": "assets/icons/do-not-disturb-alt.svg"
     },
     "dock": {
       "codepoint": 108238,
-      "source": "assets/fonts/colorgy/icons/dock.svg"
+      "source": "assets/icons/dock.svg"
     },
     "domain": {
       "codepoint": 108239,
-      "source": "assets/fonts/colorgy/icons/domain.svg"
+      "source": "assets/icons/domain.svg"
     },
     "done": {
       "codepoint": 108014,
-      "source": "assets/fonts/colorgy/icons/done.svg"
+      "source": "assets/icons/done.svg"
     },
     "done-all": {
       "codepoint": 108015,
-      "source": "assets/fonts/colorgy/icons/done-all.svg"
+      "source": "assets/icons/done-all.svg"
     },
     "drafts": {
       "codepoint": 108241,
-      "source": "assets/fonts/colorgy/icons/drafts.svg"
+      "source": "assets/icons/drafts.svg"
     },
     "drive-eta": {
       "codepoint": 108976,
-      "source": "assets/fonts/colorgy/icons/drive-eta.svg"
+      "source": "assets/icons/drive-eta.svg"
     },
     "dvr": {
       "codepoint": 108243,
-      "source": "assets/fonts/colorgy/icons/dvr.svg"
+      "source": "assets/icons/dvr.svg"
     },
     "edit": {
       "codepoint": 108244,
-      "source": "assets/fonts/colorgy/icons/edit.svg"
+      "source": "assets/icons/edit.svg"
     },
     "email": {
       "codepoint": 108245,
-      "source": "assets/fonts/colorgy/icons/email.svg"
+      "source": "assets/icons/email.svg"
     },
     "equalizer": {
       "codepoint": 108246,
-      "source": "assets/fonts/colorgy/icons/equalizer.svg"
+      "source": "assets/icons/equalizer.svg"
     },
     "error": {
       "codepoint": 108247,
-      "source": "assets/fonts/colorgy/icons/error.svg"
+      "source": "assets/icons/error.svg"
     },
     "error-outline": {
       "codepoint": 108977,
-      "source": "assets/fonts/colorgy/icons/error-outline.svg"
+      "source": "assets/icons/error-outline.svg"
     },
     "event": {
       "codepoint": 108249,
-      "source": "assets/fonts/colorgy/icons/event.svg"
+      "source": "assets/icons/event.svg"
     },
     "event-available": {
       "codepoint": 108978,
-      "source": "assets/fonts/colorgy/icons/event-available.svg"
+      "source": "assets/icons/event-available.svg"
     },
     "event-busy": {
       "codepoint": 108979,
-      "source": "assets/fonts/colorgy/icons/event-busy.svg"
+      "source": "assets/icons/event-busy.svg"
     },
     "event-note": {
       "codepoint": 108980,
-      "source": "assets/fonts/colorgy/icons/event-note.svg"
+      "source": "assets/icons/event-note.svg"
     },
     "event-seat": {
       "codepoint": 108981,
-      "source": "assets/fonts/colorgy/icons/event-seat.svg"
+      "source": "assets/icons/event-seat.svg"
     },
     "exit-to-app": {
       "codepoint": 108982,
-      "source": "assets/fonts/colorgy/icons/exit-to-app.svg"
+      "source": "assets/icons/exit-to-app.svg"
     },
     "expand-less": {
       "codepoint": 108983,
-      "source": "assets/fonts/colorgy/icons/expand-less.svg"
+      "source": "assets/icons/expand-less.svg"
     },
     "expand-more": {
       "codepoint": 108984,
-      "source": "assets/fonts/colorgy/icons/expand-more.svg"
+      "source": "assets/icons/expand-more.svg"
     },
     "explicit": {
       "codepoint": 108257,
-      "source": "assets/fonts/colorgy/icons/explicit.svg"
+      "source": "assets/icons/explicit.svg"
     },
     "explore": {
       "codepoint": 108258,
-      "source": "assets/fonts/colorgy/icons/explore.svg"
+      "source": "assets/icons/explore.svg"
     },
     "exposure": {
       "codepoint": 108259,
-      "source": "assets/fonts/colorgy/icons/exposure.svg"
+      "source": "assets/icons/exposure.svg"
     },
     "exposure-neg-1": {
       "codepoint": 108985,
-      "source": "assets/fonts/colorgy/icons/exposure-neg-1.svg"
+      "source": "assets/icons/exposure-neg-1.svg"
     },
     "exposure-neg-2": {
       "codepoint": 108986,
-      "source": "assets/fonts/colorgy/icons/exposure-neg-2.svg"
+      "source": "assets/icons/exposure-neg-2.svg"
     },
     "exposure-plus-1": {
       "codepoint": 108987,
-      "source": "assets/fonts/colorgy/icons/exposure-plus-1.svg"
+      "source": "assets/icons/exposure-plus-1.svg"
     },
     "exposure-plus-2": {
       "codepoint": 108988,
-      "source": "assets/fonts/colorgy/icons/exposure-plus-2.svg"
+      "source": "assets/icons/exposure-plus-2.svg"
     },
     "exposure-zero": {
       "codepoint": 108989,
-      "source": "assets/fonts/colorgy/icons/exposure-zero.svg"
+      "source": "assets/icons/exposure-zero.svg"
     },
     "extension": {
       "codepoint": 108265,
-      "source": "assets/fonts/colorgy/icons/extension.svg"
+      "source": "assets/icons/extension.svg"
     },
     "face": {
       "codepoint": 108266,
-      "source": "assets/fonts/colorgy/icons/face.svg"
+      "source": "assets/icons/face.svg"
     },
     "fast-forward": {
       "codepoint": 108990,
-      "source": "assets/fonts/colorgy/icons/fast-forward.svg"
+      "source": "assets/icons/fast-forward.svg"
     },
     "fast-rewind": {
       "codepoint": 108991,
-      "source": "assets/fonts/colorgy/icons/fast-rewind.svg"
+      "source": "assets/icons/fast-rewind.svg"
     },
     "favorite": {
       "codepoint": 108269,
-      "source": "assets/fonts/colorgy/icons/favorite.svg"
+      "source": "assets/icons/favorite.svg"
     },
     "favorite-border": {
       "codepoint": 108992,
-      "source": "assets/fonts/colorgy/icons/favorite-border.svg"
+      "source": "assets/icons/favorite-border.svg"
     },
     "feedback": {
       "codepoint": 108271,
-      "source": "assets/fonts/colorgy/icons/feedback.svg"
+      "source": "assets/icons/feedback.svg"
     },
     "file-download": {
       "codepoint": 108993,
-      "source": "assets/fonts/colorgy/icons/file-download.svg"
+      "source": "assets/icons/file-download.svg"
     },
     "file-upload": {
       "codepoint": 108994,
-      "source": "assets/fonts/colorgy/icons/file-upload.svg"
+      "source": "assets/icons/file-upload.svg"
     },
     "filter": {
       "codepoint": 108274,
-      "source": "assets/fonts/colorgy/icons/filter.svg"
+      "source": "assets/icons/filter.svg"
     },
     "filter-1": {
       "codepoint": 108995,
-      "source": "assets/fonts/colorgy/icons/filter-1.svg"
+      "source": "assets/icons/filter-1.svg"
     },
     "filter-2": {
       "codepoint": 108996,
-      "source": "assets/fonts/colorgy/icons/filter-2.svg"
+      "source": "assets/icons/filter-2.svg"
     },
     "filter-3": {
       "codepoint": 108997,
-      "source": "assets/fonts/colorgy/icons/filter-3.svg"
+      "source": "assets/icons/filter-3.svg"
     },
     "filter-4": {
       "codepoint": 108998,
-      "source": "assets/fonts/colorgy/icons/filter-4.svg"
+      "source": "assets/icons/filter-4.svg"
     },
     "filter-5": {
       "codepoint": 108999,
-      "source": "assets/fonts/colorgy/icons/filter-5.svg"
+      "source": "assets/icons/filter-5.svg"
     },
     "filter-6": {
       "codepoint": 109000,
-      "source": "assets/fonts/colorgy/icons/filter-6.svg"
+      "source": "assets/icons/filter-6.svg"
     },
     "filter-7": {
       "codepoint": 109001,
-      "source": "assets/fonts/colorgy/icons/filter-7.svg"
+      "source": "assets/icons/filter-7.svg"
     },
     "filter-8": {
       "codepoint": 109002,
-      "source": "assets/fonts/colorgy/icons/filter-8.svg"
+      "source": "assets/icons/filter-8.svg"
     },
     "filter-9": {
       "codepoint": 109003,
-      "source": "assets/fonts/colorgy/icons/filter-9.svg"
+      "source": "assets/icons/filter-9.svg"
     },
     "filter-9-plus": {
       "codepoint": 109004,
-      "source": "assets/fonts/colorgy/icons/filter-9-plus.svg"
+      "source": "assets/icons/filter-9-plus.svg"
     },
     "filter-b-and-w": {
       "codepoint": 109005,
-      "source": "assets/fonts/colorgy/icons/filter-b-and-w.svg"
+      "source": "assets/icons/filter-b-and-w.svg"
     },
     "filter-center-focus": {
       "codepoint": 109006,
-      "source": "assets/fonts/colorgy/icons/filter-center-focus.svg"
+      "source": "assets/icons/filter-center-focus.svg"
     },
     "filter-drama": {
       "codepoint": 109007,
-      "source": "assets/fonts/colorgy/icons/filter-drama.svg"
+      "source": "assets/icons/filter-drama.svg"
     },
     "filter-frames": {
       "codepoint": 109008,
-      "source": "assets/fonts/colorgy/icons/filter-frames.svg"
+      "source": "assets/icons/filter-frames.svg"
     },
     "filter-hdr": {
       "codepoint": 109009,
-      "source": "assets/fonts/colorgy/icons/filter-hdr.svg"
+      "source": "assets/icons/filter-hdr.svg"
     },
     "filter-list": {
       "codepoint": 109010,
-      "source": "assets/fonts/colorgy/icons/filter-list.svg"
+      "source": "assets/icons/filter-list.svg"
     },
     "filter-none": {
       "codepoint": 109011,
-      "source": "assets/fonts/colorgy/icons/filter-none.svg"
+      "source": "assets/icons/filter-none.svg"
     },
     "filter-tilt-shift": {
       "codepoint": 109012,
-      "source": "assets/fonts/colorgy/icons/filter-tilt-shift.svg"
+      "source": "assets/icons/filter-tilt-shift.svg"
     },
     "filter-vintage": {
       "codepoint": 109013,
-      "source": "assets/fonts/colorgy/icons/filter-vintage.svg"
+      "source": "assets/icons/filter-vintage.svg"
     },
     "find-in-page": {
       "codepoint": 109014,
-      "source": "assets/fonts/colorgy/icons/find-in-page.svg"
+      "source": "assets/icons/find-in-page.svg"
     },
     "find-replace": {
       "codepoint": 109015,
-      "source": "assets/fonts/colorgy/icons/find-replace.svg"
+      "source": "assets/icons/find-replace.svg"
     },
     "flag": {
       "codepoint": 108296,
-      "source": "assets/fonts/colorgy/icons/flag.svg"
+      "source": "assets/icons/flag.svg"
     },
     "flare": {
       "codepoint": 108297,
-      "source": "assets/fonts/colorgy/icons/flare.svg"
+      "source": "assets/icons/flare.svg"
     },
     "flash-auto": {
       "codepoint": 109016,
-      "source": "assets/fonts/colorgy/icons/flash-auto.svg"
+      "source": "assets/icons/flash-auto.svg"
     },
     "flash-off": {
       "codepoint": 109017,
-      "source": "assets/fonts/colorgy/icons/flash-off.svg"
+      "source": "assets/icons/flash-off.svg"
     },
     "flash-on": {
       "codepoint": 109018,
-      "source": "assets/fonts/colorgy/icons/flash-on.svg"
+      "source": "assets/icons/flash-on.svg"
     },
     "flight": {
       "codepoint": 108301,
-      "source": "assets/fonts/colorgy/icons/flight.svg"
+      "source": "assets/icons/flight.svg"
     },
     "flight-land": {
       "codepoint": 109019,
-      "source": "assets/fonts/colorgy/icons/flight-land.svg"
+      "source": "assets/icons/flight-land.svg"
     },
     "flight-takeoff": {
       "codepoint": 109020,
-      "source": "assets/fonts/colorgy/icons/flight-takeoff.svg"
+      "source": "assets/icons/flight-takeoff.svg"
     },
     "flip": {
       "codepoint": 108304,
-      "source": "assets/fonts/colorgy/icons/flip.svg"
+      "source": "assets/icons/flip.svg"
     },
     "flip-to-back": {
       "codepoint": 109021,
-      "source": "assets/fonts/colorgy/icons/flip-to-back.svg"
+      "source": "assets/icons/flip-to-back.svg"
     },
     "flip-to-front": {
       "codepoint": 109022,
-      "source": "assets/fonts/colorgy/icons/flip-to-front.svg"
+      "source": "assets/icons/flip-to-front.svg"
     },
     "folder": {
       "codepoint": 108307,
-      "source": "assets/fonts/colorgy/icons/folder.svg"
+      "source": "assets/icons/folder.svg"
     },
     "folder-open": {
       "codepoint": 109023,
-      "source": "assets/fonts/colorgy/icons/folder-open.svg"
+      "source": "assets/icons/folder-open.svg"
     },
     "folder-shared": {
       "codepoint": 109024,
-      "source": "assets/fonts/colorgy/icons/folder-shared.svg"
+      "source": "assets/icons/folder-shared.svg"
     },
     "folder-special": {
       "codepoint": 109025,
-      "source": "assets/fonts/colorgy/icons/folder-special.svg"
+      "source": "assets/icons/folder-special.svg"
     },
     "format-align-center": {
       "codepoint": 109026,
-      "source": "assets/fonts/colorgy/icons/format-align-center.svg"
+      "source": "assets/icons/format-align-center.svg"
     },
     "format-align-justify": {
       "codepoint": 109027,
-      "source": "assets/fonts/colorgy/icons/format-align-justify.svg"
+      "source": "assets/icons/format-align-justify.svg"
     },
     "format-align-left": {
       "codepoint": 109028,
-      "source": "assets/fonts/colorgy/icons/format-align-left.svg"
+      "source": "assets/icons/format-align-left.svg"
     },
     "format-align-right": {
       "codepoint": 109029,
-      "source": "assets/fonts/colorgy/icons/format-align-right.svg"
+      "source": "assets/icons/format-align-right.svg"
     },
     "format-bold": {
       "codepoint": 109030,
-      "source": "assets/fonts/colorgy/icons/format-bold.svg"
+      "source": "assets/icons/format-bold.svg"
     },
     "format-clear": {
       "codepoint": 109031,
-      "source": "assets/fonts/colorgy/icons/format-clear.svg"
+      "source": "assets/icons/format-clear.svg"
     },
     "format-color-fill": {
       "codepoint": 109032,
-      "source": "assets/fonts/colorgy/icons/format-color-fill.svg"
+      "source": "assets/icons/format-color-fill.svg"
     },
     "format-color-reset": {
       "codepoint": 109033,
-      "source": "assets/fonts/colorgy/icons/format-color-reset.svg"
+      "source": "assets/icons/format-color-reset.svg"
     },
     "format-color-text": {
       "codepoint": 109034,
-      "source": "assets/fonts/colorgy/icons/format-color-text.svg"
+      "source": "assets/icons/format-color-text.svg"
     },
     "format-indent-decrease": {
       "codepoint": 109035,
-      "source": "assets/fonts/colorgy/icons/format-indent-decrease.svg"
+      "source": "assets/icons/format-indent-decrease.svg"
     },
     "format-indent-increase": {
       "codepoint": 109036,
-      "source": "assets/fonts/colorgy/icons/format-indent-increase.svg"
+      "source": "assets/icons/format-indent-increase.svg"
     },
     "format-italic": {
       "codepoint": 109037,
-      "source": "assets/fonts/colorgy/icons/format-italic.svg"
+      "source": "assets/icons/format-italic.svg"
     },
     "format-line-spacing": {
       "codepoint": 109038,
-      "source": "assets/fonts/colorgy/icons/format-line-spacing.svg"
+      "source": "assets/icons/format-line-spacing.svg"
     },
     "format-list-bulleted": {
       "codepoint": 109039,
-      "source": "assets/fonts/colorgy/icons/format-list-bulleted.svg"
+      "source": "assets/icons/format-list-bulleted.svg"
     },
     "format-list-numbered": {
       "codepoint": 109040,
-      "source": "assets/fonts/colorgy/icons/format-list-numbered.svg"
+      "source": "assets/icons/format-list-numbered.svg"
     },
     "format-paint": {
       "codepoint": 109041,
-      "source": "assets/fonts/colorgy/icons/format-paint.svg"
+      "source": "assets/icons/format-paint.svg"
     },
     "format-quote": {
       "codepoint": 109042,
-      "source": "assets/fonts/colorgy/icons/format-quote.svg"
+      "source": "assets/icons/format-quote.svg"
     },
     "format-size": {
       "codepoint": 109043,
-      "source": "assets/fonts/colorgy/icons/format-size.svg"
+      "source": "assets/icons/format-size.svg"
     },
     "format-strikethrough": {
       "codepoint": 109044,
-      "source": "assets/fonts/colorgy/icons/format-strikethrough.svg"
+      "source": "assets/icons/format-strikethrough.svg"
     },
     "format-textdirection-l-to-r": {
       "codepoint": 109045,
-      "source": "assets/fonts/colorgy/icons/format-textdirection-l-to-r.svg"
+      "source": "assets/icons/format-textdirection-l-to-r.svg"
     },
     "format-textdirection-r-to-l": {
       "codepoint": 109046,
-      "source": "assets/fonts/colorgy/icons/format-textdirection-r-to-l.svg"
+      "source": "assets/icons/format-textdirection-r-to-l.svg"
     },
     "format-underlined": {
       "codepoint": 109047,
-      "source": "assets/fonts/colorgy/icons/format-underlined.svg"
+      "source": "assets/icons/format-underlined.svg"
     },
     "forum": {
       "codepoint": 108333,
-      "source": "assets/fonts/colorgy/icons/forum.svg"
+      "source": "assets/icons/forum.svg"
     },
     "forward": {
       "codepoint": 108334,
-      "source": "assets/fonts/colorgy/icons/forward.svg"
+      "source": "assets/icons/forward.svg"
     },
     "forward-10": {
       "codepoint": 109048,
-      "source": "assets/fonts/colorgy/icons/forward-10.svg"
+      "source": "assets/icons/forward-10.svg"
     },
     "forward-30": {
       "codepoint": 109049,
-      "source": "assets/fonts/colorgy/icons/forward-30.svg"
+      "source": "assets/icons/forward-30.svg"
     },
     "forward-5": {
       "codepoint": 109050,
-      "source": "assets/fonts/colorgy/icons/forward-5.svg"
+      "source": "assets/icons/forward-5.svg"
     },
     "fullscreen": {
       "codepoint": 108338,
-      "source": "assets/fonts/colorgy/icons/fullscreen.svg"
+      "source": "assets/icons/fullscreen.svg"
     },
     "fullscreen-exit": {
       "codepoint": 109051,
-      "source": "assets/fonts/colorgy/icons/fullscreen-exit.svg"
+      "source": "assets/icons/fullscreen-exit.svg"
     },
     "functions": {
       "codepoint": 108340,
-      "source": "assets/fonts/colorgy/icons/functions.svg"
+      "source": "assets/icons/functions.svg"
     },
     "gamepad": {
       "codepoint": 108341,
-      "source": "assets/fonts/colorgy/icons/gamepad.svg"
+      "source": "assets/icons/gamepad.svg"
     },
     "games": {
       "codepoint": 108342,
-      "source": "assets/fonts/colorgy/icons/games.svg"
+      "source": "assets/icons/games.svg"
     },
     "gesture": {
       "codepoint": 108343,
-      "source": "assets/fonts/colorgy/icons/gesture.svg"
+      "source": "assets/icons/gesture.svg"
     },
     "get-app": {
       "codepoint": 109052,
-      "source": "assets/fonts/colorgy/icons/get-app.svg"
+      "source": "assets/icons/get-app.svg"
     },
     "github": {
       "codepoint": 100525,
-      "source": "assets/fonts/colorgy/icons/github.svg"
+      "source": "assets/icons/github.svg"
     },
     "gps-fixed": {
       "codepoint": 109053,
-      "source": "assets/fonts/colorgy/icons/gps-fixed.svg"
+      "source": "assets/icons/gps-fixed.svg"
     },
     "gps-not-fixed": {
       "codepoint": 109054,
-      "source": "assets/fonts/colorgy/icons/gps-not-fixed.svg"
+      "source": "assets/icons/gps-not-fixed.svg"
     },
     "gps-off": {
       "codepoint": 109055,
-      "source": "assets/fonts/colorgy/icons/gps-off.svg"
+      "source": "assets/icons/gps-off.svg"
     },
     "grade": {
       "codepoint": 108348,
-      "source": "assets/fonts/colorgy/icons/grade.svg"
+      "source": "assets/icons/grade.svg"
     },
     "gradient": {
       "codepoint": 108349,
-      "source": "assets/fonts/colorgy/icons/gradient.svg"
+      "source": "assets/icons/gradient.svg"
     },
     "grain": {
       "codepoint": 108350,
-      "source": "assets/fonts/colorgy/icons/grain.svg"
+      "source": "assets/icons/grain.svg"
     },
     "graphic-eq": {
       "codepoint": 109056,
-      "source": "assets/fonts/colorgy/icons/graphic-eq.svg"
+      "source": "assets/icons/graphic-eq.svg"
     },
     "grid-off": {
       "codepoint": 109057,
-      "source": "assets/fonts/colorgy/icons/grid-off.svg"
+      "source": "assets/icons/grid-off.svg"
     },
     "grid-on": {
       "codepoint": 109058,
-      "source": "assets/fonts/colorgy/icons/grid-on.svg"
+      "source": "assets/icons/grid-on.svg"
     },
     "group": {
       "codepoint": 108354,
-      "source": "assets/fonts/colorgy/icons/group.svg"
+      "source": "assets/icons/group.svg"
     },
     "group-add": {
       "codepoint": 109059,
-      "source": "assets/fonts/colorgy/icons/group-add.svg"
+      "source": "assets/icons/group-add.svg"
     },
     "group-work": {
       "codepoint": 109060,
-      "source": "assets/fonts/colorgy/icons/group-work.svg"
+      "source": "assets/icons/group-work.svg"
     },
     "hdr-off": {
       "codepoint": 109061,
-      "source": "assets/fonts/colorgy/icons/hdr-off.svg"
+      "source": "assets/icons/hdr-off.svg"
     },
     "hdr-on": {
       "codepoint": 109062,
-      "source": "assets/fonts/colorgy/icons/hdr-on.svg"
+      "source": "assets/icons/hdr-on.svg"
     },
     "hdr-strong": {
       "codepoint": 109063,
-      "source": "assets/fonts/colorgy/icons/hdr-strong.svg"
+      "source": "assets/icons/hdr-strong.svg"
     },
     "hdr-weak": {
       "codepoint": 109064,
-      "source": "assets/fonts/colorgy/icons/hdr-weak.svg"
+      "source": "assets/icons/hdr-weak.svg"
     },
     "headset": {
       "codepoint": 108361,
-      "source": "assets/fonts/colorgy/icons/headset.svg"
+      "source": "assets/icons/headset.svg"
     },
     "headset-mic": {
       "codepoint": 109065,
-      "source": "assets/fonts/colorgy/icons/headset-mic.svg"
+      "source": "assets/icons/headset-mic.svg"
     },
     "healing": {
       "codepoint": 108363,
-      "source": "assets/fonts/colorgy/icons/healing.svg"
+      "source": "assets/icons/healing.svg"
     },
     "hearing": {
       "codepoint": 108364,
-      "source": "assets/fonts/colorgy/icons/hearing.svg"
+      "source": "assets/icons/hearing.svg"
     },
     "help": {
       "codepoint": 108365,
-      "source": "assets/fonts/colorgy/icons/help.svg"
+      "source": "assets/icons/help.svg"
     },
     "high-quality": {
       "codepoint": 109066,
-      "source": "assets/fonts/colorgy/icons/high-quality.svg"
+      "source": "assets/icons/high-quality.svg"
     },
     "highlight-off": {
       "codepoint": 109067,
-      "source": "assets/fonts/colorgy/icons/highlight-off.svg"
+      "source": "assets/icons/highlight-off.svg"
     },
     "history": {
       "codepoint": 108368,
-      "source": "assets/fonts/colorgy/icons/history.svg"
+      "source": "assets/icons/history.svg"
     },
     "home": {
       "codepoint": 108369,
-      "source": "assets/fonts/colorgy/icons/home.svg"
+      "source": "assets/icons/home.svg"
     },
     "hotel": {
       "codepoint": 108370,
-      "source": "assets/fonts/colorgy/icons/hotel.svg"
+      "source": "assets/icons/hotel.svg"
     },
     "hourglass-empty": {
       "codepoint": 109068,
-      "source": "assets/fonts/colorgy/icons/hourglass-empty.svg"
+      "source": "assets/icons/hourglass-empty.svg"
     },
     "hourglass-full": {
       "codepoint": 109069,
-      "source": "assets/fonts/colorgy/icons/hourglass-full.svg"
+      "source": "assets/icons/hourglass-full.svg"
     },
     "http": {
       "codepoint": 108373,
-      "source": "assets/fonts/colorgy/icons/http.svg"
+      "source": "assets/icons/http.svg"
     },
     "https": {
       "codepoint": 108374,
-      "source": "assets/fonts/colorgy/icons/https.svg"
+      "source": "assets/icons/https.svg"
     },
     "image": {
       "codepoint": 108375,
-      "source": "assets/fonts/colorgy/icons/image.svg"
+      "source": "assets/icons/image.svg"
     },
     "image-aspect-ratio": {
       "codepoint": 109070,
-      "source": "assets/fonts/colorgy/icons/image-aspect-ratio.svg"
+      "source": "assets/icons/image-aspect-ratio.svg"
     },
     "import-export": {
       "codepoint": 109071,
-      "source": "assets/fonts/colorgy/icons/import-export.svg"
+      "source": "assets/icons/import-export.svg"
     },
     "inbox": {
       "codepoint": 108378,
-      "source": "assets/fonts/colorgy/icons/inbox.svg"
+      "source": "assets/icons/inbox.svg"
     },
     "info": {
       "codepoint": 108379,
-      "source": "assets/fonts/colorgy/icons/info.svg"
+      "source": "assets/icons/info.svg"
     },
     "info-outline": {
       "codepoint": 109072,
-      "source": "assets/fonts/colorgy/icons/info-outline.svg"
+      "source": "assets/icons/info-outline.svg"
     },
     "input": {
       "codepoint": 108381,
-      "source": "assets/fonts/colorgy/icons/input.svg"
+      "source": "assets/icons/input.svg"
     },
     "insert-chart": {
       "codepoint": 109073,
-      "source": "assets/fonts/colorgy/icons/insert-chart.svg"
+      "source": "assets/icons/insert-chart.svg"
     },
     "insert-comment": {
       "codepoint": 109074,
-      "source": "assets/fonts/colorgy/icons/insert-comment.svg"
+      "source": "assets/icons/insert-comment.svg"
     },
     "insert-drive-file": {
       "codepoint": 109075,
-      "source": "assets/fonts/colorgy/icons/insert-drive-file.svg"
+      "source": "assets/icons/insert-drive-file.svg"
     },
     "insert-emoticon": {
       "codepoint": 109076,
-      "source": "assets/fonts/colorgy/icons/insert-emoticon.svg"
+      "source": "assets/icons/insert-emoticon.svg"
     },
     "insert-invitation": {
       "codepoint": 109077,
-      "source": "assets/fonts/colorgy/icons/insert-invitation.svg"
+      "source": "assets/icons/insert-invitation.svg"
     },
     "insert-link": {
       "codepoint": 109078,
-      "source": "assets/fonts/colorgy/icons/insert-link.svg"
+      "source": "assets/icons/insert-link.svg"
     },
     "insert-photo": {
       "codepoint": 109079,
-      "source": "assets/fonts/colorgy/icons/insert-photo.svg"
+      "source": "assets/icons/insert-photo.svg"
     },
     "invert-colors": {
       "codepoint": 109080,
-      "source": "assets/fonts/colorgy/icons/invert-colors.svg"
+      "source": "assets/icons/invert-colors.svg"
     },
     "invert-colors-off": {
       "codepoint": 109081,
-      "source": "assets/fonts/colorgy/icons/invert-colors-off.svg"
+      "source": "assets/icons/invert-colors-off.svg"
     },
     "iso": {
       "codepoint": 108391,
-      "source": "assets/fonts/colorgy/icons/iso.svg"
+      "source": "assets/icons/iso.svg"
     },
     "keyboard": {
       "codepoint": 108392,
-      "source": "assets/fonts/colorgy/icons/keyboard.svg"
+      "source": "assets/icons/keyboard.svg"
     },
     "keyboard-arrow-down": {
       "codepoint": 109082,
-      "source": "assets/fonts/colorgy/icons/keyboard-arrow-down.svg"
+      "source": "assets/icons/keyboard-arrow-down.svg"
     },
     "keyboard-arrow-left": {
       "codepoint": 109083,
-      "source": "assets/fonts/colorgy/icons/keyboard-arrow-left.svg"
+      "source": "assets/icons/keyboard-arrow-left.svg"
     },
     "keyboard-arrow-right": {
       "codepoint": 109084,
-      "source": "assets/fonts/colorgy/icons/keyboard-arrow-right.svg"
+      "source": "assets/icons/keyboard-arrow-right.svg"
     },
     "keyboard-arrow-up": {
       "codepoint": 109085,
-      "source": "assets/fonts/colorgy/icons/keyboard-arrow-up.svg"
+      "source": "assets/icons/keyboard-arrow-up.svg"
     },
     "keyboard-backspace": {
       "codepoint": 109086,
-      "source": "assets/fonts/colorgy/icons/keyboard-backspace.svg"
+      "source": "assets/icons/keyboard-backspace.svg"
     },
     "keyboard-capslock": {
       "codepoint": 109087,
-      "source": "assets/fonts/colorgy/icons/keyboard-capslock.svg"
+      "source": "assets/icons/keyboard-capslock.svg"
     },
     "keyboard-hide": {
       "codepoint": 109088,
-      "source": "assets/fonts/colorgy/icons/keyboard-hide.svg"
+      "source": "assets/icons/keyboard-hide.svg"
     },
     "keyboard-return": {
       "codepoint": 109089,
-      "source": "assets/fonts/colorgy/icons/keyboard-return.svg"
+      "source": "assets/icons/keyboard-return.svg"
     },
     "keyboard-tab": {
       "codepoint": 109090,
-      "source": "assets/fonts/colorgy/icons/keyboard-tab.svg"
+      "source": "assets/icons/keyboard-tab.svg"
     },
     "keyboard-voice": {
       "codepoint": 109091,
-      "source": "assets/fonts/colorgy/icons/keyboard-voice.svg"
+      "source": "assets/icons/keyboard-voice.svg"
     },
     "label": {
       "codepoint": 108403,
-      "source": "assets/fonts/colorgy/icons/label.svg"
+      "source": "assets/icons/label.svg"
     },
     "label-outline": {
       "codepoint": 109092,
-      "source": "assets/fonts/colorgy/icons/label-outline.svg"
+      "source": "assets/icons/label-outline.svg"
     },
     "landscape": {
       "codepoint": 108405,
-      "source": "assets/fonts/colorgy/icons/landscape.svg"
+      "source": "assets/icons/landscape.svg"
     },
     "language": {
       "codepoint": 108406,
-      "source": "assets/fonts/colorgy/icons/language.svg"
+      "source": "assets/icons/language.svg"
     },
     "laptop": {
       "codepoint": 108407,
-      "source": "assets/fonts/colorgy/icons/laptop.svg"
+      "source": "assets/icons/laptop.svg"
     },
     "laptop-chromebook": {
       "codepoint": 109093,
-      "source": "assets/fonts/colorgy/icons/laptop-chromebook.svg"
+      "source": "assets/icons/laptop-chromebook.svg"
     },
     "laptop-mac": {
       "codepoint": 109094,
-      "source": "assets/fonts/colorgy/icons/laptop-mac.svg"
+      "source": "assets/icons/laptop-mac.svg"
     },
     "laptop-windows": {
       "codepoint": 109095,
-      "source": "assets/fonts/colorgy/icons/laptop-windows.svg"
+      "source": "assets/icons/laptop-windows.svg"
     },
     "launch": {
       "codepoint": 108411,
-      "source": "assets/fonts/colorgy/icons/launch.svg"
+      "source": "assets/icons/launch.svg"
     },
     "layers": {
       "codepoint": 108412,
-      "source": "assets/fonts/colorgy/icons/layers.svg"
+      "source": "assets/icons/layers.svg"
     },
     "layers-clear": {
       "codepoint": 109096,
-      "source": "assets/fonts/colorgy/icons/layers-clear.svg"
+      "source": "assets/icons/layers-clear.svg"
     },
     "leak-add": {
       "codepoint": 109097,
-      "source": "assets/fonts/colorgy/icons/leak-add.svg"
+      "source": "assets/icons/leak-add.svg"
     },
     "leak-remove": {
       "codepoint": 109098,
-      "source": "assets/fonts/colorgy/icons/leak-remove.svg"
+      "source": "assets/icons/leak-remove.svg"
     },
     "lens": {
       "codepoint": 108416,
-      "source": "assets/fonts/colorgy/icons/lens.svg"
+      "source": "assets/icons/lens.svg"
     },
     "library-add": {
       "codepoint": 109099,
-      "source": "assets/fonts/colorgy/icons/library-add.svg"
+      "source": "assets/icons/library-add.svg"
     },
     "library-books": {
       "codepoint": 109100,
-      "source": "assets/fonts/colorgy/icons/library-books.svg"
+      "source": "assets/icons/library-books.svg"
     },
     "library-music": {
       "codepoint": 109101,
-      "source": "assets/fonts/colorgy/icons/library-music.svg"
+      "source": "assets/icons/library-music.svg"
     },
     "link": {
       "codepoint": 108420,
-      "source": "assets/fonts/colorgy/icons/link.svg"
+      "source": "assets/icons/link.svg"
     },
     "list": {
       "codepoint": 108421,
-      "source": "assets/fonts/colorgy/icons/list.svg"
+      "source": "assets/icons/list.svg"
     },
     "live-help": {
       "codepoint": 109102,
-      "source": "assets/fonts/colorgy/icons/live-help.svg"
+      "source": "assets/icons/live-help.svg"
     },
     "live-tv": {
       "codepoint": 109103,
-      "source": "assets/fonts/colorgy/icons/live-tv.svg"
+      "source": "assets/icons/live-tv.svg"
     },
     "local-activity": {
       "codepoint": 109104,
-      "source": "assets/fonts/colorgy/icons/local-activity.svg"
+      "source": "assets/icons/local-activity.svg"
     },
     "local-airport": {
       "codepoint": 109105,
-      "source": "assets/fonts/colorgy/icons/local-airport.svg"
+      "source": "assets/icons/local-airport.svg"
     },
     "local-atm": {
       "codepoint": 109106,
-      "source": "assets/fonts/colorgy/icons/local-atm.svg"
+      "source": "assets/icons/local-atm.svg"
     },
     "local-bar": {
       "codepoint": 109107,
-      "source": "assets/fonts/colorgy/icons/local-bar.svg"
+      "source": "assets/icons/local-bar.svg"
     },
     "local-cafe": {
       "codepoint": 109108,
-      "source": "assets/fonts/colorgy/icons/local-cafe.svg"
+      "source": "assets/icons/local-cafe.svg"
     },
     "local-car-wash": {
       "codepoint": 109109,
-      "source": "assets/fonts/colorgy/icons/local-car-wash.svg"
+      "source": "assets/icons/local-car-wash.svg"
     },
     "local-convenience-store": {
       "codepoint": 109110,
-      "source": "assets/fonts/colorgy/icons/local-convenience-store.svg"
+      "source": "assets/icons/local-convenience-store.svg"
     },
     "local-dining": {
       "codepoint": 109111,
-      "source": "assets/fonts/colorgy/icons/local-dining.svg"
+      "source": "assets/icons/local-dining.svg"
     },
     "local-drink": {
       "codepoint": 109112,
-      "source": "assets/fonts/colorgy/icons/local-drink.svg"
+      "source": "assets/icons/local-drink.svg"
     },
     "local-florist": {
       "codepoint": 109113,
-      "source": "assets/fonts/colorgy/icons/local-florist.svg"
+      "source": "assets/icons/local-florist.svg"
     },
     "local-gas-station": {
       "codepoint": 109114,
-      "source": "assets/fonts/colorgy/icons/local-gas-station.svg"
+      "source": "assets/icons/local-gas-station.svg"
     },
     "local-grocery-store": {
       "codepoint": 109115,
-      "source": "assets/fonts/colorgy/icons/local-grocery-store.svg"
+      "source": "assets/icons/local-grocery-store.svg"
     },
     "local-hospital": {
       "codepoint": 109116,
-      "source": "assets/fonts/colorgy/icons/local-hospital.svg"
+      "source": "assets/icons/local-hospital.svg"
     },
     "local-hotel": {
       "codepoint": 109117,
-      "source": "assets/fonts/colorgy/icons/local-hotel.svg"
+      "source": "assets/icons/local-hotel.svg"
     },
     "local-laundry-service": {
       "codepoint": 109118,
-      "source": "assets/fonts/colorgy/icons/local-laundry-service.svg"
+      "source": "assets/icons/local-laundry-service.svg"
     },
     "local-library": {
       "codepoint": 109119,
-      "source": "assets/fonts/colorgy/icons/local-library.svg"
+      "source": "assets/icons/local-library.svg"
     },
     "local-mall": {
       "codepoint": 109120,
-      "source": "assets/fonts/colorgy/icons/local-mall.svg"
+      "source": "assets/icons/local-mall.svg"
     },
     "local-movies": {
       "codepoint": 109121,
-      "source": "assets/fonts/colorgy/icons/local-movies.svg"
+      "source": "assets/icons/local-movies.svg"
     },
     "local-offer": {
       "codepoint": 109122,
-      "source": "assets/fonts/colorgy/icons/local-offer.svg"
+      "source": "assets/icons/local-offer.svg"
     },
     "local-parking": {
       "codepoint": 109123,
-      "source": "assets/fonts/colorgy/icons/local-parking.svg"
+      "source": "assets/icons/local-parking.svg"
     },
     "local-pharmacy": {
       "codepoint": 109124,
-      "source": "assets/fonts/colorgy/icons/local-pharmacy.svg"
+      "source": "assets/icons/local-pharmacy.svg"
     },
     "local-phone": {
       "codepoint": 109125,
-      "source": "assets/fonts/colorgy/icons/local-phone.svg"
+      "source": "assets/icons/local-phone.svg"
     },
     "local-pizza": {
       "codepoint": 109126,
-      "source": "assets/fonts/colorgy/icons/local-pizza.svg"
+      "source": "assets/icons/local-pizza.svg"
     },
     "local-play": {
       "codepoint": 109127,
-      "source": "assets/fonts/colorgy/icons/local-play.svg"
+      "source": "assets/icons/local-play.svg"
     },
     "local-post-office": {
       "codepoint": 109128,
-      "source": "assets/fonts/colorgy/icons/local-post-office.svg"
+      "source": "assets/icons/local-post-office.svg"
     },
     "local-printshop": {
       "codepoint": 109129,
-      "source": "assets/fonts/colorgy/icons/local-printshop.svg"
+      "source": "assets/icons/local-printshop.svg"
     },
     "local-see": {
       "codepoint": 109130,
-      "source": "assets/fonts/colorgy/icons/local-see.svg"
+      "source": "assets/icons/local-see.svg"
     },
     "local-shipping": {
       "codepoint": 109131,
-      "source": "assets/fonts/colorgy/icons/local-shipping.svg"
+      "source": "assets/icons/local-shipping.svg"
     },
     "local-taxi": {
       "codepoint": 109132,
-      "source": "assets/fonts/colorgy/icons/local-taxi.svg"
+      "source": "assets/icons/local-taxi.svg"
     },
     "location-city": {
       "codepoint": 109133,
-      "source": "assets/fonts/colorgy/icons/location-city.svg"
+      "source": "assets/icons/location-city.svg"
     },
     "location-disabled": {
       "codepoint": 109134,
-      "source": "assets/fonts/colorgy/icons/location-disabled.svg"
+      "source": "assets/icons/location-disabled.svg"
     },
     "location-off": {
       "codepoint": 109135,
-      "source": "assets/fonts/colorgy/icons/location-off.svg"
+      "source": "assets/icons/location-off.svg"
     },
     "location-on": {
       "codepoint": 109136,
-      "source": "assets/fonts/colorgy/icons/location-on.svg"
+      "source": "assets/icons/location-on.svg"
     },
     "location-searching": {
       "codepoint": 109137,
-      "source": "assets/fonts/colorgy/icons/location-searching.svg"
+      "source": "assets/icons/location-searching.svg"
     },
     "lock": {
       "codepoint": 108458,
-      "source": "assets/fonts/colorgy/icons/lock.svg"
+      "source": "assets/icons/lock.svg"
     },
     "lock-open": {
       "codepoint": 109138,
-      "source": "assets/fonts/colorgy/icons/lock-open.svg"
+      "source": "assets/icons/lock-open.svg"
     },
     "lock-outline": {
       "codepoint": 109139,
-      "source": "assets/fonts/colorgy/icons/lock-outline.svg"
+      "source": "assets/icons/lock-outline.svg"
     },
     "looks": {
       "codepoint": 108461,
-      "source": "assets/fonts/colorgy/icons/looks.svg"
+      "source": "assets/icons/looks.svg"
     },
     "looks-3": {
       "codepoint": 109140,
-      "source": "assets/fonts/colorgy/icons/looks-3.svg"
+      "source": "assets/icons/looks-3.svg"
     },
     "looks-4": {
       "codepoint": 109141,
-      "source": "assets/fonts/colorgy/icons/looks-4.svg"
+      "source": "assets/icons/looks-4.svg"
     },
     "looks-5": {
       "codepoint": 109142,
-      "source": "assets/fonts/colorgy/icons/looks-5.svg"
+      "source": "assets/icons/looks-5.svg"
     },
     "looks-6": {
       "codepoint": 109143,
-      "source": "assets/fonts/colorgy/icons/looks-6.svg"
+      "source": "assets/icons/looks-6.svg"
     },
     "looks-one": {
       "codepoint": 109144,
-      "source": "assets/fonts/colorgy/icons/looks-one.svg"
+      "source": "assets/icons/looks-one.svg"
     },
     "looks-two": {
       "codepoint": 109145,
-      "source": "assets/fonts/colorgy/icons/looks-two.svg"
+      "source": "assets/icons/looks-two.svg"
     },
     "loop": {
       "codepoint": 108468,
-      "source": "assets/fonts/colorgy/icons/loop.svg"
+      "source": "assets/icons/loop.svg"
     },
     "loupe": {
       "codepoint": 108469,
-      "source": "assets/fonts/colorgy/icons/loupe.svg"
+      "source": "assets/icons/loupe.svg"
     },
     "loyalty": {
       "codepoint": 108470,
-      "source": "assets/fonts/colorgy/icons/loyalty.svg"
+      "source": "assets/icons/loyalty.svg"
     },
     "mail": {
       "codepoint": 108471,
-      "source": "assets/fonts/colorgy/icons/mail.svg"
+      "source": "assets/icons/mail.svg"
     },
     "map": {
       "codepoint": 108472,
-      "source": "assets/fonts/colorgy/icons/map.svg"
+      "source": "assets/icons/map.svg"
     },
     "markunread": {
       "codepoint": 108473,
-      "source": "assets/fonts/colorgy/icons/markunread.svg"
+      "source": "assets/icons/markunread.svg"
     },
     "markunread-mailbox": {
       "codepoint": 109146,
-      "source": "assets/fonts/colorgy/icons/markunread-mailbox.svg"
+      "source": "assets/icons/markunread-mailbox.svg"
     },
     "memory": {
       "codepoint": 108475,
-      "source": "assets/fonts/colorgy/icons/memory.svg"
+      "source": "assets/icons/memory.svg"
     },
     "menu": {
       "codepoint": 108476,
-      "source": "assets/fonts/colorgy/icons/menu.svg"
+      "source": "assets/icons/menu.svg"
     },
     "merge-type": {
       "codepoint": 109147,
-      "source": "assets/fonts/colorgy/icons/merge-type.svg"
+      "source": "assets/icons/merge-type.svg"
     },
     "message": {
       "codepoint": 108478,
-      "source": "assets/fonts/colorgy/icons/message.svg"
+      "source": "assets/icons/message.svg"
     },
     "mic": {
       "codepoint": 108479,
-      "source": "assets/fonts/colorgy/icons/mic.svg"
+      "source": "assets/icons/mic.svg"
     },
     "mic-none": {
       "codepoint": 109148,
-      "source": "assets/fonts/colorgy/icons/mic-none.svg"
+      "source": "assets/icons/mic-none.svg"
     },
     "mic-off": {
       "codepoint": 109149,
-      "source": "assets/fonts/colorgy/icons/mic-off.svg"
+      "source": "assets/icons/mic-off.svg"
     },
     "mms": {
       "codepoint": 108482,
-      "source": "assets/fonts/colorgy/icons/mms.svg"
+      "source": "assets/icons/mms.svg"
     },
     "mode-comment": {
       "codepoint": 109150,
-      "source": "assets/fonts/colorgy/icons/mode-comment.svg"
+      "source": "assets/icons/mode-comment.svg"
     },
     "mode-edit": {
       "codepoint": 109151,
-      "source": "assets/fonts/colorgy/icons/mode-edit.svg"
+      "source": "assets/icons/mode-edit.svg"
     },
     "monochrome-photos": {
       "codepoint": 109152,
-      "source": "assets/fonts/colorgy/icons/monochrome-photos.svg"
+      "source": "assets/icons/monochrome-photos.svg"
     },
     "mood": {
       "codepoint": 108486,
-      "source": "assets/fonts/colorgy/icons/mood.svg"
+      "source": "assets/icons/mood.svg"
     },
     "mood-bad": {
       "codepoint": 109153,
-      "source": "assets/fonts/colorgy/icons/mood-bad.svg"
+      "source": "assets/icons/mood-bad.svg"
     },
     "more": {
       "codepoint": 108488,
-      "source": "assets/fonts/colorgy/icons/more.svg"
+      "source": "assets/icons/more.svg"
     },
     "more-horiz": {
       "codepoint": 109154,
-      "source": "assets/fonts/colorgy/icons/more-horiz.svg"
+      "source": "assets/icons/more-horiz.svg"
     },
     "more-vert": {
       "codepoint": 109155,
-      "source": "assets/fonts/colorgy/icons/more-vert.svg"
+      "source": "assets/icons/more-vert.svg"
     },
     "mouse": {
       "codepoint": 108491,
-      "source": "assets/fonts/colorgy/icons/mouse.svg"
+      "source": "assets/icons/mouse.svg"
     },
     "movie": {
       "codepoint": 108492,
-      "source": "assets/fonts/colorgy/icons/movie.svg"
+      "source": "assets/icons/movie.svg"
     },
     "movie-creation": {
       "codepoint": 109156,
-      "source": "assets/fonts/colorgy/icons/movie-creation.svg"
+      "source": "assets/icons/movie-creation.svg"
     },
     "music-note": {
       "codepoint": 109157,
-      "source": "assets/fonts/colorgy/icons/music-note.svg"
+      "source": "assets/icons/music-note.svg"
     },
     "my-location": {
       "codepoint": 109158,
-      "source": "assets/fonts/colorgy/icons/my-location.svg"
+      "source": "assets/icons/my-location.svg"
     },
     "nature": {
       "codepoint": 108496,
-      "source": "assets/fonts/colorgy/icons/nature.svg"
+      "source": "assets/icons/nature.svg"
     },
     "nature-people": {
       "codepoint": 109159,
-      "source": "assets/fonts/colorgy/icons/nature-people.svg"
+      "source": "assets/icons/nature-people.svg"
     },
     "navigate-before": {
       "codepoint": 109160,
-      "source": "assets/fonts/colorgy/icons/navigate-before.svg"
+      "source": "assets/icons/navigate-before.svg"
     },
     "navigate-next": {
       "codepoint": 109161,
-      "source": "assets/fonts/colorgy/icons/navigate-next.svg"
+      "source": "assets/icons/navigate-next.svg"
     },
     "navigation": {
       "codepoint": 108500,
-      "source": "assets/fonts/colorgy/icons/navigation.svg"
+      "source": "assets/icons/navigation.svg"
     },
     "network-cell": {
       "codepoint": 109162,
-      "source": "assets/fonts/colorgy/icons/network-cell.svg"
+      "source": "assets/icons/network-cell.svg"
     },
     "network-locked": {
       "codepoint": 109163,
-      "source": "assets/fonts/colorgy/icons/network-locked.svg"
+      "source": "assets/icons/network-locked.svg"
     },
     "network-wifi": {
       "codepoint": 109164,
-      "source": "assets/fonts/colorgy/icons/network-wifi.svg"
+      "source": "assets/icons/network-wifi.svg"
     },
     "new-releases": {
       "codepoint": 109165,
-      "source": "assets/fonts/colorgy/icons/new-releases.svg"
+      "source": "assets/icons/new-releases.svg"
     },
     "nfc": {
       "codepoint": 108505,
-      "source": "assets/fonts/colorgy/icons/nfc.svg"
+      "source": "assets/icons/nfc.svg"
     },
     "no-sim": {
       "codepoint": 109166,
-      "source": "assets/fonts/colorgy/icons/no-sim.svg"
+      "source": "assets/icons/no-sim.svg"
     },
     "not-interested": {
       "codepoint": 109167,
-      "source": "assets/fonts/colorgy/icons/not-interested.svg"
+      "source": "assets/icons/not-interested.svg"
     },
     "note-add": {
       "codepoint": 109168,
-      "source": "assets/fonts/colorgy/icons/note-add.svg"
+      "source": "assets/icons/note-add.svg"
     },
     "notifications": {
       "codepoint": 108509,
-      "source": "assets/fonts/colorgy/icons/notifications.svg"
+      "source": "assets/icons/notifications.svg"
     },
     "notifications-active": {
       "codepoint": 109169,
-      "source": "assets/fonts/colorgy/icons/notifications-active.svg"
+      "source": "assets/icons/notifications-active.svg"
     },
     "notifications-none": {
       "codepoint": 109170,
-      "source": "assets/fonts/colorgy/icons/notifications-none.svg"
+      "source": "assets/icons/notifications-none.svg"
     },
     "notifications-off": {
       "codepoint": 109171,
-      "source": "assets/fonts/colorgy/icons/notifications-off.svg"
+      "source": "assets/icons/notifications-off.svg"
     },
     "notifications-paused": {
       "codepoint": 109172,
-      "source": "assets/fonts/colorgy/icons/notifications-paused.svg"
+      "source": "assets/icons/notifications-paused.svg"
     },
     "ondemand-video": {
       "codepoint": 109173,
-      "source": "assets/fonts/colorgy/icons/ondemand-video.svg"
+      "source": "assets/icons/ondemand-video.svg"
     },
     "open-in-browser": {
       "codepoint": 109174,
-      "source": "assets/fonts/colorgy/icons/open-in-browser.svg"
+      "source": "assets/icons/open-in-browser.svg"
     },
     "open-in-new": {
       "codepoint": 109175,
-      "source": "assets/fonts/colorgy/icons/open-in-new.svg"
+      "source": "assets/icons/open-in-new.svg"
     },
     "open-with": {
       "codepoint": 109176,
-      "source": "assets/fonts/colorgy/icons/open-with.svg"
+      "source": "assets/icons/open-with.svg"
     },
     "pages": {
       "codepoint": 108518,
-      "source": "assets/fonts/colorgy/icons/pages.svg"
+      "source": "assets/icons/pages.svg"
     },
     "pageview": {
       "codepoint": 108519,
-      "source": "assets/fonts/colorgy/icons/pageview.svg"
+      "source": "assets/icons/pageview.svg"
     },
     "palette": {
       "codepoint": 108520,
-      "source": "assets/fonts/colorgy/icons/palette.svg"
+      "source": "assets/icons/palette.svg"
     },
     "panorama": {
       "codepoint": 108521,
-      "source": "assets/fonts/colorgy/icons/panorama.svg"
+      "source": "assets/icons/panorama.svg"
     },
     "panorama-fish-eye": {
       "codepoint": 109177,
-      "source": "assets/fonts/colorgy/icons/panorama-fish-eye.svg"
+      "source": "assets/icons/panorama-fish-eye.svg"
     },
     "panorama-horizontal": {
       "codepoint": 109178,
-      "source": "assets/fonts/colorgy/icons/panorama-horizontal.svg"
+      "source": "assets/icons/panorama-horizontal.svg"
     },
     "panorama-vertical": {
       "codepoint": 109179,
-      "source": "assets/fonts/colorgy/icons/panorama-vertical.svg"
+      "source": "assets/icons/panorama-vertical.svg"
     },
     "panorama-wide-angle": {
       "codepoint": 109180,
-      "source": "assets/fonts/colorgy/icons/panorama-wide-angle.svg"
+      "source": "assets/icons/panorama-wide-angle.svg"
     },
     "party-mode": {
       "codepoint": 109181,
-      "source": "assets/fonts/colorgy/icons/party-mode.svg"
+      "source": "assets/icons/party-mode.svg"
     },
     "pause": {
       "codepoint": 108527,
-      "source": "assets/fonts/colorgy/icons/pause.svg"
+      "source": "assets/icons/pause.svg"
     },
     "pause-circle-filled": {
       "codepoint": 109182,
-      "source": "assets/fonts/colorgy/icons/pause-circle-filled.svg"
+      "source": "assets/icons/pause-circle-filled.svg"
     },
     "pause-circle-outline": {
       "codepoint": 109183,
-      "source": "assets/fonts/colorgy/icons/pause-circle-outline.svg"
+      "source": "assets/icons/pause-circle-outline.svg"
     },
     "payment": {
       "codepoint": 108530,
-      "source": "assets/fonts/colorgy/icons/payment.svg"
+      "source": "assets/icons/payment.svg"
     },
     "people": {
       "codepoint": 108531,
-      "source": "assets/fonts/colorgy/icons/people.svg"
+      "source": "assets/icons/people.svg"
     },
     "people-outline": {
       "codepoint": 109184,
-      "source": "assets/fonts/colorgy/icons/people-outline.svg"
+      "source": "assets/icons/people-outline.svg"
     },
     "perm-camera-mic": {
       "codepoint": 109185,
-      "source": "assets/fonts/colorgy/icons/perm-camera-mic.svg"
+      "source": "assets/icons/perm-camera-mic.svg"
     },
     "perm-contact-calendar": {
       "codepoint": 109186,
-      "source": "assets/fonts/colorgy/icons/perm-contact-calendar.svg"
+      "source": "assets/icons/perm-contact-calendar.svg"
     },
     "perm-data-setting": {
       "codepoint": 109187,
-      "source": "assets/fonts/colorgy/icons/perm-data-setting.svg"
+      "source": "assets/icons/perm-data-setting.svg"
     },
     "perm-device-information": {
       "codepoint": 109188,
-      "source": "assets/fonts/colorgy/icons/perm-device-information.svg"
+      "source": "assets/icons/perm-device-information.svg"
     },
     "perm-identity": {
       "codepoint": 109189,
-      "source": "assets/fonts/colorgy/icons/perm-identity.svg"
+      "source": "assets/icons/perm-identity.svg"
     },
     "perm-media": {
       "codepoint": 109190,
-      "source": "assets/fonts/colorgy/icons/perm-media.svg"
+      "source": "assets/icons/perm-media.svg"
     },
     "perm-phone-msg": {
       "codepoint": 109191,
-      "source": "assets/fonts/colorgy/icons/perm-phone-msg.svg"
+      "source": "assets/icons/perm-phone-msg.svg"
     },
     "perm-scan-wifi": {
       "codepoint": 109192,
-      "source": "assets/fonts/colorgy/icons/perm-scan-wifi.svg"
+      "source": "assets/icons/perm-scan-wifi.svg"
     },
     "person": {
       "codepoint": 108541,
-      "source": "assets/fonts/colorgy/icons/person.svg"
+      "source": "assets/icons/person.svg"
     },
     "person-add": {
       "codepoint": 109193,
-      "source": "assets/fonts/colorgy/icons/person-add.svg"
+      "source": "assets/icons/person-add.svg"
     },
     "person-outline": {
       "codepoint": 109194,
-      "source": "assets/fonts/colorgy/icons/person-outline.svg"
+      "source": "assets/icons/person-outline.svg"
     },
     "person-pin": {
       "codepoint": 109195,
-      "source": "assets/fonts/colorgy/icons/person-pin.svg"
+      "source": "assets/icons/person-pin.svg"
     },
     "personal-video": {
       "codepoint": 109196,
-      "source": "assets/fonts/colorgy/icons/personal-video.svg"
+      "source": "assets/icons/personal-video.svg"
     },
     "phone": {
       "codepoint": 108546,
-      "source": "assets/fonts/colorgy/icons/phone.svg"
+      "source": "assets/icons/phone.svg"
     },
     "phone-android": {
       "codepoint": 109197,
-      "source": "assets/fonts/colorgy/icons/phone-android.svg"
+      "source": "assets/icons/phone-android.svg"
     },
     "phone-bluetooth-speaker": {
       "codepoint": 109198,
-      "source": "assets/fonts/colorgy/icons/phone-bluetooth-speaker.svg"
+      "source": "assets/icons/phone-bluetooth-speaker.svg"
     },
     "phone-forwarded": {
       "codepoint": 109199,
-      "source": "assets/fonts/colorgy/icons/phone-forwarded.svg"
+      "source": "assets/icons/phone-forwarded.svg"
     },
     "phone-in-talk": {
       "codepoint": 109200,
-      "source": "assets/fonts/colorgy/icons/phone-in-talk.svg"
+      "source": "assets/icons/phone-in-talk.svg"
     },
     "phone-iphone": {
       "codepoint": 109201,
-      "source": "assets/fonts/colorgy/icons/phone-iphone.svg"
+      "source": "assets/icons/phone-iphone.svg"
     },
     "phone-locked": {
       "codepoint": 109202,
-      "source": "assets/fonts/colorgy/icons/phone-locked.svg"
+      "source": "assets/icons/phone-locked.svg"
     },
     "phone-missed": {
       "codepoint": 109203,
-      "source": "assets/fonts/colorgy/icons/phone-missed.svg"
+      "source": "assets/icons/phone-missed.svg"
     },
     "phone-paused": {
       "codepoint": 109204,
-      "source": "assets/fonts/colorgy/icons/phone-paused.svg"
+      "source": "assets/icons/phone-paused.svg"
     },
     "phonelink": {
       "codepoint": 108555,
-      "source": "assets/fonts/colorgy/icons/phonelink.svg"
+      "source": "assets/icons/phonelink.svg"
     },
     "phonelink-off": {
       "codepoint": 109205,
-      "source": "assets/fonts/colorgy/icons/phonelink-off.svg"
+      "source": "assets/icons/phonelink-off.svg"
     },
     "photo": {
       "codepoint": 108557,
-      "source": "assets/fonts/colorgy/icons/photo.svg"
+      "source": "assets/icons/photo.svg"
     },
     "photo-album": {
       "codepoint": 109206,
-      "source": "assets/fonts/colorgy/icons/photo-album.svg"
+      "source": "assets/icons/photo-album.svg"
     },
     "photo-camera": {
       "codepoint": 109207,
-      "source": "assets/fonts/colorgy/icons/photo-camera.svg"
+      "source": "assets/icons/photo-camera.svg"
     },
     "photo-library": {
       "codepoint": 109208,
-      "source": "assets/fonts/colorgy/icons/photo-library.svg"
+      "source": "assets/icons/photo-library.svg"
     },
     "picture-as-pdf": {
       "codepoint": 109209,
-      "source": "assets/fonts/colorgy/icons/picture-as-pdf.svg"
+      "source": "assets/icons/picture-as-pdf.svg"
     },
     "picture-in-picture": {
       "codepoint": 109210,
-      "source": "assets/fonts/colorgy/icons/picture-in-picture.svg"
+      "source": "assets/icons/picture-in-picture.svg"
     },
     "pin-drop": {
       "codepoint": 109211,
-      "source": "assets/fonts/colorgy/icons/pin-drop.svg"
+      "source": "assets/icons/pin-drop.svg"
     },
     "place": {
       "codepoint": 108564,
-      "source": "assets/fonts/colorgy/icons/place.svg"
+      "source": "assets/icons/place.svg"
     },
     "play-arrow": {
       "codepoint": 109212,
-      "source": "assets/fonts/colorgy/icons/play-arrow.svg"
+      "source": "assets/icons/play-arrow.svg"
     },
     "play-circle-filled": {
       "codepoint": 109213,
-      "source": "assets/fonts/colorgy/icons/play-circle-filled.svg"
+      "source": "assets/icons/play-circle-filled.svg"
     },
     "play-circle-outline": {
       "codepoint": 109214,
-      "source": "assets/fonts/colorgy/icons/play-circle-outline.svg"
+      "source": "assets/icons/play-circle-outline.svg"
     },
     "play-for-work": {
       "codepoint": 109215,
-      "source": "assets/fonts/colorgy/icons/play-for-work.svg"
+      "source": "assets/icons/play-for-work.svg"
     },
     "playlist-add": {
       "codepoint": 109216,
-      "source": "assets/fonts/colorgy/icons/playlist-add.svg"
+      "source": "assets/icons/playlist-add.svg"
     },
     "plus-one": {
       "codepoint": 109217,
-      "source": "assets/fonts/colorgy/icons/plus-one.svg"
+      "source": "assets/icons/plus-one.svg"
     },
     "poll": {
       "codepoint": 108571,
-      "source": "assets/fonts/colorgy/icons/poll.svg"
+      "source": "assets/icons/poll.svg"
     },
     "polymer": {
       "codepoint": 108572,
-      "source": "assets/fonts/colorgy/icons/polymer.svg"
+      "source": "assets/icons/polymer.svg"
     },
     "portable-wifi-off": {
       "codepoint": 109218,
-      "source": "assets/fonts/colorgy/icons/portable-wifi-off.svg"
+      "source": "assets/icons/portable-wifi-off.svg"
     },
     "portrait": {
       "codepoint": 108574,
-      "source": "assets/fonts/colorgy/icons/portrait.svg"
+      "source": "assets/icons/portrait.svg"
     },
     "power": {
       "codepoint": 108575,
-      "source": "assets/fonts/colorgy/icons/power.svg"
+      "source": "assets/icons/power.svg"
     },
     "power-input": {
       "codepoint": 109219,
-      "source": "assets/fonts/colorgy/icons/power-input.svg"
+      "source": "assets/icons/power-input.svg"
     },
     "power-settings-new": {
       "codepoint": 109220,
-      "source": "assets/fonts/colorgy/icons/power-settings-new.svg"
+      "source": "assets/icons/power-settings-new.svg"
     },
     "present-to-all": {
       "codepoint": 109221,
-      "source": "assets/fonts/colorgy/icons/present-to-all.svg"
+      "source": "assets/icons/present-to-all.svg"
     },
     "print": {
       "codepoint": 108579,
-      "source": "assets/fonts/colorgy/icons/print.svg"
+      "source": "assets/icons/print.svg"
     },
     "public": {
       "codepoint": 108580,
-      "source": "assets/fonts/colorgy/icons/public.svg"
+      "source": "assets/icons/public.svg"
     },
     "publish": {
       "codepoint": 108581,
-      "source": "assets/fonts/colorgy/icons/publish.svg"
+      "source": "assets/icons/publish.svg"
     },
     "query-builder": {
       "codepoint": 109222,
-      "source": "assets/fonts/colorgy/icons/query-builder.svg"
+      "source": "assets/icons/query-builder.svg"
     },
     "question-answer": {
       "codepoint": 109223,
-      "source": "assets/fonts/colorgy/icons/question-answer.svg"
+      "source": "assets/icons/question-answer.svg"
     },
     "queue": {
       "codepoint": 108584,
-      "source": "assets/fonts/colorgy/icons/queue.svg"
+      "source": "assets/icons/queue.svg"
     },
     "queue-music": {
       "codepoint": 109224,
-      "source": "assets/fonts/colorgy/icons/queue-music.svg"
+      "source": "assets/icons/queue-music.svg"
     },
     "radio": {
       "codepoint": 108586,
-      "source": "assets/fonts/colorgy/icons/radio.svg"
+      "source": "assets/icons/radio.svg"
     },
     "radio-button-checked": {
       "codepoint": 109225,
-      "source": "assets/fonts/colorgy/icons/radio-button-checked.svg"
+      "source": "assets/icons/radio-button-checked.svg"
     },
     "radio-button-unchecked": {
       "codepoint": 109226,
-      "source": "assets/fonts/colorgy/icons/radio-button-unchecked.svg"
+      "source": "assets/icons/radio-button-unchecked.svg"
     },
     "rate-review": {
       "codepoint": 109227,
-      "source": "assets/fonts/colorgy/icons/rate-review.svg"
+      "source": "assets/icons/rate-review.svg"
     },
     "receipt": {
       "codepoint": 108590,
-      "source": "assets/fonts/colorgy/icons/receipt.svg"
+      "source": "assets/icons/receipt.svg"
     },
     "recent-actors": {
       "codepoint": 109228,
-      "source": "assets/fonts/colorgy/icons/recent-actors.svg"
+      "source": "assets/icons/recent-actors.svg"
     },
     "redeem": {
       "codepoint": 108592,
-      "source": "assets/fonts/colorgy/icons/redeem.svg"
+      "source": "assets/icons/redeem.svg"
     },
     "redo": {
       "codepoint": 108593,
-      "source": "assets/fonts/colorgy/icons/redo.svg"
+      "source": "assets/icons/redo.svg"
     },
     "refresh": {
       "codepoint": 108594,
-      "source": "assets/fonts/colorgy/icons/refresh.svg"
+      "source": "assets/icons/refresh.svg"
     },
     "remove": {
       "codepoint": 108595,
-      "source": "assets/fonts/colorgy/icons/remove.svg"
+      "source": "assets/icons/remove.svg"
     },
     "remove-circle": {
       "codepoint": 109229,
-      "source": "assets/fonts/colorgy/icons/remove-circle.svg"
+      "source": "assets/icons/remove-circle.svg"
     },
     "remove-circle-outline": {
       "codepoint": 109230,
-      "source": "assets/fonts/colorgy/icons/remove-circle-outline.svg"
+      "source": "assets/icons/remove-circle-outline.svg"
     },
     "remove-red-eye": {
       "codepoint": 109231,
-      "source": "assets/fonts/colorgy/icons/remove-red-eye.svg"
+      "source": "assets/icons/remove-red-eye.svg"
     },
     "repeat": {
       "codepoint": 108599,
-      "source": "assets/fonts/colorgy/icons/repeat.svg"
+      "source": "assets/icons/repeat.svg"
     },
     "repeat-one": {
       "codepoint": 109232,
-      "source": "assets/fonts/colorgy/icons/repeat-one.svg"
+      "source": "assets/icons/repeat-one.svg"
     },
     "replay": {
       "codepoint": 108601,
-      "source": "assets/fonts/colorgy/icons/replay.svg"
+      "source": "assets/icons/replay.svg"
     },
     "replay-10": {
       "codepoint": 109233,
-      "source": "assets/fonts/colorgy/icons/replay-10.svg"
+      "source": "assets/icons/replay-10.svg"
     },
     "replay-30": {
       "codepoint": 109234,
-      "source": "assets/fonts/colorgy/icons/replay-30.svg"
+      "source": "assets/icons/replay-30.svg"
     },
     "replay-5": {
       "codepoint": 109235,
-      "source": "assets/fonts/colorgy/icons/replay-5.svg"
+      "source": "assets/icons/replay-5.svg"
     },
     "reply": {
       "codepoint": 108605,
-      "source": "assets/fonts/colorgy/icons/reply.svg"
+      "source": "assets/icons/reply.svg"
     },
     "reply-all": {
       "codepoint": 109236,
-      "source": "assets/fonts/colorgy/icons/reply-all.svg"
+      "source": "assets/icons/reply-all.svg"
     },
     "report": {
       "codepoint": 108607,
-      "source": "assets/fonts/colorgy/icons/report.svg"
+      "source": "assets/icons/report.svg"
     },
     "report-problem": {
       "codepoint": 109237,
-      "source": "assets/fonts/colorgy/icons/report-problem.svg"
+      "source": "assets/icons/report-problem.svg"
     },
     "restaurant-menu": {
       "codepoint": 109238,
-      "source": "assets/fonts/colorgy/icons/restaurant-menu.svg"
+      "source": "assets/icons/restaurant-menu.svg"
     },
     "restore": {
       "codepoint": 108610,
-      "source": "assets/fonts/colorgy/icons/restore.svg"
+      "source": "assets/icons/restore.svg"
     },
     "ring-volume": {
       "codepoint": 109239,
-      "source": "assets/fonts/colorgy/icons/ring-volume.svg"
+      "source": "assets/icons/ring-volume.svg"
     },
     "room": {
       "codepoint": 108612,
-      "source": "assets/fonts/colorgy/icons/room.svg"
+      "source": "assets/icons/room.svg"
     },
     "rotate-90-degrees-ccw": {
       "codepoint": 109240,
-      "source": "assets/fonts/colorgy/icons/rotate-90-degrees-ccw.svg"
+      "source": "assets/icons/rotate-90-degrees-ccw.svg"
     },
     "rotate-left": {
       "codepoint": 109241,
-      "source": "assets/fonts/colorgy/icons/rotate-left.svg"
+      "source": "assets/icons/rotate-left.svg"
     },
     "rotate-right": {
       "codepoint": 109242,
-      "source": "assets/fonts/colorgy/icons/rotate-right.svg"
+      "source": "assets/icons/rotate-right.svg"
     },
     "router": {
       "codepoint": 108616,
-      "source": "assets/fonts/colorgy/icons/router.svg"
+      "source": "assets/icons/router.svg"
     },
     "satellite": {
       "codepoint": 108617,
-      "source": "assets/fonts/colorgy/icons/satellite.svg"
+      "source": "assets/icons/satellite.svg"
     },
     "save": {
       "codepoint": 108618,
-      "source": "assets/fonts/colorgy/icons/save.svg"
+      "source": "assets/icons/save.svg"
     },
     "scanner": {
       "codepoint": 108619,
-      "source": "assets/fonts/colorgy/icons/scanner.svg"
+      "source": "assets/icons/scanner.svg"
     },
     "schedule": {
       "codepoint": 108620,
-      "source": "assets/fonts/colorgy/icons/schedule.svg"
+      "source": "assets/icons/schedule.svg"
     },
     "school": {
       "codepoint": 108621,
-      "source": "assets/fonts/colorgy/icons/school.svg"
+      "source": "assets/icons/school.svg"
     },
     "screen-lock-landscape": {
       "codepoint": 109243,
-      "source": "assets/fonts/colorgy/icons/screen-lock-landscape.svg"
+      "source": "assets/icons/screen-lock-landscape.svg"
     },
     "screen-lock-portrait": {
       "codepoint": 109244,
-      "source": "assets/fonts/colorgy/icons/screen-lock-portrait.svg"
+      "source": "assets/icons/screen-lock-portrait.svg"
     },
     "screen-lock-rotation": {
       "codepoint": 109245,
-      "source": "assets/fonts/colorgy/icons/screen-lock-rotation.svg"
+      "source": "assets/icons/screen-lock-rotation.svg"
     },
     "screen-rotation": {
       "codepoint": 109246,
-      "source": "assets/fonts/colorgy/icons/screen-rotation.svg"
+      "source": "assets/icons/screen-rotation.svg"
     },
     "sd-card": {
       "codepoint": 109247,
-      "source": "assets/fonts/colorgy/icons/sd-card.svg"
+      "source": "assets/icons/sd-card.svg"
     },
     "sd-storage": {
       "codepoint": 109248,
-      "source": "assets/fonts/colorgy/icons/sd-storage.svg"
+      "source": "assets/icons/sd-storage.svg"
     },
     "search": {
       "codepoint": 108628,
-      "source": "assets/fonts/colorgy/icons/search.svg"
+      "source": "assets/icons/search.svg"
     },
     "security": {
       "codepoint": 108629,
-      "source": "assets/fonts/colorgy/icons/security.svg"
+      "source": "assets/icons/security.svg"
     },
     "select-all": {
       "codepoint": 109249,
-      "source": "assets/fonts/colorgy/icons/select-all.svg"
+      "source": "assets/icons/select-all.svg"
     },
     "send": {
       "codepoint": 108631,
-      "source": "assets/fonts/colorgy/icons/send.svg"
+      "source": "assets/icons/send.svg"
     },
     "settings": {
       "codepoint": 108012,
-      "source": "assets/fonts/colorgy/icons/settings.svg"
+      "source": "assets/icons/settings.svg"
     },
     "settings-applications": {
       "codepoint": 109250,
-      "source": "assets/fonts/colorgy/icons/settings-applications.svg"
+      "source": "assets/icons/settings-applications.svg"
     },
     "settings-backup-restore": {
       "codepoint": 109251,
-      "source": "assets/fonts/colorgy/icons/settings-backup-restore.svg"
+      "source": "assets/icons/settings-backup-restore.svg"
     },
     "settings-bluetooth": {
       "codepoint": 109252,
-      "source": "assets/fonts/colorgy/icons/settings-bluetooth.svg"
+      "source": "assets/icons/settings-bluetooth.svg"
     },
     "settings-brightness": {
       "codepoint": 109253,
-      "source": "assets/fonts/colorgy/icons/settings-brightness.svg"
+      "source": "assets/icons/settings-brightness.svg"
     },
     "settings-cell": {
       "codepoint": 109254,
-      "source": "assets/fonts/colorgy/icons/settings-cell.svg"
+      "source": "assets/icons/settings-cell.svg"
     },
     "settings-ethernet": {
       "codepoint": 109255,
-      "source": "assets/fonts/colorgy/icons/settings-ethernet.svg"
+      "source": "assets/icons/settings-ethernet.svg"
     },
     "settings-input-antenna": {
       "codepoint": 109256,
-      "source": "assets/fonts/colorgy/icons/settings-input-antenna.svg"
+      "source": "assets/icons/settings-input-antenna.svg"
     },
     "settings-input-component": {
       "codepoint": 109257,
-      "source": "assets/fonts/colorgy/icons/settings-input-component.svg"
+      "source": "assets/icons/settings-input-component.svg"
     },
     "settings-input-composite": {
       "codepoint": 109258,
-      "source": "assets/fonts/colorgy/icons/settings-input-composite.svg"
+      "source": "assets/icons/settings-input-composite.svg"
     },
     "settings-input-hdmi": {
       "codepoint": 109259,
-      "source": "assets/fonts/colorgy/icons/settings-input-hdmi.svg"
+      "source": "assets/icons/settings-input-hdmi.svg"
     },
     "settings-input-svideo": {
       "codepoint": 109260,
-      "source": "assets/fonts/colorgy/icons/settings-input-svideo.svg"
+      "source": "assets/icons/settings-input-svideo.svg"
     },
     "settings-overscan": {
       "codepoint": 109261,
-      "source": "assets/fonts/colorgy/icons/settings-overscan.svg"
+      "source": "assets/icons/settings-overscan.svg"
     },
     "settings-phone": {
       "codepoint": 109262,
-      "source": "assets/fonts/colorgy/icons/settings-phone.svg"
+      "source": "assets/icons/settings-phone.svg"
     },
     "settings-power": {
       "codepoint": 109263,
-      "source": "assets/fonts/colorgy/icons/settings-power.svg"
+      "source": "assets/icons/settings-power.svg"
     },
     "settings-remote": {
       "codepoint": 109264,
-      "source": "assets/fonts/colorgy/icons/settings-remote.svg"
+      "source": "assets/icons/settings-remote.svg"
     },
     "settings-system-daydream": {
       "codepoint": 109265,
-      "source": "assets/fonts/colorgy/icons/settings-system-daydream.svg"
+      "source": "assets/icons/settings-system-daydream.svg"
     },
     "settings-voice": {
       "codepoint": 109266,
-      "source": "assets/fonts/colorgy/icons/settings-voice.svg"
+      "source": "assets/icons/settings-voice.svg"
     },
     "share": {
       "codepoint": 108649,
-      "source": "assets/fonts/colorgy/icons/share.svg"
+      "source": "assets/icons/share.svg"
     },
     "shop": {
       "codepoint": 108650,
-      "source": "assets/fonts/colorgy/icons/shop.svg"
+      "source": "assets/icons/shop.svg"
     },
     "shop-two": {
       "codepoint": 109267,
-      "source": "assets/fonts/colorgy/icons/shop-two.svg"
+      "source": "assets/icons/shop-two.svg"
     },
     "shopping-basket": {
       "codepoint": 109268,
-      "source": "assets/fonts/colorgy/icons/shopping-basket.svg"
+      "source": "assets/icons/shopping-basket.svg"
     },
     "shopping-cart": {
       "codepoint": 109269,
-      "source": "assets/fonts/colorgy/icons/shopping-cart.svg"
+      "source": "assets/icons/shopping-cart.svg"
     },
     "shuffle": {
       "codepoint": 108654,
-      "source": "assets/fonts/colorgy/icons/shuffle.svg"
+      "source": "assets/icons/shuffle.svg"
     },
     "signal-cellular-0-bar": {
       "codepoint": 109270,
-      "source": "assets/fonts/colorgy/icons/signal-cellular-0-bar.svg"
+      "source": "assets/icons/signal-cellular-0-bar.svg"
     },
     "signal-cellular-1-bar": {
       "codepoint": 109271,
-      "source": "assets/fonts/colorgy/icons/signal-cellular-1-bar.svg"
+      "source": "assets/icons/signal-cellular-1-bar.svg"
     },
     "signal-cellular-2-bar": {
       "codepoint": 109272,
-      "source": "assets/fonts/colorgy/icons/signal-cellular-2-bar.svg"
+      "source": "assets/icons/signal-cellular-2-bar.svg"
     },
     "signal-cellular-3-bar": {
       "codepoint": 109273,
-      "source": "assets/fonts/colorgy/icons/signal-cellular-3-bar.svg"
+      "source": "assets/icons/signal-cellular-3-bar.svg"
     },
     "signal-cellular-4-bar": {
       "codepoint": 109274,
-      "source": "assets/fonts/colorgy/icons/signal-cellular-4-bar.svg"
+      "source": "assets/icons/signal-cellular-4-bar.svg"
     },
     "signal-cellular-connected-no-internet-0-bar": {
       "codepoint": 109275,
-      "source": "assets/fonts/colorgy/icons/signal-cellular-connected-no-internet-0-bar.svg"
+      "source": "assets/icons/signal-cellular-connected-no-internet-0-bar.svg"
     },
     "signal-cellular-connected-no-internet-1-bar": {
       "codepoint": 109276,
-      "source": "assets/fonts/colorgy/icons/signal-cellular-connected-no-internet-1-bar.svg"
+      "source": "assets/icons/signal-cellular-connected-no-internet-1-bar.svg"
     },
     "signal-cellular-connected-no-internet-2-bar": {
       "codepoint": 109277,
-      "source": "assets/fonts/colorgy/icons/signal-cellular-connected-no-internet-2-bar.svg"
+      "source": "assets/icons/signal-cellular-connected-no-internet-2-bar.svg"
     },
     "signal-cellular-connected-no-internet-3-bar": {
       "codepoint": 109278,
-      "source": "assets/fonts/colorgy/icons/signal-cellular-connected-no-internet-3-bar.svg"
+      "source": "assets/icons/signal-cellular-connected-no-internet-3-bar.svg"
     },
     "signal-cellular-connected-no-internet-4-bar": {
       "codepoint": 109279,
-      "source": "assets/fonts/colorgy/icons/signal-cellular-connected-no-internet-4-bar.svg"
+      "source": "assets/icons/signal-cellular-connected-no-internet-4-bar.svg"
     },
     "signal-cellular-no-sim": {
       "codepoint": 109280,
-      "source": "assets/fonts/colorgy/icons/signal-cellular-no-sim.svg"
+      "source": "assets/icons/signal-cellular-no-sim.svg"
     },
     "signal-cellular-null": {
       "codepoint": 109281,
-      "source": "assets/fonts/colorgy/icons/signal-cellular-null.svg"
+      "source": "assets/icons/signal-cellular-null.svg"
     },
     "signal-cellular-off": {
       "codepoint": 109282,
-      "source": "assets/fonts/colorgy/icons/signal-cellular-off.svg"
+      "source": "assets/icons/signal-cellular-off.svg"
     },
     "signal-wifi-0-bar": {
       "codepoint": 109283,
-      "source": "assets/fonts/colorgy/icons/signal-wifi-0-bar.svg"
+      "source": "assets/icons/signal-wifi-0-bar.svg"
     },
     "signal-wifi-1-bar": {
       "codepoint": 109284,
-      "source": "assets/fonts/colorgy/icons/signal-wifi-1-bar.svg"
+      "source": "assets/icons/signal-wifi-1-bar.svg"
     },
     "signal-wifi-1-bar-lock": {
       "codepoint": 109285,
-      "source": "assets/fonts/colorgy/icons/signal-wifi-1-bar-lock.svg"
+      "source": "assets/icons/signal-wifi-1-bar-lock.svg"
     },
     "signal-wifi-2-bar": {
       "codepoint": 109286,
-      "source": "assets/fonts/colorgy/icons/signal-wifi-2-bar.svg"
+      "source": "assets/icons/signal-wifi-2-bar.svg"
     },
     "signal-wifi-2-bar-lock": {
       "codepoint": 109287,
-      "source": "assets/fonts/colorgy/icons/signal-wifi-2-bar-lock.svg"
+      "source": "assets/icons/signal-wifi-2-bar-lock.svg"
     },
     "signal-wifi-3-bar": {
       "codepoint": 109288,
-      "source": "assets/fonts/colorgy/icons/signal-wifi-3-bar.svg"
+      "source": "assets/icons/signal-wifi-3-bar.svg"
     },
     "signal-wifi-3-bar-lock": {
       "codepoint": 109289,
-      "source": "assets/fonts/colorgy/icons/signal-wifi-3-bar-lock.svg"
+      "source": "assets/icons/signal-wifi-3-bar-lock.svg"
     },
     "signal-wifi-4-bar": {
       "codepoint": 109290,
-      "source": "assets/fonts/colorgy/icons/signal-wifi-4-bar.svg"
+      "source": "assets/icons/signal-wifi-4-bar.svg"
     },
     "signal-wifi-4-bar-lock": {
       "codepoint": 109291,
-      "source": "assets/fonts/colorgy/icons/signal-wifi-4-bar-lock.svg"
+      "source": "assets/icons/signal-wifi-4-bar-lock.svg"
     },
     "signal-wifi-off": {
       "codepoint": 109292,
-      "source": "assets/fonts/colorgy/icons/signal-wifi-off.svg"
+      "source": "assets/icons/signal-wifi-off.svg"
     },
     "sim-card": {
       "codepoint": 109293,
-      "source": "assets/fonts/colorgy/icons/sim-card.svg"
+      "source": "assets/icons/sim-card.svg"
     },
     "sim-card-alert": {
       "codepoint": 109294,
-      "source": "assets/fonts/colorgy/icons/sim-card-alert.svg"
+      "source": "assets/icons/sim-card-alert.svg"
     },
     "skip-next": {
       "codepoint": 109295,
-      "source": "assets/fonts/colorgy/icons/skip-next.svg"
+      "source": "assets/icons/skip-next.svg"
     },
     "skip-previous": {
       "codepoint": 109296,
-      "source": "assets/fonts/colorgy/icons/skip-previous.svg"
+      "source": "assets/icons/skip-previous.svg"
     },
     "slideshow": {
       "codepoint": 108682,
-      "source": "assets/fonts/colorgy/icons/slideshow.svg"
+      "source": "assets/icons/slideshow.svg"
     },
     "smartphone": {
       "codepoint": 108683,
-      "source": "assets/fonts/colorgy/icons/smartphone.svg"
+      "source": "assets/icons/smartphone.svg"
     },
     "sms": {
       "codepoint": 108684,
-      "source": "assets/fonts/colorgy/icons/sms.svg"
+      "source": "assets/icons/sms.svg"
     },
     "sms-failed": {
       "codepoint": 109297,
-      "source": "assets/fonts/colorgy/icons/sms-failed.svg"
+      "source": "assets/icons/sms-failed.svg"
     },
     "snooze": {
       "codepoint": 108686,
-      "source": "assets/fonts/colorgy/icons/snooze.svg"
+      "source": "assets/icons/snooze.svg"
     },
     "sort": {
       "codepoint": 108687,
-      "source": "assets/fonts/colorgy/icons/sort.svg"
+      "source": "assets/icons/sort.svg"
     },
     "space-bar": {
       "codepoint": 109298,
-      "source": "assets/fonts/colorgy/icons/space-bar.svg"
+      "source": "assets/icons/space-bar.svg"
     },
     "speaker": {
       "codepoint": 108689,
-      "source": "assets/fonts/colorgy/icons/speaker.svg"
+      "source": "assets/icons/speaker.svg"
     },
     "speaker-group": {
       "codepoint": 109299,
-      "source": "assets/fonts/colorgy/icons/speaker-group.svg"
+      "source": "assets/icons/speaker-group.svg"
     },
     "speaker-notes": {
       "codepoint": 109300,
-      "source": "assets/fonts/colorgy/icons/speaker-notes.svg"
+      "source": "assets/icons/speaker-notes.svg"
     },
     "speaker-phone": {
       "codepoint": 109301,
-      "source": "assets/fonts/colorgy/icons/speaker-phone.svg"
+      "source": "assets/icons/speaker-phone.svg"
     },
     "spellcheck": {
       "codepoint": 108693,
-      "source": "assets/fonts/colorgy/icons/spellcheck.svg"
+      "source": "assets/icons/spellcheck.svg"
     },
     "stars": {
       "codepoint": 108694,
-      "source": "assets/fonts/colorgy/icons/stars.svg"
+      "source": "assets/icons/stars.svg"
     },
     "stay-current-landscape": {
       "codepoint": 109302,
-      "source": "assets/fonts/colorgy/icons/stay-current-landscape.svg"
+      "source": "assets/icons/stay-current-landscape.svg"
     },
     "stay-current-portrait": {
       "codepoint": 109303,
-      "source": "assets/fonts/colorgy/icons/stay-current-portrait.svg"
+      "source": "assets/icons/stay-current-portrait.svg"
     },
     "stay-primary-landscape": {
       "codepoint": 109304,
-      "source": "assets/fonts/colorgy/icons/stay-primary-landscape.svg"
+      "source": "assets/icons/stay-primary-landscape.svg"
     },
     "stay-primary-portrait": {
       "codepoint": 109305,
-      "source": "assets/fonts/colorgy/icons/stay-primary-portrait.svg"
+      "source": "assets/icons/stay-primary-portrait.svg"
     },
     "stop": {
       "codepoint": 108699,
-      "source": "assets/fonts/colorgy/icons/stop.svg"
+      "source": "assets/icons/stop.svg"
     },
     "storage": {
       "codepoint": 108700,
-      "source": "assets/fonts/colorgy/icons/storage.svg"
+      "source": "assets/icons/storage.svg"
     },
     "store": {
       "codepoint": 108701,
-      "source": "assets/fonts/colorgy/icons/store.svg"
+      "source": "assets/icons/store.svg"
     },
     "store-mall-directory": {
       "codepoint": 109306,
-      "source": "assets/fonts/colorgy/icons/store-mall-directory.svg"
+      "source": "assets/icons/store-mall-directory.svg"
     },
     "straighten": {
       "codepoint": 108703,
-      "source": "assets/fonts/colorgy/icons/straighten.svg"
+      "source": "assets/icons/straighten.svg"
     },
     "strikethrough-s": {
       "codepoint": 109307,
-      "source": "assets/fonts/colorgy/icons/strikethrough-s.svg"
+      "source": "assets/icons/strikethrough-s.svg"
     },
     "style": {
       "codepoint": 108705,
-      "source": "assets/fonts/colorgy/icons/style.svg"
+      "source": "assets/icons/style.svg"
     },
     "subject": {
       "codepoint": 108706,
-      "source": "assets/fonts/colorgy/icons/subject.svg"
+      "source": "assets/icons/subject.svg"
     },
     "subtitles": {
       "codepoint": 108707,
-      "source": "assets/fonts/colorgy/icons/subtitles.svg"
+      "source": "assets/icons/subtitles.svg"
     },
     "supervisor-account": {
       "codepoint": 109308,
-      "source": "assets/fonts/colorgy/icons/supervisor-account.svg"
+      "source": "assets/icons/supervisor-account.svg"
     },
     "surround-sound": {
       "codepoint": 109309,
-      "source": "assets/fonts/colorgy/icons/surround-sound.svg"
+      "source": "assets/icons/surround-sound.svg"
     },
     "swap-calls": {
       "codepoint": 109310,
-      "source": "assets/fonts/colorgy/icons/swap-calls.svg"
+      "source": "assets/icons/swap-calls.svg"
     },
     "swap-horiz": {
       "codepoint": 109311,
-      "source": "assets/fonts/colorgy/icons/swap-horiz.svg"
+      "source": "assets/icons/swap-horiz.svg"
     },
     "swap-vert": {
       "codepoint": 109312,
-      "source": "assets/fonts/colorgy/icons/swap-vert.svg"
+      "source": "assets/icons/swap-vert.svg"
     },
     "swap-vertical-circle": {
       "codepoint": 109313,
-      "source": "assets/fonts/colorgy/icons/swap-vertical-circle.svg"
+      "source": "assets/icons/swap-vertical-circle.svg"
     },
     "switch-camera": {
       "codepoint": 109314,
-      "source": "assets/fonts/colorgy/icons/switch-camera.svg"
+      "source": "assets/icons/switch-camera.svg"
     },
     "switch-video": {
       "codepoint": 109315,
-      "source": "assets/fonts/colorgy/icons/switch-video.svg"
+      "source": "assets/icons/switch-video.svg"
     },
     "sync": {
       "codepoint": 108716,
-      "source": "assets/fonts/colorgy/icons/sync.svg"
+      "source": "assets/icons/sync.svg"
     },
     "sync-disabled": {
       "codepoint": 109316,
-      "source": "assets/fonts/colorgy/icons/sync-disabled.svg"
+      "source": "assets/icons/sync-disabled.svg"
     },
     "sync-problem": {
       "codepoint": 109317,
-      "source": "assets/fonts/colorgy/icons/sync-problem.svg"
+      "source": "assets/icons/sync-problem.svg"
     },
     "system-update": {
       "codepoint": 109318,
-      "source": "assets/fonts/colorgy/icons/system-update.svg"
+      "source": "assets/icons/system-update.svg"
     },
     "system-update-alt": {
       "codepoint": 109319,
-      "source": "assets/fonts/colorgy/icons/system-update-alt.svg"
+      "source": "assets/icons/system-update-alt.svg"
     },
     "tab": {
       "codepoint": 108721,
-      "source": "assets/fonts/colorgy/icons/tab.svg"
+      "source": "assets/icons/tab.svg"
     },
     "tab-unselected": {
       "codepoint": 109320,
-      "source": "assets/fonts/colorgy/icons/tab-unselected.svg"
+      "source": "assets/icons/tab-unselected.svg"
     },
     "table-blank": {
       "codepoint": 100500,
-      "source": "assets/fonts/colorgy/icons/table-blank.svg"
+      "source": "assets/icons/table-blank.svg"
     },
     "table-bottom-left-corner-rounded": {
       "codepoint": 100523,
-      "source": "assets/fonts/colorgy/icons/table-bottom-left-corner-rounded.svg"
+      "source": "assets/icons/table-bottom-left-corner-rounded.svg"
     },
     "table-bottom-right-corner-rounded": {
       "codepoint": 100524,
-      "source": "assets/fonts/colorgy/icons/table-bottom-right-corner-rounded.svg"
+      "source": "assets/icons/table-bottom-right-corner-rounded.svg"
     },
     "table-frame-horizontal": {
       "codepoint": 100501,
-      "source": "assets/fonts/colorgy/icons/table-frame-horizontal.svg"
+      "source": "assets/icons/table-frame-horizontal.svg"
     },
     "table-frame-vertical": {
       "codepoint": 100502,
-      "source": "assets/fonts/colorgy/icons/table-frame-vertical.svg"
+      "source": "assets/icons/table-frame-vertical.svg"
     },
     "table-top-left-corner-rounded": {
       "codepoint": 100521,
-      "source": "assets/fonts/colorgy/icons/table-top-left-corner-rounded.svg"
+      "source": "assets/icons/table-top-left-corner-rounded.svg"
     },
     "table-top-right-corner-rounded": {
       "codepoint": 100522,
-      "source": "assets/fonts/colorgy/icons/table-top-right-corner-rounded.svg"
+      "source": "assets/icons/table-top-right-corner-rounded.svg"
     },
     "tablet": {
       "codepoint": 108723,
-      "source": "assets/fonts/colorgy/icons/tablet.svg"
+      "source": "assets/icons/tablet.svg"
     },
     "tablet-android": {
       "codepoint": 109321,
-      "source": "assets/fonts/colorgy/icons/tablet-android.svg"
+      "source": "assets/icons/tablet-android.svg"
     },
     "tablet-mac": {
       "codepoint": 109322,
-      "source": "assets/fonts/colorgy/icons/tablet-mac.svg"
+      "source": "assets/icons/tablet-mac.svg"
     },
     "tag": {
       "codepoint": 108013,
-      "source": "assets/fonts/colorgy/icons/tag.svg"
+      "source": "assets/icons/tag.svg"
     },
     "tag-faces": {
       "codepoint": 109323,
-      "source": "assets/fonts/colorgy/icons/tag-faces.svg"
+      "source": "assets/icons/tag-faces.svg"
     },
     "tap-and-play": {
       "codepoint": 109324,
-      "source": "assets/fonts/colorgy/icons/tap-and-play.svg"
+      "source": "assets/icons/tap-and-play.svg"
     },
     "terrain": {
       "codepoint": 108728,
-      "source": "assets/fonts/colorgy/icons/terrain.svg"
+      "source": "assets/icons/terrain.svg"
     },
     "text-format": {
       "codepoint": 109325,
-      "source": "assets/fonts/colorgy/icons/text-format.svg"
+      "source": "assets/icons/text-format.svg"
     },
     "textsms": {
       "codepoint": 108730,
-      "source": "assets/fonts/colorgy/icons/textsms.svg"
+      "source": "assets/icons/textsms.svg"
     },
     "texture": {
       "codepoint": 108731,
-      "source": "assets/fonts/colorgy/icons/texture.svg"
+      "source": "assets/icons/texture.svg"
     },
     "theaters": {
       "codepoint": 108732,
-      "source": "assets/fonts/colorgy/icons/theaters.svg"
+      "source": "assets/icons/theaters.svg"
     },
     "thumb-down": {
       "codepoint": 109326,
-      "source": "assets/fonts/colorgy/icons/thumb-down.svg"
+      "source": "assets/icons/thumb-down.svg"
     },
     "thumb-up": {
       "codepoint": 109327,
-      "source": "assets/fonts/colorgy/icons/thumb-up.svg"
+      "source": "assets/icons/thumb-up.svg"
     },
     "thumbs-up-down": {
       "codepoint": 109328,
-      "source": "assets/fonts/colorgy/icons/thumbs-up-down.svg"
+      "source": "assets/icons/thumbs-up-down.svg"
     },
     "time-to-leave": {
       "codepoint": 109329,
-      "source": "assets/fonts/colorgy/icons/time-to-leave.svg"
+      "source": "assets/icons/time-to-leave.svg"
     },
     "timelapse": {
       "codepoint": 108737,
-      "source": "assets/fonts/colorgy/icons/timelapse.svg"
+      "source": "assets/icons/timelapse.svg"
     },
     "timer": {
       "codepoint": 108738,
-      "source": "assets/fonts/colorgy/icons/timer.svg"
+      "source": "assets/icons/timer.svg"
     },
     "timer-10": {
       "codepoint": 109330,
-      "source": "assets/fonts/colorgy/icons/timer-10.svg"
+      "source": "assets/icons/timer-10.svg"
     },
     "timer-3": {
       "codepoint": 109331,
-      "source": "assets/fonts/colorgy/icons/timer-3.svg"
+      "source": "assets/icons/timer-3.svg"
     },
     "timer-off": {
       "codepoint": 109332,
-      "source": "assets/fonts/colorgy/icons/timer-off.svg"
+      "source": "assets/icons/timer-off.svg"
     },
     "toc": {
       "codepoint": 108742,
-      "source": "assets/fonts/colorgy/icons/toc.svg"
+      "source": "assets/icons/toc.svg"
     },
     "today": {
       "codepoint": 108743,
-      "source": "assets/fonts/colorgy/icons/today.svg"
+      "source": "assets/icons/today.svg"
     },
     "toll": {
       "codepoint": 108744,
-      "source": "assets/fonts/colorgy/icons/toll.svg"
+      "source": "assets/icons/toll.svg"
     },
     "tonality": {
       "codepoint": 108745,
-      "source": "assets/fonts/colorgy/icons/tonality.svg"
+      "source": "assets/icons/tonality.svg"
     },
     "toys": {
       "codepoint": 108746,
-      "source": "assets/fonts/colorgy/icons/toys.svg"
+      "source": "assets/icons/toys.svg"
     },
     "track-changes": {
       "codepoint": 109333,
-      "source": "assets/fonts/colorgy/icons/track-changes.svg"
+      "source": "assets/icons/track-changes.svg"
     },
     "traffic": {
       "codepoint": 108748,
-      "source": "assets/fonts/colorgy/icons/traffic.svg"
+      "source": "assets/icons/traffic.svg"
     },
     "transform": {
       "codepoint": 108749,
-      "source": "assets/fonts/colorgy/icons/transform.svg"
+      "source": "assets/icons/transform.svg"
     },
     "translate": {
       "codepoint": 108750,
-      "source": "assets/fonts/colorgy/icons/translate.svg"
+      "source": "assets/icons/translate.svg"
     },
     "trending-down": {
       "codepoint": 109334,
-      "source": "assets/fonts/colorgy/icons/trending-down.svg"
+      "source": "assets/icons/trending-down.svg"
     },
     "trending-flat": {
       "codepoint": 109335,
-      "source": "assets/fonts/colorgy/icons/trending-flat.svg"
+      "source": "assets/icons/trending-flat.svg"
     },
     "trending-up": {
       "codepoint": 109336,
-      "source": "assets/fonts/colorgy/icons/trending-up.svg"
+      "source": "assets/icons/trending-up.svg"
     },
     "tune": {
       "codepoint": 108754,
-      "source": "assets/fonts/colorgy/icons/tune.svg"
+      "source": "assets/icons/tune.svg"
     },
     "turned-in": {
       "codepoint": 109337,
-      "source": "assets/fonts/colorgy/icons/turned-in.svg"
+      "source": "assets/icons/turned-in.svg"
     },
     "turned-in-not": {
       "codepoint": 109338,
-      "source": "assets/fonts/colorgy/icons/turned-in-not.svg"
+      "source": "assets/icons/turned-in-not.svg"
     },
     "tv": {
       "codepoint": 108757,
-      "source": "assets/fonts/colorgy/icons/tv.svg"
+      "source": "assets/icons/tv.svg"
     },
     "undo": {
       "codepoint": 108758,
-      "source": "assets/fonts/colorgy/icons/undo.svg"
+      "source": "assets/icons/undo.svg"
     },
     "unfold-less": {
       "codepoint": 109339,
-      "source": "assets/fonts/colorgy/icons/unfold-less.svg"
+      "source": "assets/icons/unfold-less.svg"
     },
     "unfold-more": {
       "codepoint": 109340,
-      "source": "assets/fonts/colorgy/icons/unfold-more.svg"
+      "source": "assets/icons/unfold-more.svg"
     },
     "usb": {
       "codepoint": 108761,
-      "source": "assets/fonts/colorgy/icons/usb.svg"
+      "source": "assets/icons/usb.svg"
     },
     "verified-user": {
       "codepoint": 109341,
-      "source": "assets/fonts/colorgy/icons/verified-user.svg"
+      "source": "assets/icons/verified-user.svg"
     },
     "vertical-align-bottom": {
       "codepoint": 109342,
-      "source": "assets/fonts/colorgy/icons/vertical-align-bottom.svg"
+      "source": "assets/icons/vertical-align-bottom.svg"
     },
     "vertical-align-center": {
       "codepoint": 109343,
-      "source": "assets/fonts/colorgy/icons/vertical-align-center.svg"
+      "source": "assets/icons/vertical-align-center.svg"
     },
     "vertical-align-top": {
       "codepoint": 109344,
-      "source": "assets/fonts/colorgy/icons/vertical-align-top.svg"
+      "source": "assets/icons/vertical-align-top.svg"
     },
     "vibration": {
       "codepoint": 108766,
-      "source": "assets/fonts/colorgy/icons/vibration.svg"
+      "source": "assets/icons/vibration.svg"
     },
     "video-library": {
       "codepoint": 109345,
-      "source": "assets/fonts/colorgy/icons/video-library.svg"
+      "source": "assets/icons/video-library.svg"
     },
     "videocam": {
       "codepoint": 108768,
-      "source": "assets/fonts/colorgy/icons/videocam.svg"
+      "source": "assets/icons/videocam.svg"
     },
     "videocam-off": {
       "codepoint": 109346,
-      "source": "assets/fonts/colorgy/icons/videocam-off.svg"
+      "source": "assets/icons/videocam-off.svg"
     },
     "view-agenda": {
       "codepoint": 109347,
-      "source": "assets/fonts/colorgy/icons/view-agenda.svg"
+      "source": "assets/icons/view-agenda.svg"
     },
     "view-array": {
       "codepoint": 109348,
-      "source": "assets/fonts/colorgy/icons/view-array.svg"
+      "source": "assets/icons/view-array.svg"
     },
     "view-carousel": {
       "codepoint": 109349,
-      "source": "assets/fonts/colorgy/icons/view-carousel.svg"
+      "source": "assets/icons/view-carousel.svg"
     },
     "view-column": {
       "codepoint": 109350,
-      "source": "assets/fonts/colorgy/icons/view-column.svg"
+      "source": "assets/icons/view-column.svg"
     },
     "view-comfy": {
       "codepoint": 109351,
-      "source": "assets/fonts/colorgy/icons/view-comfy.svg"
+      "source": "assets/icons/view-comfy.svg"
     },
     "view-compact": {
       "codepoint": 109352,
-      "source": "assets/fonts/colorgy/icons/view-compact.svg"
+      "source": "assets/icons/view-compact.svg"
     },
     "view-day": {
       "codepoint": 109353,
-      "source": "assets/fonts/colorgy/icons/view-day.svg"
+      "source": "assets/icons/view-day.svg"
     },
     "view-headline": {
       "codepoint": 109354,
-      "source": "assets/fonts/colorgy/icons/view-headline.svg"
+      "source": "assets/icons/view-headline.svg"
     },
     "view-list": {
       "codepoint": 109355,
-      "source": "assets/fonts/colorgy/icons/view-list.svg"
+      "source": "assets/icons/view-list.svg"
     },
     "view-module": {
       "codepoint": 109356,
-      "source": "assets/fonts/colorgy/icons/view-module.svg"
+      "source": "assets/icons/view-module.svg"
     },
     "view-quilt": {
       "codepoint": 109357,
-      "source": "assets/fonts/colorgy/icons/view-quilt.svg"
+      "source": "assets/icons/view-quilt.svg"
     },
     "view-stream": {
       "codepoint": 109358,
-      "source": "assets/fonts/colorgy/icons/view-stream.svg"
+      "source": "assets/icons/view-stream.svg"
     },
     "view-week": {
       "codepoint": 109359,
-      "source": "assets/fonts/colorgy/icons/view-week.svg"
+      "source": "assets/icons/view-week.svg"
     },
     "visibility": {
       "codepoint": 108783,
-      "source": "assets/fonts/colorgy/icons/visibility.svg"
+      "source": "assets/icons/visibility.svg"
     },
     "visibility-off": {
       "codepoint": 109360,
-      "source": "assets/fonts/colorgy/icons/visibility-off.svg"
+      "source": "assets/icons/visibility-off.svg"
     },
     "voice-chat": {
       "codepoint": 109361,
-      "source": "assets/fonts/colorgy/icons/voice-chat.svg"
+      "source": "assets/icons/voice-chat.svg"
     },
     "voicemail": {
       "codepoint": 108786,
-      "source": "assets/fonts/colorgy/icons/voicemail.svg"
+      "source": "assets/icons/voicemail.svg"
     },
     "volume-down": {
       "codepoint": 109362,
-      "source": "assets/fonts/colorgy/icons/volume-down.svg"
+      "source": "assets/icons/volume-down.svg"
     },
     "volume-mute": {
       "codepoint": 109363,
-      "source": "assets/fonts/colorgy/icons/volume-mute.svg"
+      "source": "assets/icons/volume-mute.svg"
     },
     "volume-off": {
       "codepoint": 109364,
-      "source": "assets/fonts/colorgy/icons/volume-off.svg"
+      "source": "assets/icons/volume-off.svg"
     },
     "volume-up": {
       "codepoint": 109365,
-      "source": "assets/fonts/colorgy/icons/volume-up.svg"
+      "source": "assets/icons/volume-up.svg"
     },
     "vpn-key": {
       "codepoint": 109366,
-      "source": "assets/fonts/colorgy/icons/vpn-key.svg"
+      "source": "assets/icons/vpn-key.svg"
     },
     "vpn-lock": {
       "codepoint": 109367,
-      "source": "assets/fonts/colorgy/icons/vpn-lock.svg"
+      "source": "assets/icons/vpn-lock.svg"
     },
     "wallpaper": {
       "codepoint": 108793,
-      "source": "assets/fonts/colorgy/icons/wallpaper.svg"
+      "source": "assets/icons/wallpaper.svg"
     },
     "warning": {
       "codepoint": 108794,
-      "source": "assets/fonts/colorgy/icons/warning.svg"
+      "source": "assets/icons/warning.svg"
     },
     "watch": {
       "codepoint": 108795,
-      "source": "assets/fonts/colorgy/icons/watch.svg"
+      "source": "assets/icons/watch.svg"
     },
     "wb-auto": {
       "codepoint": 109368,
-      "source": "assets/fonts/colorgy/icons/wb-auto.svg"
+      "source": "assets/icons/wb-auto.svg"
     },
     "wb-cloudy": {
       "codepoint": 109369,
-      "source": "assets/fonts/colorgy/icons/wb-cloudy.svg"
+      "source": "assets/icons/wb-cloudy.svg"
     },
     "wb-incandescent": {
       "codepoint": 109370,
-      "source": "assets/fonts/colorgy/icons/wb-incandescent.svg"
+      "source": "assets/icons/wb-incandescent.svg"
     },
     "wb-iridescent": {
       "codepoint": 109371,
-      "source": "assets/fonts/colorgy/icons/wb-iridescent.svg"
+      "source": "assets/icons/wb-iridescent.svg"
     },
     "wb-sunny": {
       "codepoint": 109372,
-      "source": "assets/fonts/colorgy/icons/wb-sunny.svg"
+      "source": "assets/icons/wb-sunny.svg"
     },
     "wc": {
       "codepoint": 108801,
-      "source": "assets/fonts/colorgy/icons/wc.svg"
+      "source": "assets/icons/wc.svg"
     },
     "web": {
       "codepoint": 108802,
-      "source": "assets/fonts/colorgy/icons/web.svg"
+      "source": "assets/icons/web.svg"
     },
     "whatshot": {
       "codepoint": 108803,
-      "source": "assets/fonts/colorgy/icons/whatshot.svg"
+      "source": "assets/icons/whatshot.svg"
     },
     "widgets": {
       "codepoint": 108804,
-      "source": "assets/fonts/colorgy/icons/widgets.svg"
+      "source": "assets/icons/widgets.svg"
     },
     "wifi": {
       "codepoint": 108805,
-      "source": "assets/fonts/colorgy/icons/wifi.svg"
+      "source": "assets/icons/wifi.svg"
     },
     "wifi-lock": {
       "codepoint": 109373,
-      "source": "assets/fonts/colorgy/icons/wifi-lock.svg"
+      "source": "assets/icons/wifi-lock.svg"
     },
     "wifi-tethering": {
       "codepoint": 109374,
-      "source": "assets/fonts/colorgy/icons/wifi-tethering.svg"
+      "source": "assets/icons/wifi-tethering.svg"
     },
     "work": {
       "codepoint": 108808,
-      "source": "assets/fonts/colorgy/icons/work.svg"
+      "source": "assets/icons/work.svg"
     },
     "wrap-text": {
       "codepoint": 109375,
-      "source": "assets/fonts/colorgy/icons/wrap-text.svg"
+      "source": "assets/icons/wrap-text.svg"
     },
     "youtube-searched-for": {
       "codepoint": 109376,
-      "source": "assets/fonts/colorgy/icons/youtube-searched-for.svg"
+      "source": "assets/icons/youtube-searched-for.svg"
     }
   },
   "options": {
@@ -3261,7 +3261,7 @@
     "force": true,
     "input": {
       "templates": "templates/fontcustom",
-      "vectors": "assets/fonts/colorgy/icons"
+      "vectors": "assets/icons"
     },
     "no_hash": true,
     "output": {
