@@ -1,0 +1,78 @@
+// *************************************
+//
+//   Mini Nav
+//   -> A small basic navbar
+//
+//   Styleguide MiniNav
+//
+// *************************************
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+// ----- Colors ----- //
+
+$mini-nav-bg-color: #333;
+$mini-nav-text-color: #eee;
+
+// ----- Sizing ----- //
+
+$mini-nav-height: 36px;
+$mini-nav-nav-item-padding-horizontal: 8px;
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.mini-nav {
+	width: 100%;
+	height: $mini-nav-height;
+	background-color: $mini-nav-bg-color;
+}
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// ----- Basic Navigation ----- //
+
+.mini-nav-nav {
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+
+	> li {
+		padding: 0 $mini-nav-nav-item-padding-horizontal;
+		list-style: none;
+
+		&,
+		> a,
+		> a:hover {
+			display: inline-block;
+			line-height: $mini-nav-height;
+			text-decoration: none;
+			color: $mini-nav-text-color;
+		}
+	}
+
+	> li:hover {
+		background-color: lighten($mini-nav-bg-color, 10%);
+	}
+
+	img {
+		max-height: $mini-nav-height * 30/36;
+		margin: ($mini-nav-height * 3/36) 4px;
+	}
+}
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Nav Position ----- //
+
+.mini-nav-nav--right {
+	float: right;
+}
