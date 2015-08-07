@@ -15,9 +15,9 @@
 // Menu
 $mobile-side-nav-menu-item-height: 45px;
 $mobile-side-nav-menu-item-padding-horizontal: 12px;
+$mobile-side-nav-head-height: 160px;
 
 // User Info
-$mobile-user-info-height: 160px;
 $mobile-user-info-padding-horizontal: 16px;
 $mobile-user-info-avatar-size: 60px;
 $mobile-user-info-name-height: 60px;
@@ -34,9 +34,17 @@ $mobile-user-info-name-padding-vertical: 12px;
 //   Scaffolding & Elements
 // -------------------------------------
 
+.mobile-side-nav-head {
+	position: relative;
+	height: $mobile-side-nav-head-height;
+}
+
 .mobile-side-nav-menu {
+	position: absolute;
+	top: $mobile-side-nav-head-height;
 	left: 0;
 	right: 0;
+	bottom: 0;
 	width: 100%;
 	background-color: $white;
 	overflow: auto;
@@ -49,10 +57,17 @@ $mobile-user-info-name-padding-vertical: 12px;
 	li {
 		list-style: none;
 		display: block;
+		margin: 0;
+		padding: 0;
+	}
+
+	li a {
+		width: 100%;
 		height: $mobile-side-nav-menu-item-height;
 		line-height: $mobile-side-nav-menu-item-height;
 		padding: 0 $mobile-side-nav-menu-item-padding-horizontal;
 		vertical-align: bottom;
+		color: $black;
 
 		> *,
 		.icon > * {
@@ -72,6 +87,8 @@ $mobile-user-info-name-padding-vertical: 12px;
 		&:focus,
 		&.active {
 			background-color: #ddd;
+			text-decoration: none;
+			color: $black;
 
 			.icon {
 				color: $black;
@@ -95,8 +112,6 @@ $mobile-user-info-name-padding-vertical: 12px;
 // ----- User Info ----- //
 
 .mobile-user-info {
-	position: relative;
-	height: $mobile-user-info-height;
 	padding: 0 $mobile-user-info-padding-horizontal;
 	background-size: cover;
 	background-position: 50% 50%;
@@ -171,7 +186,8 @@ $mobile-user-info-name-padding-vertical: 12px;
 
 .mobile-user-info-menu {
 	position: absolute;
-	top: $mobile-user-info-height;
+	top: $mobile-side-nav-head-height;
+	bottom: -220px;
 
 	@extend .mobile-side-nav-menu;
 }
