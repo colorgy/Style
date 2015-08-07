@@ -66,11 +66,8 @@ $card-inner-border-color:         rgba(#aaa, .2) !default;
 		}
 	}
 
-	.card-image {
-
-		.card-title {
-			padding: $padding-vertical $padding-horizontal;
-		}
+	.card-title {
+		padding: $padding-vertical $padding-horizontal;
 	}
 }
 
