@@ -1,0 +1,177 @@
+// *************************************
+//
+//   Mobile Side Nav
+//
+//   Styleguide MobileSideNav
+//
+// *************************************
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+// ----- Sizing ----- //
+
+// Menu
+$mobile-side-nav-menu-item-height: 45px;
+$mobile-side-nav-menu-item-padding-horizontal: 12px;
+
+// User Info
+$mobile-user-info-height: 160px;
+$mobile-user-info-padding-horizontal: 16px;
+$mobile-user-info-avatar-size: 60px;
+$mobile-user-info-name-height: 60px;
+$mobile-user-info-name-padding-vertical: 12px;
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.mobile-side-nav {
+}
+
+// -------------------------------------
+//   Scaffolding & Elements
+// -------------------------------------
+
+.mobile-side-nav-menu {
+	left: 0;
+	right: 0;
+	width: 100%;
+	background-color: $white;
+	overflow: auto;
+
+	ul {
+		margin: 12px 0;
+		padding: 0;
+	}
+
+	li {
+		list-style: none;
+		display: block;
+		height: $mobile-side-nav-menu-item-height;
+		line-height: $mobile-side-nav-menu-item-height;
+		padding: 0 $mobile-side-nav-menu-item-padding-horizontal;
+		vertical-align: bottom;
+
+		> *,
+		.icon > * {
+			display: inline-block;
+			height: $mobile-side-nav-menu-item-height;
+			line-height: $mobile-side-nav-menu-item-height;
+		}
+
+		.icon {
+			margin-right: $mobile-user-info-name-padding-vertical / 2;
+			font-size: 150%;
+			vertical-align: bottom;
+			color: #777;
+		}
+
+		&:hover,
+		&:focus,
+		&.active {
+			background-color: #ddd;
+
+			.icon {
+				color: $black;
+			}
+		}
+	}
+
+	hr {
+		margin: 0;
+		border: 0;
+		border-top: 1px solid #eeeeee;
+	}
+
+	div {
+		font-size: 12px;
+		color: #777;
+		margin: 12px;
+	}
+}
+
+// ----- User Info ----- //
+
+.mobile-user-info {
+	position: relative;
+	height: $mobile-user-info-height;
+	padding: 0 $mobile-user-info-padding-horizontal;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+.mobile-user-info-avatar {
+	position: absolute;
+	left: $mobile-user-info-padding-horizontal - 2px;
+	bottom: $mobile-user-info-name-height + 8px;
+
+	&,
+	img {
+		width: 60px;
+		height: 60px;
+		border-radius: 5px;
+		overflow: hidden;
+	}
+}
+
+.mobile-user-info-name {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: $mobile-user-info-name-height;
+	width: 100%;
+	padding: $mobile-user-info-name-padding-vertical $mobile-user-info-padding-horizontal;
+	line-height: ($mobile-user-info-name-height - 16px) / 2;
+	color: $white;
+	text-shadow: 0 0 4px rgba($black, .8);
+	text-shadow: 0 0 4px rgba($black, .8), 0 0 12px rgba($black, .5);
+
+	> * {
+		$-item-height: $mobile-user-info-name-height / 2 - $mobile-user-info-name-padding-vertical;
+		display: block;
+		margin: 0;
+		line-height: $-item-height;
+
+		&:only-child {
+			line-height: $-item-height * 2;
+		}
+	}
+
+	&,
+	&:hover,
+	&:focus,
+	&:active {
+		text-decoration: none;
+		color: $white;
+	}
+}
+
+.mobile-user-info-toggle {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: $mobile-user-info-name-height;
+	height: $mobile-user-info-name-height;
+	line-height: $mobile-user-info-name-height;
+	text-align: center;
+	color: $white;
+	font-size: 24px;
+	text-shadow: 0 0 4px rgba($black, .8);
+	text-shadow: 0 0 4px rgba($black, .8), 0 0 12px rgba($black, .5);
+
+	@extend .i-keyboard-arrow-down;
+
+	*[aria-expanded=true] & {
+		@extend .i-keyboard-arrow-up;
+	}
+}
+
+.mobile-user-info-menu {
+	position: absolute;
+	top: $mobile-user-info-height;
+
+	@extend .mobile-side-nav-menu;
+}
