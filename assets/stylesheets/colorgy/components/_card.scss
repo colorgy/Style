@@ -28,6 +28,9 @@ $card-inner-border-color:         rgba(#aaa, .2) !default;
 
 // ----- Colors ----- //
 
+$card-supporting-text-color:      #757575;
+$card-supporting-text-bg:         #f5f5f5;
+
 // -------------------------------------
 //   Mixins
 // -------------------------------------
@@ -35,9 +38,11 @@ $card-inner-border-color:         rgba(#aaa, .2) !default;
 @mixin card-style-variant($padding-vertical, $padding-horizontal) {
 	padding: $padding-vertical $padding-horizontal;
 
+	.card-title,
 	.card-content,
 	.card-actions,
-	.card-image {
+	.card-image,
+	.card-supporting-text {
 		margin: 0 (-$padding-horizontal);
 		margin-top: 0;
 
@@ -50,8 +55,20 @@ $card-inner-border-color:         rgba(#aaa, .2) !default;
 		}
 	}
 
+	.card-image {
+
+		.card-title,
+		.card-content,
+		.card-actions,
+		.card-image {
+			margin: 0;
+		}
+	}
+
+	.card-title,
 	.card-content,
-	.card-actions {
+	.card-actions,
+	.card-supporting-text {
 		padding: $padding-vertical $padding-horizontal;
 	}
 
@@ -64,10 +81,6 @@ $card-inner-border-color:         rgba(#aaa, .2) !default;
 				margin-left: 0;
 			}
 		}
-	}
-
-	.card-title {
-		padding: $padding-vertical $padding-horizontal;
 	}
 }
 
@@ -134,6 +147,12 @@ $card-inner-border-color:         rgba(#aaa, .2) !default;
 		left: 0;
 		margin: 0;
 	}
+}
+
+.card-supporting-text {
+	margin: -18px -24px;
+	background-color: $card-supporting-text-bg;
+	color: $card-supporting-text-color;
 }
 
 // -------------------------------------

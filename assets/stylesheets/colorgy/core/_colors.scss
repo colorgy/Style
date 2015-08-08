@@ -264,3 +264,7 @@ $text-color-light:      $white !default;
 @include bg-color('.bg-info', $info-color);
 @include bg-color('.bg-warning', $warning-color);
 @include bg-color('.bg-danger', $danger-color);
+
+.bg-transparent {
+	background-color: transparent !important;
+}

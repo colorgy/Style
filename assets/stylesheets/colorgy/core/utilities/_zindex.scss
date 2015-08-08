@@ -1,0 +1,6 @@
+@each $i in $z-index-list {
+
+	.z-index-#{$i} {
+		@include z-index($i);
+	}
+}

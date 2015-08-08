@@ -13,13 +13,13 @@
 
 // ----- Colors ----- //
 
-$mini-nav-bg-color: #333;
-$mini-nav-text-color: #eee;
+$mini-nav-bg-color: $theme-color !default;
+$mini-nav-text-color: #eee !default;
 
 // ----- Sizing ----- //
 
-$mini-nav-height: 36px;
-$mini-nav-nav-item-padding-horizontal: 8px;
+$mini-nav-height: 36px !default;
+$mini-nav-nav-item-padding-horizontal: 8px !default;
 
 // -------------------------------------
 //   Base
@@ -44,6 +44,7 @@ $mini-nav-nav-item-padding-horizontal: 8px;
 	padding: 0;
 
 	> li {
+		position: relative;
 		padding: 0 $mini-nav-nav-item-padding-horizontal;
 		list-style: none;
 

@@ -1,0 +1,41 @@
+// *************************************
+//
+//   Colorgy Core
+//   -> Core manifest
+//
+// *************************************
+
+// -------------------------------------
+//   Reset
+// -------------------------------------
+
+@import "core/reset";
+
+// -------------------------------------
+//   Core
+// -------------------------------------
+
+// ----- Config ----- //
+
+@import "core/config";
+
+// ----- Helpers ----- //
+
+@import "core/helpers/**/*";
+
+// ----- Fonts ----- //
+
+@import "core/fonts";
+
+// ----- Grid ----- //
+
+@import "core/grid";
+
+// ----- Base ----- //
+
+@import "core/base";
+@import "core/form";
+
+// ----- Utilities ----- //
+
+@import "core/utilities/**/*";
