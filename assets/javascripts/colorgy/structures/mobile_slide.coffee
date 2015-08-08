@@ -41,11 +41,9 @@ $ ->
     # Touch swipe events
 
     mobileSlideSwipe = (event, phase, direction, distance, duration, fingers, fingerData) ->
-      distance = 0 if direction == 'up' or direction == 'down'
+      px = fingerData[0].end.x - fingerData[0].start.x
       if phase == 'move'
         window.mobileSlideSwipeTouching = true
-        px = distance
-        px = px * -1 if direction == 'left'
         if $('body').hasClass('is-mobile-slide-active')
           px = px + MOBILE_SWIPE_WIDTH
         px = MOBILE_SWIPE_WIDTH + 4 if px > MOBILE_SWIPE_WIDTH + 4
@@ -149,10 +147,8 @@ $ ->
     # Touch swipe events
 
     mobileSlideSecondSwipe = (event, phase, direction, distance, duration, fingers, fingerData) ->
-      distance = 0 if direction == 'up' or direction == 'down'
+      px = fingerData[0].end.x - fingerData[0].start.x
       if phase == 'move'
-        px = distance
-        px = px * -1 if direction == 'left'
         px = px + MOBILE_SWIPE_WIDTH if $('body').hasClass('is-mobile-slide-second-active')
         px = MOBILE_SWIPE_WIDTH + 4 if px > MOBILE_SWIPE_WIDTH + 4
         $(this).css

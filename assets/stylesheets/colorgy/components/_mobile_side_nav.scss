@@ -14,11 +14,12 @@
 
 // Menu
 $mobile-side-nav-menu-item-height: 45px;
-$mobile-side-nav-menu-item-padding-horizontal: 12px;
+$mobile-side-nav-menu-item-padding-horizontal: 20px;
 $mobile-side-nav-head-height: 160px;
+$mobile-side-nav-menu-item-margin-vertical: 2px;
 
 // User Info
-$mobile-user-info-padding-horizontal: 16px;
+$mobile-user-info-padding-horizontal: 18px;
 $mobile-user-info-avatar-size: 60px;
 $mobile-user-info-name-height: 60px;
 $mobile-user-info-name-padding-vertical: 12px;
@@ -35,7 +36,10 @@ $mobile-user-info-name-padding-vertical: 12px;
 // -------------------------------------
 
 .mobile-side-nav-head {
-	position: relative;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
 	height: $mobile-side-nav-head-height;
 }
 
@@ -45,7 +49,6 @@ $mobile-user-info-name-padding-vertical: 12px;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	width: 100%;
 	background-color: $white;
 	overflow: auto;
 
@@ -66,6 +69,7 @@ $mobile-user-info-name-padding-vertical: 12px;
 		width: 100%;
 		height: $mobile-side-nav-menu-item-height;
 		line-height: $mobile-side-nav-menu-item-height;
+		margin: $mobile-side-nav-menu-item-margin-vertical 0;
 		padding: 0 $mobile-side-nav-menu-item-padding-horizontal;
 		vertical-align: bottom;
 		color: $black;
@@ -78,7 +82,7 @@ $mobile-user-info-name-padding-vertical: 12px;
 		}
 
 		.icon {
-			margin-right: $mobile-user-info-name-padding-vertical / 2;
+			margin-right: $mobile-side-nav-menu-item-padding-horizontal / 2;
 			font-size: 150%;
 			vertical-align: bottom;
 			color: #777;
@@ -107,6 +111,11 @@ $mobile-user-info-name-padding-vertical: 12px;
 		font-size: 12px;
 		color: #777;
 		margin: 12px;
+	}
+
+	.user-menu {
+		font-size: 90%;
+		border-bottom: 1px solid #eee;
 	}
 }
 
@@ -182,5 +191,29 @@ $mobile-user-info-name-padding-vertical: 12px;
 
 	*[aria-expanded=true] & {
 		@extend .i-keyboard-arrow-up;
+	}
+}
+
+// -------------------------------------
+//   Scenarios
+// -------------------------------------
+
+.mobile-slide {
+
+	.mobile-user-info {
+		left: -10px;
+
+		> * {
+			margin-left: 10px;
+		}
+	}
+
+	.mobile-side-nav-menu {
+		left: -10px;
+		right: 0;
+
+		li a {
+			padding-left: $mobile-side-nav-menu-item-padding-horizontal + 10px;
+		}
 	}
 }
