@@ -15,7 +15,6 @@
 //= require materialize/toasts
 //= require materialize/sideNav
 //= require materialize/scrollspy
-//= require materialize/forms
 //= require materialize/slider
 //= require materialize/cards
 //= require materialize/pushpin

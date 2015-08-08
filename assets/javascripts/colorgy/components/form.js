@@ -83,7 +83,13 @@
     validate_field = function(object) {
       var hasLength = object.attr('length') !== undefined;
       var lenAttr = parseInt(object.attr('length'));
-      var len = object.val().length;
+      var hasMinLenAttr = object.attr('min-length') !== undefined;
+      var minLenAttr = parseInt(object.attr('min-length'));
+      var hasEqualToAttr = object.attr('eq-to') !== undefined;
+      var equalToAttr = object.attr('eq-to');
+      if (hasEqualToAttr) { var equalToValue = $(equalToAttr).val(); }
+      var val = object.val();
+      var len = val.length;
 
       if (object.val().length === 0 && object[0].validity.badInput === false) {
         if (object.hasClass('validate')) {
@@ -93,8 +99,12 @@
       }
       else {
         if (object.hasClass('validate')) {
-          // Check for character counter attributes
-          if ((object.is(':valid') && hasLength && (len < lenAttr)) || (object.is(':valid') && !hasLength)) {
+          // Check for character counter attributes, min-length attributes, etc.
+          if (object.is(':valid') &&
+               ((hasLength && (len < lenAttr)) || (object.is(':valid') && !hasLength)) &&
+               ((hasMinLenAttr && (len >= minLenAttr)) || (object.is(':valid') && !hasMinLenAttr)) &&
+               ((hasEqualToAttr && (val == equalToValue)) || (object.is(':valid') && !hasEqualToAttr))
+             ) {
             object.removeClass('invalid');
             object.addClass('valid');
           }
