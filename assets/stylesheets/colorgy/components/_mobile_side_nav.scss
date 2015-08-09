@@ -41,6 +41,11 @@ $mobile-user-info-name-padding-vertical: 12px;
 	right: 0;
 	left: 0;
 	height: $mobile-side-nav-head-height;
+
+	p {
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
 }
 
 .mobile-side-nav-menu {
@@ -73,6 +78,8 @@ $mobile-user-info-name-padding-vertical: 12px;
 		padding: 0 $mobile-side-nav-menu-item-padding-horizontal;
 		vertical-align: bottom;
 		color: $black;
+		overflow: hidden;
+		text-overflow: ellipsis;
 
 		> *,
 		.icon > * {
